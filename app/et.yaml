@@ -392,6 +392,27 @@ settings:
       dark: Tume
       title: Disain
     title: App
+  mayo: "Hei karvane nina! 🐾\n\nTore, et sa leidsid tee minu salajasse piirkonda!
+    Võib-olla sa juba tunned mind. Kui mitte, siis minu nimi on Mayo ja ma olen Appenzelli
+    mägikoer. Loomulikult emane! Ma olen nüüd 2 aastat vana. Ülaltoodud illustratsioonil
+    olen mina. Lihtsalt selleks, et te mind ära tunneksite, kui te mind kunagi näete.\n
+    \nKahjuks saime minu perega aru, et mul on ärevusfaasid. Mingil hetkel jäi meile
+    kõigile mulje, et mu hormoonid mängivad enne kuumust hulluks ja ma ei ole enam
+    nii julge kui varem. Aga me ei olnud päris kindlad.\n\nMinu perenaine Korinna
+    tuli siis mõttele, et võiksime teha emaste koerte jaoks kalendri, nagu me teeme
+    seda ka inimeste emaste jaoks. Poleks varem öeldud kui tehtud! Minu peremees Fabian
+    on programmeerija. Ka tema pidas seda suurepäraseks ideeks ja asus kohe tööle.\n
+    \nKuid Fabian sai peagi aru, et tal ei ole koera tsüklist üldse aimu. Või mida
+    see hõlmab. Nii et ta uuris palju internetis, küsis Korinnale palju küsimusi ja
+    võrdles teda olemasolevate rakendustega, mis on mõeldud inimnaisedele.\n\nPärast
+    paari kuud ja testifaasi koos käpiklastega oli aeg käes! 27. novembril 2023 avaldasime
+    Heado App Store'is Androidile ja iOSile.\n\nMinu ärevusfaasid tulevad tegelikult
+    minu hormoonidest. Aga tundub, et ka see muutub iga soojaga palju paremaks. Kindlasti
+    hoiame silma peal.\n\nLoodan, et saame ka teid ja teie inimesi selle äpiga aidata
+    ja kiiremini probleeme või ebakorrapärasusi leida. Ja ka vajalikud tõendid loomaarsti
+    juures.\n\nKui teil või teie inimestel on mingeid ideid või soove, võtke minuga
+    ühendust aadressil mayo@heado.app. Ka probleemide, vigade või raskuste korral.\n
+    \nLõbutsemist rakendusega! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Konto seaded
   logins:
@@ -468,6 +489,7 @@ onboarding:
     code:
       error:
         min_length: Kood peab koosnema 5 numbrist
+      invalid: "Kutsekood on kehtetu.\nKood ei ole olemas või on juba kasutatud."
   finish:
     task: Te olete valmis!
     legal:
