@@ -347,6 +347,7 @@ onboarding:
     code:
       error:
         min_length: O código deve ser composto por 5 dígitos
+      invalid: "Código de convite inválido.\nO código não existe ou já foi utilizado."
 overview:
   overview:
     current_period:
@@ -458,6 +459,30 @@ settings:
       title: Design
       light: Luz
     title: Aplicação
+  mayo: "Olha o nariz de pelo! 🐾\n\nAinda bem que encontraste o caminho para a minha
+    área secreta! Talvez já me conheças. Se não me conheces, chamo-me Mayo e sou um
+    cão da montanha de Appenzell. Uma fêmea, claro! Tenho agora 2 anos de idade. A
+    ilustração acima sou eu. Para que me possas reconhecer se me vires.\n\nInfelizmente,
+    eu e a minha família apercebemo-nos de que tenho fases de ansiedade. A dada altura,
+    todos tivemos a impressão de que as minhas hormonas estavam a enlouquecer antes
+    do meu cio e que eu já não era tão corajosa como antes. Mas não tínhamos bem a
+    certeza.\n\nA minha dona Korinna teve então a ideia de que podíamos fazer um calendário
+    para as cadelas, tal como fazemos para as fêmeas humanas. Não hesitaste em dizer
+    que já estava feito! O meu dono Fabian é programador. Também ele achou que era
+    uma óptima ideia e começou logo a trabalhar.\n\nNo entanto, Fabian apercebeu-se
+    rapidamente de que não fazia a mínima ideia sobre o ciclo de um cão. Ou o que
+    é que ele envolve. Por isso, fez muita pesquisa na Internet, fez muitas perguntas
+    à Korinna e comparou-a com as aplicações existentes para senhoras humanas.\n\n
+    Após alguns meses e uma fase de testes com os meus amigos de patas, chegou o momento!
+    Em 27 de novembro de 2023, publicámos o Heado na App Store para Android e iOS.\n
+    \nAs minhas fases de ansiedade são, na verdade, causadas pelas minhas hormonas.
+    Mas também parece melhorar muito com cada calor. Vamos ficar atentos a isso.\n
+    \nEspero que também possamos ajudar-te a ti e aos teus humanos com esta aplicação
+    e encontrar problemas ou irregularidades mais rapidamente. E também que tenhas
+    as provas necessárias no veterinário.\n\nSe tu ou os teus humanos tiverem alguma
+    ideia ou pedido, por favor entra em contacto comigo em mayo@heado.app. Também
+    em caso de problemas, erros ou dificuldades.\n\nDiverte-te com a aplicação! <3\n
+    \nMayo, Korinna & Fabian"
 app:
   title: Heado - calendário de calor
   title_short: Cabeça
