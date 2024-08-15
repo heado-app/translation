@@ -121,6 +121,7 @@ onboarding:
     code:
       error:
         min_length: Kod musi składać się z 5 cyfr
+      invalid: "Nieprawidłowy kod zaproszenia.\nKod nie istnieje lub został już użyty."
   family:
     task: Nadaj swojej rodzinie imię
     name:
@@ -456,6 +457,28 @@ settings:
       title: Projekt
       light: Światło
     title: Aplikacja
+  mayo: "Hej futrzany nosie! 🐾\n\nCieszę się, że trafiłeś do mojej sekretnej strefy!
+    Może już mnie znasz. Jeśli nie, nazywam się Mayo i jestem psem górskim z Appenzell.
+    Oczywiście suczką! Mam teraz 2 lata. Powyższa ilustracja przedstawia mnie. Żebyś
+    mógł mnie rozpoznać, jeśli kiedykolwiek mnie zobaczysz.\n\nNiestety, moja rodzina
+    i ja zdaliśmy sobie sprawę, że mam niespokojne fazy. W pewnym momencie wszyscy
+    mieliśmy wrażenie, że moje hormony szaleją przed okresem i że nie jestem już tak
+    odważna jak kiedyś. Ale nie byliśmy do końca pewni.\n\nMoja pani Korinna wpadła
+    wtedy na pomysł, że moglibyśmy stworzyć kalendarz dla suczek, tak jak robimy to
+    dla suczek ludzkich. Prędzej powiedzieliśmy niż zrobiliśmy! Mój mistrz Fabian
+    jest programistą. On również uznał, że to świetny pomysł i od razu zabrał się
+    do pracy.\n\nJednak Fabian szybko zdał sobie sprawę, że nie ma pojęcia o psim
+    cyklu. Ani na czym on polega. Przeprowadził więc wiele badań w Internecie, zadał
+    Korinnie wiele pytań i porównał ją z istniejącymi aplikacjami dla ludzkich kobiet.\n
+    \nPo kilku miesiącach i fazie testowej z moimi przyjaciółmi, nadszedł czas! W
+    dniu 27 listopada 2023 r. opublikowaliśmy Heado w App Store na Androida i iOS.\n
+    \nMoje fazy niepokoju wynikają z hormonów. Ale wydaje się, że z każdą rują jest
+    znacznie lepiej. Zdecydowanie będziemy mieć na to oko.\n\nMam nadzieję, że dzięki
+    tej aplikacji pomożemy również Tobie i Twoim ludziom szybciej znaleźć problemy
+    lub nieprawidłowości. A także mieć niezbędne dowody u weterynarza.\n\nJeśli Ty
+    lub Twoi ludzie macie jakieś pomysły lub prośby, skontaktuj się ze mną pod adresem
+    mayo@heado.app. Również w przypadku problemów, błędów lub trudności.\n\nBaw się
+    dobrze z aplikacją! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Ustawienia konta
   logins:
