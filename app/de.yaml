@@ -405,6 +405,30 @@ settings:
       dark: Dunkel
       title: Design
     title: App
+  mayo: "Hey Fellnase! 🐾\n\nSchön dass du zu meinem geheimen Bereich gefunden hast!
+    Vielleicht kennst du mich ja schon. Falls nicht: Mein Name ist Mayo und ich bin
+    ein Appenzeller Sennenhund. Ein Weibchen natürlich! Inzwischen bin ich 2 Jahre
+    alt. Die Illustration da oben bin überings ich. Nur damit du mich erkennt falls
+    du mich Mal siehst.\n\nLeider musste meine Familie und ich feststellen, dass ich
+    immer wieder ängstliche Phasen habe. Irgendwann hatten wir alle den Anschein,
+    dass meine Hormone vor den Läufigkeiten verrückt spielen und ich deshalb nicht
+    mehr so mutig bin. Ganz sicher waren wir uns da aber nicht.\n\nMein Frauchen Korinna
+    hatte dann die Idee, dass man ähnlich wie für die Menschen Weibchen auch einen
+    Kalender für Hunde Damen machen könnte. Gesagt getan! Mein Herrchen Fabian ist
+    nämlich Programmierer. Er fand die Idee ebenfalls sehr gut und leget sofort los.\n
+    \nFabian musste aber schnell feststellen, dass er garkeine Ahnung über den Zyklus
+    von einem Hund hat. Oder worauf es dabei ankommt. Also hat er ganz viel im Internet
+    recherchiert, Korinna Löcher in den Bauch gefragt und mit vorhanden Apps für die
+    Menschen Damen verglichen.\n\nNach einigen Monaten und einer Testphase mit meinen
+    Pfotenfreunden war es soweit! Am 27.11.2023 haben wir Heado in den App Store für
+    Android & iOS veröffentlicht.\n\nTatsächlich kommen meine Angstphasen von meinen
+    Hormonen. Aber es scheint mit jeder Läufigkeit auch deutlich besser zu werden.
+    Wir behalten das auf jeden Fall im Auge.\n\nIch hoffe wir können dir und euren
+    Menschen mit dieser App ebenfalls etwas helfen, und Probleme oder Unregelmäßigkeiten
+    schneller finden. Und auch beim Tierarzt die nötigen Nachweise haben.\n\nFalls
+    du, oder deine Menschen Ideen und Wünsche habt, melde dich gerne bei mir unter
+    mayo@heado.app. Auch bei Problemen, Fehlern oder Schwierigkeiten.\n\nViel Spaß
+    mit der App! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: "Kontoeinstellungen"
   logins:
@@ -481,6 +505,8 @@ onboarding:
     code:
       error:
         min_length: "Der Code muss aus 5 Ziffern bestehen"
+      invalid: "Ungültiger Einladungs-Code.\nDer Code existiert nicht, oder wurde
+        bereits verwendet."
   finish:
     task: "Du bist bereit!"
     legal:
