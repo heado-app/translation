@@ -392,6 +392,28 @@ settings:
       title: Suunnittelu
       light: Valo
     title: App
+  mayo: "Hei, karvanaama! 🐾\n\nKiva, että löysit tiesi salaiselle alueelleni! Ehkä
+    tunnetkin minut jo. Jos et, niin nimeni on Mayo ja olen Appenzellin vuorikoira.
+    Narttu tietenkin! Olen nyt 2-vuotias. Yllä olevassa kuvassa olen minä. Jotta tunnistaisit
+    minut, jos joskus näet minut.\n\nValitettavasti perheeni ja minä huomasimme, että
+    minulla on ahdistuneita vaiheita. Jossain vaiheessa meille kaikille tuli vaikutelma,
+    että hormonini sekoilivat ennen kiimaa ja että en ollut enää niin rohkea kuin
+    ennen. Mutta emme olleet aivan varmoja.\n\nEmäntäni Korinna sai sitten idean,
+    että voisimme tehdä kalenterin nartuille, aivan kuten ihmisnartuillekin. Sanottu
+    oli kuin tehty! Isäntäni Fabian on ohjelmoija. Hänkin piti ideaa loistavana ja
+    aloitti heti.\n\nPian Fabian kuitenkin huomasi, ettei hänellä ollut minkäänlaista
+    käsitystä koiran kiertokulusta. Tai siitä, mitä se pitää sisällään. Niinpä hän
+    teki paljon tutkimusta internetissä, esitti Korinnalle paljon kysymyksiä ja vertasi
+    sitä olemassa oleviin ihmisnaisille tarkoitettuihin sovelluksiin.\n\nMuutaman
+    kuukauden ja tassukavereiden kanssa tehdyn testivaiheen jälkeen oli tullut aika!
+    27. marraskuuta 2023 julkaisimme Headon App Storessa Androidille ja iOS:lle.\n
+    \nAhdistusvaiheeni johtuvat itse asiassa hormoneistani. Mutta se tuntuu myös paranevan
+    paljon jokaisen helteen myötä. Pidämme sitä ehdottomasti silmällä.\n\nToivottavasti
+    voimme myös auttaa sinua ja ihmisiäkin tämän sovelluksen avulla ja löytää ongelmat
+    tai epäsäännöllisyydet nopeammin. Ja myös saada tarvittavat todisteet eläinlääkärille.\n
+    \nJos sinulla tai ihmisilläsi on ideoita tai toiveita, ota yhteyttä minuun osoitteeseen
+    mayo@heado.app. Myös ongelmien, virheiden tai vaikeuksien sattuessa.\n\nPidä hauskaa
+    sovelluksen kanssa! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Tilin asetukset
   logins:
@@ -468,6 +490,7 @@ onboarding:
     code:
       error:
         min_length: Koodin on koostuttava 5 numerosta
+      invalid: "Virheellinen kutsukoodi.\nKoodia ei ole olemassa tai se on jo käytetty."
   finish:
     task: Olet valmis!
     legal:
