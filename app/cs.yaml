@@ -388,6 +388,26 @@ settings:
       title: Design
       dark: Dark
     title: Aplikace
+  mayo: "Hej, chlupatý nos! 🐾\n\nJsem ráda, že jsi našel cestu do mého tajného prostoru!
+    Možná už mě znáš. Pokud ne, jmenuji se Mayo a jsem appenzellský horský pes. Samozřejmě
+    fenka! Teď jsou mi dva roky. Na obrázku nahoře jsem já. To abyste mě poznali,
+    kdybyste mě někdy potkali.\n\nBohužel jsme si s rodinou uvědomili, že mám úzkostné
+    fáze. V určitém okamžiku jsme všichni nabyli dojmu, že se mi před říjí zbláznily
+    hormony a že už nejsem tak statečná jako dřív. Ale nebyli jsme si úplně jistí.\n
+    \nMoje panička Korinna pak přišla s nápadem, že bychom mohli udělat kalendář pro
+    fenky, stejně jako to děláme pro lidské fenky. Nebylo to dříve řečeno než uděláno!
+    Můj pán Fabian je programátor. Také si myslel, že je to skvělý nápad, a hned se
+    do toho pustil.\n\nFabian si však brzy uvědomil, že o psím cyklu nemá vůbec žádnou
+    představu. Nebo co to obnáší. A tak hodně pátral na internetu, kladl Korinně spoustu
+    otázek a porovnával ji s existujícími aplikacemi pro lidské dámy.\n\nPo několika
+    měsících a testovací fázi s tlapkovými kamarády nastal čas! Dne 27. listopadu
+    2023 jsme Heado zveřejnili v App Store pro Android a iOS.\n\nMoje fáze úzkosti
+    vlastně pocházejí z mých hormonů. Ale také se zdá, že s každým horkem je to mnohem
+    lepší. Rozhodně to budeme sledovat.\n\nDoufám, že s touto aplikací pomůžeme i
+    vám a vašim lidem a rychleji najdeme problémy nebo nesrovnalosti. A také mít potřebné
+    důkazy u veterináře.\n\nPokud budete mít vy nebo vaši lidé nějaké nápady nebo
+    požadavky, ozvěte se mi prosím na mayo@heado.app. Také v případě problémů, chyb
+    nebo potíží.\n\nPřeji vám příjemnou zábavu s aplikací! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Nastavení účtu
   logins:
@@ -464,6 +484,7 @@ onboarding:
     code:
       error:
         min_length: Kód se musí skládat z 5 číslic
+      invalid: "Neplatný kód pozvánky.\nKód neexistuje nebo byl již použit."
   finish:
     task: Jste připraveni!
     legal:
