@@ -1,4 +1,4 @@
-title: 'Heado: Värmekalender'
+title: 'Heado: Löpkalender'
 description:
   long: "Heado ger dig en enkel och tydlig kalender över din tiks värme.\n\n<b>🔄 Aktuell
     löpning 🔄</b>\n\nDu kan se vilken fas din hund befinner sig i direkt på startsidan.
@@ -41,7 +41,7 @@ description:
     Heado är ett tyskt projekt. Utvecklingen och servrarna finns i Tyskland. Jag har
     minimerat användningen av tredjepartsleverantörer. Appen frågar dig om dina preferenser
     för databehandling innan du använder den. Heado är därför förenlig med GDPR."
-  short: Heado, värmekalendern för alla dina tikar!
+  short: Heado, löpkalender för alla dina tikar!
 screenshot:
   '1':
     title: Håll alltid ett öga på cykeln
