@@ -421,6 +421,26 @@ settings:
     test_login:
       title: Testni korisnički pristup
     title: Demo
+  mayo: "Hej krzneni nos! 🐾\n\nLijepo što si pronašao put do mog tajnog područja!
+    Možda me već poznaješ. Ako ne, moje ime je Mayo i ja sam planinski pas Appenzell.
+    Ženka, naravno! Sada imam 2 godine. Gornja ilustracija sam ja. Samo da me prepoznaš
+    ako me ikad vidiš.\n\nNažalost, moja obitelj i ja morali smo shvatiti da uvijek
+    imam anksiozne faze. Svi smo u nekom trenutku pomislili da su moji hormoni poludjeli
+    prije vrućine i da zato više nisam bila tako hrabra. Ali nismo baš bili sigurni.\n
+    \nMoja vlasnica Korinna tada je dobila ideju da se može napraviti kalendar za
+    ženke pasa, kao i za ljudske ženke. Rečeno, učinjeno! Moj majstor Fabian je programer.
+    Također je mislio da je to odlična ideja i odmah je počeo.\n\nAli Fabian je ubrzo
+    shvatio da nema pojma o psećem ciklusu. Ili što to uključuje. Stoga je mnogo istraživao
+    na internetu, postavio Korinni mnogo pitanja i usporedio je s postojećim aplikacijama
+    za žene.\n\nNakon nekoliko mjeseci i testne faze s mojim prijateljima šapama,
+    došlo je vrijeme! Dana 27.11.2023. objavili smo Heado u App Storeu za Android
+    i iOS.\n\nZapravo, moje faze tjeskobe dolaze od mojih hormona. Ali čini se da
+    je sa svakom toplinom puno bolje. Svakako ćemo ga držati na oku.\n\nNadam se da
+    s ovom aplikacijom također možemo pomoći vama i vašim ljudima i brže pronaći probleme
+    ili nepravilnosti. I također imati potrebne dokaze kod veterinara.\n\nAko vi ili
+    vaši ljudi imate bilo kakvih ideja ili zahtjeva, kontaktirajte me na mayo@heado.app.
+    Također u slučaju problema, grešaka ili poteškoća.\n\nZabavite se s aplikacijom!
+    <3\n\nMayo, Korinna & Fabian"
 account_settings:
   logins:
     error:
@@ -508,6 +528,7 @@ onboarding:
     code:
       error:
         min_length: Kôd mora sadržavati 5 znamenki
+      invalid: "Nevažeći kod pozivnice.\nKod ne postoji ili je već korišten."
   family:
     task: Dajte ime vašoj obitelji
     name:
