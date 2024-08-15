@@ -74,6 +74,7 @@ onboarding:
     code:
       error:
         min_length: Kodą turi sudaryti 5 skaitmenys
+      invalid: "Netinkamas kvietimo kodas.\nKodas neegzistuoja arba jau buvo panaudotas."
   finish:
     task: Jūs esate pasiruošę!
     legal:
@@ -495,6 +496,29 @@ settings:
       dark: Tamsus
       title: Dizainas
     title: Programėlė
+  mayo: "Ei, kailinė nosis! 🐾\n\nDžiaugiuosi, kad radai kelią į mano slaptavietę!
+    Galbūt tu mane jau pažįsti. Jei ne, mano vardas Mayo ir aš esu Apencelio kalnų
+    šuo. Žinoma, patelė! Dabar man jau dveji metai. Viršuje esančioje iliustracijoje
+    esu aš. Kad galėtumėte mane atpažinti, jei kada nors mane pamatysite.\n\nDeja,
+    aš ir mano šeima supratome, kad man būdingos nerimo fazės. Kažkuriuo metu mums
+    visiems susidarė įspūdis, kad prieš karščius mano hormonai šėlsta ir kad aš nesu
+    tokia drąsi, kokia buvau anksčiau. Tačiau nebuvome visiškai tikri.\n\nTada mano
+    šeimininkei Korinnai kilo mintis, kad galėtume sukurti kalendorių šunų patelėms,
+    kaip ir žmonių patelėms. Greičiau nepasakyta, nei padaryta! Mano šeimininkas Fabianas
+    yra programuotojas. Jis taip pat pagalvojo, kad tai puiki idėja, ir iš karto ėmėsi
+    darbo.\n\nTačiau Fabianas netrukus suprato, kad neturi jokio supratimo apie šunų
+    ciklą. Arba ką jis apima. Taigi jis atliko daugybę tyrimų internete, uždavė Korinnai
+    daugybę klausimų ir palygino ją su jau egzistuojančiomis programėlėmis, skirtomis
+    žmonių damoms.\n\nPo kelių mėnesių ir bandomojo etapo su savo letenų draugais
+    atėjo laikas! 2023 m. lapkričio 27 d. programėlių parduotuvėje \"Android\" ir
+    \"iOS\" paskelbėme \"Heado\".\n\nMano nerimo fazės iš tikrųjų kyla dėl hormonų.
+    Tačiau taip pat atrodo, kad su kiekvienu karščiu jis tampa daug geresnis. Mes
+    ją tikrai stebėsime.\n\nTikiuosi, kad su šia programėle taip pat galėsime padėti
+    jums ir jūsų žmonėms ir greičiau rasti problemų ar neatitikimų. O taip pat turėti
+    reikiamų įrodymų pas veterinarą.\n\nJei jūs ar jūsų žmonės turite kokių nors idėjų
+    ar pageidavimų, susisiekite su manimi el. paštu mayo@heado.app. Taip pat iškilus
+    problemoms, klaidoms ar sunkumams.\n\nSmagaus naudojimosi programėle! <3\n\nMayo,
+    Korinna ir Fabianas"
 generic:
   system_default: Sistemos standartas
   cancel: Atšaukti
