@@ -390,6 +390,27 @@ settings:
       dark: Dark
       title: Design
     title: App
+  mayo: "Hey fur nose! 🐾\n\nNice that you've found your way to my secret area! Maybe
+    you already know me. If not, my name is Mayo and I'm an Appenzell mountain dog.
+    A female, of course! I am now 2 years old. The illustration above is me. Just
+    so you can recognize me if you ever see me.\n\nUnfortunately, my family and I
+    had to realize that I always have anxious phases. At some point, we all thought
+    that my hormones were going crazy before my heat and that's why I wasn't as brave
+    anymore. But we weren't quite sure.\n\nMy owner Korinna then had the idea that
+    you could make a calendar for female dogs, just like for human females. No sooner
+    said than done! My master Fabian is a programmer. He also thought it was a great
+    idea and got started straight away.\n\nBut Fabian soon realized that he had no
+    idea whatsoever about a dog's cycle. Or what it involves. So he did a lot of research
+    on the internet, asked Korinna a lot of questions and compared it with existing
+    apps for human ladies.\n\nAfter a few months and a test phase with my paw friends,
+    the time had come! On 27.11.2023 we published Heado in the App Store for Android
+    & iOS.\n\nIn fact, my anxiety phases come from my hormones. But it seems to get
+    much better with every heat. We'll definitely keep an eye on it.\n\nI hope we
+    can also help you and your humans with this app and find problems or irregularities
+    more quickly. And also have the necessary evidence at the vet.\n\nIf you or your
+    humans have any ideas or requests, please contact me at mayo@heado.app. Also in
+    case of problems, errors or difficulties.\n\nHave fun with the app! <3\n\nMayo,
+    Korinna & Fabian"
 account_settings:
   title: Account settings
   logins:
@@ -465,6 +486,7 @@ onboarding:
     code:
       error:
         min_length: The code must consist of 5 digits
+      invalid: "Invalid invitation code.\nCode not exists or already used."
   finish:
     task: You are ready!
     legal:
