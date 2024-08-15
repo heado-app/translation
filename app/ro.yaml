@@ -142,6 +142,7 @@ onboarding:
     code:
       error:
         min_length: Codul trebuie să fie format din 5 cifre
+      invalid: "Cod de invitație nevalid.\nCodul nu există sau a fost deja utilizat."
   finish:
     task: Sunteți gata!
     legal:
@@ -460,6 +461,29 @@ settings:
       title: Design
       light: Lumină
       dark: Întuneric
+  mayo: "Hei nas de blană! 🐾\n\nMă bucur că ai găsit drumul spre zona mea secretă!
+    Poate că mă cunoști deja. Dacă nu, numele meu este Mayo și sunt un câine de munte
+    Appenzell. O femelă, desigur! Acum am 2 ani. Ilustrația de mai sus sunt eu. Doar
+    ca să mă puteți recunoaște dacă mă vedeți vreodată.\n\nDin păcate, eu și familia
+    mea ne-am dat seama că am faze anxioase. La un moment dat am avut cu toții impresia
+    că hormonii mei o luaseră razna înainte de călduri și că nu mai eram la fel de
+    curajoasă ca înainte. Dar nu eram foarte siguri.\n\nStăpâna mea Korinna a avut
+    atunci ideea că am putea face un calendar pentru femelele de câine, la fel cum
+    facem pentru femelele umane. Nici vorbă! Stăpânul meu Fabian este programator.
+    Și lui i s-a părut o idee grozavă și s-a apucat imediat de treabă.\n\nCu toate
+    acestea, Fabian și-a dat repede seama că nu avea nicio idee despre ciclul unui
+    câine. Sau ce implică acesta. Așa că a făcut multe cercetări pe internet, i-a
+    pus Korinnei o mulțime de întrebări și a comparat-o cu aplicațiile existente pentru
+    doamnele umane.\n\nDupă câteva luni și o fază de testare cu prietenii mei labați,
+    a venit momentul! Pe 27 noiembrie 2023, am publicat Heado în App Store pentru
+    Android și iOS.\n\nFazele mele de anxietate vin de fapt de la hormonii mei. Dar,
+    de asemenea, pare să devină mult mai bine cu fiecare căldură. Cu siguranță vom
+    fi cu ochii pe ea.\n\nSper să vă putem ajuta și pe dvs. și pe oamenii dvs. cu
+    această aplicație și să găsim probleme sau nereguli mai repede. Și, de asemenea,
+    să aveți dovezile necesare la veterinar.\n\nDacă tu sau oamenii tăi aveți idei
+    sau solicitări, vă rog să luați legătura cu mine la mayo@heado.app. De asemenea,
+    în caz de probleme, erori sau dificultăți.\n\nDistracție plăcută cu aplicația!
+    <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Setări de cont
   logins:
