@@ -209,6 +209,7 @@ onboarding:
     code:
       error:
         min_length: Il codice deve essere composto da 5 cifre
+      invalid: "Codice invito non valido.\nIl codice non esiste o è già stato utilizzato."
   finish:
     task: Sei pronto!
     legal:
@@ -377,6 +378,29 @@ settings:
       title: Design
       light: Luce
     title: App
+  mayo: "Ehi, naso di pelo! 🐾\n\nSono felice che tu abbia trovato la strada per la
+    mia area segreta! Forse mi conosci già. In caso contrario, mi chiamo Mayo e sono
+    un cane da montagna dell'Appenzello. Una femmina, ovviamente! Ora ho 2 anni. L'illustrazione
+    qui sopra sono io. Così potrai riconoscermi se mi vedrai.\n\nPurtroppo io e la
+    mia famiglia ci siamo resi conto che ho delle fasi ansiose. A un certo punto abbiamo
+    avuto l'impressione che i miei ormoni stessero impazzendo prima del parto e che
+    non fossi più coraggiosa come un tempo. Ma non ne eravamo del tutto sicuri.\n\n
+    La mia padrona Korinna ha avuto l'idea di creare un calendario per le femmine
+    di cane, proprio come facciamo per le femmine umane. Non c'è che dire! Il mio
+    padrone Fabian è un programmatore. Anche lui ha pensato che fosse una grande idea
+    e si è messo subito all'opera.\n\nTuttavia, Fabian si è subito reso conto di non
+    avere la minima idea del ciclo di un cane. O di cosa comporti. Così ha fatto molte
+    ricerche su Internet, ha fatto molte domande a Korinna e l'ha confrontata con
+    le app esistenti per le donne umane.\n\nDopo alcuni mesi e una fase di test con
+    i miei amici di zampa, è arrivato il momento! Il 27 novembre 2023 abbiamo pubblicato
+    Heado sull'App Store per Android e iOS.\n\nLe mie fasi di ansia derivano in realtà
+    dai miei ormoni. Ma sembra anche che la situazione migliori ad ogni riscaldamento.
+    Lo terremo sicuramente d'occhio.\n\nSpero di poter aiutare anche te e i tuoi umani
+    con questa app e di poter individuare più rapidamente problemi o irregolarità.
+    E di avere anche le prove necessarie dal veterinario.\n\nSe tu o i tuoi umani
+    avete idee o richieste, contattatemi all'indirizzo mayo@heado.app. Anche in caso
+    di problemi, errori o difficoltà.\n\nBuon divertimento con l'app! <3\n\nMayo,
+    Korinna & Fabian"
 app:
   title: Heado - calendario termico
   title_short: Heado
