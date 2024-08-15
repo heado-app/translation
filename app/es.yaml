@@ -54,6 +54,8 @@ onboarding:
     code:
       error:
         min_length: El código debe constar de 5 dígitos
+      invalid: "Código de invitación no válido.\nEl código no existe o ya ha sido
+        utilizado."
   finish:
     task: ¡Estás preparado!
     legal:
@@ -144,6 +146,29 @@ settings:
       title: Diseño
       light: Luz
     title: Aplicación
+  mayo: "¡Hola nariz de piel! 🐾\n\n¡Me alegro de que hayas encontrado el camino a
+    mi zona secreta! Quizá ya me conozcas. Si no es así, me llamo Mayo y soy un perro
+    de montaña de Appenzell. Hembra, por supuesto. Ahora tengo 2 años. La ilustración
+    de arriba soy yo. Para que me reconozcas si alguna vez me ves.\n\nPor desgracia,
+    mi familia y yo nos dimos cuenta de que tengo fases ansiosas. En algún momento
+    todos tuvimos la impresión de que mis hormonas se estaban volviendo locas antes
+    del celo y que ya no era tan valiente como antes. Pero no estábamos muy seguros.\n
+    \nMi ama Korinna tuvo entonces la idea de que podíamos hacer un calendario para
+    las perras, igual que hacemos con las hembras humanas. ¡Dicho y hecho! Mi amo
+    Fabian es programador. También pensó que era una gran idea y se puso manos a la
+    obra enseguida.\n\nSin embargo, Fabián pronto se dio cuenta de que no tenía ni
+    idea del ciclo de una perra. Ni de lo que implica. Así que investigó mucho en
+    Internet, le hizo muchas preguntas a Korinna y la comparó con las aplicaciones
+    existentes para damas humanas.\n\nTras unos meses y una fase de prueba con mis
+    amigos de las patas, ¡había llegado el momento! El 27 de noviembre de 2023, publicamos
+    Heado en la App Store para Android e iOS.\n\nMis fases de ansiedad provienen en
+    realidad de mis hormonas. Pero también parece que mejora mucho con cada celo.
+    Sin duda, lo seguiremos vigilando.\n\nEspero que también podamos ayudarte a ti
+    y a tus humanos con esta aplicación y encontrar problemas o irregularidades más
+    rápidamente. Y también tener las pruebas necesarias en el veterinario.\n\nSi tú
+    o tus humanos tenéis alguna idea o petición, poneos en contacto conmigo en mayo@heado.app.
+    También en caso de problemas, errores o dificultades.\n\n¡Diviértete con la aplicación!
+    <3\n\nMayo, Korinna y Fabian"
 family:
   member_list:
     title: Miembros
