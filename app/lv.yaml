@@ -368,6 +368,29 @@ settings:
       title: Dizains
       light: Gaisma
     title: Lietotne
+  mayo: "Ei, kažokādas deguns! 🐾\n\nEs priecājos, ka tu atradu ceļu uz manu slepeno
+    zonu! Varbūt tu mani jau pazīsti. Ja nē, tad mani sauc Maijo un es esmu Apencelles
+    kalnu suns. Protams, sieviešu kārtas! Man tagad ir 2 gadi. Ilustrācijā augšā esmu
+    es. Lai jūs varētu mani atpazīt, ja kādreiz mani ieraudzīsiet.\n\nDiemžēl es un
+    mana ģimene sapratām, ka man ir trauksmainas fāzes. Kādā brīdī mums visiem radās
+    iespaids, ka mani hormoni pirms karstuma trakojas un ka es vairs neesmu tik drosmīga
+    kā agrāk. Bet mēs nebijām īsti pārliecināti.\n\nTad manai saimniecei Korinnai
+    radās ideja, ka mēs varētu izveidot kalendāru suņu mātītēm, gluži tāpat kā to
+    darām cilvēku mātītēm. Ne ātrāk pateica, nekā izdarīja! Mans saimnieks Fabians
+    ir programmētājs. Viņš arī uzskatīja, ka tā ir lieliska ideja, un uzreiz ķērās
+    pie darba.\n\nTomēr Fabians drīz vien saprata, ka viņam nav nekāda priekšstata
+    par suņu ciklu. Vai arī par to, ko tas ietver. Tāpēc viņš veica lielu izpēti internetā,
+    uzdeva Korinnai daudz jautājumu un salīdzināja to ar jau esošajām aplikācijām,
+    kas paredzētas cilvēku dāmām.\n\nPēc dažiem mēnešiem un testa posma ar ķepu draugiem
+    bija pienācis laiks! 2023. gada 27. novembrī mēs publicējām Heado aplikāciju veikalā
+    Android un iOS operētājsistēmām.\n\nManas trauksmes fāzes patiesībā rodas no maniem
+    hormoniem. Taču šķiet, ka ar katru karstumu tā kļūst daudz labāka. Mēs to noteikti
+    sekosim līdzi.\n\nEs ceru, ka ar šo lietotni mēs varēsim palīdzēt arī jums un
+    jūsu cilvēkiem un ātrāk atrast problēmas vai pārkāpumus. Un arī iegūt nepieciešamos
+    pierādījumus pie veterinārārsta.\n\nJa jums vai jūsu cilvēkiem ir kādas idejas
+    vai lūgumi, lūdzu, sazinieties ar mani pa e-pastu mayo@heado.app. Arī problēmu,
+    kļūdu vai grūtību gadījumā.\n\nPriecājieties par lietotni! <3\n\nMayo, Korinna
+    & Fabian"
 account_settings:
   title: Konta iestatījumi
   logins:
@@ -450,6 +473,7 @@ onboarding:
     code:
       error:
         min_length: Kodam jāsastāv no 5 cipariem
+      invalid: "Nederīgs ielūguma kods.\nKods neeksistē vai jau ir izmantots."
   finish:
     task: Jūs esat gatavi!
     legal:
