@@ -394,6 +394,28 @@ settings:
       dark: Mørk
       title: Design
     title: App
+  mayo: "Hej pelsnæse! 🐾\n\nJeg er glad for, at du har fundet vej til mit hemmelige
+    område! Måske kender du mig allerede. Hvis ikke, så hedder jeg Mayo, og jeg er
+    en Appenzellerberghund. En tæve, selvfølgelig! Jeg er nu 2 år gammel. Illustrationen
+    ovenfor er mig. Bare så du kan genkende mig, hvis du nogensinde ser mig.\n\nDesværre
+    har min familie og jeg indset, at jeg har ængstelige faser. På et tidspunkt havde
+    vi alle indtryk af, at mine hormoner gik amok før min løbetid, og at jeg ikke
+    var så modig, som jeg plejede at være. Men vi var ikke helt sikre.\n\nMin elskerinde
+    Korinna fik så den idé, at vi kunne lave en kalender for hunhunde, ligesom vi
+    gør for menneskehunner. Aldrig så snart sagt, aldrig så snart gjort! Min herre
+    Fabian er programmør. Han syntes også, at det var en god idé og gik straks i gang.\n
+    \nFabian indså dog hurtigt, at han ikke havde nogen som helst idé om en hunds
+    cyklus. Eller hvad den indebærer. Så han lavede en masse research på internettet,
+    stillede Korinna en masse spørgsmål og sammenlignede hende med eksisterende apps
+    til menneskedamer.\n\nEfter et par måneder og en testfase med mine potevenner
+    var tiden kommet! Den 27. november 2023 udgav vi Heado i App Store til Android
+    & iOS.\n\nMine angstfaser kommer faktisk fra mine hormoner. Men det ser også ud
+    til at blive meget bedre for hvert heat. Vi vil helt sikkert holde øje med det.\n
+    \nJeg håber, at vi også kan hjælpe dig og dine mennesker med denne app og finde
+    problemer eller uregelmæssigheder hurtigere. Og også have de nødvendige beviser
+    hos dyrlægen.\n\nHvis du eller dine mennesker har ideer eller ønsker, så kontakt
+    mig på mayo@heado.app. Også i tilfælde af problemer, fejl eller vanskeligheder.\n
+    \nGod fornøjelse med appen! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Kontoindstillinger
   logins:
@@ -469,6 +491,8 @@ onboarding:
     code:
       error:
         min_length: Koden skal bestå af 5 cifre
+      invalid: "Ugyldig invitationskode.\nKoden findes ikke eller er allerede blevet
+        brugt."
   finish:
     task: Du er klar!
     legal:
