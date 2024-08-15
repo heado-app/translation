@@ -17,9 +17,9 @@ core:
     hint: Inga poster.
   unknown: Okänd
 app:
-  title: Heado - värmekalender
+  title: Heado - Löpkalender
   title_short: Huvud
-  slogan: Kalender för värme
+  slogan: Löpkalender
 family:
   member_list:
     title: Medlemmar
@@ -273,7 +273,7 @@ overview:
       no_data:
         cta: Registrera din tiks första löp!
         info:
-          title: Förutsägelse av nästa värme
+          title: Förutsägelse av nästa löp
           message: Heado behöver en fullständig cykel (inklusive vilofas!) från din
             tik för att göra en förutsägelse.
           close: OK
@@ -289,18 +289,18 @@ overview:
         anestrus: Vilofas
     period_dates:
       last:
-        title: Sista värmen
+        title: Sista löp
         none: Ingen period har ännu angetts.
         from: från
         to: till
       next:
-        title: Nästa heat
+        title: Nästa löp
         from: från
         to: till
         none: Det finns ännu inte tillräckligt med perioder för att göra en förutsägelse.
     period_count:
       period:
-        title: Antal uppvärmningar
+        title: Antal löp
         time: Färg
         times: Färg
       false_pregnancy:
@@ -395,6 +395,28 @@ settings:
       title: Design
       light: Ljus
     title: App
+  mayo: "Hej, pälsnäsa! 🐾\n\nJag är glad att du hittade vägen till mitt hemliga område!
+    Du kanske redan känner mig. Om inte, så heter jag Mayo och är en Appenzellerbergshund.
+    En tik, så klart! Jag är nu 2 år gammal. Illustrationen ovan är jag. Bara så att
+    du kan känna igen mig om du någonsin ser mig.\n\nTyvärr har jag och min familj
+    insett att jag har oroliga faser. Vid något tillfälle fick vi alla intrycket av
+    att mina hormoner skenade iväg inför min brunst och att jag inte var lika modig
+    som jag brukade vara. Men vi var inte riktigt säkra.\n\nMin husmor Korinna fick
+    då idén att vi kunde göra en kalender för hundtjejer, precis som vi gör för människotjejer.
+    Sagt och gjort! Min husse Fabian är programmerare. Han tyckte också att det var
+    en jättebra idé och satte igång direkt.\n\nFabian insåg dock snart att han inte
+    hade någon som helst aning om en hunds cykel. Eller vad den innebär. Så han gjorde
+    en hel del efterforskningar på internet, ställde en massa frågor till Korinna
+    och jämförde henne med befintliga appar för mänskliga damer.\n\nEfter några månader
+    och en testfas med mina tassvänner var det dags! Den 27 november 2023 publicerade
+    vi Heado i App Store för Android & iOS.\n\nMina ångestfaser kommer faktiskt från
+    mina hormoner. Men det verkar också bli mycket bättre för varje brunst. Vi kommer
+    definitivt att hålla ett öga på det.\n\nJag hoppas att vi också kan hjälpa dig
+    och dina människor med den här appen och hitta problem eller oegentligheter snabbare.
+    Och även ha de nödvändiga bevisen hos veterinären.\n\nOm du eller dina människor
+    har några idéer eller önskemål, vänligen kontakta mig på mayo@heado.app. Även
+    i händelse av problem, fel eller svårigheter.\n\nHa kul med appen! <3\n\nMayo,
+    Korinna & Fabian"
 account_settings:
   title: Kontoinställningar
   logins:
@@ -472,6 +494,7 @@ onboarding:
     code:
       error:
         min_length: Koden måste bestå av 5 siffror
+      invalid: "Ogiltig kod för inbjudan.\nKoden finns inte eller har redan använts."
   finish:
     task: Du är redo!
     legal:
