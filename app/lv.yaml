@@ -1,0 +1,499 @@
+family:
+  member_form:
+    name:
+      label: Nosaukums
+    action:
+      delete: Dzēst
+      save: Saglabāt
+    delete:
+      confirm:
+        title: Dzēst dalībnieku
+        message: Vai jūs patiešām vēlaties dzēst locekli {}? Dalībnieks vairs nevar
+          piekļūt šai ģimenei, un viņam ir nepieciešams jauns ielūgums. Ja šis lietotājs
+          ir pēdējais no šīs ģimenes, tiks dzēsta arī ģimene. Tiks dzēsti arī visi
+          suņi un ar tiem saistītie dati. To nevar atcelt!
+        no: Atcelt
+        yes: Dzēst
+    title: Rediģēt dalībnieku
+  invitation_form:
+    title: Ielūgums
+    share:
+      hint: Izmantojiet uzaicinājuma PIN kodu "{}", lai uzaicinātu citu ģimenes locekli
+        pievienoties jūsu ģimenei. Katru PIN kodu var izmantot tikai vienu reizi.
+      content: Aicinu jūs pievienoties manai ģimenei! Lejupielādējiet lietotni Heado
+        (https://heado.de/) un reģistrējoties izmantojiet ģimenes PIN kodu "{}".
+      copy:
+        hint: PIN kods "{}" ir kopēts.
+    action:
+      delete: Dzēst
+    delete:
+      confirm:
+        title: Dzēst uzaicinājumu
+        message: Vai tiešām vēlaties dzēst šo ielūgumu? Tad jūs vairs nevarat izmantot
+          šo ielūguma PIN kodu. To nevar atcelt, un jums būs jāizveido jauns PIN kods!
+        no: Atcelt
+        yes: Dzēst
+  family_form:
+    title: Rediģēt ģimeni
+    name:
+      label: Nosaukums
+    action:
+      delete: Dzēst
+      save: Saglabāt
+    delete:
+      confirm:
+        title: Dzēst ģimeni
+        message: Vai tiešām vēlaties dzēst ģimeni {}? Jūsu konts, visi ģimenes locekļi
+          un suņi, ieskaitot kalendāra datus, tiks dzēsti. To nevar atcelt!
+        no: Atcelt
+        yes: Dzēst
+  dog_selection:
+    add: Pievienot jaunu suni
+  dog_list:
+    title: Suņi
+    add: Pievienot jaunu suni
+  dog_form:
+    title:
+      add: Pievienot suni
+      edit: Rediģēt suni
+    name:
+      label: Nosaukums
+    action:
+      delete: Dzēst
+      save: Saglabāt
+    delete:
+      confirm:
+        title: Dzēst suni
+        message: Vai jūs patiešām vēlaties dzēst savu suni {}? Tiks dzēsti arī visi
+          kalendāra dati. To nevar atcelt.
+        no: Atcelt
+        yes: Dzēst
+  member_list:
+    title: Locekļi
+    invitation:
+      label: Uzaicinājums "{}"
+    add_invitation: Uzaicināt jaunu dalībnieku
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Fāze
+        proestrus: Uzkarsē
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Atpūtas fāze
+      false_pregnancy:
+        label: Viltus grūtniecība
+        active_info: Aktīvā viltus grūtniecība
+      mood:
+        label: Noskaņojums
+      symptom:
+        label: Simptomi
+      behavior:
+        label: Uzvedība
+      secretion:
+        label: Izplūde
+      weight:
+        label: Svars
+        unit: kg
+      note:
+        label: Piezīmes
+  day_form:
+    period:
+      title: Periods
+      enable: Pievienot perioda ciklu
+      disable: Dzēst perioda ciklu
+      proestrus_start_date:
+        label: Pirms atnešanās sākums (proestrus)
+        info:
+          title: Pirms ovulācijas (proestrus)
+          message: "Pirms rēsta sākas, kad kucei uzbriest vulva un parādās asiņaini
+            izdalījumi no maksts.\n\nVidējais ilgums ir 9 dienas un var svārstīties
+            no 3 līdz 17 dienām.\n\nŠis datums vienmēr ir jānorāda."
+          close: LABI
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+      estrus_start_date:
+        label: Rēres sākums (Riesta laiks)
+        info:
+          title: Riesta laiks (Estruss)
+          message: "Sākoties rērei, kuce izrāda vēlmi pāroties (rēgs). Vaginālie izdalījumi
+            joprojām ir iespējami, bet tie būs vairāk līdzīgi gaļas ūdenim un, iespējams,
+            gļotveidīgi.\n\nVidējais izdalījumu ilgums ir 9 dienas, un tas var svārstīties
+            no 3 līdz 21 dienai.\n \nJa šī fāze vēl nav sākusies vai jūs nevēlaties
+            dokumentēt šo fāzi, atstājiet šo lauku tukšu."
+          close: LABI
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+      metestrus_start_date:
+        label: Pēcdzemdību sākums (Metestrus)
+        info:
+          title: Pēc sadedzināšanas (Metestrus)
+          message: "Pēcbarošanas periodu raksturo gatavības pārošanās perioda beigas.
+            Turklāt pārstāj izdalījumi no maksts un vulva atkāpjas. Šajā laikā iespējama
+            viltus grūtniecība.\n\nJa šis posms vēl nav sācies vai jūs nevēlaties
+            dokumentēt šo posmu, atstājiet šo lauku tukšu."
+          close: LABI
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+      end_date:
+        label: Cikla beigas (miera fāze)
+        info:
+          title: Miera fāze (anestrus)
+          message: "Atpūtas fāzē nav dzimumcikla pazīmju. Vulva ir pilnībā regresējusi.\n
+            \nAtstājiet šo lauku tukšu, ja šis cikls vēl nav beidzies."
+          close: LABI
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+    false_pregnancy:
+      title: Viltus grūtniecība
+      enable: Viltus grūtniecības pievienošana
+      disable: Dzēst viltus grūtniecību
+      start_date:
+        label: Viltus grūtniecības sākums
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+      end_date:
+        label: Viltus grūtniecības beigas
+        error:
+          in_future: Datums nedrīkst būt nākotnē.
+    features:
+      title: Funkcijas
+      mood:
+        label: Noskaņojums
+        no_selection: Nav atlasīti noskaņojumi
+      symptom:
+        label: Simptomi
+        no_selection: Nav izvēlēti nekādi simptomi
+      behavior:
+        label: Uzvedība
+        no_selection: Nav izvēlēta uzvedība
+      secretion:
+        label: Izplūde
+        no_selection: Nav izvēlēta izkraušana
+      weight:
+        weight:
+          label: Svars
+        unit:
+          label: Vienība
+          kilogram: kg
+    notes:
+      title: Piezīmes
+      notes:
+        label: Piezīmes
+    action:
+      save: Saglabāt
+  mood:
+    bitchy: Bitchy
+    fearful: Trauksmains
+    courageous: Drosmīgs
+    brave: Drosmīgs
+    sleepy: Sleepy
+    sniffy: Sniffing
+    aggressive: Agresīvs
+    nervous: Nervozitāte
+    satisfied: Apmierināts
+    stressed: Stresa situācijā
+    sleepless: Bezmiegs
+    dissatisfied: Neapmierinātie
+    depressed: Depresija
+    defiant: Izaicinošs
+    relaxed: Relaksēts
+    happy: Laimīgs
+    obedient: Paklausība
+    balanced: Līdzsvarots
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Strīdīgs
+    attentive: Uzmanību
+    sad: Skumji
+    stormy: Stormy
+    crazy: Traks
+    calm: Mierīgs
+    cuddly: Mājīgs
+    appetiteless: Bez apetītes
+    indecisive: Neizlēmuši
+    exhausted: Izsmelts
+    frustrated: Neapmierināts
+    troubled: Nemierīgs
+    jittery: Jittery
+  behavior:
+    herding: Cepures
+    adopting: Pieņemt
+    nesting: Ligzdu būvēšana
+    howling: Yelp
+    restless: Nemierīgs
+  symptom:
+    stomach_cramps: Kuņģa krampji
+    flatulence: Meteorisms
+    diarrhea: Caureja
+    constipation: Aizcietējums
+    bloody_stool: Asiņaini izkārnījumi
+    milk_discharge: Piena izvadīšana
+    swollen_teats: Pietūkušas sēžamvietas
+    vomit: Vemšana
+    dandruff: Blaugznu mētelis
+  secretion:
+    bloody: Bloody
+    watery: Ūdens
+    creamy: Krēmveida
+    dryly: Dry
+    stinky: Smirdošs
+    purulent: Gandarījums
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Reģistrējiet savas kuces pirmo riestu!
+        info:
+          title: Nākamā karstuma prognozēšana
+          message: Heado ir nepieciešams pilns cikls (ieskaitot miera fāzi!) no jūsu
+            kuces, lai veiktu prognozi.
+          close: LABI
+      days_left: joprojām {} dienas
+      weeks_left: vēl {} nedēļas
+      months_left: joprojām {} mēneši
+      until_date: uz {}
+      error: Ir notikusi kļūda. Noklikšķiniet, lai atkārtotu.
+      phase:
+        proestrus: Uzkarsē
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Atpūtas fāze
+    period_dates:
+      last:
+        title: Pēdējais karstums
+        none: Pagaidām nav ievadīts neviens periods.
+        from: no
+        to: līdz
+      next:
+        title: Nākamais siltums
+        from: no
+        to: līdz
+        none: Pagaidām nav pietiekami daudz periodu, lai varētu izteikt prognozes.
+    period_count:
+      period:
+        title: Apkures reižu skaits
+        time: Krāsa
+        times: Krāsa
+      false_pregnancy:
+        title: Viltus grūtniecību skaits
+        time: Krāsa
+        times: Krāsa
+    menu:
+      calendar: Kalendārs
+      settings: Iestatījumi
+  ad_banner:
+    title: Izmēģinājuma periods bez reklāmām drīz beigsies!
+    message: Testa fāze beidzas {}. Pēc šīs dienas jūs redzēsiet reklāmas. Ja vēlaties
+      lietot programmu bez reklāmām, varat iegādāties Premium versiju.
+    become_member: Kļūsti par biedru
+    left_days: '{}/{} Atlikušās dienas'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Kļūstiet par Heado Premium biedru un izmantojiet lietotni bez reklāmām.
+    purchase_single: Kļūsti par Premium biedru
+    purchase_single_hint: '{} - Unikāls {}'
+    purchase_family: Kļūsti par Premium ģimeni
+    purchase_family_hint: '{} - Unikāls {}'
+    restore_purchase: Pirkumu atjaunošana
+  membership:
+    member:
+      teaser: Jūs esat Heado Premium dalībnieks un varat lietot lietotni bez reklāmām!
+      info: Jūs esat Heado Premium lietotājs kopš {}.
+    family:
+      teaser: Jūs un jūsu ģimene esat Heado Premium lietotājs. Jūs varat lietot lietotni
+        bez reklāmām!
+      info: Jūsu ģimene ir Heado Premium lietotāja kopš {}.
+settings:
+  title: Iestatījumi
+  footer: Izgatavots ar {} par Kori {} un Mayo {}.
+  family:
+    dogs:
+      title: Suņi
+    members:
+      title: Locekļi
+    family:
+      title: Ģimene
+    title: Ģimene
+  account:
+    title: Konts
+    premium:
+      title: Premium
+    settings:
+      title: Konta iestatījumi
+    cookies:
+      title: Sīkfailu piekrišana
+  demo:
+    title: Demo
+    test_login:
+      title: Lietotāja piekļuves testēšana
+  contact:
+    title: Sazinieties ar mums
+    website:
+      title: Tīmekļa vietne
+      link: https://heado.de/
+    mail:
+      title: e-pasts
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Juridiskie jautājumi
+    terms:
+      title: Lietošanas noteikumi
+      link: https://heado.de/terms
+    privacy:
+      title: Datu aizsardzības nosacījumi
+      link: https://heado.de/privacy
+  about:
+    title: Par
+    status:
+      title: Statuss
+    version:
+      title: Versija
+    translation:
+      title: Tulkojumi
+  app:
+    design:
+      dark: Tumšs
+      title: Dizains
+      light: Gaisma
+    title: Lietotne
+account_settings:
+  title: Konta iestatījumi
+  logins:
+    title: Konta informācija
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Testa lietotājs
+    error:
+      already_in_use:
+        title: Jau savienots
+        message: Izvēlētais konts jau ir savienots ar citu lietotāju.
+        close: LABI
+  disconnect:
+    label: Atdalīt kontu
+    confirm:
+      title: Atdalīt kontu
+      message: Vai tiešām vēlaties atcelt konta sasaisti? Tad vairs nevarēsiet pieteikties
+        pie šī pakalpojumu sniedzēja. Savu kontu varēsiet atkal savienot vēlāk.
+      no: Atcelt
+      yes: Jā, atdaliet
+  logout:
+    label: Iziet no sistēmas
+    confirm:
+      title: Iziet no sistēmas
+      message: Vai tiešām vēlaties iziet no sistēmas? Varat vēlreiz pieteikties, izmantojot
+        Google vai Apple kontu.
+      no: Atcelt
+      yes: Jā, iziet no sistēmas
+  delete:
+    label: Dzēst kontu
+    confirm:
+      title: Dzēst kontu
+      message: Vai tiešām vēlaties dzēst savu kontu? Jūs vairs nevarat piekļūt šai
+        ģimenei, un jums ir nepieciešams jauns ielūgums. Ja esat pēdējais šīs ģimenes
+        lietotājs, tiks dzēsta arī šī ģimene. Tiks dzēsti arī visi suņi un ar tiem
+        saistītie dati. To nevar atcelt!
+      no: Vai tiešām vēlaties iziet no sistēmas? Varat vēlreiz pieteikties, izmantojot
+        Google vai Apple kontu.
+      yes: Jā, dzēst
+onboarding:
+  next: Tālāk
+  welcome:
+    task: Vai jums jau ir konts?
+    action:
+      register: Izveidot jaunu kontu
+      login: Man jau ir konts
+  member:
+    task: Kā es varu jūs saukt?
+    name:
+      label: Nosaukums
+  lonely:
+    task: Vai esat uzaicināts uz ģimeni?
+    action:
+      create_family: Izveidot jaunu ģimeni
+      join_family: Pievienojieties esošai ģimenei
+  login:
+    task: Piesakieties savā esošajā kontā
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: PIN koda pieteikšanās demo lietotājiem
+    code:
+      error:
+        min_length: Kodam jāsastāv no 5 cipariem
+        invalid: Nederīgs kods
+    action:
+      login: Pieteikšanās
+  auth:
+    action:
+      apple: Apple
+      skip: Es nevēlos pieteikties
+      google: Google
+    task: Piesakieties, saglabājiet konta datus un izmantojiet vairākas ierīces
+  join:
+    task: Jūsu ģimenes ielūguma kods
+    code:
+      error:
+        min_length: Kodam jāsastāv no 5 cipariem
+  finish:
+    task: Jūs esat gatavi!
+    legal:
+      hint: 'Noklikšķinot uz "Pieņemt un izveidot kontu", jūs piekrītat šādiem nosacījumiem:'
+      terms:
+        label: 1. lietošanas noteikumi
+        link: https://heado.de/terms
+      privacy:
+        label: 2. datu aizsardzības nosacījumi
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Pieņemt un izveidot kontu
+  family:
+    task: Dodiet savai ģimenei vārdu
+    name:
+      label: (Fiktīvs) uzvārds
+      help: Izvēlieties iedomātu vārdu, kas labi raksturo jūsu ģimeni. Jūsu uzvārds
+        šeit nav nepieciešams.
+  dog:
+    task: Kāds ir jūsu suņa vārds?
+    name:
+      label: Suņa vārds
+app:
+  title: Heado - siltuma kalendārs
+  title_short: Heado
+  slogan: Siltuma kalendārs
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Ir notikusi kļūda!
+      long: Ak, ir notikusi kļūda! Atvainojiet.
+    retry:
+      short: Atkārtojiet
+      long: Mēģiniet vēlreiz
+  empty:
+    hint: Nav ierakstu.
+  close: Aizvērt
+  copy: Kopēt
+  share: Dalīties
+  unknown: Nezināms
+generic:
+  system_default: Sistēmas standarts
+  cancel: Atcelt

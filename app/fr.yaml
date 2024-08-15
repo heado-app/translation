@@ -1,0 +1,529 @@
+app:
+  title: Heado - Calendrier des chaleurs
+  title_short: Heado
+  slogan: Calendrier des chaleurs
+family:
+  invitation_form:
+    share:
+      content: Je t'invite dans ma famille ! Télécharge l'application Heado (https://heado.de/)
+        et utilise le code PIN familial "{}" lors de l'inscription.
+      hint: Utilise le PIN d'invitation "{}" pour inviter un autre membre de ta famille
+        à rejoindre ta famille. Chaque PIN ne peut être utilisé qu'une seule fois.
+      copy:
+        hint: Le PIN "{}" a été copié.
+    title: Invitation
+    action:
+      delete: Supprimer
+    delete:
+      confirm:
+        title: Supprimer l'invitation
+        message: Tu veux vraiment supprimer cette invitation ? Tu ne pourras plus
+          utiliser ce NIP d'invitation par la suite. Cela ne peut pas être annulé
+          et tu dois créer un nouveau PIN !
+        no: Annuler
+        yes: Supprimer
+  member_list:
+    title: Membres
+    invitation:
+      label: Invitation "{}"
+    add_invitation: Inviter un nouveau membre
+  member_form:
+    title: Modifier le membre
+    name:
+      label: Nom
+    action:
+      delete: Supprimer
+      save: Enregistrer
+    delete:
+      confirm:
+        title: Supprimer un membre
+        message: Tu veux vraiment supprimer le membre {} ? Le membre ne peut plus
+          accéder à cette famille et a besoin d'une nouvelle invitation. Si cet utilisateur
+          est le dernier de cette famille, la famille sera également supprimée. Tous
+          les chiens et les données associées seront également supprimés. Cela ne
+          peut pas être annulé !
+        no: Annuler
+        yes: Supprimer
+  family_form:
+    title: Modifier la famille
+    name:
+      label: Nom
+    action:
+      delete: Supprimer
+      save: Enregistrer
+    delete:
+      confirm:
+        title: Supprimer la famille
+        message: Tu veux vraiment supprimer la famille {} ? Ton compte, tous les membres
+          de la famille & les chiens, y compris les données du calendrier seront supprimés.
+          Cela ne peut pas être annulé !
+        no: Annuler
+        yes: Supprimer
+  dog_selection:
+    add: Ajouter un nouveau chien
+  dog_list:
+    title: Chiens
+    add: Ajouter un nouveau chien
+  dog_form:
+    title:
+      add: Ajouter un chien
+      edit: Modifier le chien
+    name:
+      label: Nom
+    action:
+      delete: Supprimer
+      save: Enregistrer
+    delete:
+      confirm:
+        title: Supprimer un chien
+        message: Tu veux vraiment supprimer ton chien {} ? Toutes les données du calendrier
+          seront également supprimées. Cela ne peut pas être annulé.
+        yes: Supprimer
+        no: Annuler
+settings:
+  about:
+    translation:
+      title: Traductions
+    title: A propos de
+    status:
+      title: Statut
+    version:
+      title: Version
+  account:
+    cookies:
+      title: Consentement aux cookies
+    title: Compte
+    premium:
+      title: Premium
+    settings:
+      title: Paramètres du compte
+  title: Paramètres
+  footer: Fabriqué avec {} pour Kori {} et Mayo {}.
+  family:
+    title: Famille
+    dogs:
+      title: Chiens
+    members:
+      title: Membres
+    family:
+      title: Famille
+  demo:
+    title: Démo
+    test_login:
+      title: Accès utilisateur test
+  contact:
+    title: Contact
+    website:
+      title: Site web
+      link: https://heado.de/
+    mail:
+      title: E-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Juridique
+    terms:
+      title: Conditions d'utilisation
+      link: https://heado.de/terms
+    privacy:
+      title: Conditions de protection des données
+      link: https://heado.de/privacy
+  app:
+    design:
+      light: Lumineux
+      dark: Sombre
+      title: Design
+    title: App
+calendar:
+  mood:
+    exhausted: Épuisé
+    frustrated: Frustré
+    bitchy: Bitchy
+    troubled: Inquiet
+    jittery: Hibou
+    fearful: Anxieux
+    courageous: Courageux
+    brave: Courageux
+    sleepy: Somnolent
+    sniffy: En reniflant
+    aggressive: Agressif
+    nervous: Nerveux
+    satisfied: Satisfait
+    stressed: Stressé
+    sleepless: Nuits blanches
+    dissatisfied: Mécontent
+    depressed: Déprimé
+    defiant: Défiant
+    relaxed: Détendu
+    happy: Heureux
+    obedient: Obéissance
+    balanced: Équilibré
+    fiepsy: Fiepsig
+    grumpy: Grognon
+    weepy: Pénible
+    attentive: Attention
+    sad: Triste
+    stormy: Tempête
+    crazy: Dingue
+    calm: Serein
+    cuddly: Douillet
+    appetiteless: Sans appétit
+    indecisive: Indécis
+  calendar:
+    details:
+      phase:
+        label: Phase
+        proestrus: Pré-brûlures
+        estrus: Les chaleurs
+        metestrus: Arrière-goût
+        anestrus: Phase de repos
+      false_pregnancy:
+        label: Fausse grossesse
+        active_info: Fausse grossesse active
+      mood:
+        label: Ambiance
+      symptom:
+        label: Symptômes
+      behavior:
+        label: Comportement
+      secretion:
+        label: Écoulement
+      weight:
+        label: Poids
+        unit: kg
+      note:
+        label: Notes
+  day_form:
+    period:
+      title: Période
+      enable: Ajouter un cycle de période
+      disable: Supprimer le cycle de période
+      proestrus_start_date:
+        label: Début de la période de pré-rupture (proestrus)
+        info:
+          title: Pré-brûlure (proestrus)
+          message: "Les chaleurs précoces commencent lorsque la vulve de ta chienne
+            se met à gonfler et que des pertes vaginales sanglantes apparaissent.\n
+            \nLa durée est en moyenne de 9 jours et peut varier de 3 à 17 jours.\n
+            \nCette date doit toujours être remplie."
+          close: OK
+        error:
+          in_future: La date ne doit pas être dans le futur
+      estrus_start_date:
+        label: Début des chaleurs (Estrus)
+        info:
+          title: Rut (Estrus)
+          message: "Lorsque les chaleurs commencent, ta chienne montre qu'elle est
+            prête à s'accoupler (chaleur d'attente). Il est toujours possible d'avoir
+            des pertes vaginales, mais elles ressemblent plutôt à de l'eau charnue
+            et peuvent être visqueuses.\n\nLa durée moyenne est de 9 jours et peut
+            varier de 3 à 21 jours.\n \nSi cette phase n'a pas encore commencé ou
+            si tu ne souhaites pas documenter cette phase, laisse ce champ vide."
+          close: OK
+        error:
+          in_future: La date ne doit pas être dans le futur
+      metestrus_start_date:
+        label: Début de la postcombustion (Metestrus)
+        info:
+          title: Ardeur post-rupture (Metestrus)
+          message: "Le post-coït est caractérisé par la fin de l'accouplement. En
+            outre, les pertes vaginales cessent et la vulve se rétracte. Une fausse
+            grossesse est possible pendant cette période.\n\nSi cette phase n'a pas
+            encore commencé, ou si tu ne souhaites pas documenter cette phase, laisse
+            cette case vide."
+          close: OK
+        error:
+          in_future: "Lorsque les chaleurs commencent, ta chienne montre qu'elle est
+            prête à s'accoupler (chaleur d'attente). Il est toujours possible d'avoir
+            des pertes vaginales, mais elles ressemblent plutôt à de l'eau charnue
+            et peuvent être visqueuses.\n\nLa durée moyenne est de 9 jours et peut
+            varier de 3 à 21 jours.\n \nSi cette phase n'a pas encore commencé ou
+            si tu ne souhaites pas documenter cette phase, laisse ce champ vide."
+      end_date:
+        label: Fin de cycle (phase de repos)
+        info:
+          title: Phase de repos (anestrus)
+          message: "La phase de repos ne montre aucun signe du cycle sexuel. La vulve
+            est maintenant complètement effacée.\n\nLaisse ce champ vide si ce cycle
+            n'est pas encore terminé."
+          close: OK
+        error:
+          in_future: "Lorsque les chaleurs commencent, ta chienne montre qu'elle est
+            prête à s'accoupler (chaleur d'attente). Il est toujours possible d'avoir
+            des pertes vaginales, mais elles ressemblent plutôt à de l'eau charnue
+            et peuvent être visqueuses.\n\nLa durée moyenne est de 9 jours et peut
+            varier de 3 à 21 jours.\n \nSi cette phase n'a pas encore commencé ou
+            si tu ne souhaites pas documenter cette phase, laisse ce champ vide."
+    false_pregnancy:
+      title: Fausse grossesse
+      enable: Ajouter une fausse grossesse
+      disable: Supprimer une fausse grossesse
+      start_date:
+        label: Début d'une fausse grossesse
+        error:
+          in_future: "Lorsque les chaleurs commencent, ta chienne montre qu'elle est
+            prête à s'accoupler (chaleur d'attente). Il est toujours possible d'avoir
+            des pertes vaginales, mais elles ressemblent plutôt à de l'eau charnue
+            et peuvent être visqueuses.\n\nLa durée moyenne est de 9 jours et peut
+            varier de 3 à 21 jours.\n \nSi cette phase n'a pas encore commencé ou
+            si tu ne souhaites pas documenter cette phase, laisse ce champ vide."
+      end_date:
+        label: Fin de la fausse grossesse
+        error:
+          in_future: "Lorsque les chaleurs commencent, ta chienne montre qu'elle est
+            prête à s'accoupler (chaleur d'attente). Il est toujours possible d'avoir
+            des pertes vaginales, mais elles ressemblent plutôt à de l'eau charnue
+            et peuvent être visqueuses.\n\nLa durée moyenne est de 9 jours et peut
+            varier de 3 à 21 jours.\n \nSi cette phase n'a pas encore commencé ou
+            si tu ne souhaites pas documenter cette phase, laisse ce champ vide."
+    features:
+      title: Caractéristiques
+      mood:
+        label: Ambiance
+        no_selection: Pas d'ambiances sélectionnées
+      symptom:
+        label: Symptômes
+        no_selection: Aucun symptôme sélectionné
+      behavior:
+        label: Comportement
+        no_selection: Pas de comportement sélectionné
+      secretion:
+        label: Écoulement
+        no_selection: Pas d'écoulement sélectionné
+      weight:
+        weight:
+          label: Poids
+        unit:
+          label: Unité
+          kilogram: kg
+    notes:
+      title: Notes
+      notes:
+        label: Notes
+    action:
+      save: Enregistrer
+  behavior:
+    herding: Chapeaux
+    adopting: Adopter
+    nesting: Construction du nid
+    howling: Jaillir
+    restless: Sans répit
+  symptom:
+    stomach_cramps: Crampes d'estomac
+    flatulence: Flatulences
+    diarrhea: Diarrhée
+    constipation: Constipation
+    bloody_stool: Selles sanglantes
+    milk_discharge: Ecoulement de lait
+    swollen_teats: Mamelles gonflées
+    vomit: Vomissement
+    dandruff: Peau qui pèle
+  secretion:
+    bloody: Sanglante
+    watery: Aqueux
+    creamy: Crémeux
+    dryly: Sec
+    stinky: Puant
+    purulent: Purulent
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Une erreur s'est produite !
+      long: Oups, une erreur s'est produite ! Excuse-moi.
+    retry:
+      short: Répéter
+      long: Essayer à nouveau
+  empty:
+    hint: Aucune entrée.
+  close: Fermer
+  copy: Copier
+  share: Partager
+  unknown: Inconnu
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Inscris la première chaleur de ta chienne !
+        info:
+          title: Prévoir les prochaines chaleurs
+          message: Heado a besoin d'un cycle complet (y compris la phase de repos
+            !) de ta chienne pour faire une prédiction.
+          close: OK
+      days_left: encore {} jours
+      weeks_left: encore {} semaines
+      months_left: encore {} mois
+      until_date: jusqu'à {}
+      error: Une erreur s'est produite. Clique pour répéter.
+      phase:
+        proestrus: Pré-brûlures
+        estrus: Les chaleurs
+        metestrus: Arrière-goût
+        anestrus: Phase de repos
+    period_dates:
+      last:
+        title: Dernières chaleurs
+        none: Aucune période n'a encore été inscrite.
+        from: du
+        to: jusqu'à
+      next:
+        title: Prochaine période de chaleur
+        from: du
+        to: jusqu'à
+        none: Il n'y a pas encore assez de périodes pour faire des prévisions.
+    period_count:
+      period:
+        title: Nombre de chaleurs
+        time: Mal
+        times: Mal
+      false_pregnancy:
+        title: Nombre de fausses grossesses
+        time: Mal
+        times: Mal
+    menu:
+      calendar: Calendrier
+      settings: Paramètres
+  ad_banner:
+    title: Ta période d'essai sans publicité se termine bientôt !
+    message: Ta période d'essai se termine le {}. Après ce jour, des publicités s'afficheront
+      sur ton écran. Si tu souhaites utiliser l'application sans publicité, tu peux
+      acheter la version Premium.
+    become_member: Devenir membre
+    left_days: '{}/{} jours restants'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Deviens membre Heado Premium et utilise l'application sans publicité.
+    purchase_single: Deviens un membre premium
+    purchase_single_hint: '{} - Une fois {}'
+    purchase_family: Deviens une famille premium
+    purchase_family_hint: '{} - Une fois {}'
+    restore_purchase: Récupérer les achats
+  membership:
+    member:
+      teaser: Tu es membre Heado Premium et tu peux utiliser l'application sans publicité
+        !
+      info: Tu es membre Premium Heado depuis le {}.
+    family:
+      teaser: Toi et ta famille êtes membres Heado Premium. Tu peux utiliser l'application
+        sans publicité !
+      info: Ta famille est membre Heado Premium depuis le {}.
+account_settings:
+  title: Paramètres du compte
+  logins:
+    title: Coordonnées du compte
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Utilisateur test
+    error:
+      already_in_use:
+        title: Déjà connecté
+        message: Le compte sélectionné est déjà connecté à un autre utilisateur.
+        close: OK
+  disconnect:
+    label: Découpler le compte
+    confirm:
+      title: Découpler le compte
+      message: Tu veux vraiment découpler ton compte ? Tu ne pourras alors plus te
+        connecter avec ce fournisseur. Tu pourras reconnecter ton compte plus tard.
+      yes: Oui, découpler
+      no: Annuler
+  logout:
+    label: Se désinscrire
+    confirm:
+      title: Se désinscrire
+      message: Tu veux vraiment te désinscrire ? Tu peux te reconnecter avec ton compte
+        Google ou Apple.
+      yes: Oui, déconnecte-toi
+      no: Annuler
+  delete:
+    label: Supprimer le compte
+    confirm:
+      title: Supprimer le compte
+      message: Tu veux vraiment supprimer ton compte ? Tu ne peux plus accéder à cette
+        famille et tu as besoin d'une nouvelle invitation. Si tu es le dernier utilisateur
+        de cette famille, celle-ci sera également supprimée. Tous les chiens et les
+        données associées seront également supprimés. Ceci ne peut pas être annulé
+        !
+      yes: Oui, supprimer
+      no: Annuler
+onboarding:
+  next: Continue
+  welcome:
+    task: Tu as déjà un compte ?
+    action:
+      register: Créer un nouveau compte
+      login: J'ai déjà un compte
+  member:
+    task: Comment puis-je t'appeler ?
+    name:
+      label: Nom
+  lonely:
+    task: As-tu été invité dans une famille ?
+    action:
+      create_family: Créer une nouvelle famille
+      join_family: Rejoindre une famille existante
+  login:
+    task: Connecte-toi à ton compte existant
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Code PIN Login pour les utilisateurs de démonstration
+    code:
+      error:
+        min_length: Le code doit être composé de 5 chiffres
+        invalid: Code non valide
+    action:
+      login: Connexion
+  join:
+    task: Code d'invitation de ta famille
+    code:
+      error:
+        min_length: Le code doit être composé de 5 chiffres
+  finish:
+    task: Tu es prêt !
+    legal:
+      hint: 'En cliquant sur "Accepter & créer un compte", tu acceptes les conditions
+        suivantes :'
+      terms:
+        label: 1. conditions d'utilisation
+        link: https://heado.de/terms
+      privacy:
+        label: 2. conditions de protection des données
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Accepter et créer un compte
+  family:
+    task: Donne un nom à ta famille
+    name:
+      label: Nom de famille (fictif)
+      help: Choisis un nom imaginaire qui décrit bien ta famille. Ton nom de famille
+        n'est pas nécessaire ici.
+  dog:
+    task: Quel est le nom de ton chien ?
+    name:
+      label: Nom du chien
+  auth:
+    task: Se connecter, sauvegarder les données du compte & utiliser plusieurs appareils
+    action:
+      google: Google
+      apple: Apple
+      skip: Je ne veux pas me connecter
+generic:
+  system_default: Standard du système
+  cancel: Annuler

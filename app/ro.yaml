@@ -1,0 +1,507 @@
+family:
+  invitation_form:
+    share:
+      copy:
+        hint: PIN-ul "{}" a fost copiat.
+      hint: Utilizați PIN-ul de invitație "{}" pentru a invita un alt membru al familiei
+        să se alăture familiei dvs. Fiecare PIN poate fi utilizat o singură dată.
+      content: Vă invit să vă alăturați familiei mele! Descărcați aplicația Heado
+        (https://heado.de/) și folosiți PIN-ul familiei "{}" atunci când vă înregistrați.
+    title: Invitație
+    action:
+      delete: Ștergeți
+    delete:
+      confirm:
+        title: Ștergeți invitația
+        message: Chiar doriți să ștergeți această invitație? Atunci nu mai puteți
+          utiliza acest PIN de invitație. Aceasta nu poate fi anulată și va trebui
+          să creați un nou PIN!
+        no: Anulează
+        yes: Ștergeți
+  member_list:
+    title: Membri
+    invitation:
+      label: Invitație "{}"
+    add_invitation: Invitați un nou membru
+  member_form:
+    title: Editează membru
+    name:
+      label: Nume
+    action:
+      delete: Ștergeți
+      save: Salvați
+    delete:
+      confirm:
+        title: Ștergeți membrul
+        message: Chiar doriți să ștergeți membrul {}? Membrul nu mai poate accesa
+          această familie și are nevoie de o nouă invitație. Dacă acest utilizator
+          este ultimul membru al acestei familii, familia va fi, de asemenea, ștearsă.
+          Toți câinii și datele asociate vor fi, de asemenea, șterse. Acest lucru
+          nu poate fi anulat!
+        no: Anulează
+        yes: Ștergeți
+  family_form:
+    title: Editează familia
+    name:
+      label: Nume
+    action:
+      delete: Ștergeți
+      save: Salvați
+    delete:
+      confirm:
+        title: Ștergeți familia
+        message: Chiar vrei să ștergi familia {}? Contul dvs., toți membrii familiei
+          și câinii, inclusiv datele din calendar vor fi șterse. Acest lucru nu poate
+          fi anulat!
+        no: Anulează
+        yes: Ștergeți
+  dog_selection:
+    add: Adăugați un câine nou
+  dog_list:
+    title: Câini
+    add: Adăugați un câine nou
+  dog_form:
+    title:
+      add: Adaugă câine
+      edit: Editare câine
+    name:
+      label: Nume
+    action:
+      delete: Ștergeți
+      save: Salvați
+    delete:
+      confirm:
+        title: Șterge câinele
+        message: Chiar vrei să-ți ștergi câinele {}? Toate datele din calendar vor
+          fi, de asemenea, șterse. Acest lucru nu poate fi anulat.
+        no: Anulează
+        yes: Ștergeți
+app:
+  title: Heado - calendar termic
+  title_short: Heado
+  slogan: Calendar termic
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: A apărut o eroare!
+      long: Oops, a apărut o eroare! Îmi pare rău.
+    retry:
+      short: Repetați
+      long: Încearcă din nou
+  empty:
+    hint: Nu există intrări.
+  close: Închideți
+  copy: Copiați
+  share: Share
+  unknown: Necunoscut
+onboarding:
+  dog:
+    task: Care este numele câinelui tău?
+    name:
+      label: Numele câinelui
+  auth:
+    task: Conectați-vă, salvați datele contului și utilizați mai multe dispozitive
+    action:
+      google: Google
+      apple: Apple
+      skip: Nu vreau să mă conectez
+  next: Mai departe
+  welcome:
+    task: Aveți deja un cont?
+    action:
+      register: Creați un cont nou
+      login: Am deja un cont
+  member:
+    task: Cum pot să-ți spun?
+    name:
+      label: Nume
+  lonely:
+    task: Ați fost invitat la o familie?
+    action:
+      create_family: Creați o nouă familie
+      join_family: Alăturați-vă unei familii existente
+  login:
+    task: Conectați-vă la contul dvs. existent
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Conectare cu cod PIN pentru utilizatorii demo
+    code:
+      error:
+        min_length: Codul trebuie să fie format din 5 cifre
+        invalid: Cod invalid
+    action:
+      login: Autentificare
+  join:
+    task: Codul de invitație al familiei tale
+    code:
+      error:
+        min_length: Codul trebuie să fie format din 5 cifre
+  finish:
+    task: Sunteți gata!
+    legal:
+      hint: 'Făcând clic pe "Acceptă și creează cont", sunteți de acord cu următoarele
+        condiții:'
+      terms:
+        label: 1. condiții de utilizare
+        link: https://heado.de/terms
+      privacy:
+        label: 2. Condiții de protecție a datelor
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Acceptați și creați un cont
+  family:
+    task: Dați un nume familiei dvs.
+    name:
+      label: Nume de familie (fictiv)
+      help: Alegeți un nume imaginar care să vă descrie bine familia. Numele dvs.
+        de familie nu este necesar aici.
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Faza
+        proestrus: Preîncălziți
+        estrus: Oestru
+        metestrus: Afterburn
+        anestrus: Faza de odihnă
+      false_pregnancy:
+        label: Sarcina falsă
+        active_info: Sarcina falsă activă
+      mood:
+        label: Stare de spirit
+      symptom:
+        label: Simptomele
+      behavior:
+        label: Comportament
+      secretion:
+        label: Ieșire
+      weight:
+        label: Greutate
+        unit: kg
+      note:
+        label: Note
+  day_form:
+    period:
+      title: Perioada
+      enable: Adăugați ciclul perioadei
+      disable: Ștergerea ciclului de perioade
+      proestrus_start_date:
+        label: Începutul perioadei de pre-rut (proestru)
+        info:
+          title: Pre-ovulație (Proestru)
+          message: "Pre-estrul începe atunci când vulva cățelei se umflă și apar scurgeri
+            vaginale cu sânge.\n\nDurata medie este de 9 zile și poate varia de la
+            3 la 17 zile.\n\nAceastă dată trebuie completată întotdeauna."
+          close: OK
+        error:
+          in_future: Data nu trebuie să fie în viitor
+      estrus_start_date:
+        label: Începutul estrului (estru)
+        info:
+          title: Oestru (Estru)
+          message: "Odată cu debutul estrului, cățeaua dvs. își manifestă dorința
+            de a se împerechea (în călduri). Scurgerea vaginală este încă posibilă,
+            dar va fi mai mult ca apa de carne și posibil mucoasă.\n\nDurata medie
+            este de 9 zile și poate varia între 3 și 21 de zile.\n \nDacă această
+            fază nu a început încă sau dacă nu doriți să documentați această fază,
+            lăsați acest câmp gol."
+          close: OK
+        error:
+          in_future: Data nu trebuie să fie în viitor
+      metestrus_start_date:
+        label: Începutul postcombustiei (Metestru)
+        info:
+          title: Afterburn (Metestrus)
+          message: "Perioada de după alăptare se caracterizează prin încetarea pregătirii
+            pentru împerechere. În plus, secrețiile vaginale încetează și vulva se
+            retrage. O sarcină falsă este posibilă în această perioadă.\n\nDacă această
+            fază nu a început încă sau dacă nu doriți să documentați această fază,
+            lăsați acest câmp gol."
+          close: OK
+        error:
+          in_future: Data nu trebuie să fie în viitor
+      end_date:
+        label: Sfârșitul ciclului (faza de repaus)
+        info:
+          title: Faza de repaus (anestro)
+          message: "Faza de repaus nu prezintă semne ale ciclului sexual. Vulva este
+            acum complet regresată.\n\nLăsați acest câmp gol dacă acest ciclu nu s-a
+            încheiat încă."
+          close: OK
+        error:
+          in_future: Data nu trebuie să fie în viitor
+    false_pregnancy:
+      title: Sarcina falsă
+      enable: Adăugarea unei sarcini false
+      disable: Ștergeți sarcina falsă
+      start_date:
+        label: Începutul unei sarcini false
+        error:
+          in_future: Data nu trebuie să fie în viitor
+      end_date:
+        label: Sfârșitul sarcinii false
+        error:
+          in_future: Data nu trebuie să fie în viitor
+    features:
+      title: Caracteristici
+      mood:
+        label: Stare de spirit
+        no_selection: Nu sunt selectate stări de spirit
+      symptom:
+        label: Simptomele
+        no_selection: Niciun simptom selectat
+      behavior:
+        label: Comportament
+        no_selection: Niciun comportament selectat
+      secretion:
+        label: Ieșire
+        no_selection: Nu s-a selectat nicio descărcare
+      weight:
+        weight:
+          label: Greutate
+        unit:
+          label: Unitatea
+          kilogram: kg
+    notes:
+      title: Note
+      notes:
+        label: Note
+    action:
+      save: Salvați
+  mood:
+    fearful: Anxios
+    courageous: Curajos
+    brave: Brave
+    sleepy: Sleepy
+    sniffy: Sniffing
+    aggressive: Agresivitate
+    nervous: Nervos
+    satisfied: Satisfăcut
+    stressed: Stresat
+    sleepless: Insomnii
+    dissatisfied: Nemulțumit
+    depressed: Deprimat
+    defiant: Sfidător
+    relaxed: Relaxat
+    happy: Fericit
+    obedient: Obediență
+    balanced: Echilibrat
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Certăreț
+    attentive: Atenție
+    sad: Trist
+    stormy: Stormy
+    crazy: Crazy
+    calm: Calm
+    cuddly: Confortabil
+    appetiteless: Fără apetit
+    indecisive: Indecis
+    exhausted: Epuizat
+    frustrated: Frustrat
+    bitchy: Bitchy
+    troubled: Neliniștit
+    jittery: Jittery
+  behavior:
+    herding: Pălării
+    adopting: Adoptați
+    nesting: Construirea cuibului
+    howling: Yelp
+    restless: Neliniștit
+  symptom:
+    stomach_cramps: Crampe la stomac
+    flatulence: Flatulență
+    diarrhea: Diareea
+    constipation: Constipație
+    bloody_stool: Scaune cu sânge
+    milk_discharge: Scurgerea laptelui
+    swollen_teats: Fese umflate
+    vomit: Vărsături
+    dandruff: Mătreață haină
+  secretion:
+    bloody: Bloody
+    watery: Aqueous
+    creamy: Cremos
+    dryly: Uscat
+    stinky: Mirositor
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Înregistrează prima căldurică a cățelei tale!
+        info:
+          title: Predicția următoarei călduri
+          message: Heado are nevoie de un ciclu complet (inclusiv faza de repaus!)
+            de la cățea ta pentru a face o predicție.
+          close: OK
+      days_left: încă {} zile
+      weeks_left: încă {} săptămâni
+      months_left: încă {} luni
+      until_date: la {}
+      error: S-a produs o eroare. Faceți clic pentru a repeta.
+      phase:
+        proestrus: Preîncălziți
+        estrus: Oestru
+        metestrus: Afterburn
+        anestrus: Faza de odihnă
+    period_dates:
+      last:
+        title: Ultima căldură
+        none: Încă nu a fost introdusă nicio perioadă.
+        from: de la
+        to: până la
+      next:
+        title: Următoarea căldură
+        from: de la
+        to: până la
+        none: Nu există încă suficiente perioade pentru a face o predicție.
+    period_count:
+      period:
+        title: Numărul de încălziri
+        time: Vopsea
+        times: Vopsea
+      false_pregnancy:
+        title: Numărul de sarcini false
+        time: Vopsea
+        times: Vopsea
+    menu:
+      calendar: Calendar
+      settings: Setări
+  ad_banner:
+    title: Perioada de probă fără reclame se încheie în curând!
+    message: Faza de testare se încheie pe {}. După această zi, veți vedea reclame.
+      Dacă doriți să utilizați aplicația fără reclame, puteți achiziționa versiunea
+      Premium.
+    become_member: Deveniți membru
+    left_days: '{}/{} Zile rămase'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Deveniți un membru Heado Premium și utilizați aplicația fără reclame.
+    purchase_single: Deveniți un membru Premium
+    purchase_single_hint: '{} - Unic {}'
+    purchase_family: Deveniți o familie Premium
+    purchase_family_hint: '{} - Unic {}'
+    restore_purchase: Restabilirea achizițiilor
+  membership:
+    member:
+      teaser: Sunteți membru Heado Premium și puteți utiliza aplicația fără reclame!
+      info: Sunteți membru Heado Premium de la {}.
+    family:
+      teaser: Tu și familia ta sunteți membri Heado Premium. Puteți utiliza aplicația
+        fără reclame!
+      info: Familia dvs. este membru Heado Premium de la {}.
+settings:
+  title: Setări
+  footer: Făcut cu {} pentru Kori {} și Mayo {}.
+  family:
+    title: Familie
+    dogs:
+      title: Câini
+    members:
+      title: Membri
+    family:
+      title: Familie
+  account:
+    title: Cont
+    premium:
+      title: Premium
+    settings:
+      title: Setări de cont
+    cookies:
+      title: Consimțământul pentru cookie-uri
+  demo:
+    title: Demo
+    test_login:
+      title: Testați accesul utilizatorilor
+  contact:
+    title: Contactați-ne
+    website:
+      title: Site web
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Aspecte juridice
+    terms:
+      title: Termeni de utilizare
+      link: https://heado.de/terms
+    privacy:
+      title: Condiții de protecție a datelor
+      link: https://heado.de/privacy
+  about:
+    title: Despre
+    status:
+      title: Stare
+    version:
+      title: Versiunea
+    translation:
+      title: Traduceri
+  app:
+    title: Aplicație
+    design:
+      title: Design
+      light: Lumină
+      dark: Întuneric
+account_settings:
+  title: Setări de cont
+  logins:
+    title: Detalii de cont
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Utilizator de test
+    error:
+      already_in_use:
+        title: Deja conectat
+        message: Contul selectat este deja conectat la un alt utilizator.
+        close: OK
+  disconnect:
+    label: Contul de decuplare
+    confirm:
+      title: Contul de decuplare
+      message: Chiar vreți să vă deconectați contul? Atunci nu vă veți mai putea conecta
+        la acest furnizor. Vă puteți reconecta contul mai târziu.
+      no: Anulează
+      yes: Da, decuplați
+  logout:
+    label: Deconectați-vă
+    confirm:
+      title: Deconectați-vă
+      message: Chiar doriți să vă deconectați? Vă puteți autentifica din nou cu contul
+        Google sau Apple.
+      no: Anulează
+      yes: Da, deconectați-vă
+  delete:
+    label: Ștergeți contul
+    confirm:
+      title: Ștergeți contul
+      message: Chiar doriți să vă ștergeți contul? Nu mai puteți accesa această familie
+        și aveți nevoie de o nouă invitație. Dacă sunteți ultimul utilizator al acestei
+        familii, familia va fi, de asemenea, ștearsă. Toți câinii și datele asociate
+        vor fi, de asemenea, șterse. Acest lucru nu poate fi anulat!
+      no: Chiar doriți să vă deconectați? Vă puteți autentifica din nou cu contul
+        Google sau Apple.
+      yes: Da, ștergeți
+generic:
+  system_default: Standard de sistem
+  cancel: Anulează

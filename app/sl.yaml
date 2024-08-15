@@ -1,0 +1,502 @@
+app:
+  title: Heado - toplotni koledar
+  title_short: Heado
+  slogan: Toplotni koledar
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Zgodila se je napaka!
+      long: Ups, prišlo je do napake! Opravičujemo se.
+    retry:
+      short: Ponovite
+      long: Poskusite znova
+  empty:
+    hint: Ni vnosov.
+  close: Zapri
+  copy: Kopiraj
+  share: Delite
+  unknown: Neznano
+family:
+  member_list:
+    title: Člani
+    invitation:
+      label: Vabilo "{}"
+    add_invitation: Povabite novega člana
+  member_form:
+    title: Uredi člana
+    name:
+      label: Ime
+    action:
+      delete: Izbriši
+      save: Shrani
+    delete:
+      confirm:
+        title: Izbriši člana
+        message: Ali res želite izbrisati člana {}? Član ne more več dostopati do
+          te družine in potrebuje novo povabilo. Če je ta uporabnik zadnji iz te družine,
+          bo izbrisana tudi družina. Izbrisani bodo tudi vsi psi in z njimi povezani
+          podatki. Tega ni mogoče preklicati!
+        no: Prekliči
+        yes: Izbriši
+  invitation_form:
+    title: Vabilo
+    share:
+      hint: Z vabilom PIN "{}" povabite drugega družinskega člana, da se pridruži
+        vaši družini. Vsako kodo PIN lahko uporabite samo enkrat.
+      content: Vabim vas, da se pridružite moji družini! Prenesite aplikacijo Heado
+        (https://heado.de/) in pri registraciji uporabite družinsko kodo PIN "{}".
+      copy:
+        hint: PIN "{}" je bil kopiran.
+    action:
+      delete: Izbriši
+    delete:
+      confirm:
+        title: Brisanje povabila
+        message: Ali res želite izbrisati to povabilo? Potem tega vabila PIN ne morete
+          več uporabiti. Tega ni mogoče preklicati, zato boste morali ustvariti novo
+          kodo PIN!
+        no: Prekliči
+        yes: Izbriši
+  family_form:
+    title: Uredi družino
+    name:
+      label: Ime
+    action:
+      delete: Izbriši
+      save: Shrani
+    delete:
+      confirm:
+        title: Izbriši družino
+        message: Ali res želite izbrisati družino {}? Vaš račun, vsi družinski člani
+          in psi, vključno s koledarskimi podatki, bodo izbrisani. Tega ni mogoče
+          preklicati!
+        no: Prekliči
+        yes: Izbriši
+  dog_selection:
+    add: Dodajanje novega psa
+  dog_list:
+    title: Psi
+    add: Dodajanje novega psa
+  dog_form:
+    title:
+      add: Dodajte psa
+      edit: Urejanje psa
+    name:
+      label: Ime
+    action:
+      delete: Izbriši
+      save: Shrani
+    delete:
+      confirm:
+        title: Izbriši psa
+        message: Ali res želite izbrisati svojega psa {}? Izbrisani bodo tudi vsi
+          koledarski podatki. Tega ni mogoče preklicati.
+        no: Prekliči
+        yes: Izbriši
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Faza
+        proestrus: Predgrevanje
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Faza počitka
+      false_pregnancy:
+        label: Lažna nosečnost
+        active_info: Aktivna lažna nosečnost
+      mood:
+        label: Razpoloženje
+      symptom:
+        label: Simptomi
+      behavior:
+        label: Vedenje
+      secretion:
+        label: Odtok
+      weight:
+        label: Teža
+        unit: kg
+      note:
+        label: Opombe
+  day_form:
+    period:
+      title: Obdobje
+      enable: Dodaj cikel obdobja
+      disable: Brisanje cikla obdobja
+      proestrus_start_date:
+        label: Začetek predrugačenja (proestrus)
+        info:
+          title: Pred ovulacijo (proestrus)
+          message: "Obdobje pred rujem se začne, ko vulva vaše psice nabrekne in se
+            pojavi krvav izcedek iz nožnice.\n\nV povprečju traja 9 dni, lahko pa
+            od 3 do 17 dni.\n\nTa datum je treba vedno izpolniti."
+          close: V REDU
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+      estrus_start_date:
+        label: Začetek rje (estrus)
+        info:
+          title: Estrus (Estrus)
+          message: "Z nastopom rje vaša psica pokaže pripravljenost za parjenje (stalna
+            rja). Izcedek iz nožnice je še vedno možen, vendar bo bolj podoben mesni
+            vodi in morda sluzast.\n\nV povprečju traja 9 dni, lahko pa se giblje
+            med 3 in 21 dnevi.\n \nČe se ta faza še ni začela ali je ne želite dokumentirati,
+            pustite to polje prazno."
+          close: V REDU
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+      metestrus_start_date:
+        label: Začetek pospravljanja (metestrus)
+        info:
+          title: Afterburn (metestrus)
+          message: "Za obdobje po dojenju je značilno, da je pripravljenost za parjenje
+            končana. Poleg tega se ustavi izločanje iz nožnice in vulva se umakne.
+            V tem času je možna lažna nosečnost.\n\nČe se ta faza še ni začela ali
+            je ne želite dokumentirati, pustite to polje prazno."
+          close: V REDU
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+      end_date:
+        label: Konec cikla (faza mirovanja)
+        info:
+          title: Faza mirovanja (anestrus)
+          message: "V fazi mirovanja ni znakov spolnega cikla. Vulva je zdaj popolnoma
+            nazadovala.\n\nTo polje pustite prazno, če se ta cikel še ni končal."
+          close: V REDU
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+    false_pregnancy:
+      title: Lažna nosečnost
+      enable: Dodajanje lažne nosečnosti
+      disable: Izbriši lažno nosečnost
+      start_date:
+        label: Začetek lažne nosečnosti
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+      end_date:
+        label: Konec lažne nosečnosti
+        error:
+          in_future: Datum ne sme biti v prihodnosti.
+    features:
+      title: Značilnosti
+      mood:
+        label: Razpoloženje
+        no_selection: Ni izbrano nobeno razpoloženje
+      symptom:
+        label: Simptomi
+        no_selection: Ni izbranih simptomov
+      behavior:
+        label: Vedenje
+        no_selection: Ni izbranega vedenja
+      secretion:
+        label: Odtok
+        no_selection: Ni izbranega razrešnice
+      weight:
+        weight:
+          label: Teža
+        unit:
+          label: Enota
+          kilogram: kg
+    notes:
+      title: Opombe
+      notes:
+        label: Opombe
+    action:
+      save: Shrani
+  mood:
+    sleepy: Sleepy
+    sniffy: Sniffing
+    fearful: Anksiozni
+    courageous: Pogumni
+    brave: Pogumni
+    aggressive: Agresivni
+    nervous: Živčni
+    satisfied: Zadovoljni
+    stressed: Stresni
+    sleepless: Brez spanca
+    dissatisfied: Nezadovoljni
+    depressed: Depresija
+    defiant: Izzivalni
+    relaxed: Sproščeno
+    happy: Srečno
+    obedient: Poslušnost
+    balanced: Uravnotežen
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Prepirljiv
+    attentive: Pozor,
+    sad: Žalostno
+    stormy: Stormy
+    crazy: Crazy
+    calm: Calm
+    cuddly: Udobno
+    appetiteless: Brez apetita
+    indecisive: Neopredeljeni
+    exhausted: Izčrpan
+    frustrated: Frustrirani
+    bitchy: Bitchy
+    troubled: Nemirni
+    jittery: Neredki
+  behavior:
+    herding: Klobuki
+    adopting: Sprejem
+    nesting: Gradnja gnezda
+    howling: Yelp
+    restless: Nemirni
+  symptom:
+    stomach_cramps: Želodčni krči
+    flatulence: Flatulenca
+    diarrhea: Driska
+    constipation: Zaprtje
+    bloody_stool: Krvavo blato
+    milk_discharge: Izpust mleka
+    swollen_teats: Otekla zadnjica
+    vomit: Bruhanje
+    dandruff: Lupinasta prevleka
+  secretion:
+    bloody: Bloody
+    watery: Vodni
+    creamy: Kremna
+    dryly: Suho
+    stinky: Smrdeče
+    purulent: Gnojenje
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Prijavite prvo rjuho svoje psice!
+        info:
+          title: Napovedovanje naslednje vročine
+          message: Heado potrebuje celoten cikel (vključno s fazo mirovanja!) vaše
+            psice, da lahko poda napoved.
+          close: V REDU
+      days_left: še vedno {} dni
+      weeks_left: še vedno {} tednov
+      months_left: še vedno {} mesecev
+      until_date: v {}
+      error: Zgodila se je napaka. Kliknite za ponovitev.
+      phase:
+        proestrus: Predgrevanje
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Faza počitka
+    period_dates:
+      last:
+        title: Zadnja vročina
+        none: Obdobje še ni bilo vneseno.
+        from: iz
+        to: do .
+      next:
+        title: Naslednja toplota
+        from: iz
+        to: do .
+        none: Obdobij še ni dovolj, da bi jih lahko napovedali.
+    period_count:
+      period:
+        title: Število ogrevanj
+        time: Barva
+        times: Barva
+      false_pregnancy:
+        title: Število lažnih nosečnosti
+        time: Barva
+        times: Barva
+    menu:
+      calendar: Koledar
+      settings: Nastavitve
+  ad_banner:
+    title: Preizkusno obdobje brez oglasov se kmalu konča!
+    message: Vaša faza testiranja se konča na {}. Po tem dnevu se vam bodo prikazovali
+      oglasi. Če želite aplikacijo uporabljati brez oglasov, lahko kupite različico
+      Premium.
+    become_member: Postanite član
+    left_days: '{}/{} Preostali dnevi'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Postanite član Heado Premium in uporabljajte aplikacijo brez oglasov.
+    purchase_single: Postanite član Premium
+    purchase_single_hint: '{} - Edinstvene {}'
+    purchase_family: Postanite družina Premium
+    purchase_family_hint: '{} - Edinstvene {}'
+    restore_purchase: Obnovitev nakupov
+  membership:
+    member:
+      teaser: Ste član Heado Premium in lahko aplikacijo uporabljate brez oglasov!
+      info: Od {} ste član Heado Premium.
+    family:
+      teaser: Vi in vaša družina ste člani Heado Premium. Aplikacijo lahko uporabljate
+        brez oglasov!
+      info: Vaša družina je član Heado Premium od {}.
+settings:
+  title: Nastavitve
+  footer: Narejeno s {} za Kori {} in Mayo {}.
+  family:
+    title: Družina
+    dogs:
+      title: Psi
+    members:
+      title: Člani
+    family:
+      title: Družina
+  account:
+    title: Račun
+    premium:
+      title: Premium
+    settings:
+      title: Nastavitve računa
+    cookies:
+      title: Soglasja za piškotke
+  demo:
+    title: Demo
+    test_login:
+      title: Preizkusite dostop uporabnika
+  contact:
+    title: Pišite nam
+    website:
+      title: Spletna stran
+      link: https://heado.de/
+    mail:
+      title: e-pošta
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Pravne zadeve
+    terms:
+      title: Pogoji uporabe
+      link: https://heado.de/terms
+    privacy:
+      title: Pogoji za varstvo podatkov
+      link: https://heado.de/privacy
+  about:
+    title: O
+    status:
+      title: Status
+    version:
+      title: Različica
+    translation:
+      title: Prevodi
+  app:
+    design:
+      dark: Dark
+      title: Oblikovanje
+      light: Svetloba
+    title: Aplikacija
+account_settings:
+  title: Nastavitve računa
+  logins:
+    title: Podatki o računu
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Testni uporabnik
+    error:
+      already_in_use:
+        title: Že povezano
+        message: Izbrani račun je že povezan z drugim uporabnikom.
+        close: V REDU
+  disconnect:
+    label: Odcepitev računa
+    confirm:
+      title: Odcepitev računa
+      message: Ali res želite odpraviti povezavo z računom? Potem se ne boste mogli
+        več prijaviti pri tem ponudniku. Račun lahko znova povežete pozneje.
+      no: Prekliči
+      yes: Da, ločite
+  logout:
+    label: Odjavite se
+    confirm:
+      title: Odjavite se
+      message: Ali se res želite odjaviti? Ponovno se lahko prijavite z računom Google
+        ali Apple.
+      no: Prekliči
+      yes: Da, odjavite se
+  delete:
+    label: Izbriši račun
+    confirm:
+      title: Izbriši račun
+      message: Ali res želite izbrisati svoj račun? Do te družine ne morete več dostopati
+        in potrebujete novo povabilo. Če ste zadnji uporabnik te družine, bo izbrisana
+        tudi družina. Izbrisani bodo tudi vsi psi in z njimi povezani podatki. Tega
+        ni mogoče preklicati!
+      no: Ali se res želite odjaviti? Ponovno se lahko prijavite z računom Google
+        ali Apple.
+      yes: Da, izbrišite
+onboarding:
+  welcome:
+    task: Ali že imate račun?
+    action:
+      register: Ustvarite nov račun
+      login: Že imam račun
+  member:
+    task: Kako te lahko kličem?
+    name:
+      label: Ime
+  lonely:
+    task: Ste bili povabljeni v družino?
+    action:
+      create_family: Ustvari novo družino
+      join_family: Pridružite se obstoječi družini
+  login:
+    task: Prijavite se v obstoječi račun
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Prijava s kodo PIN za demo uporabnike
+    code:
+      error:
+        min_length: Koda mora biti sestavljena iz petih številk.
+        invalid: Neveljavna koda
+    action:
+      login: Prijava
+  join:
+    task: Koda povabila vaše družine
+    code:
+      error:
+        min_length: Koda mora biti sestavljena iz petih številk.
+  finish:
+    task: Pripravljeni ste!
+    legal:
+      hint: 'S klikom na "Sprejmi in ustvari račun" se strinjate z naslednjimi pogoji:'
+      terms:
+        label: 1. pogoji uporabe
+        link: https://heado.de/terms
+      privacy:
+        label: 2. pogoji za varstvo podatkov
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Sprejmite in ustvarite račun
+  family:
+    task: Poimenujte svojo družino
+    name:
+      label: (Izmišljeno) družinsko ime
+      help: Izberite namišljeno ime, ki dobro opisuje vašo družino. Vaš priimek tu
+        ni potreben.
+  dog:
+    task: Kako je vašemu psu ime?
+    name:
+      label: Ime psa
+  auth:
+    task: Prijavite se, shranite podatke o računu in uporabite več naprav
+    action:
+      google: Google
+      apple: Apple
+      skip: Ne želim se prijaviti
+  next: Dodatno
+generic:
+  system_default: Sistemski standard
+  cancel: Prekliči

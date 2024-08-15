@@ -1,0 +1,502 @@
+core:
+  error:
+    generic:
+      long: Oops, something went wrong! Sorry.
+      short: Something went wrong!
+    retry:
+      short: Retry
+      long: Try again
+  empty:
+    hint: No entries.
+  close: Close
+  copy: Copy
+  share: Share
+  unknown: Unknown
+  date:
+    long: dd. MMMM yyyy
+    short: dd/MM/yyyy
+    month_year: MMMM yyyy
+family:
+  member_list:
+    title: Members
+    invitation:
+      label: Invitation „{}“
+    add_invitation: Invite new member
+  member_form:
+    title: Edit member
+    name:
+      label: Name
+    action:
+      delete: Delete
+      save: Save
+    delete:
+      confirm:
+        title: Delete member
+        message: Do you really want delete the member {}? The member can not access
+          the family anymore and need a new invite to join again. If this is the last
+          member of family, the family also will be deleted. All dogs and associated
+          data will be deleted too. This can not be undone!
+        no: Cancel
+        yes: Delete
+  invitation_form:
+    title: Invitation
+    share:
+      hint: Use the invitation code „{}“ for let a new member join your family. Every
+        code is only valid once.
+      content: I invite you to my family! Please download the Heado app (https://heado.app/)
+        and use the family invitation code „{}.“ on the registration process.
+      copy:
+        hint: The code „{}“ was copied.
+    action:
+      delete: Delete
+    delete:
+      confirm:
+        title: Delete invitation
+        message: Do you really want delete this invitation? After operation the invitation
+          code can not used anymore. This can not be undone and you need to create
+          a new code!
+        no: Cancel
+        yes: Delete
+  family_form:
+    title: Edit family
+    name:
+      label: Name
+    action:
+      delete: Delete
+      save: Save
+    delete:
+      confirm:
+        title: Delete family
+        message: Do you really want delete your family {}? Your account, all family
+          members & dogs inclusive associated calendar data are deleted. This can
+          not be undo!
+        no: Cancel
+        yes: Delete
+  dog_selection:
+    add: Add new dog
+  dog_list:
+    title: Dogs
+    add: Add new dog
+  dog_form:
+    title:
+      add: Add new dog
+      edit: Edit dog
+    name:
+      label: Name
+    action:
+      delete: Delete
+      save: Save
+    delete:
+      confirm:
+        title: Delete dog
+        message: Do you really want delete your dog {}? All associated calendar data
+          are deleted. This can not be undo.
+        no: Cancel
+        yes: Delete
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Phase
+        proestrus: Preheat
+        estrus: Heat
+        metestrus: Afterburn
+        anestrus: Rest phase
+      false_pregnancy:
+        label: False pregnancy
+        active_info: Active false pregnancy
+      mood:
+        label: Mood
+      symptom:
+        label: Symptoms
+      behavior:
+        label: Behavior
+      secretion:
+        label: Secretion
+      weight:
+        label: Weight
+        unit: kg
+      note:
+        label: Note
+  day_form:
+    period:
+      title: Period
+      enable: Add period cycle
+      disable: Delete period cycle
+      proestrus_start_date:
+        label: Start of pre heat (proestrus)
+        info:
+          title: Pre heat (proestrus)
+          message: "Oestrus begins when your dog's vulva swells and bloody vaginal
+            discharge appears.\n\nThe average duration is 9 days and can vary between
+            3 and 17 days.\n\nThe date must always be specified."
+          close: OK
+        error:
+          in_future: The date must not be in the future
+      estrus_start_date:
+        label: Start of heat (estrus)
+        info:
+          title: Heat (estrus)
+          message: "With the onset of heat, your dog will show a willingness to mate
+            (standing heat). Vaginal discharge is still possible, but it is more like
+            meat water and may be mucousy.\n\nThe average duration is 9 days and can
+            vary between 3 and 21 days.\n\nIf this phase has not yet begun or you
+            do not wish to document this phase, leave this field empty."
+          close: OK
+        error:
+          in_future: The date must not be in the future
+      metestrus_start_date:
+        label: Start of afterburn (metestrus)
+        info:
+          title: Afterburn (metestrus)
+          message: "The period after heat is characterized by the end of mating. In
+            addition, vaginal discharge stops and the vulva recedes. A false pregnancy
+            is possible during this time.\n\nIf this phase has not yet begun or you
+            do not wish to document this phase, leave this field empty."
+          close: OK
+        error:
+          in_future: The date must not be in the future
+      end_date:
+        label: End of peroid (start of resting phase)
+        info:
+          title: Resting phase (anestrus)
+          message: "There are no signs of the sexual cycle during the resting phase.
+            The vulva is now completely regressed.\n\nLeave this field empty if the
+            period has not yet ended."
+          close: OK
+        error:
+          in_future: The date must not be in the future
+    false_pregnancy:
+      title: False pregnancy
+      enable: Add false pregnancy
+      disable: Delete false pregnancy
+      start_date:
+        label: Start of false pregnancy
+        error:
+          in_future: The date must not be in the future
+      end_date:
+        label: End of false pregnancy
+        error:
+          in_future: The date must not be in the future
+    features:
+      title: Characteristics
+      mood:
+        label: Mood
+        no_selection: No moods selected
+      symptom:
+        label: Symptoms
+        no_selection: No symptoms selected
+      behavior:
+        label: Behavior
+        no_selection: No behaviors selected
+      secretion:
+        label: Secretion
+        no_selection: No secretions selected
+      weight:
+        weight:
+          label: Weight
+        unit:
+          label: Unit
+          kilogram: kg
+    notes:
+      title: Notes
+      notes:
+        label: Notes
+    action:
+      save: Save
+  mood:
+    fearful: Fearful
+    courageous: Courageous
+    brave: Brave
+    sleepy: Sleepy
+    sniffy: Sniffy
+    aggressive: Aggressive
+    nervous: Nervous
+    satisfied: Satisfied
+    stressed: Stressed
+    sleepless: Sleepless
+    dissatisfied: Dissatisfied
+    depressed: Depressed
+    defiant: Defiant
+    relaxed: Relaxed
+    happy: Happy
+    obedient: Obedient
+    balanced: Balanced
+    fiepsy: Fiepsy
+    grumpy: Grumpy
+    weepy: Weepy
+    attentive: Attentive
+    sad: Sad
+    stormy: Stormy
+    crazy: Crazy
+    calm: Calm
+    cuddly: Cuddly
+    appetiteless: Without appetite
+    indecisive: Indecisive
+    exhausted: Exhausted
+    frustrated: Frustrated
+    bitchy: Bitchy
+    troubled: Troubled
+    jittery: Jittery
+  behavior:
+    herding: Herding
+    adopting: Adopting
+    nesting: Nesting
+    howling: Howling
+    restless: Restless
+  symptom:
+    stomach_cramps: Stomach cramps
+    flatulence: Flatulence
+    diarrhea: Diarrhea
+    constipation: Constipation
+    bloody_stool: Bloody stool
+    milk_discharge: Milk discharge
+    swollen_teats: Swollen teats
+    vomit: Vomit
+    dandruff: Dandruff fell
+  secretion:
+    bloody: Bloody
+    watery: Watery
+    creamy: Creamy
+    dryly: Dryly
+    stinky: Stinky
+    purulent: Purulent
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Enter your dog's first heat!
+        info:
+          title: Predict next heat
+          message: Heado needs a complete cycle (including resting phase!) from your
+            dog, to make a prediction.
+          close: OK
+      days_left: '{} days left'
+      weeks_left: '{} weeks left'
+      months_left: '{} months left'
+      until_date: until {}
+      error: Something went wrong. Click to retry.
+      phase:
+        proestrus: Proestrus
+        estrus: Estrus
+        metestrus: Metestrus
+        anestrus: Rest phase
+    period_dates:
+      last:
+        title: Last period
+        none: There is no last period yet.
+        from: from
+        to: to
+      next:
+        title: Next period
+        from: from
+        to: to
+        none: Too few periods data to predict the next period.
+    period_count:
+      period:
+        title: Number of periods
+        time: time
+        times: times
+      false_pregnancy:
+        title: Number of false pregnancies
+        time: time
+        times: times
+    menu:
+      calendar: Calendar
+      settings: Settings
+  ad_banner:
+    title: Your ad-free trail ends soon!
+    message: Your test phase ends on {}. After this date we will show you some advertising.
+      If you want to continue using Heado without advertising, you can get our premium
+      package.
+    become_member: Become a member
+    left_days: '{}/{} days left'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Become Heado Premium member now and use app without advertising.
+    purchase_single: Become a premium member
+    purchase_single_hint: '{} • One time {}'
+    purchase_family: Become a premium family
+    purchase_family_hint: '{} • One time {}'
+    restore_purchase: Restore purchase
+  membership:
+    member:
+      teaser: You are a Heado Premium member and can use the app without advertising!
+      info: You are Heado Premium member since {}.
+    family:
+      teaser: You and your family are Heado Premium members and can use the app without
+        advertising!
+      info: Your family is Heado Premium member since {}.
+settings:
+  title: Settings
+  footer: Made with {} for Kori {} and Mayo {}.
+  family:
+    title: Family
+    dogs:
+      title: Dogs
+    members:
+      title: Members
+    family:
+      title: Family
+  account:
+    title: Account
+    premium:
+      title: Premium
+    settings:
+      title: Account settings
+    cookies:
+      title: Cookie consents
+  demo:
+    title: Demo
+    test_login:
+      title: Test user login
+  contact:
+    title: Contact
+    website:
+      title: Website
+      link: https://heado.app/
+    mail:
+      title: Mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.app
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.app
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_app
+  legal:
+    title: Legal
+    terms:
+      title: Terms
+      link: https://heado.app/terms
+    privacy:
+      title: Privacy
+      link: https://heado.app/privacy
+  about:
+    title: About
+    status:
+      title: Status
+    version:
+      title: Version
+    translation:
+      title: Translations
+  app:
+    design:
+      light: Light
+      dark: Dark
+      title: Design
+    title: App
+account_settings:
+  title: Account settings
+  logins:
+    title: Account connections
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Test user
+    error:
+      already_in_use:
+        title: Account already in use
+        message: The selected account is already connected to another user.
+        close: OK
+  disconnect:
+    label: Disconnect account
+    confirm:
+      title: Disconnect account
+      message: Do you really want to disconnect your account? After that you can not
+        login with this provider. You can connect the account later again.
+      no: Cancel
+      yes: Yes, disconnect
+  logout:
+    label: Logout
+    confirm:
+      title: Logout
+      message: Do you really want to logout? You can sign in again with your Google
+        or Apple account.
+      no: Cancel
+      yes: Yes, logout
+  delete:
+    label: Delete account
+    confirm:
+      title: Delete account
+      message: Do you really want delete your account? You can not access this family
+        anymore and need a new invite to join again. If you are the last member of
+        this family, the family also will deleted. All dogs and associated data will
+        be deleted too. This can not be undone!
+      no: Cancel
+      yes: Yes, delete
+onboarding:
+  next: Continue
+  welcome:
+    task: Do you have already an account?
+    action:
+      register: Create a new account
+      login: I have already an account
+  member:
+    task: What may I call you?
+    name:
+      label: Name
+  lonely:
+    task: Do you invited to a family?
+    action:
+      create_family: Create a new family
+      join_family: Join existing family
+  login:
+    task: Login to your existing account
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Login with pin code for demo accounts
+    code:
+      error:
+        min_length: The code must consist of 5 digits
+        invalid: Invalid pin code
+    action:
+      login: Login
+  join:
+    task: Family invitation code
+    code:
+      error:
+        min_length: The code must consist of 5 digits
+  finish:
+    task: You are ready!
+    legal:
+      hint: 'By clicking on „Accept & create account“ you accept the following conditions:'
+      terms:
+        label: 1. Terms of use
+        link: https://heado.app/terms
+      privacy:
+        label: 2. Privacy Policy
+        link: https://heado.app/privacy
+    action:
+      accept_and_register: Accept & create account
+  family:
+    task: Give your family a name
+    name:
+      label: (Fictional) Family name
+      help: Choose a fantasy name that describes your family well. Your surname is
+        not required here.
+  dog:
+    task: What is the name of your dog?
+    name:
+      label: Dog name
+  auth:
+    task: Login & save your data and use your profile on multiple devices
+    action:
+      google: Google
+      apple: Apple
+      skip: I don't want to login
+app:
+  title: Heado - Dog heat calendar
+  title_short: Heado
+  slogan: Dog heat calendar
+generic:
+  system_default: System standard
+  cancel: Cancel

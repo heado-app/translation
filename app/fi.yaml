@@ -1,0 +1,501 @@
+core:
+  error:
+    retry:
+      short: Toista
+      long: Yritä uudelleen
+    generic:
+      short: On tapahtunut virhe!
+      long: Hups, tapahtui virhe! Anteeksi.
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  empty:
+    hint: Ei merkintöjä.
+  close: Sulje
+  copy: Kopioi
+  share: Jaa
+  unknown: Tuntematon
+app:
+  title: Heado - lämpökalenteri
+  title_short: Heado
+  slogan: Lämpökalenteri
+family:
+  member_list:
+    title: Jäsenet
+    invitation:
+      label: Kutsu "{}"
+    add_invitation: Kutsu uusi jäsen
+  member_form:
+    title: Muokkaa jäsentä
+    name:
+      label: Nimi
+    action:
+      delete: Poista
+      save: Tallenna
+    delete:
+      confirm:
+        title: Jäsenen poistaminen
+        message: Haluatko todella poistaa jäsenen {}? Jäsen ei voi enää käyttää tätä
+          perhettä ja tarvitsee uuden kutsun. Jos tämä käyttäjä on tämän perheen viimeinen
+          jäsen, myös perhe poistetaan. Myös kaikki koirat ja niihin liittyvät tiedot
+          poistetaan. Tätä ei voi perua!
+        no: Peruuta
+        yes: Poista
+  invitation_form:
+    title: Kutsu
+    share:
+      hint: Käytä kutsun PIN-koodia "{}" kutsuaksesi toisen perheenjäsenen liittymään
+        perheeseesi. Kutakin PIN-koodia voi käyttää vain kerran.
+      content: Kutsun sinut liittymään perheeseeni! Lataa Heado-sovellus (https://heado.de/)
+        ja käytä perheen PIN-koodia "{}" rekisteröityessäsi.
+      copy:
+        hint: PIN-koodi "{}" on kopioitu.
+    action:
+      delete: Poista
+    delete:
+      confirm:
+        title: Poista kutsu
+        message: Haluatko todella poistaa tämän kutsun? Sitten et voi enää käyttää
+          tätä kutsun PIN-koodia. Sitä ei voi peruuttaa, ja sinun on luotava uusi
+          PIN-koodi!
+        no: Peruuta
+        yes: Poista
+  family_form:
+    title: Muokkaa perhettä
+    name:
+      label: Nimi
+    action:
+      delete: Poista
+      save: Tallenna
+    delete:
+      confirm:
+        title: Poista perhe
+        message: Haluatko todella poistaa perheen {}? Tilisi, kaikki perheenjäsenet
+          ja koirat, mukaan lukien kalenteritiedot, poistetaan. Tätä ei voi perua!
+        no: Peruuta
+        yes: Poista
+  dog_selection:
+    add: Lisää uusi koira
+  dog_list:
+    title: Koirat
+    add: Lisää uusi koira
+  dog_form:
+    title:
+      add: Lisää koira
+      edit: Muokkaa koiraa
+    name:
+      label: Nimi
+    action:
+      delete: Poista
+      save: Tallenna
+    delete:
+      confirm:
+        title: Poista koira
+        message: Haluatko todella poistaa koirasi {}? Myös kaikki kalenteritiedot
+          poistetaan. Tätä ei voi perua.
+        no: Peruuta
+        yes: Poista
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Vaihe
+        proestrus: Esilämmitys
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Lepovaihe
+      false_pregnancy:
+        label: Väärä raskaus
+        active_info: Aktiivinen väärä raskaus
+      mood:
+        label: Tunnelma
+      symptom:
+        label: Oireet
+      behavior:
+        label: Käyttäytyminen
+      secretion:
+        label: Outflow
+      weight:
+        label: Paino
+        unit: kg
+      note:
+        label: Huomautukset
+  day_form:
+    period:
+      title: Jakso
+      enable: Lisää jakson sykli
+      disable: Poista jakson jakso
+      proestrus_start_date:
+        label: Kutua edeltävän ajan (proestrus) alku
+        info:
+          title: Ennen ovulaatiota (Proestrus)
+          message: "Esiesterrus alkaa, kun nartun häpyhuulet turpoavat ja emättimestä
+            tulee veristä vuotoa.\n\nKeskimääräinen kesto on 9 päivää, mutta se voi
+            vaihdella 3-17 päivään.\n\nTämä päivämäärä on aina täytettävä."
+          close: OK
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+      estrus_start_date:
+        label: Östruksen alku (estrus)
+        info:
+          title: Oestrus (estrus)
+          message: "Kun tiineys alkaa, narttusi osoittaa halukkuutta paritteluun (seisova
+            kiima). Emätinvuoto on edelleen mahdollista, mutta se on enemmänkin lihavettä
+            ja mahdollisesti limaista.\n\nKeskimääräinen kesto on 9 päivää, ja se
+            voi vaihdella 3-21 päivän välillä.\n \nJos tämä vaihe ei ole vielä alkanut
+            tai jos et halua dokumentoida tätä vaihetta, jätä tämä kenttä tyhjäksi."
+          close: OK
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+      metestrus_start_date:
+        label: Jälkipoltto alkaa (Metestrus)
+        info:
+          title: Jälkipoltto (Metestrus)
+          message: "Paritteluvalmius päättyy imetyksen jälkeisenä aikana. Lisäksi
+            emätinvuoto lakkaa ja häpyhuulet vetäytyvät. Valeraskaus on mahdollista
+            tänä aikana.\n\nJos tämä vaihe ei ole vielä alkanut tai jos et halua dokumentoida
+            tätä vaihetta, jätä tämä kenttä tyhjäksi."
+          close: OK
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+      end_date:
+        label: Syklin loppu (lepovaihe)
+        info:
+          title: Lepovaihe (anestrus)
+          message: "Lepovaiheessa ei ole merkkejä seksuaalisesta syklistä. Vulva on
+            nyt täysin taantunut.\n\nJätä tämä kenttä tyhjäksi, jos kierto ei ole
+            vielä päättynyt."
+          close: OK
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+    features:
+      weight:
+        unit:
+          label: Yksikkö
+          kilogram: kg
+        weight:
+          label: Paino
+      title: Ominaisuudet
+      mood:
+        label: Tunnelma
+        no_selection: Ei tunnelmia valittu
+      symptom:
+        label: Oireet
+        no_selection: Ei valittuja oireita
+      behavior:
+        label: Käyttäytyminen
+        no_selection: Ei valittua käyttäytymistä
+      secretion:
+        label: Outflow
+        no_selection: Ei valittua vastuuvapautta
+    false_pregnancy:
+      title: Väärä raskaus
+      enable: Väärän raskauden lisääminen
+      disable: Poista väärä raskaus
+      start_date:
+        label: Väärän raskauden alkaminen
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+      end_date:
+        label: Väärän raskauden loppu
+        error:
+          in_future: Päivämäärä ei saa olla tulevaisuudessa
+    notes:
+      title: Huomautukset
+      notes:
+        label: Huomautukset
+    action:
+      save: Tallenna
+  mood:
+    sleepy: Sleepy
+    sniffy: Nuuskiminen
+    fearful: Huolestunut
+    courageous: Rohkea
+    brave: Rohkea
+    aggressive: Aggressiivinen
+    nervous: Hermostunut
+    satisfied: Tyytyväinen
+    stressed: Stressaantunut
+    sleepless: Uneton
+    dissatisfied: Tyytymätön
+    depressed: Masentunut
+    defiant: Defiant
+    relaxed: Rento
+    happy: Happy
+    obedient: Tottelevaisuus
+    balanced: Tasapainotettu
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Riitaisa
+    attentive: Huomio
+    sad: Surullinen
+    stormy: Stormy
+    crazy: Hullu
+    calm: Calm
+    cuddly: Viihtyisä
+    appetiteless: Appetiteless
+    indecisive: Päättämättömät
+    exhausted: Uupunut
+    frustrated: Turhautunut
+    bitchy: Bitchy
+    troubled: Levoton
+    jittery: Jittery
+  behavior:
+    herding: Hatut
+    adopting: Hyväksy
+    nesting: Pesän rakentaminen
+    howling: Yelp
+    restless: Levoton
+  symptom:
+    stomach_cramps: Vatsakrampit
+    flatulence: Ilmavaivat
+    diarrhea: Ripuli
+    constipation: Ummetus
+    bloody_stool: Veriset ulosteet
+    milk_discharge: Maidon purkautuminen
+    swollen_teats: Turvonneet pakarat
+    vomit: Oksentelu
+    dandruff: Hilse takki
+  secretion:
+    bloody: Verinen
+    watery: Vesipitoinen
+    creamy: Kermainen
+    dryly: Kuiva
+    stinky: Haiseva
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Rekisteröi narttusi ensimmäinen kiima!
+        info:
+          title: Seuraavan kuumuuden ennustaminen
+          message: Heado tarvitsee nartultasi täydellisen syklin (myös lepovaiheen!)
+            ennusteen tekemistä varten.
+          close: OK
+      days_left: vielä päiviä
+      weeks_left: vielä viikkoja
+      months_left: vielä kuukausia
+      until_date: '{}'
+      error: On tapahtunut virhe. Klikkaa toistaaksesi.
+      phase:
+        proestrus: Esilämmitys
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Lepovaihe
+    period_dates:
+      last:
+        title: Viimeinen lämpö
+        none: Mitään ajanjaksoa ei ole vielä merkitty.
+        from: alkaen
+        to: kunnes
+      next:
+        title: Seuraava lämpö
+        from: alkaen
+        to: kunnes
+        none: Jaksoja ei ole vielä riittävästi ennusteen tekemiseen.
+    period_count:
+      period:
+        title: Lämmitysten määrä
+        time: Maali
+        times: Maali
+      false_pregnancy:
+        title: Väärien raskauksien määrä
+        time: Maali
+        times: Maali
+    menu:
+      calendar: Kalenteri
+      settings: Asetukset
+  ad_banner:
+    title: Mainokseton kokeilujaksosi päättyy pian!
+    message: Testivaiheesi päättyy {}. Tämän päivän jälkeen näet mainoksia. Jos haluat
+      käyttää sovellusta ilman mainoksia, voit ostaa Premium-version.
+    become_member: Liity jäseneksi
+    left_days: '{}/{} Jäljellä olevat päivät'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Liity Heado Premium -jäseneksi ja käytä sovellusta ilman mainoksia.
+    purchase_single: Liity Premium-jäseneksi
+    purchase_single_hint: '{} - Unique {}'
+    purchase_family: Liity Premium-perheeksi
+    purchase_family_hint: '{} - Unique {}'
+    restore_purchase: Palauta ostokset
+  membership:
+    member:
+      teaser: Olet Heado Premium -jäsen ja voit käyttää sovellusta ilman mainoksia!
+      info: Olet ollut Heado Premium -jäsen vuodesta {}.
+    family:
+      teaser: Sinä ja perheesi olette Heado Premium -jäseniä. Voit käyttää sovellusta
+        ilman mainoksia!
+      info: Perheesi on ollut Heado Premium -jäsen vuodesta {}.
+settings:
+  title: Asetukset
+  footer: Tehty {} Kori {}:n ja Mayo {}:n kanssa.
+  family:
+    title: Perhe
+    dogs:
+      title: Koirat
+    members:
+      title: Jäsenet
+    family:
+      title: Perhe
+  account:
+    title: Tili
+    premium:
+      title: Premium
+    settings:
+      title: Tilin asetukset
+    cookies:
+      title: Evästeiden suostumukset
+  demo:
+    title: Demo
+    test_login:
+      title: Testaa käyttäjän käyttöoikeus
+  contact:
+    title: Ota yhteyttä
+    website:
+      title: Verkkosivusto
+      link: https://heado.de/
+    mail:
+      title: sähköpostiosoite
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Oikeudelliset asiat
+    terms:
+      title: Käyttöehdot
+      link: https://heado.de/terms
+    privacy:
+      title: Tietosuojaehdot
+      link: https://heado.de/privacy
+  about:
+    title: Tietoja
+    status:
+      title: Tila
+    version:
+      title: Versio
+    translation:
+      title: Käännökset
+  app:
+    design:
+      dark: Tumma
+      title: Suunnittelu
+      light: Valo
+    title: App
+account_settings:
+  title: Tilin asetukset
+  logins:
+    title: Tilin tiedot
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Testikäyttäjä
+    error:
+      already_in_use:
+        title: Jo kytketty
+        message: Valittu tili on jo yhdistetty toiseen käyttäjään.
+        close: OK
+  disconnect:
+    label: Kytke tili irti
+    confirm:
+      title: Kytke tili irti
+      message: Haluatko todella poistaa tilisi linkityksen? Silloin et voi enää kirjautua
+        sisään tämän palveluntarjoajan kanssa. Voit yhdistää tilisi uudelleen myöhemmin.
+      no: Peruuta
+      yes: Kyllä, irrota kytkentä
+  logout:
+    label: Kirjaudu ulos
+    confirm:
+      title: Kirjaudu ulos
+      message: Haluatko todella kirjautua ulos? Voit kirjautua uudelleen sisään Google-
+        tai Apple-tililläsi.
+      no: Peruuta
+      yes: Kyllä, kirjaudu ulos
+  delete:
+    label: Poista tili
+    confirm:
+      title: Poista tili
+      message: Haluatko todella poistaa tilisi? Et voi enää käyttää tätä perhettä
+        ja tarvitset uuden kutsun. Jos olet tämän perheen viimeinen käyttäjä, myös
+        perhe poistetaan. Myös kaikki koirat ja niihin liittyvät tiedot poistetaan.
+        Tätä ei voi perua!
+      no: Haluatko todella kirjautua ulos? Voit kirjautua uudelleen sisään Google-
+        tai Apple-tililläsi.
+      yes: Kyllä, poista
+onboarding:
+  next: Lisätietoja
+  welcome:
+    task: Onko sinulla jo tili?
+    action:
+      register: Luo uusi tili
+      login: Minulla on jo tili
+  member:
+    task: Millä nimellä voin kutsua sinua?
+    name:
+      label: Nimi
+  lonely:
+    task: Onko sinut kutsuttu perheeseen?
+    action:
+      create_family: Luo uusi perhe
+      join_family: Liity olemassa olevaan perheeseen
+  login:
+    task: Kirjaudu sisään olemassa olevalle tilillesi
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: PIN-koodilla kirjautuminen demokäyttäjille
+    code:
+      error:
+        min_length: Koodin on koostuttava 5 numerosta
+        invalid: Virheellinen koodi
+    action:
+      login: Kirjaudu sisään
+  join:
+    task: Perheesi kutsukoodi
+    code:
+      error:
+        min_length: Koodin on koostuttava 5 numerosta
+  finish:
+    task: Olet valmis!
+    legal:
+      hint: 'Klikkaamalla "Hyväksy & luo tili" hyväksyt seuraavat ehdot:'
+      terms:
+        label: 1. käyttöehdot
+        link: https://heado.de/terms
+      privacy:
+        label: 2. tietosuojaa koskevat ehdot
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Hyväksy ja luo tili
+  family:
+    task: Anna perheellesi nimi
+    name:
+      label: (Fiktiivinen) Sukunimi
+      help: Valitse mielikuvitusnimi, joka kuvaa hyvin perhettäsi. Sukunimesi ei ole
+        välttämätön tässä yhteydessä.
+  dog:
+    task: Mikä on koirasi nimi?
+    name:
+      label: Koiran nimi
+  auth:
+    task: Kirjaudu sisään, tallenna tilitiedot ja käytä useita laitteita
+    action:
+      google: Google
+      apple: Apple
+      skip: En halua kirjautua sisään
+generic:
+  system_default: Järjestelmän standardi
+  cancel: Peruuta

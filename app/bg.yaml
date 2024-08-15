@@ -1,0 +1,509 @@
+app:
+  title: Heado - топлинен календар
+  title_short: Heado
+  slogan: Топлинен календар
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Възникнала е грешка!
+      long: Упс, възникна грешка! Съжаляваме.
+    retry:
+      short: Повторете
+      long: Опитайте отново
+  empty:
+    hint: Няма вписвания.
+  close: Затвори
+  copy: Копие
+  share: Споделете
+  unknown: Неизвестно
+family:
+  member_list:
+    title: Членове
+    invitation:
+      label: Покана "{}"
+    add_invitation: Покана за нов член
+  member_form:
+    title: Редактиране на член
+    name:
+      label: Име
+    action:
+      delete: Изтриване на
+      save: Запазете
+    delete:
+      confirm:
+        title: Изтриване на член
+        message: Наистина ли искате да изтриете члена {}? Членът вече няма достъп
+          до това семейство и се нуждае от нова покана. Ако този потребител е последният
+          от това семейство, семейството също ще бъде изтрито. Всички кучета и свързаните
+          с тях данни също ще бъдат изтрити. Това не може да бъде отменено!
+        no: Отмяна на
+        yes: Изтриване на
+  invitation_form:
+    title: Покана
+    share:
+      hint: Използвайте ПИН кода на поканата "{}", за да поканите друг член на семейството
+        да се присъедини към вашето семейство. Всеки ПИН може да се използва само
+        веднъж.
+      content: Каня ви да се присъедините към моето семейство! Изтеглете приложението
+        Heado (https://heado.de/) и използвайте семейния ПИН код "{}" при регистрацията
+        си.
+      copy:
+        hint: ПИН кодът "{}" е копиран.
+    action:
+      delete: Изтриване на
+    delete:
+      confirm:
+        title: Изтриване на покана
+        message: Наистина ли искате да изтриете тази покана? Тогава вече не можете
+          да използвате тази покана с ПИН код. То не може да бъде отменено и ще трябва
+          да създадете нов ПИН код!
+        no: Отмяна на
+        yes: Изтриване на
+  family_form:
+    title: Семейство Редактиране
+    name:
+      label: Име
+    action:
+      delete: Изтриване на
+      save: Запазете
+    delete:
+      confirm:
+        title: Изтриване на семейството
+        message: Наистина ли искате да изтриете семейството {}? Вашият акаунт, всички
+          членове на семейството и кучетата, включително данните от календара, ще
+          бъдат изтрити. Това не може да бъде върнато обратно!
+        no: Отмяна на
+        yes: Изтриване на
+  dog_selection:
+    add: Добавяне на ново куче
+  dog_list:
+    title: Кучета
+    add: Добавяне на ново куче
+  dog_form:
+    title:
+      add: Добавяне на куче
+      edit: Редактиране на куче
+    name:
+      label: Име
+    action:
+      delete: Изтриване на
+      save: Запазете
+    delete:
+      confirm:
+        title: Изтрийте кучето
+        message: Наистина ли искате да изтриете кучето си {}? Всички данни от календара
+          също ще бъдат изтрити. Това не може да бъде върнато.
+        no: Отмяна на
+        yes: Изтриване на
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Фаза
+        proestrus: Загрейте
+        estrus: Еструс
+        metestrus: Afterburn
+        anestrus: Фаза на почивка
+      false_pregnancy:
+        label: Фалшива бременност
+        active_info: Активна фалшива бременност
+      mood:
+        label: Настроение
+      symptom:
+        label: Симптоми
+      behavior:
+        label: Поведение
+      secretion:
+        label: Изтичане
+      weight:
+        label: Тегло
+        unit: kg
+      note:
+        label: Бележки
+  day_form:
+    period:
+      title: Период
+      enable: Добавяне на цикъл на периода
+      disable: Изтриване на цикъла на периода
+      proestrus_start_date:
+        label: Начало на периода преди раждането (прострус)
+        info:
+          title: Преди овулация (проеструс)
+          message: "Преди еструса вулвата на кучката се подува и се появява кървав
+            вагинален секрет.\n\nСредната продължителност е 9 дни и може да варира
+            от 3 до 17 дни.\n\nТази дата винаги трябва да се попълва."
+          close: OK
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+      estrus_start_date:
+        label: Начало на еструс (еструс)
+        info:
+          title: Еструс (Estrus)
+          message: "С настъпването на еструса вашата кучка показва желание за чифтосване
+            (заставане в репродукция). Все още е възможно вагинално течение, но то
+            ще бъде по-скоро като месна вода и евентуално слузесто.\n\nСредната продължителност
+            е 9 дни и може да варира между 3 и 21 дни.\n \nАко тази фаза все още не
+            е започнала или не желаете да документирате тази фаза, оставете това поле
+            празно."
+          close: ОК
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+      metestrus_start_date:
+        label: Начало на следжътвеното (Metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "Периодът след кърменето се характеризира с края на готовността
+            за чифтосване. Освен това вагиналното течение спира и вулвата се отдръпва.
+            През този период е възможно да настъпи фалшива бременност.\n\nАко тази
+            фаза все още не е започнала или не желаете да документирате тази фаза,
+            оставете това поле празно."
+          close: ОК
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+      end_date:
+        label: Край на цикъла (фаза на покой)
+        info:
+          title: Фаза на покой (анеструс)
+          message: "Във фазата на покой няма признаци на полов цикъл. Вулвата е напълно
+            регресирала.\n\nОставете това поле празно, ако този цикъл все още не е
+            приключил."
+          close: ОК
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+    false_pregnancy:
+      start_date:
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+        label: Начало на фалшива бременност
+      end_date:
+        label: Край на фалшивата бременност
+        error:
+          in_future: Датата не трябва да е в бъдещето.
+      title: Фалшива бременност
+      enable: Добавяне на фалшива бременност
+      disable: Изтриване на фалшива бременност
+    features:
+      title: Характеристики
+      mood:
+        label: Настроение
+        no_selection: Няма избрани настроения
+      symptom:
+        label: Симптоми
+        no_selection: Няма избрани симптоми
+      behavior:
+        label: Поведение
+        no_selection: Не е избрано поведение
+      secretion:
+        label: Изтичане
+        no_selection: Не е избрано разтоварване
+      weight:
+        weight:
+          label: Тегло
+        unit:
+          label: Единица
+          kilogram: kg
+    notes:
+      title: Бележки
+      notes:
+        label: Бележки
+    action:
+      save: Запазете
+  mood:
+    fearful: Безпокойство
+    courageous: Смел
+    brave: Brave
+    sleepy: Sleepy
+    sniffy: Снайфинг
+    aggressive: Агресивен
+    nervous: Нервност
+    satisfied: Удовлетворени
+    stressed: Стресирани
+    sleepless: Безсъници
+    dissatisfied: Неудовлетворени
+    depressed: Депресиран
+    defiant: Предизвикателен
+    relaxed: Отпуснат
+    happy: Happy
+    obedient: Послушание
+    balanced: Балансиран
+    fiepsy: Fiepsig
+    grumpy: Мърморещ
+    weepy: Свадлив
+    attentive: Внимание
+    sad: Тъжен
+    stormy: Stormy
+    crazy: Crazy
+    calm: Спокойно
+    cuddly: Уютен
+    appetiteless: Без апетит
+    indecisive: Нерешителни
+    exhausted: Изтощен
+    frustrated: Разочарован
+    bitchy: Bitchy
+    troubled: Неспокоен
+    jittery: Трескав
+  behavior:
+    herding: Шапки
+    adopting: Приемете
+    nesting: Изграждане на гнездо
+    howling: Yelp
+    restless: Неспокоен
+  symptom:
+    stomach_cramps: Стомашни спазми
+    flatulence: Метеоризъм
+    diarrhea: Диария
+    constipation: Запек
+    bloody_stool: Кървави изпражнения
+    milk_discharge: Изхвърляне на мляко
+    swollen_teats: Подути седалищни части
+    vomit: Повръщане
+    dandruff: Козината от пърхот
+  secretion:
+    bloody: Кървав
+    watery: Воден
+    creamy: Кремообразен
+    dryly: Сух
+    stinky: Миризлив
+    purulent: Загниване
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Регистрирайте първото разгонване на кучката си!
+        info:
+          title: Предвиждане на следващата жега
+          message: Heado се нуждае от пълен цикъл (включително фазата на покой!) от
+            вашата кучка, за да направи прогноза.
+          close: ОК
+      days_left: все още {} дни
+      weeks_left: все още {} седмици
+      months_left: все още {} месеца
+      until_date: към {}
+      error: Възникна грешка. Кликнете, за да повторите.
+      phase:
+        proestrus: Загрейте
+        estrus: Еструс
+        metestrus: Afterburn
+        anestrus: Фаза на почивка
+    period_dates:
+      last:
+        title: Последна топлина
+        none: Все още не е въведен период.
+        from: от
+        to: до
+      next:
+        title: Следваща топлина
+        from: от
+        to: до
+        none: Все още няма достатъчно периоди, за да се направи прогноза.
+    period_count:
+      period:
+        title: Брой отопления
+        time: Боядисване
+        times: Боядисване
+      false_pregnancy:
+        title: Брой фалшиви бременности
+        time: Боядисване
+        times: Боядисване
+    menu:
+      calendar: Календар
+      settings: Настройки
+  ad_banner:
+    title: Пробната ви версия без реклами приключва скоро!
+    message: Фазата на изпитване приключва на {}. След този ден ще виждате реклами.
+      Ако искате да използвате приложението без реклами, можете да закупите премиум
+      версията.
+    become_member: Станете член
+    left_days: '{}/{} Оставащи дни'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Станете член на Heado Premium и използвайте приложението без реклами.
+    purchase_single: Станете член на Premium
+    purchase_single_hint: '{} - Уникален {}'
+    purchase_family: Станете семейство Premium
+    purchase_family_hint: '{} - Уникален {}'
+    restore_purchase: Възстановяване на покупките
+  membership:
+    member:
+      teaser: Вие сте член на Heado Premium и можете да използвате приложението без
+        реклами!
+      info: Вие сте член на Heado Premium от {}.
+    family:
+      teaser: Вие и вашето семейство сте членове на Heado Premium. Можете да използвате
+        приложението без реклами!
+      info: Вашето семейство е член на Heado Premium от {}.
+settings:
+  title: Настройки
+  footer: Направено с {} за Kori {} и Mayo {}.
+  family:
+    title: Семейство
+    dogs:
+      title: Кучета
+    members:
+      title: Членове
+    family:
+      title: Семейство
+  account:
+    title: Сметка
+    premium:
+      title: Premium
+    settings:
+      title: Настройки на акаунта
+    cookies:
+      title: Съгласия за използване на бисквитки
+  demo:
+    title: Демонстрация
+    test_login:
+      title: Тестване на потребителския достъп
+  contact:
+    title: Свържете се с нас
+    website:
+      title: Уебсайт
+      link: https://heado.de/
+    mail:
+      title: имейл
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Правни въпроси
+    terms:
+      title: Условия за ползване
+      link: https://heado.de/terms
+    privacy:
+      title: Условия за защита на данните
+      link: https://heado.de/privacy
+  about:
+    title: За
+    status:
+      title: Статус
+    version:
+      title: Версия
+    translation:
+      title: Преводи
+  app:
+    design:
+      light: Светлина
+      dark: Dark
+      title: Дизайн
+    title: Приложение
+account_settings:
+  title: Настройки на акаунта
+  logins:
+    title: Данни за сметката
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Тестов потребител
+    error:
+      already_in_use:
+        title: Вече свързани
+        message: Избраният акаунт вече е свързан с друг потребител.
+        close: ОК
+  disconnect:
+    label: Отделяне на сметка
+    confirm:
+      title: Отделяне на сметка
+      message: Наистина ли искате да премахнете връзката с акаунта си? Тогава вече
+        няма да можете да влизате в системата на този доставчик. Можете да свържете
+        отново профила си по-късно.
+      no: Отмяна на
+      yes: Да, разединете
+  logout:
+    label: Излизане от системата
+    confirm:
+      title: Излизане от системата
+      message: Наистина ли искате да излезете от системата? Можете да влезете отново
+        с профила си в Google или Apple.
+      no: Отмяна на
+      yes: Да, излезте от системата
+  delete:
+    label: Изтриване на акаунт
+    confirm:
+      title: Изтриване на акаунт
+      message: Наистина ли искате да изтриете профила си? Вече нямате достъп до това
+        семейство и се нуждаете от нова покана. Ако сте последният потребител на това
+        семейство, семейството също ще бъде изтрито. Всички кучета и свързаните с
+        тях данни също ще бъдат изтрити. Това не може да бъде върнато обратно!
+      yes: Да, изтрийте
+      no: Отмяна на
+onboarding:
+  next: Още
+  welcome:
+    task: Имате ли вече акаунт?
+    action:
+      register: Създаване на нов акаунт
+      login: Вече имам акаунт
+  member:
+    task: Как да ви наричам?
+    name:
+      label: Име
+  lonely:
+    task: Били ли сте поканени в семейство?
+    action:
+      create_family: Създаване на ново семейство
+      join_family: Присъединяване към съществуващо семейство
+  login:
+    task: Влезте в съществуващия си акаунт
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Вход с ПИН код за демо потребители
+    code:
+      error:
+        min_length: Кодът трябва да се състои от 5 цифри.
+        invalid: Невалиден код
+    action:
+      login: Вход
+  join:
+    task: Код за покана на вашето семейство
+    code:
+      error:
+        min_length: Кодът трябва да се състои от 5 цифри.
+  finish:
+    task: Готови сте!
+    legal:
+      hint: 'С натискането на бутона "Приемам и създавам акаунт" вие се съгласявате
+        със следните условия:'
+      terms:
+        label: 1. условия за ползване
+        link: https://heado.de/terms
+      privacy:
+        label: 2. условия за защита на данните
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Приемете и създайте акаунт
+  family:
+    task: Дайте име на семейството си
+    name:
+      label: (Измислено) фамилно име
+      help: Изберете въображаемо име, което добре описва семейството ви. Фамилното
+        ви име не е необходимо тук.
+  dog:
+    task: Как се казва кучето ви?
+    name:
+      label: Име на кучето
+  auth:
+    task: Влезте, запазете данните на акаунта и използвайте няколко устройства
+    action:
+      google: Google
+      apple: Apple
+      skip: Не искам да вляза в системата
+generic:
+  system_default: Стандарт на системата
+  cancel: Отмяна на

@@ -1,0 +1,513 @@
+calendar:
+  behavior:
+    nesting: Κατασκευή φωλιάς
+    howling: Yelp
+    herding: Καπέλα
+    adopting: Υιοθετήστε το
+    restless: Ανήσυχο
+  mood:
+    jittery: Τρέμουλο
+    fearful: Ανήσυχος
+    courageous: Θαρραλέα
+    brave: Γενναίο
+    sleepy: Sleepy
+    sniffy: Sniffing
+    aggressive: Επιθετικό
+    nervous: Νευρικό
+    satisfied: Ικανοποιημένο
+    stressed: Στρεσαρισμένο
+    sleepless: Άγρυπνος
+    dissatisfied: Δυσαρεστημένο
+    depressed: Καταθλιπτικό
+    defiant: Προκλητικό
+    relaxed: Χαλαρό
+    happy: Ευτυχισμένο
+    obedient: Υπακοή
+    balanced: Ισορροπημένο
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Καυγαδίζοντες
+    attentive: Προσοχή
+    sad: Θλιβερό
+    stormy: Stormy
+    crazy: Crazy
+    calm: Ηρεμία
+    cuddly: Άνετο
+    appetiteless: Appetiteless
+    indecisive: Αναποφάσιστοι
+    exhausted: Εξαντλημένο
+    frustrated: Απογοητευμένο
+    bitchy: Bitchy
+    troubled: Ανήσυχο
+  day_form:
+    period:
+      end_date:
+        info:
+          close: OK
+          title: Φάση ηρεμίας (ανίστρος)
+          message: "Η φάση ανάπαυσης δεν παρουσιάζει σημάδια του σεξουαλικού κύκλου.
+            Το αιδοίο έχει πλέον υποχωρήσει πλήρως.\n\nΑφήστε αυτό το πεδίο κενό εάν
+            ο κύκλος αυτός δεν έχει ακόμη ολοκληρωθεί."
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+        label: Τέλος του κύκλου (φάση ηρεμίας)
+      title: Περίοδος
+      enable: Προσθήκη κύκλου περιόδου
+      disable: Διαγραφή κύκλου περιόδου
+      proestrus_start_date:
+        label: Έναρξη της προγεννητικής περιόδου (proestrus)
+        info:
+          title: Προ ωορρηξίας (Proestrus)
+          message: "Ο πρόωρος οίστρος αρχίζει όταν το αιδοίο της σκύλας σας διογκώνεται
+            και εμφανίζονται αιματηρές κολπικές εκκρίσεις.\n\nΗ μέση διάρκεια είναι
+            9 ημέρες και μπορεί να κυμαίνεται από 3 έως 17 ημέρες.\n\nΑυτή η ημερομηνία
+            πρέπει πάντα να συμπληρώνεται."
+          close: OK
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+      estrus_start_date:
+        label: Έναρξη οίστρου (οίστρος)
+        info:
+          title: Οίστρος (Estrus)
+          message: "Με την έναρξη του οίστρου, η σκύλα σας δείχνει προθυμία να ζευγαρώσει
+            (στάσιμος καύσος). Οι κολπικές εκκρίσεις είναι ακόμα πιθανές, αλλά θα
+            μοιάζουν περισσότερο με νερό από κρέας και πιθανώς βλεννώδεις.\n\nΗ μέση
+            διάρκεια είναι 9 ημέρες και μπορεί να κυμαίνεται μεταξύ 3 και 21 ημερών.\n
+            \nΕάν αυτή η φάση δεν έχει ακόμη ξεκινήσει ή δεν επιθυμείτε να καταγράψετε
+            αυτή τη φάση, αφήστε αυτό το πεδίο κενό."
+          close: OK
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+      metestrus_start_date:
+        label: Έναρξη της μετακαύσης (Metestrus)
+        info:
+          title: Μετάκαυση (Metestrus)
+          message: "Η περίοδος μετά τον θηλασμό χαρακτηρίζεται από το τέλος της ετοιμότητας
+            για ζευγάρωμα. Επιπλέον, οι κολπικές εκκρίσεις σταματούν και το αιδοίο
+            υποχωρεί. Κατά τη διάρκεια αυτής της περιόδου είναι δυνατή μια ψευδοεγκυμοσύνη.\n
+            \nΕάν η φάση αυτή δεν έχει ακόμη αρχίσει ή δεν επιθυμείτε να καταγράψετε
+            τη φάση αυτή, αφήστε το πεδίο αυτό κενό."
+          close: OK
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+    false_pregnancy:
+      title: Ψευδής εγκυμοσύνη
+      enable: Προσθήκη ψευδούς εγκυμοσύνης
+      disable: Διαγραφή ψευδούς εγκυμοσύνης
+      start_date:
+        label: Έναρξη ψευδούς εγκυμοσύνης
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+      end_date:
+        label: Τέλος ψευδούς εγκυμοσύνης
+        error:
+          in_future: Η ημερομηνία δεν πρέπει να είναι στο μέλλον
+    features:
+      title: Χαρακτηριστικά
+      mood:
+        label: Διάθεση
+        no_selection: Δεν έχουν επιλεγεί διαθέσεις
+      symptom:
+        label: Συμπτώματα
+        no_selection: Δεν έχουν επιλεγεί συμπτώματα
+      behavior:
+        label: Συμπεριφορά
+        no_selection: Δεν έχει επιλεγεί συμπεριφορά
+      secretion:
+        label: Εκροή
+        no_selection: Δεν έχει επιλεγεί απόρριψη
+      weight:
+        weight:
+          label: Βάρος
+        unit:
+          label: Μονάδα
+          kilogram: kg
+    notes:
+      title: Σημειώσεις
+      notes:
+        label: Σημειώσεις
+    action:
+      save: Αποθήκευση
+  calendar:
+    details:
+      phase:
+        label: Φάση
+        proestrus: Προθερμάνετε το
+        estrus: Οίστρος
+        metestrus: Afterburn
+        anestrus: Φάση ανάπαυσης
+      false_pregnancy:
+        label: Ψευδής εγκυμοσύνη
+        active_info: Ενεργός ψευδής εγκυμοσύνη
+      mood:
+        label: Διάθεση
+      symptom:
+        label: Συμπτώματα
+      behavior:
+        label: Συμπεριφορά
+      secretion:
+        label: Εκροή
+      weight:
+        label: Βάρος
+        unit: kg
+      note:
+        label: Σημειώσεις
+  symptom:
+    stomach_cramps: Κράμπες στο στομάχι
+    flatulence: Φούσκωμα
+    diarrhea: Διάρροια
+    constipation: Δυσκοιλιότητα
+    bloody_stool: Αιματηρά κόπρανα
+    milk_discharge: Έκκριση γάλακτος
+    swollen_teats: Πρησμένοι γλουτοί
+    vomit: Εμετός
+    dandruff: Πιτυρίδα παλτό
+  secretion:
+    bloody: Bloody
+    watery: Υδατικό
+    creamy: Κρεμώδες
+    dryly: Στεγνό
+    stinky: Βρωμερό
+    purulent: Καύση
+core:
+  error:
+    generic:
+      short: Εμφανίστηκε σφάλμα!
+      long: Ουπς, προέκυψε σφάλμα! Συγγνώμη.
+    retry:
+      short: Επανάληψη
+      long: Δοκιμάστε ξανά
+  empty:
+    hint: Δεν υπάρχουν καταχωρήσεις.
+  close: Κλείστε το
+  copy: Αντιγραφή
+  share: Μοιραστείτε το
+  unknown: Άγνωστος
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+family:
+  member_list:
+    title: Μέλη
+    invitation:
+      label: Πρόσκληση "{}"
+    add_invitation: Πρόσκληση νέου μέλους
+  member_form:
+    title: Επεξεργασία μέλους
+    name:
+      label: Όνομα
+    action:
+      delete: Διαγραφή
+      save: Αποθήκευση
+    delete:
+      confirm:
+        title: Διαγραφή μέλους
+        message: Θέλετε πραγματικά να διαγράψετε το μέλος {}; Το μέλος δεν μπορεί
+          πλέον να έχει πρόσβαση σε αυτή την οικογένεια και απαιτεί νέα πρόσκληση.
+          Εάν αυτός ο χρήστης είναι ο τελευταίος αυτής της οικογένειας, η οικογένεια
+          θα διαγραφεί επίσης. Όλα τα σκυλιά και τα σχετικά δεδομένα θα διαγραφούν
+          επίσης. Αυτό δεν μπορεί να αναιρεθεί!
+        no: Ακύρωση
+        yes: Διαγραφή
+  invitation_form:
+    title: Πρόσκληση
+    share:
+      hint: Χρησιμοποιήστε το PIN πρόσκλησης "{}" για να προσκαλέσετε ένα άλλο μέλος
+        της οικογένειάς σας να γίνει μέλος της οικογένειάς σας. Κάθε PIN μπορεί να
+        χρησιμοποιηθεί μόνο μία φορά.
+      content: Σας προσκαλώ να γίνετε μέλος της οικογένειάς μου! Κατεβάστε την εφαρμογή
+        Heado (https://heado.de/) και χρησιμοποιήστε το οικογενειακό PIN "{}" κατά
+        την εγγραφή σας.
+      copy:
+        hint: Το PIN "{}" έχει αντιγραφεί.
+    action:
+      delete: Διαγραφή
+    delete:
+      confirm:
+        title: Διαγραφή πρόσκλησης
+        message: Θέλετε πραγματικά να διαγράψετε αυτή την πρόσκληση; Τότε δεν μπορείτε
+          πλέον να χρησιμοποιήσετε αυτό το PIN πρόσκλησης. Δεν μπορεί να ακυρωθεί
+          και θα πρέπει να δημιουργήσετε ένα νέο PIN!
+        no: Ακύρωση
+        yes: Διαγραφή
+  family_form:
+    title: Επεξεργασία οικογένειας
+    name:
+      label: Όνομα
+    action:
+      delete: Διαγραφή
+      save: Αποθήκευση
+    delete:
+      confirm:
+        title: Διαγραφή οικογένειας
+        message: Θέλετε πραγματικά να διαγράψετε την οικογένεια {}; Ο λογαριασμός
+          σας, όλα τα μέλη της οικογένειας και τα σκυλιά, συμπεριλαμβανομένων των
+          δεδομένων του ημερολογίου, θα διαγραφούν. Αυτό δεν μπορεί να αναιρεθεί!
+        no: Ακύρωση
+        yes: Διαγραφή
+  dog_selection:
+    add: Προσθέστε ένα νέο σκύλο
+  dog_list:
+    add: Προσθέστε ένα νέο σκύλο
+    title: Σκύλοι
+  dog_form:
+    title:
+      add: Προσθέστε σκύλο
+      edit: Επεξεργασία σκύλου
+    name:
+      label: Όνομα
+    action:
+      delete: Διαγραφή
+      save: Αποθήκευση
+    delete:
+      confirm:
+        title: Διαγραφή σκύλου
+        message: Θέλετε πραγματικά να διαγράψετε τον σκύλο σας {}; Όλα τα δεδομένα
+          ημερολογίου θα διαγραφούν επίσης. Αυτό δεν μπορεί να αναιρεθεί.
+        no: Ακύρωση
+        yes: Διαγραφή
+account_settings:
+  title: Ρυθμίσεις λογαριασμού
+  logins:
+    title: Στοιχεία λογαριασμού
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Χρήστης δοκιμής
+    error:
+      already_in_use:
+        title: Ήδη συνδεδεμένο
+        message: Ο επιλεγμένος λογαριασμός είναι ήδη συνδεδεμένος με άλλον χρήστη.
+        close: OK
+  disconnect:
+    label: Αποσύνδεση λογαριασμού
+    confirm:
+      title: Αποσύνδεση λογαριασμού
+      message: Θέλετε πραγματικά να καταργήσετε τη σύνδεση του λογαριασμού σας; Τότε
+        δεν θα μπορείτε πλέον να συνδεθείτε με αυτόν τον πάροχο. Μπορείτε να επανασυνδέσετε
+        το λογαριασμό σας αργότερα.
+      no: Ακύρωση
+      yes: Ναι, αποσύνδεση
+  logout:
+    label: Αποσύνδεση
+    confirm:
+      title: Αποσύνδεση
+      message: Θέλετε πραγματικά να αποσυνδεθείτε; Μπορείτε να συνδεθείτε ξανά με
+        τον λογαριασμό σας στο Google ή στην Apple.
+      no: Ακύρωση
+      yes: Ναι, αποσυνδεθείτε
+  delete:
+    label: Διαγραφή λογαριασμού
+    confirm:
+      title: Διαγραφή λογαριασμού
+      message: Θέλετε πραγματικά να διαγράψετε τον λογαριασμό σας; Δεν μπορείτε πλέον
+        να έχετε πρόσβαση σε αυτή την οικογένεια και χρειάζεστε μια νέα πρόσκληση.
+        Εάν είστε ο τελευταίος χρήστης αυτής της οικογένειας, η οικογένεια θα διαγραφεί
+        επίσης. Όλα τα σκυλιά και τα σχετικά δεδομένα θα διαγραφούν επίσης. Αυτό δεν
+        μπορεί να αναιρεθεί!
+      yes: Ναι, διαγράψτε
+      no: Ακύρωση
+app:
+  title: Heado - ημερολόγιο θερμότητας
+  title_short: Heado
+  slogan: Ημερολόγιο θερμότητας
+onboarding:
+  finish:
+    legal:
+      terms:
+        label: 1. όροι χρήσης
+        link: https://heado.de/terms
+      privacy:
+        label: 2. όροι προστασίας δεδομένων
+        link: https://heado.de/privacy
+      hint: 'Κάνοντας κλικ στο "Αποδοχή & δημιουργία λογαριασμού" συμφωνείτε με τους
+        ακόλουθους όρους:'
+    action:
+      accept_and_register: Αποδοχή και δημιουργία λογαριασμού
+    task: Είστε έτοιμοι!
+  family:
+    task: Δώστε στην οικογένειά σας ένα όνομα
+    name:
+      label: (Φανταστικό) οικογενειακό όνομα
+      help: Επιλέξτε ένα φανταστικό όνομα που να περιγράφει καλά την οικογένειά σας.
+        Το επώνυμό σας δεν είναι απαραίτητο εδώ.
+  dog:
+    task: Ποιο είναι το όνομα του σκύλου σας;
+    name:
+      label: Όνομα του σκύλου
+  auth:
+    task: Συνδεθείτε, αποθηκεύστε δεδομένα λογαριασμού & χρησιμοποιήστε πολλαπλές
+      συσκευές
+    action:
+      google: Google
+      apple: Apple
+      skip: Δεν θέλω να συνδεθώ
+  next: Περαιτέρω
+  welcome:
+    task: Έχετε ήδη λογαριασμό;
+    action:
+      register: Δημιουργία νέου λογαριασμού
+      login: Έχω ήδη λογαριασμό
+  member:
+    task: Πώς μπορώ να σας αποκαλώ;
+    name:
+      label: Όνομα
+  lonely:
+    task: Έχετε προσκληθεί σε μια οικογένεια;
+    action:
+      create_family: Δημιουργία νέας οικογένειας
+      join_family: Ενταχθείτε σε μια υπάρχουσα οικογένεια
+  login:
+    task: Συνδεθείτε στον υπάρχοντα λογαριασμό σας
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Σύνδεση με κωδικό PIN για χρήστες επίδειξης
+    code:
+      error:
+        min_length: Ο κωδικός πρέπει να αποτελείται από 5 ψηφία
+        invalid: Μη έγκυρος κωδικός
+    action:
+      login: Σύνδεση
+  join:
+    task: Κωδικός πρόσκλησης της οικογένειάς σας
+    code:
+      error:
+        min_length: Ο κωδικός πρέπει να αποτελείται από 5 ψηφία
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Καταχωρήστε την πρώτη θερμότητα της σκύλας σας!
+        info:
+          title: Πρόβλεψη της επόμενης θερμότητας
+          message: Το Heado χρειάζεται έναν πλήρη κύκλο (συμπεριλαμβανομένης της φάσης
+            ανάπαυσης!) από τη σκύλα σας για να κάνει μια πρόβλεψη.
+          close: OK
+      days_left: ακόμα μέρες
+      weeks_left: ακόμα εβδομάδες
+      months_left: ακόμα {} μήνες
+      until_date: στο {}
+      error: Εμφανίστηκε σφάλμα. Κάντε κλικ για επανάληψη.
+      phase:
+        proestrus: Προθερμάνετε το
+        estrus: Οίστρος
+        metestrus: Afterburn
+        anestrus: Φάση ανάπαυσης
+    period_dates:
+      last:
+        title: Τελευταία θερμότητα
+        none: Δεν έχει εισαχθεί ακόμη καμία περίοδος.
+        from: από το
+        to: μέχρι το
+      next:
+        title: Επόμενη θερμότητα
+        from: από το
+        to: μέχρι το
+        none: Δεν υπάρχουν ακόμη αρκετές περίοδοι για να γίνει πρόβλεψη.
+    period_count:
+      period:
+        title: Αριθμός θερμάνσεων
+        time: Βαφή
+        times: Βαφή
+      false_pregnancy:
+        title: Αριθμός λανθασμένων κυήσεων
+        time: Βαφή
+        times: Βαφή
+    menu:
+      calendar: Ημερολόγιο
+      settings: Ρυθμίσεις
+  ad_banner:
+    title: Η δοκιμή σας χωρίς διαφημίσεις τελειώνει σύντομα!
+    message: Η δοκιμαστική σας περίοδος λήγει στις {}. Μετά από αυτή την ημέρα, θα
+      βλέπετε διαφημίσεις. Αν θέλετε να χρησιμοποιήσετε την εφαρμογή χωρίς διαφημίσεις,
+      μπορείτε να αγοράσετε την έκδοση Premium.
+    become_member: Γίνετε μέλος
+    left_days: '{}/{} Ημέρες που απομένουν'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Γίνετε μέλος Heado Premium και χρησιμοποιήστε την εφαρμογή χωρίς διαφημίσεις.
+    purchase_single: Γίνετε μέλος Premium
+    purchase_single_hint: '{} - Unique {}'
+    purchase_family: Γίνετε μια οικογένεια Premium
+    purchase_family_hint: '{} - Unique {}'
+    restore_purchase: Επαναφορά αγορών
+  membership:
+    member:
+      teaser: Είστε μέλος Heado Premium και μπορείτε να χρησιμοποιήσετε την εφαρμογή
+        χωρίς διαφημίσεις!
+      info: Είστε μέλος Heado Premium από {}.
+    family:
+      teaser: Εσείς και η οικογένειά σας είστε μέλη του Heado Premium. Μπορείτε να
+        χρησιμοποιήσετε την εφαρμογή χωρίς διαφημίσεις!
+      info: Η οικογένειά σας είναι μέλος της Heado Premium από {}.
+settings:
+  title: Ρυθμίσεις
+  footer: Φτιαγμένο με {} για την Kori {} και τη Mayo {}.
+  family:
+    title: Οικογένεια
+    dogs:
+      title: Σκύλοι
+    members:
+      title: Μέλη
+    family:
+      title: Οικογένεια
+  account:
+    title: Λογαριασμός
+    premium:
+      title: Premium
+    settings:
+      title: Ρυθμίσεις λογαριασμού
+    cookies:
+      title: Συναινέσεις cookie
+  demo:
+    title: Demo
+    test_login:
+      title: Δοκιμή πρόσβασης χρήστη
+  contact:
+    title: Επικοινωνήστε μαζί μας
+    website:
+      title: Ιστοσελίδα
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Νομικά θέματα
+    terms:
+      title: Όροι χρήσης
+      link: https://heado.de/terms
+    privacy:
+      title: Όροι προστασίας δεδομένων
+      link: https://heado.de/privacy
+  about:
+    title: Σχετικά με το
+    status:
+      title: Κατάσταση
+    version:
+      title: Έκδοση
+    translation:
+      title: Μεταφράσεις
+  app:
+    design:
+      light: Φως
+      title: Σχεδιασμός
+      dark: Σκούρο
+    title: Εφαρμογή
+generic:
+  system_default: Πρότυπο συστήματος
+  cancel: Ακύρωση

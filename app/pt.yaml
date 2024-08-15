@@ -1,0 +1,502 @@
+family:
+  member_form:
+    action:
+      save: Poupa
+      delete: Elimina
+    delete:
+      confirm:
+        title: Eliminar membro
+        message: Queres mesmo apagar o membro {}? O membro já não pode aceder a esta
+          família e necessita de um novo convite. Se este utilizador for o último
+          desta família, a família também será eliminada. Todos os cães e dados associados
+          também serão eliminados. Isto não pode ser anulado!
+        no: Cancela
+        yes: Elimina
+    title: Editar membro
+    name:
+      label: Nome
+  invitation_form:
+    title: Convite
+    share:
+      hint: Utiliza o PIN de convite "{}" para convidares outro membro da família
+        a juntar-se à tua família. Cada PIN só pode ser utilizado uma vez.
+      content: Convido-te a juntares-te à minha família! Transfere a aplicação Heado
+        (https://heado.de/) e utiliza o PIN da família "{}" quando te registares.
+      copy:
+        hint: O PIN "{}" foi copiado.
+    action:
+      delete: Elimina
+    delete:
+      confirm:
+        title: Eliminar convite
+        message: Queres mesmo apagar este convite? Então já não podes utilizar este
+          PIN de convite. Este não pode ser cancelado e terás de criar um novo PIN!
+        no: Cancela
+        yes: Elimina
+  family_form:
+    title: Edita a família
+    name:
+      label: Nome
+    action:
+      delete: Elimina
+      save: Poupa
+    delete:
+      confirm:
+        title: Elimina a família
+        message: Queres mesmo apagar a família {}? A tua conta, todos os membros da
+          família e cães, incluindo os dados do calendário, serão eliminados. Isto
+          não pode ser desfeito!
+        no: Cancela
+        yes: Elimina
+  dog_selection:
+    add: Adiciona um novo cão
+  dog_list:
+    add: Adiciona um novo cão
+    title: Cães
+  dog_form:
+    title:
+      add: Adicionar cão
+      edit: Edita o cão
+    name:
+      label: Nome
+    action:
+      delete: Elimina
+      save: Poupa
+    delete:
+      confirm:
+        title: Apaga o cão
+        message: Queres mesmo apagar o teu cão {}? Todos os dados do calendário também
+          serão eliminados. Isto não pode ser anulado.
+        no: Cancela
+        yes: Elimina
+  member_list:
+    title: Membros
+    invitation:
+      label: Convite "{}"
+    add_invitation: Convida um novo membro
+calendar:
+  calendar:
+    details:
+      symptom:
+        label: Sintomas
+      behavior:
+        label: Comportamento
+      secretion:
+        label: Saída
+      weight:
+        label: Peso
+        unit: kg
+      note:
+        label: Notas
+      phase:
+        label: Fase
+        proestrus: Pré-aquece
+        estrus: Cio
+        metestrus: Queimadura posterior
+        anestrus: Fase de repouso
+      false_pregnancy:
+        label: Falsa gravidez
+        active_info: Falsa gravidez ativa
+      mood:
+        label: Humor
+  day_form:
+    period:
+      title: Período
+      enable: Acrescentar ciclo de período
+      disable: Eliminar ciclo de período
+      proestrus_start_date:
+        label: Início do pré-ciclo (proestro)
+        info:
+          title: Pré-ovulação (Proestro)
+          message: "O pré-estro começa quando a vulva da tua cadela incha e aparece
+            um corrimento vaginal com sangue.\n\nA duração média é de 9 dias e pode
+            variar de 3 a 17 dias.\n\nEsta data deve ser sempre preenchida."
+          close: OK
+        error:
+          in_future: A data não deve ser futura
+      estrus_start_date:
+        label: Início do cio (estro)
+        info:
+          title: Cio (Estro)
+          message: "Com o início do cio, a tua cadela mostra vontade de acasalar (cio
+            permanente). O corrimento vaginal ainda é possível, mas será mais parecido
+            com água de carne e possivelmente mucoso.\n\nA duração média é de 9 dias
+            e pode variar entre 3 e 21 dias.\n \nSe esta fase ainda não tiver começado
+            ou se não quiseres documentar esta fase, deixa este campo em branco."
+          close: OK
+        error:
+          in_future: A data não deve ser futura
+      metestrus_start_date:
+        label: Início do pós-cozimento (Metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "O período pós-amamentação caracteriza-se pelo fim da preparação
+            para o acasalamento. Além disso, o corrimento vaginal pára e a vulva recua.
+            Durante este período, é possível que ocorra uma falsa gravidez.\n\nSe
+            esta fase ainda não tiver começado ou se não quiseres documentar esta
+            fase, deixa este campo em branco."
+          close: OK
+        error:
+          in_future: A data não deve ser futura
+      end_date:
+        label: Fim do ciclo (fase de repouso)
+        info:
+          title: Fase de repouso (anestro)
+          message: "A fase de repouso não apresenta sinais do ciclo sexual. A vulva
+            está agora completamente regredida.\n\nDeixa este campo em branco se este
+            ciclo ainda não tiver terminado."
+          close: OK
+        error:
+          in_future: A data não deve ser futura
+    false_pregnancy:
+      title: Falsa gravidez
+      enable: Adicionar uma falsa gravidez
+      disable: Elimina a falsa gravidez
+      start_date:
+        label: Início de uma falsa gravidez
+        error:
+          in_future: A data não deve ser futura
+      end_date:
+        label: Fim da falsa gravidez
+        error:
+          in_future: A data não deve ser futura
+    features:
+      title: Características
+      mood:
+        label: Humor
+        no_selection: Não seleccionaste nenhum estado de espírito
+      symptom:
+        label: Sintomas
+        no_selection: Não seleccionaste nenhum sintoma
+      behavior:
+        label: Comportamento
+        no_selection: Nenhum comportamento selecionado
+      secretion:
+        label: Saída
+        no_selection: Não foi selecionada nenhuma descarga
+      weight:
+        weight:
+          label: Peso
+        unit:
+          label: Unidade
+          kilogram: kg
+    notes:
+      title: Notas
+      notes:
+        label: Notas
+    action:
+      save: Poupa
+  behavior:
+    adopting: Adotar
+    nesting: Construção de ninhos
+    howling: Yelp
+    restless: Inquieto
+    herding: Chapéus
+  symptom:
+    stomach_cramps: Cólicas estomacais
+    flatulence: Flatulência
+    diarrhea: Diarreia
+    constipation: Prisão de ventre
+    bloody_stool: Fezes com sangue
+    milk_discharge: Descarga de leite
+    swollen_teats: Nádegas inchadas
+    vomit: Vómitos
+    dandruff: Casaco com caspa
+  secretion:
+    bloody: Sangrento
+    watery: Aquoso
+    creamy: Cremoso
+    dryly: Seca
+    stinky: Cheiroso
+    purulent: Apodrecimento
+  mood:
+    fearful: Ansioso
+    courageous: Corajoso
+    brave: Corajoso
+    sleepy: Dorme
+    sniffy: Farejar
+    aggressive: Agressivo
+    nervous: Nervoso
+    satisfied: Satisfeito
+    stressed: Stressado
+    sleepless: Sem dormir
+    dissatisfied: Não estás satisfeito
+    depressed: Deprimido
+    defiant: Desafiador
+    relaxed: Descontraído
+    happy: Feliz
+    obedient: Obediência
+    balanced: Equilibrado
+    fiepsy: Fiepsig
+    grumpy: Mal-humorado
+    weepy: Brigão
+    attentive: Presta atenção
+    sad: Triste
+    stormy: Tempestade
+    crazy: Louco
+    calm: Acalma-te
+    cuddly: Acolhedor
+    appetiteless: Não tens apetite
+    indecisive: Indeciso
+    exhausted: Esgotado
+    frustrated: Frustrado
+    bitchy: Cabra
+    troubled: Inquieto
+    jittery: Nervoso
+account_settings:
+  title: Definições da conta
+  logins:
+    title: Detalhes da conta
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Utilizador de teste
+    error:
+      already_in_use:
+        title: Já estás ligado
+        message: A conta selecionada já está ligada a outro utilizador.
+        close: OK
+  disconnect:
+    label: Separa a conta
+    confirm:
+      title: Separa a conta
+      message: Queres mesmo desvincular a tua conta? Nesse caso, já não poderás iniciar
+        sessão com este fornecedor. Podes voltar a ligar a tua conta mais tarde.
+      no: Cancela
+      yes: Sim, desacopla
+  logout:
+    label: Termina a sessão
+    confirm:
+      title: Termina a sessão
+      message: Queres mesmo terminar a sessão? Podes iniciar sessão novamente com
+        a tua conta Google ou Apple.
+      no: Cancela
+      yes: Sim, termina a sessão
+  delete:
+    label: Eliminar a conta
+    confirm:
+      title: Eliminar a conta
+      message: Queres mesmo apagar a tua conta? Já não podes aceder a esta família
+        e precisas de um novo convite. Se fores o último utilizador desta família,
+        a família também será eliminada. Todos os cães e dados associados serão igualmente
+        eliminados. Não podes desfazer isto!
+      no: Queres mesmo terminar a sessão? Podes iniciar sessão novamente com a tua
+        conta Google ou Apple.
+      yes: Sim, apaga
+onboarding:
+  finish:
+    legal:
+      hint: 'Ao clicar em "Aceitar e criar conta", aceita as seguintes condições:'
+      terms:
+        label: 1. termos de utilização
+        link: https://heado.de/terms
+      privacy:
+        label: 2. condições de proteção de dados
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Aceita e cria uma conta
+    task: Estás pronto!
+  family:
+    task: Dá um nome à tua família
+    name:
+      label: Nome de família (fictício)
+      help: Escolhe um nome imaginário que descreva bem a tua família. O teu apelido
+        não é necessário.
+  dog:
+    task: Qual é o nome do teu cão?
+    name:
+      label: Nome do cão
+  auth:
+    task: Inicia sessão, guarda os dados da conta e utiliza vários dispositivos
+    action:
+      google: Google
+      apple: Apple
+      skip: Não quero iniciar sessão
+  next: Mais
+  welcome:
+    task: Já tens uma conta?
+    action:
+      register: Cria uma nova conta
+      login: Já tenho uma conta
+  member:
+    task: Como te posso chamar?
+    name:
+      label: Nome
+  lonely:
+    task: Foste convidado para uma família?
+    action:
+      create_family: Cria uma nova família
+      join_family: Junta-te a uma família existente
+  login:
+    task: Inicia sessão na tua conta existente
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Início de sessão com código PIN para utilizadores de demonstração
+    code:
+      error:
+        min_length: O código deve ser composto por 5 dígitos
+        invalid: Código inválido
+    action:
+      login: Acede
+  join:
+    task: Código de convite da tua família
+    code:
+      error:
+        min_length: O código deve ser composto por 5 dígitos
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Regista o primeiro cio da tua cadela!
+        info:
+          title: Prevendo o próximo calor
+          message: O Heado precisa de um ciclo completo (incluindo a fase de repouso!)
+            da tua cadela para fazer uma previsão.
+          close: OK
+      days_left: ainda {} dias
+      weeks_left: ainda {} semanas
+      months_left: ainda {} meses
+      until_date: para {}
+      error: Ocorreu um erro. Clica para repetir.
+      phase:
+        proestrus: Pré-aquece
+        estrus: Cio
+        metestrus: Queimadura posterior
+        anestrus: Fase de repouso
+    period_dates:
+      last:
+        title: Último aquecimento
+        none: Ainda não introduziste nenhum período.
+        from: do
+        to: até que
+      next:
+        title: Próximo aquecimento
+        from: do
+        to: até que
+        none: Ainda não há períodos suficientes para fazeres uma previsão.
+    period_count:
+      period:
+        title: Número de aquecimentos
+        time: Pinta
+        times: Pinta
+      false_pregnancy:
+        title: Número de falsas gravidezes
+        time: Pinta
+        times: Pinta
+    menu:
+      calendar: Calendário
+      settings: Definições
+  ad_banner:
+    title: O teu teste sem anúncios termina em breve!
+    message: A tua fase de teste termina em {}. Após este dia, verás anúncios. Se
+      quiseres utilizar a aplicação sem anúncios, podes comprar a versão Premium.
+    become_member: Torna-te membro
+    left_days: '{}/{} Dias restantes'
+settings:
+  contact:
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    title: Contacta-nos
+    website:
+      title: Sítio Web
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  title: Definições
+  footer: Feito com {} para Kori {} e Mayo {}.
+  family:
+    title: Família
+    dogs:
+      title: Cães
+    members:
+      title: Membros
+    family:
+      title: Família
+  account:
+    title: Conta
+    premium:
+      title: Prémio
+    settings:
+      title: Definições da conta
+    cookies:
+      title: Consentimentos de cookies
+  demo:
+    title: Demonstração
+    test_login:
+      title: Testa o acesso do utilizador
+  legal:
+    title: Assuntos jurídicos
+    terms:
+      title: Termos de utilização
+      link: https://heado.de/terms
+    privacy:
+      title: Condições de proteção de dados
+      link: https://heado.de/privacy
+  about:
+    title: Sobre
+    status:
+      title: Estado
+    version:
+      title: Versão
+    translation:
+      title: Traduções
+  app:
+    design:
+      dark: Escuro
+      title: Design
+      light: Luz
+    title: Aplicação
+app:
+  title: Heado - calendário de calor
+  title_short: Cabeça
+  slogan: Calendário de calor
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Ocorreu um erro!
+      long: Oops, ocorreu um erro! Desculpa.
+    retry:
+      short: Repete
+      long: Tenta novamente
+  empty:
+    hint: Não há entradas.
+  close: Fecha
+  copy: Copia
+  share: Partilha
+  unknown: Desconhecido
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Torna-te um membro Heado Premium e utiliza a aplicação sem anúncios.
+    purchase_single: Torna-te um Membro Premium
+    purchase_single_hint: '{} - Unique {}'
+    purchase_family: Torna-te uma Família Premium
+    purchase_family_hint: '{} - Unique {}'
+    restore_purchase: Restaurar compras
+  membership:
+    member:
+      teaser: És um membro Heado Premium e podes utilizar a aplicação sem anúncios!
+      info: És um membro Heado Premium desde {}.
+    family:
+      teaser: Tu e a tua família são membros Heado Premium. Podes utilizar a aplicação
+        sem anúncios!
+      info: A tua família é membro Heado Premium desde {}.
+generic:
+  system_default: Norma do sistema
+  cancel: Cancela

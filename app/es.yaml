@@ -1,0 +1,503 @@
+app:
+  title: Heado - calendario de calor
+  title_short: Heado
+  slogan: Calendario de calor
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: ¡Se ha producido un error!
+      long: Se ha producido un error. Perdona.
+    retry:
+      short: Repite
+      long: Inténtalo de nuevo
+  empty:
+    hint: No hay entradas.
+  close: Cerrar
+  copy: Copia
+  share: Comparte
+  unknown: Desconocido
+onboarding:
+  member:
+    name:
+      label: Nombre
+    task: ¿Cómo puedo llamarte?
+  lonely:
+    task: ¿Te han invitado a una familia?
+    action:
+      create_family: Crear nueva familia
+      join_family: Unirse a una familia existente
+  login:
+    task: Accede a tu cuenta existente
+    action:
+      google: Google
+      apple: Manzana
+  test_login:
+    task: Inicio de sesión con código PIN para usuarios de demostración
+    code:
+      error:
+        min_length: El código debe constar de 5 dígitos
+        invalid: Código no válido
+    action:
+      login: Iniciar sesión
+  next: Más información en
+  welcome:
+    task: ¿Ya tienes una cuenta?
+    action:
+      register: Crear una cuenta nueva
+      login: Ya tengo una cuenta
+  join:
+    task: Código de invitación de tu familia
+    code:
+      error:
+        min_length: El código debe constar de 5 dígitos
+  finish:
+    task: ¡Estás preparado!
+    legal:
+      hint: 'Al hacer clic en "Aceptar y crear cuenta", aceptas las siguientes condiciones:'
+      terms:
+        label: 1. condiciones de uso
+        link: https://heado.de/terms
+      privacy:
+        label: 2. condiciones de protección de datos
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Aceptar y crear cuenta
+  family:
+    task: Dale un nombre a tu familia
+    name:
+      label: Apellido (ficticio)
+      help: Elige un nombre imaginario que describa bien a tu familia. Tu apellido
+        no es necesario aquí.
+  dog:
+    task: ¿Cómo se llama tu perro?
+    name:
+      label: Nombre del perro
+  auth:
+    task: Inicia sesión, guarda los datos de la cuenta y utiliza varios dispositivos
+    action:
+      google: Google
+      apple: Manzana
+      skip: No quiero conectarme
+settings:
+  about:
+    translation:
+      title: Traducciones
+    title: Acerca de
+    status:
+      title: Estado
+    version:
+      title: Versión
+  account:
+    cookies:
+      title: Consentimientos de cookies
+    title: Cuenta
+    premium:
+      title: Premium
+    settings:
+      title: Configuración de la cuenta
+  title: Ajustes
+  footer: Hecho con {} para Kori {} y Mayo {}.
+  family:
+    title: Familia
+    dogs:
+      title: Perros
+    members:
+      title: Miembros
+    family:
+      title: Familia
+  demo:
+    title: Demo
+    test_login:
+      title: Prueba de acceso de usuarios
+  contact:
+    title: Contacta con nosotros
+    website:
+      title: Página web
+      link: https://heado.de/
+    mail:
+      title: correo electrónico
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Asuntos jurídicos
+    terms:
+      title: Condiciones de uso
+      link: https://heado.de/terms
+    privacy:
+      title: Condiciones de protección de datos
+      link: https://heado.de/privacy
+  app:
+    design:
+      dark: Oscuro
+      title: Diseño
+      light: Luz
+    title: Aplicación
+family:
+  member_list:
+    title: Miembros
+    invitation:
+      label: Invitación "{}"
+    add_invitation: Invitar a un nuevo miembro
+  member_form:
+    title: Editar miembro
+    name:
+      label: Nombre
+    action:
+      delete: Borra
+      save: Guarda
+    delete:
+      confirm:
+        title: Eliminar miembro
+        message: ¿Realmente quieres eliminar al miembro {}? El miembro ya no puede
+          acceder a esta familia y necesita una nueva invitación. Si este usuario
+          es el último de esta familia, también se eliminará la familia. También se
+          eliminarán todos los perros y datos asociados. ¡Esto no se puede deshacer!
+        no: Cancelar
+        yes: Borra
+  invitation_form:
+    title: Invitación
+    share:
+      hint: Utiliza el PIN de invitación "{}" para invitar a otro miembro de la familia
+        a unirse a ella. Cada PIN sólo puede utilizarse una vez.
+      content: ¡Te invito a unirte a mi familia! Descárgate la aplicación Heado (https://heado.de/)
+        y utiliza el PIN familiar "{}" al registrarte.
+      copy:
+        hint: Se ha copiado el PIN "{}".
+    action:
+      delete: Borra
+    delete:
+      confirm:
+        title: Eliminar invitación
+        message: ¿Realmente quieres eliminar esta invitación? Entonces ya no podrás
+          utilizar este PIN de invitación. No se puede cancelar y tendrás que crear
+          un nuevo PIN.
+        no: Cancelar
+        yes: Borra
+  family_form:
+    title: Editar familia
+    name:
+      label: Nombre
+    action:
+      delete: Borra
+      save: Guarda
+    delete:
+      confirm:
+        title: Borrar familia
+        message: ¿Realmente quieres eliminar la familia {}? Se eliminarán tu cuenta,
+          todos los miembros de la familia y los perros, incluidos los datos del calendario.
+          ¡Esto no se puede deshacer!
+        no: Cancelar
+        yes: Borra
+  dog_selection:
+    add: Añadir un perro nuevo
+  dog_list:
+    title: Perros
+    add: Añadir un perro nuevo
+  dog_form:
+    title:
+      add: Añadir perro
+      edit: Editar perro
+    name:
+      label: Nombre
+    action:
+      delete: Borra
+      save: Guarda
+    delete:
+      confirm:
+        title: Eliminar perro
+        message: ¿Realmente quieres borrar a tu perro {}? También se borrarán todos
+          los datos del calendario. Esto no se puede deshacer.
+        no: Cancelar
+        yes: Borra
+calendar:
+  calendar:
+    details:
+      secretion:
+        label: Flujo de salida
+      weight:
+        label: Peso
+        unit: kg
+      phase:
+        label: Fase
+        proestrus: Precalienta
+        estrus: Celo
+        metestrus: Postcombustión
+        anestrus: Fase de descanso
+      false_pregnancy:
+        label: Falso embarazo
+        active_info: Falso embarazo activo
+      mood:
+        label: Estado de ánimo
+      symptom:
+        label: Síntomas
+      behavior:
+        label: Comportamiento
+      note:
+        label: Notas
+  day_form:
+    period:
+      title: Periodo
+      enable: Añadir ciclo de periodos
+      disable: Borrar ciclo de periodos
+      proestrus_start_date:
+        label: Comienzo del pre-estro (proestro)
+        info:
+          title: Preovulación (Proestro)
+          message: "El pre-estro comienza cuando la vulva de tu perra se hincha y
+            aparecen secreciones vaginales sanguinolentas.\n\nLa duración media es
+            de 9 días y puede variar de 3 a 17 días.\n\nEsta fecha debe rellenarse
+            siempre."
+          close: OK
+        error:
+          in_future: La fecha no debe ser futura
+      estrus_start_date:
+        label: Inicio del celo (estro)
+        info:
+          title: Celo (Estrus)
+          message: "Con el inicio del celo, tu perra muestra voluntad de aparearse
+            (celo permanente). El flujo vaginal sigue siendo posible, pero será más
+            parecido al agua de carne y posiblemente mucoso.\n\nLa duración media
+            es de 9 días y puede variar entre 3 y 21 días.\n \nSi esta fase aún no
+            ha comenzado o no deseas documentarla, deja este campo en blanco."
+          close: OK
+        error:
+          in_future: La fecha no debe ser futura
+      metestrus_start_date:
+        label: Inicio de la postcombustión (Metestro)
+        info:
+          title: Postcombustión (Metestro)
+          message: "El periodo posterior a la lactancia se caracteriza por el fin
+            de la disposición para el apareamiento. Además, cesa el flujo vaginal
+            y la vulva se retrae. Durante este periodo es posible que se produzca
+            un falso embarazo.\n\nSi esta fase aún no ha comenzado o no deseas documentarla,
+            deja este campo en blanco."
+          close: OK
+        error:
+          in_future: La fecha no debe ser futura
+      end_date:
+        label: Fin de ciclo (fase de reposo)
+        info:
+          title: Fase de reposo (anestro)
+          message: "La fase de reposo no muestra signos del ciclo sexual. La vulva
+            ha retrocedido completamente.\n\nDeja este campo en blanco si este ciclo
+            aún no ha terminado."
+          close: OK
+        error:
+          in_future: La fecha no debe ser futura
+    false_pregnancy:
+      title: Falso embarazo
+      enable: Añadir un falso embarazo
+      disable: Borrar falso embarazo
+      start_date:
+        label: Inicio del falso embarazo
+        error:
+          in_future: La fecha no debe ser futura
+      end_date:
+        label: Fin del falso embarazo
+        error:
+          in_future: La fecha no debe ser futura
+    features:
+      title: Características
+      mood:
+        label: Estado de ánimo
+        no_selection: No hay estados de ánimo seleccionados
+      symptom:
+        label: Síntomas
+        no_selection: Ningún síntoma seleccionado
+      behavior:
+        label: Comportamiento
+        no_selection: No se ha seleccionado ningún comportamiento
+      secretion:
+        label: Flujo de salida
+        no_selection: No se ha seleccionado la descarga
+      weight:
+        weight:
+          label: Peso
+        unit:
+          label: Unidad
+          kilogram: kg
+    notes:
+      title: Notas
+      notes:
+        label: Notas
+    action:
+      save: Guarda
+  mood:
+    fearful: Ansioso
+    courageous: Valiente
+    brave: Valiente
+    sleepy: Dormilón
+    sniffy: Esnifando
+    aggressive: Agresivo
+    nervous: Nervioso
+    satisfied: Satisfecho
+    stressed: Estresado
+    sleepless: Insomne
+    dissatisfied: Insatisfecho
+    depressed: Deprimido
+    defiant: Desafiante
+    relaxed: Relajado
+    happy: Feliz
+    obedient: Obediencia
+    balanced: Equilibrado
+    fiepsy: Fiepsig
+    grumpy: Gruñón
+    weepy: Pendenciero
+    attentive: Atención
+    sad: Triste
+    stormy: Stormy
+    crazy: Loco
+    calm: Calma
+    cuddly: Acogedor
+    appetiteless: Sin apetito
+    indecisive: Indecisos
+    exhausted: Agotado
+    frustrated: Frustrado
+    bitchy: Perra
+    troubled: Inquieto
+    jittery: Nervioso
+  behavior:
+    herding: Sombreros
+    adopting: Adopta
+    nesting: Construcción de nidos
+    howling: Yelp
+    restless: Inquieto
+  symptom:
+    stomach_cramps: Calambres estomacales
+    flatulence: Flatulencias
+    diarrhea: Diarrea
+    constipation: Estreñimiento
+    bloody_stool: Heces sanguinolentas
+    milk_discharge: Secreción de leche
+    swollen_teats: Nalgas hinchadas
+    vomit: Vómitos
+    dandruff: Abrigo anticaspa
+  secretion:
+    bloody: Maldito
+    watery: Acuoso
+    creamy: Cremoso
+    dryly: Seco
+    stinky: Maloliente
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Registra el primer celo de tu perra
+        info:
+          title: Predecir el próximo calor
+          message: Heado necesita un ciclo completo (¡incluida la fase de reposo!)
+            de tu perra para hacer una predicción.
+          close: OK
+      days_left: todavía {} días
+      weeks_left: todavía {} semanas
+      months_left: todavía {} meses
+      until_date: a {}
+      error: Se ha producido un error. Haz clic para repetirlo.
+      phase:
+        proestrus: Precalienta
+        estrus: Celo
+        metestrus: Postcombustión
+        anestrus: Fase de descanso
+    period_dates:
+      last:
+        title: Último calor
+        none: Aún no se ha introducido ningún periodo.
+        from: del
+        to: hasta
+      next:
+        title: Calentamiento siguiente
+        from: del
+        to: hasta
+        none: Todavía no hay suficientes periodos para hacer una predicción.
+    period_count:
+      period:
+        title: Número de calefacciones
+        time: Pintar
+        times: Pintar
+      false_pregnancy:
+        title: Número de falsos embarazos
+        time: Pintar
+        times: Pintar
+    menu:
+      calendar: Calendario
+      settings: Ajustes
+  ad_banner:
+    title: ¡Tu prueba sin publicidad termina pronto!
+    message: Tu fase de prueba finaliza el {}. Después de ese día, verás anuncios.
+      Si quieres utilizar la aplicación sin anuncios, puedes comprar la versión Premium.
+    become_member: Afíliate
+    left_days: '{}/{} Días restantes'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Hazte miembro Premium de Heado y utiliza la aplicación sin anuncios.
+    purchase_single: Hazte Miembro Premium
+    purchase_single_hint: '{} - Único {}'
+    purchase_family: Hazte Familia Premium
+    purchase_family_hint: '{} - Único {}'
+    restore_purchase: Restaurar compras
+  membership:
+    member:
+      teaser: ¡Eres miembro Premium de Heado y puedes utilizar la aplicación sin anuncios!
+      info: Eres miembro Premium de Heado desde {}.
+    family:
+      teaser: Tú y tu familia sois miembros Premium de Heado. Puedes utilizar la aplicación
+        sin publicidad.
+      info: Tu familia es miembro Heado Premium desde {}.
+account_settings:
+  title: Configuración de la cuenta
+  logins:
+    title: Datos de la cuenta
+    google:
+      label: Google
+    apple:
+      label: Manzana
+    test:
+      label: Usuario de prueba
+    error:
+      already_in_use:
+        title: Ya conectado
+        message: La cuenta seleccionada ya está conectada a otro usuario.
+        close: OK
+  disconnect:
+    label: Cuenta disociada
+    confirm:
+      title: Cuenta disociada
+      message: ¿Realmente quieres desvincular tu cuenta? Entonces ya no podrás conectarte
+        con este proveedor. Puedes volver a conectar tu cuenta más adelante.
+      no: Cancelar
+      yes: Sí, desacopla
+  logout:
+    label: Cerrar sesión
+    confirm:
+      title: Cerrar sesión
+      message: ¿Realmente quieres cerrar la sesión? Puedes volver a iniciar sesión
+        con tu cuenta de Google o Apple.
+      no: Cancelar
+      yes: Sí, cerrar sesión
+  delete:
+    label: Eliminar cuenta
+    confirm:
+      title: Eliminar cuenta
+      message: ¿Realmente quieres eliminar tu cuenta? Ya no puedes acceder a esta
+        familia y necesitas una nueva invitación. Si eres el último usuario de esta
+        familia, también se eliminará la familia. También se eliminarán todos los
+        perros y datos asociados. ¡Esto no se puede deshacer!
+      no: Cancelar
+      yes: Sí, borra
+generic:
+  system_default: Sistema estándar
+  cancel: Cancelar

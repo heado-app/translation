@@ -1,0 +1,505 @@
+core:
+  close: Nära
+  copy: Kopia
+  share: Andel
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Ett fel har uppstått!
+      long: Oops, ett fel har uppstått! Jag beklagar.
+    retry:
+      short: Upprepa
+      long: Försök igen
+  empty:
+    hint: Inga poster.
+  unknown: Okänd
+app:
+  title: Heado - värmekalender
+  title_short: Huvud
+  slogan: Kalender för värme
+family:
+  member_list:
+    title: Medlemmar
+    invitation:
+      label: Inbjudan "{}"
+    add_invitation: Bjud in en ny medlem
+  member_form:
+    title: Redigera medlem
+    name:
+      label: Namn
+    action:
+      delete: Radera
+      save: Spara
+    delete:
+      confirm:
+        title: Radera medlem
+        message: Vill du verkligen ta bort medlemmen {}? Medlemmen kan inte längre
+          komma åt den här familjen och behöver en ny inbjudan. Om den här användaren
+          är den sista i den här familjen kommer familjen också att raderas. Alla
+          hundar och tillhörande data kommer också att raderas. Detta kan inte göras
+          ogjort!
+        no: Avbryt
+        yes: Radera
+  invitation_form:
+    title: Inbjudan
+    share:
+      hint: Använd PIN-koden "{}" för att bjuda in en annan familjemedlem till din
+        familj. Varje PIN-kod kan bara användas en gång.
+      content: Jag inbjuder dig att bli medlem i min familj! Ladda ner Heado-appen
+        (https://heado.de/) och använd familjens PIN-kod "{}" när du registrerar dig.
+      copy:
+        hint: PIN-koden "{}" har kopierats.
+    action:
+      delete: Radera
+    delete:
+      confirm:
+        title: Radera inbjudan
+        message: Vill du verkligen ta bort den här inbjudan? Då kan du inte längre
+          använda PIN-koden för denna inbjudan. Den kan inte annulleras och du måste
+          skapa en ny PIN-kod!
+        no: Avbryt
+        yes: Radera
+  family_form:
+    title: Redigera familj
+    name:
+      label: Namn
+    action:
+      delete: Radera
+      save: Spara
+    delete:
+      confirm:
+        title: Radera familj
+        message: Vill du verkligen ta bort familjen {}? Ditt konto, alla familjemedlemmar
+          och hundar, inklusive kalenderdata, kommer att raderas. Detta kan inte ångras!
+        no: Avbryt
+        yes: Radera
+  dog_selection:
+    add: Lägg till en ny hund
+  dog_list:
+    title: Hundar
+    add: Lägg till en ny hund
+  dog_form:
+    title:
+      add: Lägg till hund
+      edit: Redigera hund
+    name:
+      label: Namn
+    action:
+      delete: Radera
+      save: Spara
+    delete:
+      confirm:
+        title: Radera hund
+        message: Vill du verkligen radera din hund {}? Alla kalenderdata kommer också
+          att raderas. Detta kan inte ångras.
+        no: Avbryt
+        yes: Radera
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Fas
+        proestrus: Förvärmning
+        estrus: Östrus
+        metestrus: Efterbränning
+        anestrus: Vilofas
+      false_pregnancy:
+        label: Falsk graviditet
+        active_info: Aktiv falsk graviditet
+      mood:
+        label: Stämning
+      symptom:
+        label: Symtom
+      behavior:
+        label: Beteende
+      secretion:
+        label: Utflöde
+      weight:
+        label: Vikt
+        unit: kg
+      note:
+        label: Noter
+  day_form:
+    period:
+      title: Period
+      enable: Lägg till periodcykel
+      disable: Radera period cykel
+      proestrus_start_date:
+        label: Start av förbrunst (proöstrus)
+        info:
+          title: Före ägglossning (proöstrus)
+          message: "Förbrunst börjar när din tiks vulva svullnar och blodiga flytningar
+            uppträder.\n\nDen genomsnittliga varaktigheten är 9 dagar och kan variera
+            från 3 till 17 dagar.\n\nDetta datum måste alltid fyllas i."
+          close: OK
+        error:
+          in_future: Datumet får inte ligga i framtiden
+      estrus_start_date:
+        label: Start av brunst (östrus)
+        info:
+          title: Östrus (Estrus)
+          message: "När brunsten börjar visar din tik en vilja att para sig (stående
+            löpning). Vaginal flytning är fortfarande möjlig, men det kommer att vara
+            mer som köttvatten och eventuellt slemmigt.\n\nDen genomsnittliga varaktigheten
+            är 9 dagar och kan variera mellan 3 och 21 dagar.\n \nOm denna fas ännu
+            inte har börjat eller om du inte vill dokumentera denna fas, lämna detta
+            fält tomt."
+          close: OK
+        error:
+          in_future: Datumet får inte ligga i framtiden
+      metestrus_start_date:
+        label: Start av efterbrunst (Metestrus)
+        info:
+          title: Efterbränning (Metestrus)
+          message: "Perioden efter amning kännetecknas av att parningsberedskapen
+            upphör. Dessutom upphör flytningarna och vulvan drar sig tillbaka. En
+            falsk graviditet är möjlig under denna tid.\n\nOm denna fas ännu inte
+            har börjat eller om du inte vill dokumentera denna fas, lämna detta fält
+            tomt."
+          close: OK
+        error:
+          in_future: Datumet får inte ligga i framtiden
+      end_date:
+        label: Slut på cykeln (vilofas)
+        info:
+          title: Vilofas (anöstrus)
+          message: "Den vilande fasen visar inga tecken på den sexuella cykeln. Vulvan
+            är nu helt regredierad.\n\nLämna detta fält tomt om denna cykel ännu inte
+            har avslutats."
+          close: OK
+        error:
+          in_future: Datumet får inte ligga i framtiden
+    false_pregnancy:
+      title: Falsk graviditet
+      enable: Lägga till en falsk graviditet
+      disable: Radera falsk graviditet
+      start_date:
+        label: Start av falsk graviditet
+        error:
+          in_future: Datumet får inte ligga i framtiden
+      end_date:
+        label: Slut på falsk graviditet
+        error:
+          in_future: Datumet får inte ligga i framtiden
+    features:
+      title: Funktioner
+      mood:
+        label: Stämning
+        no_selection: Inga stämningar valda
+      symptom:
+        label: Symtom
+        no_selection: Inga symptom valda
+      behavior:
+        label: Beteende
+        no_selection: Inget beteende valt
+      secretion:
+        label: Utflöde
+        no_selection: Ingen urladdning vald
+      weight:
+        weight:
+          label: Vikt
+        unit:
+          label: Enhet
+          kilogram: kg
+    notes:
+      title: Noter
+      notes:
+        label: Noter
+    action:
+      save: Spara
+  mood:
+    defiant: Defiant
+    fearful: Ängslig
+    courageous: Modig
+    brave: Modig
+    sleepy: Sömnig
+    sniffy: Sniffning
+    aggressive: Aggressiv
+    nervous: Nervös
+    satisfied: Nöjd
+    stressed: Stressad
+    sleepless: Sömnlös
+    dissatisfied: Missnöjd
+    depressed: Deprimerad
+    relaxed: Avslappnad
+    happy: Lycklig
+    obedient: Lydnad
+    balanced: Balanserad
+    fiepsy: Fiepsig
+    grumpy: Grinig
+    weepy: Grälsjuk
+    attentive: Uppmärksamhet
+    sad: Sorglig
+    stormy: Stormig
+    crazy: Galet
+    calm: Lugn
+    cuddly: Mysigt
+    appetiteless: Utan aptitretare
+    indecisive: Osäker
+    exhausted: Utmattad
+    frustrated: Frustrerad
+    bitchy: Bitchig
+    troubled: Rastlös
+    jittery: Jittery
+  behavior:
+    herding: Hattar
+    adopting: Anta
+    nesting: Byggande av bo
+    howling: Yelp
+    restless: Rastlös
+  symptom:
+    stomach_cramps: Kramper i magen
+    flatulence: Flatulens
+    diarrhea: Diarré
+    constipation: Förstoppning
+    bloody_stool: Blodiga avföringar
+    milk_discharge: Utsläpp av mjölk
+    swollen_teats: Svullna skinkor
+    vomit: Kräkningar
+    dandruff: Mjällrock
+  secretion:
+    bloody: Blodiga
+    watery: Vattenhaltig
+    creamy: Krämig
+    dryly: Torr
+    stinky: Illaluktande
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Registrera din tiks första löp!
+        info:
+          title: Förutsägelse av nästa värme
+          message: Heado behöver en fullständig cykel (inklusive vilofas!) från din
+            tik för att göra en förutsägelse.
+          close: OK
+      days_left: fortfarande {} dagar
+      weeks_left: fortfarande {} veckor
+      months_left: fortfarande {} månader
+      until_date: till {}
+      error: Ett fel har uppstått. Klicka för att upprepa.
+      phase:
+        proestrus: Förvärmning
+        estrus: Östrus
+        metestrus: Efterbränning
+        anestrus: Vilofas
+    period_dates:
+      last:
+        title: Sista värmen
+        none: Ingen period har ännu angetts.
+        from: från
+        to: till
+      next:
+        title: Nästa heat
+        from: från
+        to: till
+        none: Det finns ännu inte tillräckligt med perioder för att göra en förutsägelse.
+    period_count:
+      period:
+        title: Antal uppvärmningar
+        time: Färg
+        times: Färg
+      false_pregnancy:
+        title: Antal falska graviditeter
+        time: Färg
+        times: Färg
+    menu:
+      calendar: Kalender
+      settings: Inställningar
+  ad_banner:
+    title: Din reklamfria testperiod avslutas snart!
+    message: Din testfas avslutas den {}. Efter denna dag kommer du att se annonser.
+      Om du vill använda appen utan annonser kan du köpa Premium-versionen.
+    become_member: Bli medlem
+    left_days: '{}/{} Återstående dagar'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Bli medlem i Heado Premium och använd appen utan reklam.
+    purchase_single: Bli Premiummedlem
+    purchase_single_hint: '{} - Unik {}'
+    purchase_family: Bli en Premium-familj
+    purchase_family_hint: '{} - Unik {}'
+    restore_purchase: Återställ inköp
+  membership:
+    member:
+      teaser: Du är Heado Premium-medlem och kan använda appen utan reklam!
+      info: Du har varit medlem i Heado Premium sedan {}.
+    family:
+      teaser: Du och din familj är Heado Premium-medlemmar. Du kan använda appen utan
+        reklam!
+      info: Din familj har varit medlem i Heado Premium sedan {}.
+settings:
+  title: Inställningar
+  footer: Tillverkad med {} för Kori {} och Mayo {}.
+  family:
+    title: Familj
+    dogs:
+      title: Hundar
+    members:
+      title: Medlemmar
+    family:
+      title: Familj
+  account:
+    title: Konto
+    premium:
+      title: Premium
+    settings:
+      title: Kontoinställningar
+    cookies:
+      title: Samtycke till kakor
+  demo:
+    title: Demo
+    test_login:
+      title: Testa användaråtkomst
+  contact:
+    title: Kontakta oss
+    website:
+      title: Webbplats
+      link: https://heado.de/
+    mail:
+      title: e-post
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Rättsliga frågor
+    terms:
+      title: Användarvillkor
+      link: https://heado.de/terms
+    privacy:
+      title: Villkor för dataskydd
+      link: https://heado.de/privacy
+  about:
+    title: Om
+    status:
+      title: Status
+    version:
+      title: Version
+    translation:
+      title: Översättningar
+  app:
+    design:
+      dark: Mörk
+      title: Design
+      light: Ljus
+    title: App
+account_settings:
+  title: Kontoinställningar
+  logins:
+    title: Kontouppgifter
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Testanvändare
+    error:
+      already_in_use:
+        title: Redan ansluten
+        message: Det valda kontot är redan anslutet till en annan användare.
+        close: OK
+  disconnect:
+    label: Frikoppla konto
+    confirm:
+      title: Frikoppla konto
+      message: Vill du verkligen ta bort kopplingen till ditt konto? Då kommer du
+        inte längre att kunna logga in med den här leverantören. Du kan återansluta
+        ditt konto senare.
+      no: Avbryt
+      yes: Ja, frikoppla
+  logout:
+    label: Logga ut
+    confirm:
+      title: Logga ut
+      message: Vill du verkligen logga ut? Du kan logga in igen med ditt Google- eller
+        Apple-konto.
+      no: Avbryt
+      yes: Ja, logga ut
+  delete:
+    label: Ta bort konto
+    confirm:
+      title: Ta bort konto
+      message: Vill du verkligen ta bort ditt konto? Du kan inte längre komma åt den
+        här familjen och behöver en ny inbjudan. Om du är den sista användaren av
+        denna familj, kommer familjen också att raderas. Alla hundar och tillhörande
+        data kommer också att raderas. Detta kan inte göras ogjort!
+      no: Vill du verkligen logga ut? Du kan logga in igen med ditt Google- eller
+        Apple-konto.
+      yes: Ja, radera
+onboarding:
+  next: Vidare
+  welcome:
+    task: Har du redan ett konto?
+    action:
+      register: Skapa ett nytt konto
+      login: Jag har redan ett konto
+  member:
+    task: Vad kan jag kalla dig?
+    name:
+      label: Namn
+  lonely:
+    task: Har du blivit inbjuden till en familj?
+    action:
+      create_family: Skapa ny familj
+      join_family: Gå med i en befintlig familj
+  login:
+    task: Logga in på ditt befintliga konto
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: PIN-kod för inloggning för demoanvändare
+    code:
+      error:
+        min_length: Koden måste bestå av 5 siffror
+        invalid: Ogiltig kod
+    action:
+      login: Inloggning
+  join:
+    task: Inbjudningskod för din familj
+    code:
+      error:
+        min_length: Koden måste bestå av 5 siffror
+  finish:
+    task: Du är redo!
+    legal:
+      hint: 'Genom att klicka på "Acceptera & skapa konto" godkänner du följande villkor:'
+      terms:
+        label: 1. Användarvillkor
+        link: https://heado.de/terms
+      privacy:
+        label: 2. Villkor för dataskydd
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Acceptera och skapa konto
+  family:
+    task: Ge din familj ett namn
+    name:
+      label: (Påhittat) Familjenamn
+      help: Välj ett fantasinamn som beskriver din familj väl. Ditt efternamn är inte
+        nödvändigt här.
+  dog:
+    task: Vad heter din hund?
+    name:
+      label: Hundens namn
+  auth:
+    task: Logga in, spara kontouppgifter och använd flera enheter
+    action:
+      google: Google
+      apple: Apple
+      skip: Jag vill inte logga in
+generic:
+  system_default: Systemstandard
+  cancel: Avbryt

@@ -1,0 +1,502 @@
+family:
+  member_form:
+    delete:
+      confirm:
+        title: Usuń członka
+        message: Czy naprawdę chcesz usunąć członka {}? Członek nie ma już dostępu
+          do tej rodziny i wymaga nowego zaproszenia. Jeśli ten użytkownik jest ostatnim
+          członkiem tej rodziny, rodzina również zostanie usunięta. Wszystkie psy
+          i powiązane z nimi dane również zostaną usunięte. Nie można tego cofnąć!
+        no: Anuluj
+        yes: Usuń
+    title: Edytuj członka
+    name:
+      label: Nazwa
+    action:
+      delete: Usuń
+      save: Oszczędzaj
+  member_list:
+    title: Członkowie
+    invitation:
+      label: Zaproszenie "{}"
+    add_invitation: Zaproś nowego członka
+  invitation_form:
+    title: Zaproszenie
+    share:
+      hint: Użyj kodu PIN zaproszenia "{}", aby zaprosić innego członka rodziny do
+        dołączenia do Twojej rodziny. Każdy kod PIN może zostać użyty tylko raz.
+      copy:
+        hint: Kod PIN "{}" został skopiowany.
+      content: Zapraszam Cię do dołączenia do mojej rodziny! Pobierz aplikację Heado
+        (https://heado.de/) i użyj rodzinnego kodu PIN "{}" podczas rejestracji.
+    action:
+      delete: Usuń
+    delete:
+      confirm:
+        title: Usuń zaproszenie
+        message: Czy naprawdę chcesz usunąć to zaproszenie? W takim razie nie możesz
+          już używać tego kodu PIN zaproszenia. Nie można go anulować i będziesz musiał
+          utworzyć nowy kod PIN!
+        no: Anuluj
+        yes: Usuń
+  family_form:
+    title: Edytuj rodzinę
+    name:
+      label: Nazwa
+    action:
+      delete: Usuń
+      save: Oszczędzaj
+    delete:
+      confirm:
+        title: Usuń rodzinę
+        message: Czy naprawdę chcesz usunąć rodzinę {}? Twoje konto, wszyscy członkowie
+          rodziny i psy, w tym dane kalendarza, zostaną usunięte. Nie możesz tego
+          cofnąć!
+        no: Anuluj
+        yes: Usuń
+  dog_selection:
+    add: Dodaj nowego psa
+  dog_list:
+    title: Psy
+    add: Dodaj nowego psa
+  dog_form:
+    title:
+      add: Dodaj psa
+      edit: Edytuj psa
+    name:
+      label: Nazwa
+    action:
+      delete: Usuń
+      save: Oszczędzaj
+    delete:
+      confirm:
+        title: Usuń psa
+        message: Czy naprawdę chcesz usunąć swojego psa {}? Wszystkie dane kalendarza
+          również zostaną usunięte. Nie możesz tego cofnąć.
+        no: Anuluj
+        yes: Usuń
+onboarding:
+  finish:
+    task: Jesteś gotowy!
+    legal:
+      hint: 'Klikając "Zaakceptuj i utwórz konto", zgadzasz się na następujące warunki:'
+      terms:
+        label: 1. warunki użytkowania
+        link: https://heado.de/terms
+      privacy:
+        label: 2. warunki ochrony danych
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Zaakceptuj i utwórz konto
+  next: Dalej
+  welcome:
+    task: Czy masz już konto?
+    action:
+      register: Utwórz nowe konto
+      login: Mam już konto
+  member:
+    task: Jak mogę cię nazywać?
+    name:
+      label: Nazwa
+  lonely:
+    task: Czy zostałeś zaproszony do rodziny?
+    action:
+      create_family: Utwórz nową rodzinę
+      join_family: Dołącz do istniejącej rodziny
+  login:
+    task: Zaloguj się do istniejącego konta
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Logowanie kodem PIN dla użytkowników demo
+    code:
+      error:
+        min_length: Kod musi składać się z 5 cyfr
+        invalid: Nieprawidłowy kod
+    action:
+      login: Zaloguj się
+  join:
+    task: Kod zaproszenia Twojej rodziny
+    code:
+      error:
+        min_length: Kod musi składać się z 5 cyfr
+  family:
+    task: Nadaj swojej rodzinie imię
+    name:
+      label: (Fikcyjne) Nazwisko rodowe
+      help: Wybierz wymyślone imię, które dobrze opisuje Twoją rodzinę. Twoje nazwisko
+        nie jest tutaj konieczne.
+  dog:
+    task: Jak ma na imię Twój pies?
+    name:
+      label: Imię psa
+  auth:
+    task: Zaloguj się, zapisz dane konta i korzystaj z wielu urządzeń
+    action:
+      google: Google
+      apple: Apple
+      skip: Nie chcę się zalogować
+app:
+  title: Heado - kalendarz upałów
+  title_short: Heado
+  slogan: Kalendarz upałów
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Wystąpił błąd!
+      long: Ups, wystąpił błąd! Przepraszamy.
+    retry:
+      short: Powtórz
+      long: Spróbuj ponownie
+  empty:
+    hint: Brak zgłoszeń.
+  close: Zamknij
+  copy: Kopia
+  share: Udostępnij
+  unknown: Nieznany
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Faza
+        proestrus: Rozgrzej
+        estrus: Ruja
+        metestrus: Afterburn
+        anestrus: Faza odpoczynku
+      false_pregnancy:
+        label: Fałszywa ciąża
+        active_info: Aktywna fałszywa ciąża
+      mood:
+        label: Nastrój
+      symptom:
+        label: Objawy
+      behavior:
+        label: Zachowanie
+      secretion:
+        label: Wypływ
+      weight:
+        label: Waga
+        unit: kg
+      note:
+        label: Uwagi
+  behavior:
+    herding: Czapki
+    adopting: Przyjmij
+    nesting: Budowa gniazda
+    howling: Yelp
+    restless: Niespokojny
+  day_form:
+    period:
+      title: Okres
+      enable: Dodaj cykl okresowy
+      disable: Usuń cykl okresu
+      proestrus_start_date:
+        label: Początek rui (proestrus)
+        info:
+          title: Przed owulacją (Proestrus)
+          message: "Okres przedrujowy rozpoczyna się, gdy srom twojej suki puchnie
+            i pojawia się krwawa wydzielina z pochwy.\n\nTrwa ona średnio 9 dni i
+            może wahać się od 3 do 17 dni.\n\nData ta musi być zawsze wypełniona."
+          close: OK
+        error:
+          in_future: Data nie może należeć do przyszłości
+      estrus_start_date:
+        label: Początek rui (estrus)
+        info:
+          title: Ruja (Estrus)
+          message: "Wraz z nadejściem rui Twoja suka wykazuje gotowość do krycia (ruja
+            stojąca). Wydzielina z pochwy jest nadal możliwa, ale będzie bardziej
+            przypominać wodę z mięsa i może być śluzowata.\n\nŚredni czas trwania
+            wynosi 9 dni i może wahać się od 3 do 21 dni.\n \nJeśli ta faza jeszcze
+            się nie rozpoczęła lub nie chcesz jej dokumentować, pozostaw to pole puste."
+          close: OK
+        error:
+          in_future: Data nie może należeć do przyszłości
+      metestrus_start_date:
+        label: Początek popłodu (metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "Okres po karmieniu piersią charakteryzuje się zakończeniem gotowości
+            do krycia. Ponadto ustaje wydzielina z pochwy, a srom cofa się. W tym
+            czasie możliwa jest fałszywa ciąża.\n\nJeśli ta faza jeszcze się nie rozpoczęła
+            lub nie chcesz jej dokumentować, pozostaw to pole puste."
+          close: OK
+        error:
+          in_future: Data nie może należeć do przyszłości
+      end_date:
+        label: Koniec cyklu (faza spoczynku)
+        info:
+          title: Faza spoczynku (anestrus)
+          message: "Faza spoczynku nie wykazuje oznak cyklu płciowego. Srom uległ
+            całkowitej regresji.\n\nPozostaw to pole puste, jeśli cykl jeszcze się
+            nie zakończył."
+          close: OK
+        error:
+          in_future: Data nie może należeć do przyszłości
+    false_pregnancy:
+      title: Fałszywa ciąża
+      enable: Dodawanie fałszywej ciąży
+      disable: Usuń fałszywą ciążę
+      start_date:
+        label: Początek fałszywej ciąży
+        error:
+          in_future: Data nie może należeć do przyszłości
+      end_date:
+        label: Koniec fałszywej ciąży
+        error:
+          in_future: Data nie może należeć do przyszłości
+    features:
+      title: Cechy
+      mood:
+        label: Nastrój
+        no_selection: Nie wybrano żadnych nastrojów
+      symptom:
+        label: Objawy
+        no_selection: Nie wybrano żadnych objawów
+      behavior:
+        label: Zachowanie
+        no_selection: Nie wybrano żadnego zachowania
+      secretion:
+        label: Wypływ
+        no_selection: Nie wybrano rozładowania
+      weight:
+        weight:
+          label: Waga
+        unit:
+          label: Jednostka
+          kilogram: kg
+    notes:
+      title: Uwagi
+      notes:
+        label: Uwagi
+    action:
+      save: Oszczędzaj
+  mood:
+    fearful: Niepokój
+    courageous: Odważny
+    brave: Odważny
+    sleepy: Senny
+    sniffy: Wąchanie
+    aggressive: Agresywny
+    nervous: Nerwowy
+    satisfied: Zadowolony
+    stressed: Zestresowany
+    sleepless: Bezsenność
+    dissatisfied: Niezadowolony
+    depressed: Depresja
+    defiant: Odważny
+    relaxed: Zrelaksowany
+    happy: Szczęśliwy
+    obedient: Posłuszeństwo
+    balanced: Zrównoważony
+    fiepsy: Fiepsig
+    grumpy: Zrzędliwy
+    weepy: Kłótliwy
+    attentive: Uwaga
+    sad: Smutny
+    stormy: Stormy
+    crazy: Szalony
+    calm: Spokój
+    cuddly: Przytulny
+    appetiteless: Bez apetytu
+    indecisive: Niezdecydowany
+    exhausted: Wyczerpany
+    frustrated: Sfrustrowany
+    bitchy: Zdzira
+    troubled: Niespokojny
+    jittery: Roztrzęsiony
+  symptom:
+    stomach_cramps: Skurcze żołądka
+    flatulence: Wzdęcia
+    diarrhea: Biegunka
+    constipation: Zaparcia
+    bloody_stool: Krwawe stolce
+    milk_discharge: Wypływ mleka
+    swollen_teats: Opuchnięte pośladki
+    vomit: Wymioty
+    dandruff: Płaszcz przeciwłupieżowy
+  secretion:
+    bloody: Krwawy
+    watery: Wodny
+    creamy: Kremowy
+    dryly: Suchy
+    stinky: Śmierdzący
+    purulent: Zgnilizna
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Zarejestruj pierwszą ruję swojej suki!
+        info:
+          title: Przewidywanie następnego upału
+          message: Heado potrzebuje pełnego cyklu (w tym fazy spoczynku!) twojej suki,
+            aby dokonać prognozy.
+          close: OK
+      days_left: wciąż {} dni
+      weeks_left: jeszcze {} tygodni
+      months_left: jeszcze {} miesięcy
+      until_date: do {}
+      error: Wystąpił błąd. Kliknij, aby powtórzyć.
+      phase:
+        proestrus: Rozgrzej
+        estrus: Ruja
+        metestrus: Afterburn
+        anestrus: Faza odpoczynku
+    period_dates:
+      last:
+        title: Ostatnie ciepło
+        none: Nie wprowadzono jeszcze żadnego okresu.
+        from: z
+        to: aż
+      next:
+        title: Następne ciepło
+        from: z
+        to: aż
+        none: Nie ma jeszcze wystarczającej liczby okresów, aby dokonać prognozy.
+    period_count:
+      period:
+        title: Liczba ogrzewań
+        time: Farba
+        times: Farba
+      false_pregnancy:
+        title: Liczba fałszywych ciąż
+        time: Farba
+        times: Farba
+    menu:
+      calendar: Kalendarz
+      settings: Ustawienia
+  ad_banner:
+    title: Twój okres próbny bez reklam kończy się wkrótce!
+    message: Twój okres próbny kończy się {}. Po tym dniu zobaczysz reklamy. Jeśli
+      chcesz korzystać z aplikacji bez reklam, możesz zakupić wersję Premium.
+    become_member: Zostań członkiem
+    left_days: '{}/{} Pozostałe dni'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Zostań użytkownikiem Heado Premium i korzystaj z aplikacji bez reklam.
+    purchase_single: Zostań członkiem Premium
+    purchase_single_hint: '{} - Unikalny {}'
+    purchase_family: Zostań rodziną Premium
+    purchase_family_hint: '{} - Unikalny {}'
+    restore_purchase: Przywróć zakupy
+  membership:
+    member:
+      teaser: Jesteś użytkownikiem Heado Premium i możesz korzystać z aplikacji bez
+        reklam!
+      info: Jesteś użytkownikiem Heado Premium od {}.
+    family:
+      teaser: Ty i Twoja rodzina jesteście członkami Heado Premium. Możesz korzystać
+        z aplikacji bez reklam!
+      info: Twoja rodzina jest członkiem Heado Premium od {}.
+settings:
+  title: Ustawienia
+  footer: Wykonane z {} dla Kori {} i Mayo {}.
+  family:
+    title: Rodzina
+    dogs:
+      title: Psy
+    members:
+      title: Członkowie
+    family:
+      title: Rodzina
+  account:
+    title: Konto
+    premium:
+      title: Premium
+    settings:
+      title: Ustawienia konta
+    cookies:
+      title: Zgoda na pliki cookie
+  demo:
+    title: Demo
+    test_login:
+      title: Przetestuj dostęp użytkownika
+  contact:
+    title: Skontaktuj się z nami
+    website:
+      title: Strona internetowa
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Kwestie prawne
+    terms:
+      title: Warunki użytkowania
+      link: https://heado.de/terms
+    privacy:
+      title: Warunki ochrony danych
+      link: https://heado.de/privacy
+  about:
+    title: O
+    status:
+      title: Status
+    version:
+      title: Wersja
+    translation:
+      title: Tłumaczenia
+  app:
+    design:
+      dark: Ciemny
+      title: Projekt
+      light: Światło
+    title: Aplikacja
+account_settings:
+  title: Ustawienia konta
+  logins:
+    title: Szczegóły konta
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Użytkownik testowy
+    error:
+      already_in_use:
+        title: Już połączony
+        message: Wybrane konto jest już połączone z innym użytkownikiem.
+        close: OK
+  disconnect:
+    label: Odłącz konto
+    confirm:
+      title: Odłącz konto
+      message: Czy naprawdę chcesz odłączyć swoje konto? Wtedy nie będziesz już mógł
+        zalogować się u tego dostawcy. Możesz ponownie połączyć swoje konto później.
+      no: Anuluj
+      yes: Tak, odłącz
+  logout:
+    label: Wyloguj się
+    confirm:
+      title: Wyloguj się
+      message: Czy naprawdę chcesz się wylogować? Możesz zalogować się ponownie za
+        pomocą konta Google lub Apple.
+      no: Anuluj
+      yes: Tak, wyloguj się
+  delete:
+    label: Usuń konto
+    confirm:
+      title: Usuń konto
+      message: Czy naprawdę chcesz usunąć swoje konto? Nie masz już dostępu do tej
+        rodziny i potrzebujesz nowego zaproszenia. Jeśli jesteś ostatnim użytkownikiem
+        tej rodziny, zostanie ona również usunięta. Wszystkie psy i powiązane z nimi
+        dane również zostaną usunięte. Nie możesz tego cofnąć!
+      no: Anuluj
+      yes: Tak, usuń
+generic:
+  system_default: Standard systemu
+  cancel: Anuluj

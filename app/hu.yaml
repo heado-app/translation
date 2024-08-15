@@ -1,0 +1,502 @@
+app:
+  title: Heado - hőlégköri naptár
+  title_short: Heado
+  slogan: Hő naptár
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Hiba történt!
+      long: Hoppá, hiba történt! Sajnálom.
+    retry:
+      short: Ismétlés
+      long: Próbálja újra
+  empty:
+    hint: Nincsenek bejegyzések.
+  close: Zárja be a
+  copy: Másolás
+  share: Megosztás
+  unknown: Ismeretlen
+family:
+  member_list:
+    title: Tagok
+    invitation:
+      label: Meghívó "{}"
+    add_invitation: Új tag meghívása
+  member_form:
+    title: Tag szerkesztése
+    name:
+      label: Név
+    action:
+      delete: Törölje a címet.
+      save: Mentés
+    delete:
+      confirm:
+        title: Tag törlése
+        message: Tényleg törölni akarja a {} tagot? A tag már nem férhet hozzá ehhez
+          a családhoz, és új meghívót igényel. Ha ez a felhasználó az utolsó tagja
+          ennek a családnak, a család is törlésre kerül. Az összes kutya és a kapcsolódó
+          adatok is törlődnek. Ezt nem lehet visszacsinálni!
+        no: Törölje
+        yes: Törölje a  címet.
+  invitation_form:
+    title: Meghívó
+    share:
+      hint: A "{}" meghívó PIN-kóddal meghívhat egy másik családtagot a családjához.
+        Minden PIN-kód csak egyszer használható.
+      content: Meghívom Önt, hogy csatlakozzon a családomhoz! Töltsd le a Heado alkalmazást
+        (https://heado.de/) és használd a "{}" családi PIN-kódot a regisztráció során.
+      copy:
+        hint: A "{}" PIN kódot másolták.
+    action:
+      delete: Törölje a  címet.
+    delete:
+      confirm:
+        title: Meghívó törlése
+        message: Tényleg törölni szeretné ezt a meghívót? Akkor többé nem használhatja
+          ezt a meghívó PIN-kódot. Ezt nem lehet törölni, és új PIN-kódot kell létrehoznia!
+        no: Törölje
+        yes: Törölje a  címet.
+  family_form:
+    title: Család szerkesztése
+    name:
+      label: Név
+    action:
+      delete: Törölje a  címet.
+      save: Mentés
+    delete:
+      confirm:
+        title: Család törlése
+        message: Tényleg törölni akarja a családot {}? A fiókja, az összes családtag
+          és kutya, beleértve a naptáradatokat is, törlődik. Ezt nem lehet visszacsinálni!
+        no: Törölje
+        yes: Törölje a  címet.
+  dog_selection:
+    add: Új kutya hozzáadása
+  dog_list:
+    title: Kutyák
+    add: Új kutya hozzáadása
+  dog_form:
+    title:
+      add: Kutyát hozzáadni
+      edit: Edit kutya
+    name:
+      label: Név
+    action:
+      delete: Törölje a  címet.
+      save: Mentés
+    delete:
+      confirm:
+        title: Kutyát törölni
+        message: Tényleg törölni akarja a kutyáját {}? Minden naptáradat is törlődik.
+          Ezt nem lehet visszacsinálni.
+        no: Törölje
+        yes: Törölje a  címet.
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Fázis
+        proestrus: Előmelegítés
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Pihenő fázis
+      false_pregnancy:
+        label: Hamis terhesség
+        active_info: Aktív álterhesség
+      mood:
+        label: Hangulat
+      symptom:
+        label: Tünetek
+      behavior:
+        label: Viselkedés
+      secretion:
+        label: Kiáramlás
+      weight:
+        label: Súly
+        unit: kg
+      note:
+        label: Megjegyzések
+  day_form:
+    period:
+      title: Időszak
+      enable: Időszakos ciklus hozzáadása
+      disable: Időszakciklus törlése
+      proestrus_start_date:
+        label: Az ivarzás előtti időszak kezdete (proestrus)
+        info:
+          title: Ovuláció előtti (Proestrus)
+          message: "Az ivarzás előtti időszak akkor kezdődik, amikor a szuka szeméremteste
+            megduzzad és véres hüvelyváladék jelenik meg.\n\nAz átlagos időtartam
+            9 nap, de 3 és 17 nap között változhat.\n\nEzt az időpontot mindig ki
+            kell tölteni."
+          close: OK
+        error:
+          in_future: A dátum nem lehet a jövőben
+      estrus_start_date:
+        label: Az ivarzás (ösztrusz) kezdete
+        info:
+          title: Oestrus (ösztrusz)
+          message: "Az ivarzás kezdetével a szuka párosodási hajlandóságot mutat (álló
+            ivarzás). A hüvelyváladékozás még lehetséges, de inkább húsvízszerű és
+            esetleg nyálkás lesz.\n\nAz átlagos időtartam 9 nap, de 3 és 21 nap között
+            változhat.\n \nHa ez a fázis még nem kezdődött el, vagy nem kívánja dokumentálni,
+            hagyja üresen ezt a mezőt."
+          close: OK
+        error:
+          in_future: A dátum nem lehet a jövőben
+      metestrus_start_date:
+        label: Az utóégés kezdete (Metestrus)
+        info:
+          title: Utóégetés (Metestrus)
+          message: "A szoptatás utáni időszakot a párzási készség megszűnése jellemzi.
+            Emellett a hüvelyi folyás megszűnik és a szeméremtest visszahúzódik. Ebben
+            az időszakban lehetséges a téves vemhesség.\n\nHa ez a fázis még nem kezdődött
+            el, vagy nem kívánja dokumentálni ezt a szakaszt, hagyja üresen ezt a
+            mezőt."
+          close: OK
+        error:
+          in_future: A dátum nem lehet a jövőben
+      end_date:
+        label: A ciklus vége (nyugalmi fázis)
+        info:
+          title: Nyugalmi fázis (anesztrusz)
+          message: "A nyugalmi fázis nem mutatja a szexuális ciklus jeleit. A szeméremtest
+            már teljesen visszafejlődött.\n\nHagyja üresen ezt a mezőt, ha ez a ciklus
+            még nem ért véget."
+          close: OK
+        error:
+          in_future: A dátum nem lehet a jövőben
+    false_pregnancy:
+      title: Hamis terhesség
+      enable: Hamis terhesség hozzáadása
+      disable: Hamis terhesség törlése
+      start_date:
+        label: Hamis terhesség kezdete
+        error:
+          in_future: A dátum nem lehet a jövőben
+      end_date:
+        label: A hamis terhesség vége
+        error:
+          in_future: A dátum nem lehet a jövőben
+    features:
+      title: Jellemzők
+      mood:
+        label: Hangulat
+        no_selection: Nincs kiválasztott hangulat
+      symptom:
+        label: Tünetek
+        no_selection: Nincs kiválasztott tünet
+      behavior:
+        label: Viselkedés
+        no_selection: Nincs kiválasztott viselkedés
+      secretion:
+        label: Kiáramlás
+        no_selection: Nincs kiválasztott ürítés
+      weight:
+        weight:
+          label: Súly
+        unit:
+          label: Egység
+          kilogram: kg
+    notes:
+      title: Megjegyzések
+      notes:
+        label: Megjegyzések
+    action:
+      save: Mentés
+  mood:
+    defiant: Dacos
+    fearful: Anxious
+    courageous: Bátor
+    brave: Bátor
+    sleepy: Álmos
+    sniffy: Szimatolás
+    aggressive: Agresszív
+    nervous: Ideges
+    satisfied: Elégedett
+    stressed: Stresszelt
+    sleepless: Álmatlan
+    dissatisfied: Elégedetlen
+    depressed: Depressziós
+    relaxed: Laza
+    happy: Boldog
+    obedient: Engedelmesség
+    balanced: Kiegyensúlyozott
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Veszekedő
+    attentive: Figyelem
+    sad: Szomorú
+    stormy: Stormy
+    crazy: Őrült
+    calm: Nyugalom
+    cuddly: Hangulatos
+    appetiteless: Étvágytalan
+    indecisive: Határozatlan
+    exhausted: Kimerült
+    frustrated: Frusztrált
+    bitchy: Bitchy
+    troubled: Nyugtalan
+    jittery: Jittery
+  behavior:
+    herding: Kalapok
+    adopting: Fogadja el a  címet.
+    nesting: Fészeképítés
+    howling: Yelp
+    restless: Nyugtalan
+  symptom:
+    stomach_cramps: Gyomorgörcsök
+    flatulence: Flatulencia
+    diarrhea: Hasmenés
+    constipation: Székrekedés
+    bloody_stool: Véres széklet
+    milk_discharge: Tejelválasztás
+    swollen_teats: Duzzadt fenék
+    vomit: Hányás
+    dandruff: Korpás kabát
+  secretion:
+    bloody: Bloody
+    watery: Vizes
+    creamy: Krémes
+    dryly: Száraz
+    stinky: Büdös
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Regisztráld a szukád első tüzelését!
+        info:
+          title: A következő hőség előrejelzése
+          message: A Headónak egy teljes ciklusra (beleértve a nyugalmi fázist is!)
+            van szüksége a szukádtól, hogy előrejelzést tudjon készíteni.
+          close: OK
+      days_left: Még mindig...
+      weeks_left: még mindig {} hetek
+      months_left: még mindig {} hónapok
+      until_date: a {}
+      error: Hiba történt. Kattintson az ismétléshez.
+      phase:
+        proestrus: Előmelegítés
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Pihenő fázis
+    period_dates:
+      last:
+        title: Utolsó hőség
+        none: Még nem adtak meg időszakot.
+        from: a
+        to: amíg
+      next:
+        title: Következő hőség
+        from: a
+        to: amíg
+        none: Még nincs elég időszak ahhoz, hogy előrejelzést lehessen tenni.
+    period_count:
+      period:
+        title: Fűtések száma
+        time: Festék
+        times: Festék
+      false_pregnancy:
+        title: A téves terhességek száma
+        time: Festék
+        times: Festék
+    menu:
+      calendar: Naptár
+      settings: Beállítások
+  ad_banner:
+    title: A reklámmentes próbaidőszak hamarosan véget ér!
+    message: A tesztfázisod {}-kor ér véget. Ezt a napot követően hirdetéseket fog
+      látni. Ha reklámok nélkül szeretné használni az alkalmazást, megvásárolhatja
+      a Prémium verziót.
+    become_member: Legyen tag
+    left_days: '{}/{} Maradék napok'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Legyen Heado Premium tag, és használja az alkalmazást reklámok nélkül.
+    purchase_single: Legyen Prémium tag
+    purchase_single_hint: '{} - Unique {}'
+    purchase_family: Legyen Prémium család
+    purchase_family_hint: '{} - Unique {}'
+    restore_purchase: Vásárlások visszaállítása
+  membership:
+    member:
+      teaser: Ön Heado Premium tag, és reklámok nélkül használhatja az alkalmazást!
+      info: Ön {} óta Heado Premium tag.
+    family:
+      teaser: Ön és családja Heado Premium tagok. Reklámok nélkül használhatod az
+        alkalmazást!
+      info: Az Ön családja {} óta Heado Premium tag.
+settings:
+  title: Beállítások
+  footer: Kori {} és Mayo {} számára készült.
+  family:
+    title: Család
+    dogs:
+      title: Kutyák
+    members:
+      title: Tagok
+    family:
+      title: Család
+  account:
+    title: Számla
+    premium:
+      title: Prémium
+    settings:
+      title: Fiókbeállítások
+    cookies:
+      title: Cookie hozzájárulások
+  demo:
+    title: Demo
+    test_login:
+      title: Felhasználói hozzáférés tesztelése
+  contact:
+    title: Kapcsolatfelvétel
+    website:
+      title: Weboldal
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Jogi kérdések
+    terms:
+      title: Használati feltételek
+      link: https://heado.de/terms
+    privacy:
+      title: Adatvédelmi feltételek
+      link: https://heado.de/privacy
+  about:
+    title: A  oldalról
+    status:
+      title: Állapot
+    version:
+      title: Verzió
+    translation:
+      title: Fordítások
+  app:
+    design:
+      light: Fény
+      dark: Sötét
+      title: Tervezés
+    title: App
+account_settings:
+  title: Fiókbeállítások
+  logins:
+    title: Számlaadatok
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Tesztelő felhasználó
+    error:
+      already_in_use:
+        title: Már csatlakoztatva
+        message: A kiválasztott fiók már egy másik felhasználóhoz kapcsolódik.
+        close: OK
+  disconnect:
+    label: Leválasztott számla
+    confirm:
+      title: Leválasztott számla
+      message: Tényleg fel akarod oldani a fiókodat? Akkor többé nem fog tudni bejelentkezni
+        ennél a szolgáltatónál. Fiókját később újracsatlakoztathatja.
+      no: Törölje
+      yes: Igen, szétválasztás
+  logout:
+    label: Kijelentkezés
+    confirm:
+      title: Kijelentkezés
+      message: Tényleg ki akarsz jelentkezni? Google- vagy Apple-fiókjával újra bejelentkezhet.
+      no: Törölje
+      yes: Igen, jelentkezzen ki
+  delete:
+    label: Fiók törlése
+    confirm:
+      title: Fiók törlése
+      message: Tényleg törölni szeretné a fiókját? Többé nem férhetsz hozzá ehhez
+        a családhoz, és új meghívóra van szükséged. Ha Ön az utolsó felhasználója
+        ennek a családnak, a család is törlésre kerül. Az összes kutya és a kapcsolódó
+        adatok is törlődnek. Ezt nem lehet visszacsinálni!
+      no: Tényleg ki akarsz jelentkezni? Google- vagy Apple-fiókjával újra bejelentkezhet.
+      yes: Igen, törölni
+onboarding:
+  lonely:
+    task: Meghívtak egy családhoz?
+    action:
+      create_family: Új család létrehozása
+      join_family: Csatlakozzon egy meglévő családhoz
+  login:
+    task: Jelentkezzen be meglévő fiókjába
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: PIN kódos bejelentkezés demó felhasználók számára
+    code:
+      error:
+        min_length: A kódnak 5 számjegyből kell állnia
+        invalid: Érvénytelen kód
+    action:
+      login: Bejelentkezés
+  join:
+    task: Családja meghívási kódja
+    code:
+      error:
+        min_length: A kódnak 5 számjegyből kell állnia
+  finish:
+    task: Készen állsz!
+    legal:
+      hint: 'Az "Elfogadás és fiók létrehozása" gombra kattintva Ön elfogadja az alábbi
+        feltételeket:'
+      terms:
+        label: 1. használati feltételek
+        link: https://heado.de/terms
+      privacy:
+        label: 2. adatvédelmi feltételek
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Elfogadni és fiókot létrehozni
+  family:
+    task: Adj nevet a családodnak
+    name:
+      label: (fiktív) családi név
+      help: Válasszon egy olyan képzeletbeli nevet, amely jól jellemzi a családját.
+        A vezetéknevedre itt nincs szükség.
+  dog:
+    task: Mi a kutyád neve?
+    name:
+      label: A kutya neve
+  auth:
+    task: Bejelentkezés, fiókadatok mentése és több eszköz használata
+    action:
+      google: Google
+      apple: Apple
+      skip: Nem akarok bejelentkezni
+  next: További
+  welcome:
+    task: Van már fiókja?
+    action:
+      register: Új fiók létrehozása
+      login: Már van egy fiókom
+  member:
+    task: Hogy hívhatlak?
+    name:
+      label: Név
+generic:
+  system_default: Rendszer szabvány
+  cancel: Törölje

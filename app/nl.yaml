@@ -1,0 +1,506 @@
+core:
+  copy: Kopie
+  share: Deel
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Er is een fout opgetreden!
+      long: Oeps, er is een fout opgetreden! Sorry.
+    retry:
+      short: Herhaal
+      long: Probeer het opnieuw
+  empty:
+    hint: Geen inzendingen.
+  close: Sluit
+  unknown: Onbekend
+onboarding:
+  login:
+    task: Log in op je bestaande account
+    action:
+      google: Google
+      apple: Appel
+  test_login:
+    task: Inloggen met PIN-code voor demo-gebruikers
+    code:
+      error:
+        min_length: De code moet uit 5 cijfers bestaan
+        invalid: Ongeldige code
+    action:
+      login: Inloggen
+  join:
+    task: Uitnodigingscode van je familie
+    code:
+      error:
+        min_length: De code moet uit 5 cijfers bestaan
+  finish:
+    task: Je bent er klaar voor!
+    legal:
+      hint: 'Door te klikken op "Accepteren & account aanmaken" ga je akkoord met
+        de volgende voorwaarden:'
+      terms:
+        label: 1. gebruiksvoorwaarden
+        link: https://heado.de/terms
+      privacy:
+        label: 2. voorwaarden voor gegevensbescherming
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Accepteren en account aanmaken
+  next: Verder
+  welcome:
+    task: Heb je al een account?
+    action:
+      register: Een nieuw account maken
+      login: Ik heb al een account
+  member:
+    task: Hoe kan ik je noemen?
+    name:
+      label: Naam
+  lonely:
+    task: Ben je uitgenodigd voor een familie?
+    action:
+      create_family: Nieuwe familie maken
+      join_family: Sluit je aan bij een bestaande familie
+  family:
+    task: Geef je familie een naam
+    name:
+      label: (Fictieve) Achternaam
+      help: Kies een denkbeeldige naam die je familie goed beschrijft. Je achternaam
+        is hier niet nodig.
+  dog:
+    task: Wat is de naam van je hond?
+    name:
+      label: Naam van de hond
+  auth:
+    task: Inloggen, accountgegevens opslaan & meerdere apparaten gebruiken
+    action:
+      google: Google
+      apple: Appel
+      skip: Ik wil niet inloggen
+family:
+  invitation_form:
+    share:
+      content: Ik nodig je uit om lid te worden van mijn familie! Download de Heado
+        app (https://heado.de/) en gebruik de familie PIN "{}" bij het registreren.
+      hint: Gebruik de uitnodigings-PIN "{}" om een ander gezinslid uit te nodigen.
+        Elke PIN-code kan maar één keer worden gebruikt.
+      copy:
+        hint: De PIN "{}" is gekopieerd.
+    title: Uitnodiging
+    action:
+      delete: Verwijder
+    delete:
+      confirm:
+        title: Uitnodiging verwijderen
+        message: Wil je deze uitnodiging echt verwijderen? Dan kun je deze uitnodigings-PIN
+          niet meer gebruiken. Deze kan niet worden geannuleerd en je zult een nieuwe
+          PIN moeten aanmaken!
+        no: Annuleren
+        yes: Verwijder
+  member_list:
+    title: Leden
+    invitation:
+      label: Uitnodiging "{}"
+    add_invitation: Nodig een nieuw lid uit
+  member_form:
+    title: Lid bewerken
+    name:
+      label: Naam
+    action:
+      delete: Verwijder
+      save: Sla
+    delete:
+      confirm:
+        title: Lid verwijderen
+        message: Wil je echt het lid {} verwijderen? Het lid heeft geen toegang meer
+          tot deze familie en heeft een nieuwe uitnodiging nodig. Als deze gebruiker
+          de laatste van deze familie is, wordt de familie ook verwijderd. Alle honden
+          en bijbehorende gegevens worden ook verwijderd. Dit kan niet ongedaan worden
+          gemaakt!
+        no: Annuleren
+        yes: Verwijder
+  family_form:
+    title: Familie bewerken
+    name:
+      label: Naam
+    action:
+      delete: Verwijder
+      save: Sla
+    delete:
+      confirm:
+        title: Familie verwijderen
+        message: Wil je echt de familie {} verwijderen? Je account, alle gezinsleden
+          & honden, inclusief de kalendergegevens worden verwijderd. Dit kan niet
+          ongedaan worden gemaakt!
+        no: Annuleren
+        yes: Verwijder
+  dog_selection:
+    add: Een nieuwe hond toevoegen
+  dog_list:
+    title: Honden
+    add: Een nieuwe hond toevoegen
+  dog_form:
+    title:
+      add: Hond toevoegen
+      edit: Hond bewerken
+    name:
+      label: Naam
+    action:
+      delete: Verwijder
+      save: Sla
+    delete:
+      confirm:
+        title: Hond verwijderen
+        message: Wil je echt je hond {} verwijderen? Alle kalendergegevens worden
+          ook verwijderd. Dit kan niet ongedaan worden gemaakt.
+        no: Annuleren
+        yes: Verwijder
+app:
+  title: Heado - warmtekalender
+  title_short: Heado
+  slogan: Warmtekalender
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Fase
+        proestrus: Voorverwarmen
+        estrus: bronst
+        metestrus: Naverbranding
+        anestrus: Rustfase
+      false_pregnancy:
+        label: Valse zwangerschap
+        active_info: Actieve schijnzwangerschap
+      mood:
+        label: Stemming
+      symptom:
+        label: Symptomen
+      behavior:
+        label: Gedrag
+      secretion:
+        label: Uitstroom
+      weight:
+        label: Gewicht
+        unit: kg
+      note:
+        label: Opmerkingen
+  day_form:
+    period:
+      title: Periode
+      enable: Periodecyclus toevoegen
+      disable: Periodecyclus verwijderen
+      proestrus_start_date:
+        label: Begin van de voordracht (proestrus)
+        info:
+          title: Pre-ovulatie (bronst)
+          message: "Pre-oestrus begint wanneer de vulva van je teef opzwelt en er
+            bloederige vaginale afscheiding verschijnt.\n\nDe gemiddelde duur is 9
+            dagen en kan variëren van 3 tot 17 dagen.\n\nDeze datum moet altijd ingevuld
+            worden."
+          close: OK
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+      estrus_start_date:
+        label: Begin van bronst (oestrus)
+        info:
+          title: Oestrus (Estrus)
+          message: "Met het begin van de bronst laat je teef zien dat ze bereid is
+            om te dekken (loopsheid). Vaginale afscheiding is nog steeds mogelijk,
+            maar het zal meer op vleeswater lijken en mogelijk slijmerig zijn.\n\n
+            De gemiddelde duur is 9 dagen en kan variëren tussen 3 en 21 dagen.\n
+            \nAls deze fase nog niet is begonnen of als je deze fase niet wilt documenteren,
+            laat dit veld dan leeg."
+          close: OK
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+      metestrus_start_date:
+        label: Begin nabloei (Metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "De periode na de borstvoeding wordt gekenmerkt door het einde
+            van de paringsbereidheid. Bovendien stopt de vaginale afscheiding en trekt
+            de vulva zich terug. Een schijnzwangerschap is in deze periode mogelijk.\n
+            \nAls deze fase nog niet is begonnen of als je deze fase niet wilt documenteren,
+            laat dit veld dan leeg."
+          close: OK
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+      end_date:
+        label: Einde cyclus (rustfase)
+        info:
+          title: Rustfase (anestrus)
+          message: "De rustfase vertoont geen tekenen van de seksuele cyclus. De vulva
+            is nu volledig teruggevallen.\n\nLaat dit veld leeg als deze cyclus nog
+            niet is afgelopen."
+          close: OK
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+    false_pregnancy:
+      title: Valse zwangerschap
+      enable: Een schijnzwangerschap toevoegen
+      disable: Valse zwangerschap verwijderen
+      start_date:
+        label: Begin van een schijnzwangerschap
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+      end_date:
+        label: Einde van een schijnzwangerschap
+        error:
+          in_future: De datum mag niet in de toekomst liggen
+    features:
+      title: Kenmerken
+      mood:
+        label: Stemming
+        no_selection: Geen stemmingen geselecteerd
+      symptom:
+        label: Symptomen
+        no_selection: Geen symptomen geselecteerd
+      behavior:
+        label: Gedrag
+        no_selection: Geen gedrag geselecteerd
+      secretion:
+        label: Uitstroom
+        no_selection: Geen afvoer geselecteerd
+      weight:
+        weight:
+          label: Gewicht
+        unit:
+          label: Eenheid
+          kilogram: kg
+    notes:
+      title: Opmerkingen
+      notes:
+        label: Opmerkingen
+    action:
+      save: Sla
+  mood:
+    fearful: Angstig
+    courageous: Moedig
+    brave: Dapper
+    sleepy: Slaperig
+    sniffy: Snuffelen
+    aggressive: Agressief
+    nervous: Zenuwachtig
+    satisfied: Tevreden
+    stressed: Gestresst
+    sleepless: Slapeloos
+    dissatisfied: Ontevreden
+    depressed: Depressief
+    defiant: Opstandig
+    relaxed: Ontspannen
+    happy: Happy
+    obedient: Gehoorzaamheid
+    balanced: Uitgebalanceerd
+    fiepsy: Fiepsig
+    grumpy: Knorrig
+    weepy: Ruziënd
+    attentive: Attentie
+    sad: Droevig
+    stormy: Stormy
+    crazy: Gekke
+    calm: Kalm
+    cuddly: Gezellig
+    appetiteless: Eet smakelijk
+    indecisive: Onbeslist
+    exhausted: Uitgeput
+    frustrated: Gefrustreerd
+    bitchy: Truttig
+    troubled: Onrustig
+    jittery: Jitterig
+  behavior:
+    herding: Hoeden
+    adopting: Adopteer
+    nesting: Nest bouwen
+    howling: Yelp
+    restless: Onrustig
+  symptom:
+    stomach_cramps: Maagkrampen
+    flatulence: Winderigheid
+    diarrhea: Diarree
+    constipation: Constipatie
+    bloody_stool: Bloederige ontlasting
+    milk_discharge: Melkafvoer
+    swollen_teats: Gezwollen billen
+    vomit: Braken
+    dandruff: Roos vacht
+  secretion:
+    bloody: Bloederig
+    watery: Waterig
+    creamy: Romig
+    dryly: Droog
+    stinky: Stinkende
+    purulent: Festering
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Registreer de eerste loopsheid van je teef!
+        info:
+          title: De volgende hitte voorspellen
+          message: Heado heeft een complete cyclus (inclusief rustfase!) van je teef
+            nodig om een voorspelling te kunnen doen.
+          close: OK
+      days_left: nog {} dagen
+      weeks_left: nog {} weken
+      months_left: nog {} maanden
+      until_date: naar {}
+      error: Er is een fout opgetreden. Klik om te herhalen.
+      phase:
+        proestrus: Voorverwarmen
+        estrus: bronst
+        metestrus: Naverbranding
+        anestrus: Rustfase
+    period_dates:
+      last:
+        title: Laatste warmte
+        none: Er is nog geen periode ingevoerd.
+        from: van de
+        to: tot
+      next:
+        title: Volgende warmte
+        from: van de
+        to: tot
+        none: Er zijn nog niet genoeg perioden om een voorspelling te doen.
+    period_count:
+      period:
+        title: Aantal verwarmingen
+        time: Verf
+        times: Verf
+      false_pregnancy:
+        title: Aantal schijnzwangerschappen
+        time: Verf
+        times: Verf
+    menu:
+      calendar: Kalender
+      settings: Instellingen
+  ad_banner:
+    title: Je reclamevrije proefperiode eindigt binnenkort!
+    message: Je testfase eindigt op {}. Na deze dag zul je advertenties te zien krijgen.
+      Als je de app zonder advertenties wilt gebruiken, kun je de Premium versie kopen.
+    become_member: Lid worden
+    left_days: '{}/{} Resterende dagen'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Word Heado Premium lid en gebruik de app zonder advertenties.
+    purchase_single: Premium Lid worden
+    purchase_single_hint: '{} - Uniek {}'
+    purchase_family: Premium gezin worden
+    purchase_family_hint: '{} - Uniek {}'
+    restore_purchase: Aankopen herstellen
+  membership:
+    member:
+      teaser: Je bent een Heado Premium lid en kunt de app zonder advertenties gebruiken!
+      info: Je bent een Heado Premium lid sinds {}.
+    family:
+      teaser: Jij en je familie zijn Heado Premium leden. Je kunt de app gebruiken
+        zonder advertenties!
+      info: Je gezin is sinds {} lid van Heado Premium.
+settings:
+  title: Instellingen
+  footer: Gemaakt met {} voor Kori {} en Mayo {}.
+  family:
+    title: Familie
+    dogs:
+      title: Honden
+    members:
+      title: Leden
+    family:
+      title: Familie
+  account:
+    title: Account
+    premium:
+      title: Premium
+    settings:
+      title: Accountinstellingen
+    cookies:
+      title: Cookie toestemmingen
+  demo:
+    title: Demo
+    test_login:
+      title: Test gebruikerstoegang
+  contact:
+    title: Neem contact met ons op
+    website:
+      title: Website
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Juridische zaken
+    terms:
+      title: Gebruiksvoorwaarden
+      link: https://heado.de/terms
+    privacy:
+      title: Voorwaarden gegevensbescherming
+      link: https://heado.de/privacy
+  about:
+    title: Over
+    status:
+      title: Status
+    version:
+      title: Versie
+    translation:
+      title: Vertalingen
+  app:
+    design:
+      dark: Donker
+      title: Ontwerp
+      light: Licht
+    title: App
+account_settings:
+  title: Accountinstellingen
+  logins:
+    title: Accountgegevens
+    google:
+      label: Google
+    apple:
+      label: Appel
+    test:
+      label: Testgebruiker
+    error:
+      already_in_use:
+        title: Al aangesloten
+        message: Het geselecteerde account is al verbonden met een andere gebruiker.
+        close: OK
+  disconnect:
+    label: Account ontkoppelen
+    confirm:
+      title: Account ontkoppelen
+      message: Wil je je account echt ontkoppelen? Dan kun je niet meer inloggen bij
+        deze provider. Je kunt je account later weer koppelen.
+      no: Annuleren
+      yes: Ja, ontkoppelen
+  logout:
+    label: Afmelden
+    confirm:
+      title: Afmelden
+      message: Wil je echt uitloggen? Je kunt opnieuw inloggen met je Google of Apple
+        account.
+      no: Annuleren
+      yes: Ja, uitloggen
+  delete:
+    label: Account verwijderen
+    confirm:
+      title: Account verwijderen
+      message: Wil je echt je account verwijderen? Je hebt geen toegang meer tot deze
+        familie en hebt een nieuwe uitnodiging nodig. Als je de laatste gebruiker
+        van deze familie bent, wordt de familie ook verwijderd. Alle honden en bijbehorende
+        gegevens worden ook verwijderd. Dit kan niet ongedaan worden gemaakt!
+      no: Annuleren
+      yes: Ja, verwijderen
+generic:
+  system_default: Systeemstandaard
+  cancel: Annuleren

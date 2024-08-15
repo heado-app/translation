@@ -1,0 +1,500 @@
+account_settings:
+  logout:
+    confirm:
+      yes: Taip, atsijunkite
+      title: Atsijungti
+      message: Ar tikrai norite atsijungti? Galite dar kartą prisijungti naudodami
+        "Google" arba "Apple" paskyrą.
+      no: Atšaukti
+    label: Atsijungti
+  delete:
+    label: Ištrinti paskyrą
+    confirm:
+      title: Ištrinti paskyrą
+      message: Ar tikrai norite ištrinti savo paskyrą? Jūs nebegalite prisijungti
+        prie šios šeimos ir jums reikia naujo kvietimo. Jei esate paskutinis šios
+        šeimos naudotojas, šeima taip pat bus ištrinta. Taip pat bus ištrinti visi
+        šunys ir su jais susiję duomenys. To negalima atšaukti!
+      no: Ar tikrai norite atsijungti? Galite dar kartą prisijungti naudodami "Google"
+        arba "Apple" paskyrą.
+      yes: Taip, ištrinti
+  title: Paskyros nustatymai
+  logins:
+    title: Paskyros duomenys
+    google:
+      label: '"Google"'
+    apple:
+      label: '"Apple"'
+    test:
+      label: Bandomasis naudotojas
+    error:
+      already_in_use:
+        title: Jau prisijungta
+        message: Pasirinkta paskyra jau yra prijungta prie kito naudotojo.
+        close: GERAI
+  disconnect:
+    label: Atskirti sąskaitą
+    confirm:
+      title: Atskirti sąskaitą
+      message: Ar tikrai norite panaikinti savo paskyros ryšį? Tada nebegalėsite prisijungti
+        prie šio paslaugų teikėjo. Vėliau galėsite iš naujo prijungti savo paskyrą.
+      no: Atšaukti
+      yes: Taip, atskirti
+onboarding:
+  next: Daugiau
+  welcome:
+    task: Ar jau turite paskyrą?
+    action:
+      register: Sukurti naują paskyrą
+      login: Jau turiu paskyrą
+  member:
+    task: Kaip tave vadinti?
+    name:
+      label: Pavadinimas
+  lonely:
+    task: Ar buvote pakviestas į šeimą?
+    action:
+      create_family: Sukurti naują šeimą
+      join_family: Prisijungti prie esamos šeimos
+  login:
+    task: Prisijunkite prie esamos paskyros
+    action:
+      google: '"Google"'
+      apple: '"Apple"'
+  test_login:
+    task: PIN kodo prisijungimas demonstraciniams naudotojams
+    code:
+      error:
+        min_length: Kodą turi sudaryti 5 skaitmenys
+        invalid: Netinkamas kodas
+    action:
+      login: Prisijungimas
+  join:
+    task: Jūsų šeimos pakvietimo kodas
+    code:
+      error:
+        min_length: Kodą turi sudaryti 5 skaitmenys
+  finish:
+    task: Jūs esate pasiruošę!
+    legal:
+      hint: 'Spustelėję "Priimti ir sukurti paskyrą" sutinkate su šiomis sąlygomis:'
+      terms:
+        label: 1. naudojimo sąlygos
+        link: https://heado.de/terms
+      privacy:
+        label: 2. duomenų apsaugos sąlygos
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Priimkite ir sukurkite paskyrą
+  family:
+    task: Suteikite savo šeimai vardą
+    name:
+      label: (Išgalvota) pavardė
+      help: Pasirinkite įsivaizduojamą vardą, kuris gerai apibūdintų jūsų šeimą. Jūsų
+        pavardė čia nebūtina.
+  dog:
+    task: Koks jūsų šuns vardas?
+    name:
+      label: Šuns vardas
+  auth:
+    task: Prisijunkite, išsaugokite paskyros duomenis ir naudokite kelis įrenginius
+    action:
+      google: '"Google"'
+      apple: '"Apple"'
+      skip: Nenoriu prisijungti
+app:
+  title: '"Heado" - šilumos kalendorius'
+  title_short: Heado
+  slogan: Šilumos kalendorius
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Įvyko klaida!
+      long: Oops, įvyko klaida! Atsiprašome.
+    retry:
+      short: Pakartokite
+      long: Pabandykite dar kartą
+  empty:
+    hint: Įrašų nėra.
+  close: Uždaryti
+  copy: Kopijuoti
+  share: Dalintis
+  unknown: Nežinomas
+family:
+  member_list:
+    title: Nariai
+    invitation:
+      label: Kvietimas "{}"
+    add_invitation: Pakviesti naują narį
+  member_form:
+    title: Redaguoti narį
+    name:
+      label: Pavadinimas
+    action:
+      delete: Ištrinti
+      save: Išsaugoti
+    delete:
+      confirm:
+        title: Ištrinti narį
+        message: Ar tikrai norite ištrinti narį {}? Narys nebegali naudotis šia šeima
+          ir jam reikia naujo kvietimo. Jei šis naudotojas yra paskutinis šios šeimos
+          narys, šeima taip pat bus ištrinta. Taip pat bus ištrinti visi šunys ir
+          su jais susiję duomenys. To negalima atšaukti!
+        no: Atšaukti
+        yes: Ištrinti
+  invitation_form:
+    title: Kvietimas
+    share:
+      hint: Naudodami kvietimo PIN kodą "{}" pakvieskite kitą šeimos narį prisijungti
+        prie savo šeimos. Kiekvieną PIN kodą galima naudoti tik vieną kartą.
+      content: Kviečiu prisijungti prie mano šeimos! Atsisiųskite "Heado" programėlę
+        (https://heado.de/) ir registruodamiesi naudokite šeimos PIN kodą "{}".
+      copy:
+        hint: PIN kodas "{}" buvo nukopijuotas.
+    action:
+      delete: Ištrinti
+    delete:
+      confirm:
+        title: Ištrinti kvietimą
+        message: Ar tikrai norite ištrinti šį kvietimą? Tada nebegalėsite naudoti
+          šio kvietimo PIN kodo. Jo atšaukti negalima ir turėsite susikurti naują
+          PIN kodą!
+        no: Atšaukti
+        yes: Ištrinti
+  family_form:
+    title: Redaguoti šeimą
+    name:
+      label: Pavadinimas
+    action:
+      delete: Ištrinti
+      save: Išsaugoti
+    delete:
+      confirm:
+        title: Ištrinti šeimą
+        message: Ar tikrai norite ištrinti šeimą {}? Jūsų paskyra, visi šeimos nariai
+          ir šunys, įskaitant kalendoriaus duomenis, bus ištrinti. To negalima atšaukti!
+        no: Atšaukti
+        yes: Ištrinti
+  dog_selection:
+    add: Pridėti naują šunį
+  dog_list:
+    title: Šunys
+    add: Pridėti naują šunį
+  dog_form:
+    title:
+      add: Pridėti šunį
+      edit: Redaguoti šunį
+    name:
+      label: Pavadinimas
+    action:
+      delete: Ištrinti
+      save: Išsaugoti
+    delete:
+      confirm:
+        title: Ištrinti šunį
+        message: Ar tikrai norite ištrinti savo šunį {}? Visi kalendoriaus duomenys
+          taip pat bus ištrinti. To negalima atšaukti.
+        no: Atšaukti
+        yes: Ištrinti
+calendar:
+  mood:
+    sad: Liūdna
+    stormy: Stormy
+    fearful: Nerimą keliantis
+    courageous: Drąsus
+    brave: Drąsus
+    sleepy: Mieguistas
+    sniffy: Sniffing
+    aggressive: Agresyvus
+    nervous: Nervų
+    satisfied: Patenkintas
+    stressed: Įtampa
+    sleepless: Be miego
+    dissatisfied: Nepatenkinti
+    depressed: Depresija
+    defiant: Iššaukiantis
+    relaxed: Atsipalaidavęs
+    happy: Laimingas
+    obedient: Paklusnumas
+    balanced: Subalansuota
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Kivirčai
+    attentive: Dėmesio
+    crazy: Crazy
+    calm: Ramiai
+    cuddly: Jaukus
+    appetiteless: Be apetito
+    indecisive: Neapsisprendę
+    exhausted: Išnaudotas
+    frustrated: Nusivylęs
+    bitchy: '"Bitchy"'
+    troubled: Neramus
+    jittery: Drebantis
+  calendar:
+    details:
+      phase:
+        label: Fazė
+        proestrus: Įkaitinkite
+        estrus: Rujos
+        metestrus: Afterburn
+        anestrus: Poilsio fazė
+      false_pregnancy:
+        label: Klaidingas nėštumas
+        active_info: Aktyvus netikras nėštumas
+      mood:
+        label: Nuotaika
+      symptom:
+        label: Simptomai
+      behavior:
+        label: Elgesys
+      secretion:
+        label: Ištekėjimas
+      weight:
+        label: Svoris
+        unit: kg
+      note:
+        label: Pastabos
+  day_form:
+    period:
+      title: Laikotarpis
+      enable: Pridėti periodo ciklą
+      disable: Ištrinti laikotarpio ciklą
+      proestrus_start_date:
+        label: Prieš veršiavimąsi (proestrus) pradžia
+        info:
+          title: Prieš ovuliaciją (Proestrus)
+          message: "Prieš ruja prasideda, kai kalės vulva paburksta ir pasirodo kraujingų
+            makšties išskyrų.\n\nVidutinė trukmė - 9 dienos, bet gali svyruoti nuo
+            3 iki 17 dienų.\n\nŠi data visada turi būti užpildyta."
+          close: GERAI
+        error:
+          in_future: Data negali būti būsima.
+      estrus_start_date:
+        label: Rujos (rujos) pradžia
+        info:
+          title: Rujos (Estrus)
+          message: "Prasidėjus rujos periodui, jūsų kalė parodo norą poruotis (rujos
+            metu). Vis dar galimos makšties išskyros, tačiau jos bus labiau panašios
+            į mėsos vandenį ir galbūt gleivingos.\n\nVidutinė trukmė - 9 dienos, ji
+            gali svyruoti nuo 3 iki 21 dienos.\n \nJei ši fazė dar neprasidėjo arba
+            nenorite jos dokumentuoti, palikite šį laukelį tuščią."
+          close: GERAI
+        error:
+          in_future: Data negali būti būsima.
+      metestrus_start_date:
+        label: Nudegimo pradžia (Metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "Po maitinimo krūtimi laikotarpis yra būdingas pasirengimo poravimuisi
+            pabaiga. Be to, nustoja tekėti makšties išskyros ir vulva atsitraukia.
+            Šiuo laikotarpiu galimas netikras nėštumas.\n\nJei šis etapas dar neprasidėjo
+            arba nenorite jo dokumentuoti, palikite šį laukelį tuščią."
+          close: GERAI
+        error:
+          in_future: Data negali būti būsima.
+      end_date:
+        label: Ciklo pabaiga (ramybės fazė)
+        info:
+          title: Ramybės fazė (anestrus)
+          message: "Ramybės fazėje nėra lytinio ciklo požymių. Vulva yra visiškai
+            regresavusi.\n\nPalikite šį laukelį tuščią, jei šis ciklas dar nesibaigė."
+          close: GERAI
+        error:
+          in_future: Data negali būti būsima.
+    false_pregnancy:
+      title: Klaidingas nėštumas
+      enable: Netikro nėštumo įtraukimas
+      disable: Ištrinti klaidingą nėštumą
+      start_date:
+        label: Netikro nėštumo pradžia
+        error:
+          in_future: Data negali būti būsima.
+      end_date:
+        label: Netikro nėštumo pabaiga
+        error:
+          in_future: Data negali būti būsima.
+    features:
+      title: Funkcijos
+      mood:
+        label: Nuotaika
+        no_selection: Nėra pasirinktų nuotaikų
+      symptom:
+        label: Simptomai
+        no_selection: Nėra pasirinktų simptomų
+      behavior:
+        label: Elgesys
+        no_selection: Nepasirinktas joks elgesys
+      secretion:
+        label: Ištekėjimas
+        no_selection: Nepasirinktas iškrovimas
+      weight:
+        weight:
+          label: Svoris
+        unit:
+          label: Vienetas
+          kilogram: kg
+    notes:
+      title: Pastabos
+      notes:
+        label: Pastabos
+    action:
+      save: Išsaugoti
+  behavior:
+    herding: Skrybėlės
+    adopting: Priimti
+    nesting: Lizdo statymas
+    howling: '"Yelp"'
+    restless: Neramus
+  symptom:
+    stomach_cramps: Skrandžio spazmai
+    flatulence: Mėšlungis
+    diarrhea: Viduriavimas
+    constipation: Vidurių užkietėjimas
+    bloody_stool: Kruvinos išmatos
+    milk_discharge: Pieno išleidimas
+    swollen_teats: Patinę sėdmenys
+    vomit: Vėmimas
+    dandruff: Pleiskanų kailis
+  secretion:
+    bloody: Kruvinas
+    watery: Vandeninis
+    creamy: Kreminis
+    dryly: Sausas
+    stinky: Kvapnus
+    purulent: Pūliuojantis
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Užregistruokite savo kalės pirmąjį rują!
+        info:
+          title: Kito karščio prognozavimas
+          message: Kad galėtų prognozuoti, "Heado" reikia viso jūsų kalės ciklo (įskaitant
+            ramybės fazę!).
+          close: GERAI
+      days_left: vis dar {} dienų
+      weeks_left: vis dar {} savaičių
+      months_left: vis dar {} mėnesių
+      until_date: į {}
+      error: Įvyko klaida. Spustelėkite, jei norite pakartoti.
+      phase:
+        proestrus: Įkaitinkite
+        estrus: Rujos
+        metestrus: Afterburn
+        anestrus: Poilsio fazė
+    period_dates:
+      last:
+        title: Paskutinis karštis
+        none: Kol kas neįvestas joks laikotarpis.
+        from: iš
+        to: iki
+      next:
+        title: Kitas karštis
+        from: iš
+        to: iki
+        none: Kol kas nėra pakankamai laikotarpių, kad būtų galima daryti prognozes.
+    period_count:
+      period:
+        title: Šildymų skaičius
+        time: Dažai
+        times: Dažai
+      false_pregnancy:
+        title: Netikrų nėštumų skaičius
+        time: Dažai
+        times: Dažai
+    menu:
+      calendar: Kalendorius
+      settings: Nustatymai
+  ad_banner:
+    title: Bandomasis laikotarpis be skelbimų netrukus baigsis!
+    message: Testavimo etapas baigiasi {}. Po šios dienos matysite reklamas. Jei norite
+      naudotis programėle be reklamų, galite įsigyti "Premium" versiją.
+    become_member: Tapkite nariu
+    left_days: '{}/{} Likusios dienos'
+premium:
+  title: '"Heado Premium'
+  buy:
+    teaser: Tapkite "Heado Premium" nariu ir naudokitės programėle be reklamų.
+    purchase_single: Tapkite "Premium" nariu
+    purchase_single_hint: '{} - Unikalus {}'
+    purchase_family: Tapkite "Premium" šeima
+    purchase_family_hint: '{} - Unikalus {}'
+    restore_purchase: Pirkimų atkūrimas
+  membership:
+    member:
+      teaser: Esate "Heado Premium" narys ir galite naudotis programėle be reklamų!
+      info: Esate "Heado Premium" narys nuo {}.
+    family:
+      teaser: Jūs ir jūsų šeima esate "Heado Premium" nariai. Galite naudotis programėle
+        be reklamų!
+      info: Jūsų šeima yra "Heado Premium" narė nuo {}.
+settings:
+  title: Nustatymai
+  footer: Pagaminta su {} Kori {} ir Mayo {}.
+  family:
+    title: Šeima
+    dogs:
+      title: Šunys
+    members:
+      title: Nariai
+    family:
+      title: Šeima
+  account:
+    title: Sąskaita
+    premium:
+      title: '"Premium"'
+    settings:
+      title: Paskyros nustatymai
+    cookies:
+      title: Sutikimai dėl slapukų
+  demo:
+    title: Demo
+    test_login:
+      title: Bandomoji naudotojo prieiga
+  contact:
+    title: Susisiekite su mumis
+    website:
+      title: Svetainė
+      link: https://heado.de/
+    mail:
+      title: el. paštas
+      link: mailto:wuff@heado.app
+    instagram:
+      title: '"Instagram"'
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: '"Twitter"'
+      link: https://twitter.com/heado_de
+  legal:
+    title: Teisiniai klausimai
+    terms:
+      title: Naudojimo sąlygos
+      link: https://heado.de/terms
+    privacy:
+      title: Duomenų apsaugos sąlygos
+      link: https://heado.de/privacy
+  about:
+    title: Apie
+    status:
+      title: Statusas
+    version:
+      title: Versija
+    translation:
+      title: Vertimai
+  app:
+    design:
+      light: Šviesa
+      dark: Tamsus
+      title: Dizainas
+    title: Programėlė
+generic:
+  system_default: Sistemos standartas
+  cancel: Atšaukti

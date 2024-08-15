@@ -1,0 +1,502 @@
+app:
+  title: Heado - varmekalender
+  title_short: Hoved
+  slogan: Varmekalender
+family:
+  member_form:
+    action:
+      delete: Slet
+      save: Gem
+    delete:
+      confirm:
+        title: Slet medlem
+        no: Annuller
+        message: Ønsker du virkelig at slette medlemmet {}? Medlemmet har ikke længere
+          adgang til denne familie og har brug for en ny invitation. Hvis denne bruger
+          er den sidste i denne familie, vil familien også blive slettet. Alle hunde
+          og tilknyttede data vil også blive slettet. Dette kan ikke fortrydes!
+        yes: Slet
+    title: Rediger medlem
+    name:
+      label: Navn
+  invitation_form:
+    action:
+      delete: Slet
+    delete:
+      confirm:
+        message: Vil du virkelig slette denne invitation? Så kan du ikke længere bruge
+          PIN-koden til denne invitation. Den kan ikke annulleres, og du bliver nødt
+          til at oprette en ny PIN-kode!
+        title: Slet invitation
+        no: Annuller
+        yes: Slet
+    share:
+      content: Jeg inviterer dig til at blive en del af min familie! Download Heado-appen
+        (https://heado.de/), og brug familie-PIN-koden "{}", når du registrerer dig.
+      hint: Brug invitationspinkoden "{}" til at invitere et andet familiemedlem til
+        at blive en del af din familie. Hver PIN-kode kan kun bruges én gang.
+      copy:
+        hint: PIN-koden "{}" er blevet kopieret.
+    title: Invitation
+  member_list:
+    title: Medlemmer
+    invitation:
+      label: Invitation "{}"
+    add_invitation: Inviter et nyt medlem
+  family_form:
+    title: Rediger familie
+    name:
+      label: Navn
+    action:
+      delete: Slet
+      save: Gem
+    delete:
+      confirm:
+        title: Slet familie
+        message: Vil du virkelig slette familien {}? Din konto, alle familiemedlemmer
+          og hunde, inklusive kalenderdata, vil blive slettet. Dette kan ikke fortrydes!
+        no: Annuller
+        yes: Slet
+  dog_selection:
+    add: Tilføj en ny hund
+  dog_list:
+    title: Hunde
+    add: Tilføj en ny hund
+  dog_form:
+    title:
+      add: Tilføj hund
+      edit: Rediger hund
+    name:
+      label: Navn
+    action:
+      delete: Slet
+      save: Gem
+    delete:
+      confirm:
+        title: Slet hund
+        message: Vil du virkelig slette din hund {}? Alle kalenderdata vil også blive
+          slettet. Dette kan ikke fortrydes.
+        no: Annuller
+        yes: Slet
+calendar:
+  calendar:
+    details:
+      symptom:
+        label: Symptomer
+      behavior:
+        label: Adfærd
+      secretion:
+        label: Udstrømning
+      weight:
+        label: Vægt
+        unit: kg
+      phase:
+        label: Fase
+        proestrus: Forvarmning
+        estrus: Østrus
+        metestrus: Efterforbrænding
+        anestrus: Hvilefase
+      false_pregnancy:
+        label: Falsk graviditet
+        active_info: Aktiv falsk graviditet
+      mood:
+        label: Stemning
+      note:
+        label: Noter
+  day_form:
+    period:
+      title: Periode
+      enable: Tilføj periodecyklus
+      disable: Slet periodecyklus
+      proestrus_start_date:
+        label: Start af brunst (proöstrus)
+        info:
+          title: Før ægløsning (proøstrus)
+          message: "Præøstrus begynder, når din tæves vulva svulmer op, og der kommer
+            blodigt udflåd fra skeden.\n\nDen gennemsnitlige varighed er 9 dage og
+            kan variere fra 3 til 17 dage.\n\nDenne dato skal altid udfyldes."
+          close: OK
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+      estrus_start_date:
+        label: Start af brunst (østrus)
+        info:
+          title: Østrus (brunst)
+          message: "Når brunsten indtræder, viser din tæve vilje til at parre sig
+            (stående løbetid). Vaginal udflåd er stadig muligt, men det vil være mere
+            som kødvand og muligvis slimet.\n\nDen gennemsnitlige varighed er 9 dage
+            og kan variere mellem 3 og 21 dage.\n \nHvis denne fase endnu ikke er
+            begyndt, eller du ikke ønsker at dokumentere denne fase, skal du lade
+            dette felt stå tomt."
+          close: OK
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+      metestrus_start_date:
+        label: Start på efterforbrænding (Metøstrus)
+        info:
+          title: Efterforbrænding (Metestrus)
+          message: "Perioden efter amning er kendetegnet ved, at parringsvilligheden
+            ophører. Desuden stopper udflåddet, og vulva trækker sig tilbage. En falsk
+            graviditet er mulig i denne periode.\n\nHvis denne fase endnu ikke er
+            begyndt, eller du ikke ønsker at dokumentere denne fase, skal du lade
+            dette felt stå tomt."
+          close: OK
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+      end_date:
+        label: Slutning af cyklus (hvilefase)
+        info:
+          title: Hvilefase (anøstrus)
+          message: "Hvilefasen viser ingen tegn på den seksuelle cyklus. Vulva er
+            nu fuldstændig regredieret.\n\nLad dette felt stå tomt, hvis denne cyklus
+            endnu ikke er afsluttet."
+          close: OK
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+    false_pregnancy:
+      title: Falsk graviditet
+      enable: Tilføjelse af en falsk graviditet
+      disable: Slet falsk graviditet
+      start_date:
+        label: Start på falsk graviditet
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+      end_date:
+        label: Slut på falsk graviditet
+        error:
+          in_future: Datoen må ikke ligge i fremtiden
+    features:
+      title: Funktioner
+      mood:
+        label: Stemning
+        no_selection: Ingen stemninger valgt
+      symptom:
+        label: Symptomer
+        no_selection: Ingen symptomer valgt
+      behavior:
+        label: Adfærd
+        no_selection: Ingen adfærd valgt
+      secretion:
+        label: Udstrømning
+        no_selection: Ingen udledning valgt
+      weight:
+        weight:
+          label: Vægt
+        unit:
+          label: Enhed
+          kilogram: kg
+    notes:
+      title: Noter
+      notes:
+        label: Noter
+    action:
+      save: Gem
+  mood:
+    fearful: Ængstelig
+    courageous: Modig
+    brave: Modig
+    sleepy: Søvnig
+    sniffy: Sniffing
+    aggressive: Aggressiv
+    nervous: Nervøs
+    satisfied: Tilfreds
+    stressed: Stresset
+    sleepless: Søvnløs
+    dissatisfied: Utilfreds
+    depressed: Deprimeret
+    defiant: Trodsig
+    relaxed: Afslappet
+    happy: Glad
+    obedient: Lydighed
+    balanced: Afbalanceret
+    fiepsy: Fiepsig
+    grumpy: Gnaven
+    weepy: Skænderi
+    attentive: Opmærksomhed
+    sad: Trist
+    stormy: Stormfuld
+    crazy: Skør
+    calm: Rolig
+    cuddly: Hyggelig
+    appetiteless: Appetitløs
+    indecisive: Ubestemt
+    exhausted: Udmattet
+    frustrated: Frustreret
+    bitchy: Bitchy
+    troubled: Rastløs
+    jittery: Nervøs
+  behavior:
+    herding: Hatte
+    adopting: Vedtage
+    nesting: Bygning af rede
+    howling: Yelp
+    restless: Rastløs
+  symptom:
+    stomach_cramps: Kramper i maven
+    flatulence: Luft i maven
+    diarrhea: Diarré
+    constipation: Forstoppelse
+    bloody_stool: Blodig afføring
+    milk_discharge: Udflåd af mælk
+    swollen_teats: Hævede balder
+    vomit: Opkastning
+    dandruff: Skæl frakke
+  secretion:
+    bloody: Blodig
+    watery: Vandig
+    creamy: Cremet
+    dryly: Tør
+    stinky: Stinkende
+    purulent: Festering
+core:
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Der er opstået en fejl!
+      long: Ups, der er opstået en fejl! Det er jeg ked af.
+    retry:
+      short: Gentag
+      long: Prøv igen
+  empty:
+    hint: Ingen tilmeldinger.
+  close: Luk
+  copy: Kopi
+  share: Del
+  unknown: Ukendt
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Registrer din tæves første løbetid!
+        info:
+          title: Forudsigelse af den næste varme
+          message: Heado har brug for en komplet cyklus (inklusive hvilefase!) fra
+            din tæve for at kunne forudsige den.
+          close: OK
+      days_left: stadig {} dage
+      weeks_left: stadig {} uger
+      months_left: stadig {} måneder
+      until_date: til {}
+      error: Der er opstået en fejl. Klik for at gentage.
+      phase:
+        proestrus: Forvarmning
+        estrus: Østrus
+        metestrus: Efterforbrænding
+        anestrus: Hvilefase
+    period_dates:
+      last:
+        title: Sidste heat
+        none: Der er endnu ikke indtastet nogen periode.
+        from: fra
+        to: indtil
+      next:
+        title: Næste heat
+        from: fra
+        to: indtil
+        none: Der er endnu ikke nok perioder til at lave en forudsigelse.
+    period_count:
+      period:
+        title: Antal opvarmninger
+        time: Maling
+        times: Maling
+      false_pregnancy:
+        title: Antal falske graviditeter
+        time: Maling
+        times: Maling
+    menu:
+      calendar: Kalender
+      settings: Indstillinger
+  ad_banner:
+    title: Din reklamefri prøveperiode slutter snart!
+    message: Din testfase slutter den {}. Efter denne dag vil du se reklamer. Hvis
+      du vil bruge appen uden reklamer, kan du købe Premium-versionen.
+    become_member: Bliv medlem
+    left_days: '{}/{} Resterende dage'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Bliv medlem af Heado Premium, og brug appen uden reklamer.
+    purchase_single: Bliv Premium-medlem
+    purchase_single_hint: '{} - Unik {}'
+    purchase_family: Bliv en Premium-familie
+    purchase_family_hint: '{} - Unik {}'
+    restore_purchase: Gendan køb
+  membership:
+    member:
+      teaser: Du er medlem af Heado Premium og kan bruge appen uden reklamer!
+      info: Du har været medlem af Heado Premium siden {}.
+    family:
+      teaser: Du og din familie er Heado Premium-medlemmer. Du kan bruge appen uden
+        reklamer!
+      info: Din familie har været medlem af Heado Premium siden {}.
+settings:
+  title: Indstillinger
+  footer: Lavet med {} til Kori {} og Mayo {}.
+  family:
+    title: Familie
+    dogs:
+      title: Hunde
+    members:
+      title: Medlemmer
+    family:
+      title: Familie
+  account:
+    title: Konto
+    premium:
+      title: Premium
+    settings:
+      title: Kontoindstillinger
+    cookies:
+      title: Samtykke til cookies
+  demo:
+    title: Demo
+    test_login:
+      title: Test brugeradgang
+  contact:
+    title: Kontakt os
+    website:
+      title: Hjemmeside
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Juridiske spørgsmål
+    terms:
+      title: Vilkår for brug
+      link: https://heado.de/terms
+    privacy:
+      title: Betingelser for databeskyttelse
+      link: https://heado.de/privacy
+  about:
+    title: Om
+    status:
+      title: Status
+    version:
+      title: Version
+    translation:
+      title: Oversættelser
+  app:
+    design:
+      light: Lys
+      dark: Mørk
+      title: Design
+    title: App
+account_settings:
+  title: Kontoindstillinger
+  logins:
+    title: Kontooplysninger
+    google:
+      label: Google
+    apple:
+      label: Æble
+    test:
+      label: Testbruger
+    error:
+      already_in_use:
+        title: Allerede tilsluttet
+        message: Den valgte konto er allerede forbundet til en anden bruger.
+        close: OK
+  disconnect:
+    label: Afkobl konto
+    confirm:
+      title: Afkobl konto
+      message: Vil du virkelig fjerne forbindelsen til din konto? Så vil du ikke længere
+        kunne logge ind hos denne udbyder. Du kan forbinde din konto igen senere.
+      no: Annuller
+      yes: Ja, afkobl
+  logout:
+    label: Log ud
+    confirm:
+      title: Log ud
+      message: Vil du virkelig logge ud? Du kan logge ind igen med din Google- eller
+        Apple-konto.
+      no: Annuller
+      yes: Ja, log ud
+  delete:
+    label: Slet konto
+    confirm:
+      title: Slet konto
+      message: Ønsker du virkelig at slette din konto? Du har ikke længere adgang
+        til denne familie og har brug for en ny invitation. Hvis du er den sidste
+        bruger af denne familie, vil familien også blive slettet. Alle hunde og tilknyttede
+        data vil også blive slettet. Dette kan ikke fortrydes!
+      no: Annuller
+      yes: Ja, slet
+onboarding:
+  next: Yderligere
+  welcome:
+    task: Har du allerede en konto?
+    action:
+      register: Opret en ny konto
+      login: Jeg har allerede en konto
+  member:
+    task: Hvad kan jeg kalde dig?
+    name:
+      label: Navn
+  lonely:
+    task: Er du blevet inviteret til en familie?
+    action:
+      create_family: Opret ny familie
+      join_family: Slut dig til en eksisterende familie
+  login:
+    task: Log ind på din eksisterende konto
+    action:
+      google: Google
+      apple: Æble
+  test_login:
+    task: PIN-kode-login til demobrugere
+    code:
+      error:
+        min_length: Koden skal bestå af 5 cifre
+        invalid: Ugyldig kode
+    action:
+      login: Login
+  join:
+    task: Invitationskode for din familie
+    code:
+      error:
+        min_length: Koden skal bestå af 5 cifre
+  finish:
+    task: Du er klar!
+    legal:
+      hint: 'Ved at klikke på "Acceptér og opret konto" accepterer du følgende betingelser:'
+      terms:
+        label: 1. Vilkår for brug
+        link: https://heado.de/terms
+      privacy:
+        label: 2. Betingelser for databeskyttelse
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Accepter og opret konto
+  family:
+    task: Giv din familie et navn
+    name:
+      label: (Fiktivt) Efternavn
+      help: Vælg et fantasinavn, der beskriver din familie godt. Dit efternavn er
+        ikke nødvendigt her.
+  dog:
+    task: Hvad hedder din hund?
+    name:
+      label: Hundens navn
+  auth:
+    task: Log ind, gem kontodata og brug flere enheder
+    action:
+      google: Google
+      apple: Æble
+      skip: Jeg ønsker ikke at logge ind
+generic:
+  system_default: Systemets standard
+  cancel: Annuller

@@ -1,0 +1,501 @@
+core:
+  share: Sdílet
+  unknown: Neznámé
+  date:
+    long: dd. MMMM yyyy
+    short: dd.MM.yyyy
+    month_year: MMMM yyyy
+  error:
+    generic:
+      short: Došlo k chybě!
+      long: Ups, došlo k chybě! Omlouváme se.
+    retry:
+      short: Opakování
+      long: Zkuste to znovu
+  empty:
+    hint: Žádné položky.
+  close: Zavřít
+  copy: Kopírovat
+family:
+  member_list:
+    title: Členové
+    invitation:
+      label: Pozvánka "{}"
+    add_invitation: Pozvání nového člena
+  member_form:
+    title: Upravit člena
+    name:
+      label: Název
+    action:
+      delete: Odstranit
+      save: Uložit
+    delete:
+      confirm:
+        title: Odstranit člena
+        message: Opravdu chcete odstranit člen {}? Člen již nemá přístup k této rodině
+          a vyžaduje novou pozvánku. Pokud je tento uživatel posledním členem této
+          rodiny, bude rodina také smazána. Odstraněni budou také všichni psi a související
+          údaje. Toto nelze vzít zpět!
+        no: Zrušit
+        yes: Odstranit
+  invitation_form:
+    title: Pozvánka
+    share:
+      hint: Pomocí pozvánky PIN "{}" pozvěte dalšího člena rodiny, aby se připojil
+        k vaší rodině. Každý kód PIN lze použít pouze jednou.
+      content: Zvu vás do své rodiny! Stáhněte si aplikaci Heado (https://heado.de/)
+        a při registraci použijte rodinný PIN "{}".
+      copy:
+        hint: PIN "{}" byl zkopírován.
+    action:
+      delete: Odstranit
+    delete:
+      confirm:
+        title: Odstranit pozvánku
+        message: Opravdu chcete tuto pozvánku smazat? Pak již nemůžete použít tento
+          kód PIN pozvánky. Nelze jej zrušit a budete si muset vytvořit nový kód PIN!
+        no: Zrušit
+        yes: Odstranit
+  family_form:
+    title: Upravit rodinu
+    name:
+      label: Název
+    action:
+      delete: Odstranit
+      save: Uložit
+    delete:
+      confirm:
+        title: Odstranit rodinu
+        message: Opravdu chcete odstranit rodinu {}? Váš účet, všichni členové rodiny
+          a psi, včetně dat z kalendáře, budou smazáni. Toto nelze vrátit zpět!
+        no: Zrušit
+        yes: Odstranit
+  dog_selection:
+    add: Přidání nového psa
+  dog_list:
+    title: Psi
+    add: Přidání nového psa
+  dog_form:
+    title:
+      add: Přidat psa
+      edit: Upravit psa
+    name:
+      label: Název
+    action:
+      delete: Odstranit
+      save: Uložit
+    delete:
+      confirm:
+        title: Smazat psa
+        message: Opravdu chcete smazat svého psa {}? Všechna data z kalendáře budou
+          také smazána. To nelze vrátit zpět.
+        no: Zrušit
+        yes: Odstranit
+calendar:
+  calendar:
+    details:
+      phase:
+        label: Fáze
+        proestrus: Předehřátí
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Odpočinková fáze
+      false_pregnancy:
+        label: Falešné těhotenství
+        active_info: Aktivní falešné těhotenství
+      mood:
+        label: Nálada
+      symptom:
+        label: Příznaky
+      behavior:
+        label: Chování
+      secretion:
+        label: Odtok
+      weight:
+        label: Hmotnost
+        unit: kg
+      note:
+        label: Poznámky
+  day_form:
+    period:
+      title: Období
+      enable: Přidat periodický cyklus
+      disable: Odstranění periodického cyklu
+      proestrus_start_date:
+        label: Začátek období před říjí (proestrus)
+        info:
+          title: Předovulační období (proestrus)
+          message: "Období před říjí začíná, když se feně zvětší vulva a objeví se
+            krvavý poševní výtok.\n\nPrůměrná doba trvání je 9 dní a může se pohybovat
+            od 3 do 17 dní.\n\nToto datum musí být vždy vyplněno."
+          close: OK
+        error:
+          in_future: Datum nesmí být v budoucnosti
+      estrus_start_date:
+        label: Začátek říje (estrus)
+        info:
+          title: Říje (Estrus)
+          message: "S nástupem říje projevuje vaše fena ochotu ke krytí (hárání).
+            Vaginální výtok je stále možný, ale bude spíše připomínat masitou vodu
+            a případně bude hlenovitý.\n\nPrůměrná doba trvání je 9 dní a může se
+            pohybovat mezi 3 a 21 dny.\n \nPokud tato fáze ještě nezačala nebo si
+            ji nepřejete dokumentovat, nechte toto pole prázdné."
+          close: OK
+        error:
+          in_future: Datum nesmí být v budoucnosti
+      metestrus_start_date:
+        label: Začátek popálenin (Metestrus)
+        info:
+          title: Afterburn (Metestrus)
+          message: "Období po kojení je charakteristické ukončením páření. Kromě toho
+            ustává vaginální výtok a vulva ustupuje. V tomto období je možné falešné
+            těhotenství.\n\nPokud tato fáze ještě nezačala nebo si ji nepřejete dokumentovat,
+            ponechte toto pole prázdné."
+          close: OK
+        error:
+          in_future: Datum nesmí být v budoucnosti
+      end_date:
+        label: Konec cyklu (klidová fáze)
+        info:
+          title: Klidová fáze (anestrus)
+          message: "Klidová fáze nevykazuje žádné známky pohlavního cyklu. Vulva je
+            nyní zcela regresivní.\n\nPokud tento cyklus ještě neskončil, ponechte
+            toto pole prázdné."
+          close: OK
+        error:
+          in_future: Datum nesmí být v budoucnosti
+    false_pregnancy:
+      title: Falešné těhotenství
+      enable: Přidání falešného těhotenství
+      disable: Odstranění falešného těhotenství
+      start_date:
+        label: Začátek falešného těhotenství
+        error:
+          in_future: Datum nesmí být v budoucnosti
+      end_date:
+        label: Konec falešného těhotenství
+        error:
+          in_future: Datum nesmí být v budoucnosti
+    features:
+      title: Funkce
+      mood:
+        label: Nálada
+        no_selection: Nebyly vybrány žádné nálady
+      symptom:
+        label: Příznaky
+        no_selection: Nebyly vybrány žádné příznaky
+      behavior:
+        label: Chování
+        no_selection: Není vybráno žádné chování
+      secretion:
+        label: Odtok
+        no_selection: Není vybrán žádný výboj
+      weight:
+        weight:
+          label: Hmotnost
+        unit:
+          label: Jednotka
+          kilogram: kg
+    notes:
+      title: Poznámky
+      notes:
+        label: Poznámky
+    action:
+      save: Uložit
+  mood:
+    fearful: Anxious
+    courageous: Odvážný
+    brave: Brave
+    sleepy: Sleepy
+    sniffy: Čichání
+    aggressive: Agresivní
+    nervous: Nervozita
+    satisfied: Spokojený
+    stressed: Stresované
+    sleepless: Sleepless
+    dissatisfied: Nespokojenost
+    depressed: Deprese
+    defiant: Defiant
+    relaxed: Uvolněný
+    happy: Happy
+    obedient: Poslušnost
+    balanced: Vyvážený
+    fiepsy: Fiepsig
+    grumpy: Grumpy
+    weepy: Hádavý
+    attentive: Pozor
+    sad: Smutné
+    stormy: Stormy
+    crazy: Crazy
+    calm: Calm
+    cuddly: Útulné
+    appetiteless: Bez chuti k jídlu
+    indecisive: Nerozhodnuto
+    exhausted: Vyčerpaný
+    frustrated: Frustrovaný
+    bitchy: Bitchy
+    troubled: Restless
+    jittery: Nervózní
+  behavior:
+    herding: Klobouky
+    adopting: Přijmout
+    nesting: Stavba hnízda
+    howling: Yelp
+    restless: Restless
+  symptom:
+    stomach_cramps: Žaludeční křeče
+    flatulence: Flatulence
+    diarrhea: Průjem
+    constipation: Zácpa
+    bloody_stool: Krvavé stolice
+    milk_discharge: Vypouštění mléka
+    swollen_teats: Oteklé hýždě
+    vomit: Zvracení
+    dandruff: Lupiny srst
+  secretion:
+    bloody: Bloody
+    watery: Vodní
+    creamy: Krémový
+    dryly: Suché
+    stinky: Smradlavý
+    purulent: Hnisání
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: Zaregistrujte první hárání své feny!
+        info:
+          title: Předpověď příštího vedra
+          message: Heado potřebuje kompletní cyklus (včetně klidové fáze!) vaší feny,
+            aby mohl provést předpověď.
+          close: OK
+      days_left: stále {} dny
+      weeks_left: ještě {} týdnů
+      months_left: stále {} měsíce
+      until_date: na {}
+      error: Došlo k chybě. Klikněte pro zopakování.
+      phase:
+        proestrus: Předehřátí
+        estrus: Oestrus
+        metestrus: Afterburn
+        anestrus: Odpočinková fáze
+    period_dates:
+      last:
+        title: Poslední ohřev
+        none: Zatím nebylo zadáno žádné období.
+        from: z
+        to: do
+      next:
+        title: Další teplo
+        from: z
+        to: do
+        none: Zatím nemáme dostatek období, abychom mohli předpovídat.
+    period_count:
+      period:
+        title: Počet ohřevů
+        time: Barva
+        times: Barva
+      false_pregnancy:
+        title: Počet falešných těhotenství
+        time: Barva
+        times: Barva
+    menu:
+      calendar: Kalendář
+      settings: Nastavení
+  ad_banner:
+    title: Vaše zkušební verze bez reklam brzy skončí!
+    message: Vaše testovací fáze končí v {}. Po tomto dni se vám budou zobrazovat
+      reklamy. Pokud chcete aplikaci používat bez reklam, můžete si zakoupit verzi
+      Premium.
+    become_member: Staňte se členem
+    left_days: '{}/{} Zbývající dny'
+premium:
+  title: Heado Premium
+  buy:
+    teaser: Staňte se členem Heado Premium a používejte aplikaci bez reklam.
+    purchase_single: Staňte se členem Premium
+    purchase_single_hint: '{} - Unikátní {}'
+    purchase_family: Staňte se rodinou Premium
+    purchase_family_hint: '{} - Unikátní {}'
+    restore_purchase: Obnovení nákupů
+  membership:
+    member:
+      teaser: Jste členem Heado Premium a můžete aplikaci používat bez reklam!
+      info: Jste členem Heado Premium od {}.
+    family:
+      teaser: Vy a vaše rodina jste členy Heado Premium. Aplikaci můžete používat
+        bez reklam!
+      info: Vaše rodina je členem Heado Premium od {}.
+settings:
+  title: Nastavení
+  footer: Vyrobeno s {} pro Kori {} a Mayo {}.
+  family:
+    title: Rodina
+    dogs:
+      title: Psi
+    members:
+      title: Členové
+    family:
+      title: Rodina
+  account:
+    title: Účet
+    premium:
+      title: Premium
+    settings:
+      title: Nastavení účtu
+    cookies:
+      title: Souhlasy se soubory cookie
+  demo:
+    title: Demo
+    test_login:
+      title: Testování přístupu uživatelů
+  contact:
+    title: Kontaktujte nás
+    website:
+      title: Webové stránky
+      link: https://heado.de/
+    mail:
+      title: e-mail
+      link: mailto:wuff@heado.app
+    instagram:
+      title: Instagram
+      link: https://www.instagram.com/heado.de
+    tiktok:
+      title: TikTok
+      link: https://tiktok.com/@heado.de
+    twitter:
+      title: Twitter
+      link: https://twitter.com/heado_de
+  legal:
+    title: Právní záležitosti
+    terms:
+      title: Podmínky použití
+      link: https://heado.de/terms
+    privacy:
+      title: Podmínky ochrany údajů
+      link: https://heado.de/privacy
+  about:
+    title: O stránkách
+    status:
+      title: Stav
+    version:
+      title: Verze
+    translation:
+      title: Překlady
+  app:
+    design:
+      light: Světlo
+      title: Design
+      dark: Dark
+    title: Aplikace
+account_settings:
+  title: Nastavení účtu
+  logins:
+    title: Údaje o účtu
+    google:
+      label: Google
+    apple:
+      label: Apple
+    test:
+      label: Testovací uživatel
+    error:
+      already_in_use:
+        title: Již připojeno
+        message: Vybraný účet je již připojen k jinému uživateli.
+        close: OK
+  disconnect:
+    label: Oddělit účet
+    confirm:
+      title: Oddělit účet
+      message: Opravdu chcete zrušit propojení svého účtu? Pak se již nebudete moci
+        přihlásit k tomuto poskytovateli. Účet můžete znovu připojit později.
+      no: Zrušit
+      yes: Ano, oddělit
+  logout:
+    label: Odhlášení
+    confirm:
+      title: Odhlášení
+      message: Opravdu se chcete odhlásit? Můžete se znovu přihlásit pomocí účtu Google
+        nebo Apple.
+      no: Zrušit
+      yes: Ano, odhlaste se
+  delete:
+    label: Odstranění účtu
+    confirm:
+      title: Odstranění účtu
+      message: Opravdu chcete svůj účet smazat? Do této rodiny již nemáte přístup
+        a potřebujete novou pozvánku. Pokud jste posledním uživatelem této rodiny,
+        bude rodina také smazána. Vymazáni budou také všichni psi a související údaje.
+        Toto nelze vzít zpět!
+      no: Opravdu se chcete odhlásit? Můžete se znovu přihlásit pomocí účtu Google
+        nebo Apple.
+      yes: Ano, vymazat
+onboarding:
+  next: Další
+  welcome:
+    task: Máte již účet?
+    action:
+      register: Vytvoření nového účtu
+      login: Už mám účet
+  member:
+    task: Jak ti mám říkat?
+    name:
+      label: Název
+  lonely:
+    task: Byli jste pozváni do rodiny?
+    action:
+      create_family: Vytvoření nové rodiny
+      join_family: Připojte se ke stávající rodině
+  login:
+    task: Přihlaste se ke svému stávajícímu účtu
+    action:
+      google: Google
+      apple: Apple
+  test_login:
+    task: Přihlášení pomocí kódu PIN pro uživatele demo verze
+    code:
+      error:
+        min_length: Kód se musí skládat z 5 číslic
+        invalid: Neplatný kód
+    action:
+      login: Přihlášení
+  join:
+    task: Pozvánkový kód vaší rodiny
+    code:
+      error:
+        min_length: Kód se musí skládat z 5 číslic
+  finish:
+    task: Jste připraveni!
+    legal:
+      hint: 'Kliknutím na "Přijmout a vytvořit účet" souhlasíte s následujícími podmínkami:'
+      terms:
+        label: 1. podmínky používání
+        link: https://heado.de/terms
+      privacy:
+        label: 2. podmínky ochrany údajů
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: Přijmout a vytvořit účet
+  family:
+    task: Pojmenujte svou rodinu
+    name:
+      label: (Fiktivní) příjmení
+      help: Vyberte si imaginární jméno, které dobře vystihuje vaši rodinu. Vaše příjmení
+        zde není nutné.
+  dog:
+    task: Jak se váš pes jmenuje?
+    name:
+      label: Jméno psa
+  auth:
+    task: Přihlášení, ukládání údajů o účtu a používání více zařízení
+    action:
+      google: Google
+      apple: Apple
+      skip: Nechci se přihlásit
+app:
+  title: Heado - tepelný kalendář
+  title_short: Heado
+  slogan: Teplotní kalendář
+generic:
+  system_default: Systémový standard
+  cancel: Zrušit

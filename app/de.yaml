@@ -1,0 +1,515 @@
+app:
+  title: "Heado - Läufigkeitskalender"
+  title_short: "Heado"
+  slogan: "Läufigkeitskalender"
+
+core:
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd.MM.yyyy"
+    month_year: "MMMM yyyy"
+  error:
+    generic:
+      short: "Ein Fehler ist aufgetreten!"
+      long: "Uups, ein Fehler ist aufgetreten! Entschuldigung."
+    retry:
+      short: "Wiederholen"
+      long: "Erneut versuchen"
+  empty:
+    hint: "Keine Einträge."
+  close: "Schließen"
+  copy: "Kopieren"
+  share: "Teilen"
+  unknown: "Unbekannt"
+
+family:
+  member_list:
+    title: "Mitglieder"
+    invitation:
+      label: "Einladung „{}“"
+    add_invitation: "Ein neues Mitglied einladen"
+  member_form:
+    title: "Mitglied bearbeiten"
+    name:
+      label: "Name"
+    action:
+      delete: "Löschen"
+      save: "Speichern"
+    delete:
+      confirm:
+        title: "Mitglied löschen"
+        message: "Möchtest du das Mitglied {} wirklich löschen? Das Mitglied kann
+          diese Familie nicht mehr aufrufen und benötigt eine neue Einladung. Wenn
+          dieser Nutzer der letzte dieser Familie ist, wird die Familie ebenfalls
+          gelöscht. Alle Hunde und zugehörigen Daten werden ebenfalls gelöscht. Dies
+          kann nicht rückgängig gemacht werden!"
+        no: "Abbrechen"
+        yes: "Löschen"
+  invitation_form:
+    title: "Einladung"
+    share:
+      hint: "Verwende den Einladungs-PIN „{}“ um ein weiteres Familienmitglied in
+        deine Familie einzuladen. Jeder PIN kann nur einmal verwendet werden."
+      content: "Ich lade dich in meine Familie ein! Lade dir die Heado App (https://heado.de/)
+        runter und verwende bei der Registrierung den Familien PIN „{}“."
+      copy:
+        hint: "Der PIN „{}“ wurde kopiert."
+    action:
+      delete: "Löschen"
+    delete:
+      confirm:
+        title: "Einladung löschen"
+        message: "Möchtest du diese Einladung wirklich löschen? Du kannst diesen Einladungs-PIN
+          danach nicht mehr verwenden. Dies kann nicht rückgängig gemacht werden,
+          und du musst einen neuen PIN erstellen!"
+        no: "Abbrechen"
+        yes: "Löschen"
+  family_form:
+    title: "Familie bearbeiten"
+    name:
+      label: "Name"
+    action:
+      delete: "Löschen"
+      save: "Speichern"
+    delete:
+      confirm:
+        title: "Familie löschen"
+        message: "Möchtest du wirklich die Familie {} löschen? Dein Konto, alle Familienmitglieder
+          & Hunde, inklusive der Kalender Daten werden gelöscht. Das kann nicht rückgängig
+          gemacht werden!"
+        no: "Abbrechen"
+        yes: "Löschen"
+  dog_selection:
+    add: "Neuen Hund hinzufügen"
+  dog_list:
+    title: "Hunde"
+    add: "Neuen Hund hinzufügen"
+  dog_form:
+    title:
+      add: "Hund hinzufügen"
+      edit: "Hund bearbeiten"
+    name:
+      label: "Name"
+    action:
+      delete: "Löschen"
+      save: "Speichern"
+    delete:
+      confirm:
+        title: "Hund löschen"
+        message: "Möchtest du deinen Hund {} wirklich löschen? Alle Kalenderdaten
+          werden ebenfalls gelöscht. Das kann nicht rückgängig gemacht werden."
+        no: "Abbrechen"
+        yes: "Löschen"
+
+calendar:
+  calendar:
+    details:
+      phase:
+        label: "Phase"
+        proestrus: "Vorbrunst"
+        estrus: "Brunst"
+        metestrus: "Nachbrunst"
+        anestrus: "Ruhephase"
+      false_pregnancy:
+        label: "Scheinsschwangerschaft"
+        active_info: "Aktive Scheinschwangerschaft"
+      mood:
+        label: "Stimmung"
+      symptom:
+        label: "Symptome"
+      behavior:
+        label: "Verhalten"
+      secretion:
+        label: "Ausfluss"
+      weight:
+        label: "Gewicht"
+        unit: "kg"
+      note:
+        label: "Notizen"
+  day_form:
+    period:
+      title: "Periode"
+      enable: "Periodenzyklus hinzufügen"
+      disable: "Periodenzyklus löschen"
+      proestrus_start_date:
+        label: "Beginn Vorbrunst (Proestrus)"
+        info:
+          title: "Vorbrunst (Proestrus)"
+          message: "Die Vorbrunst beginnt, wenn die Vulva deiner Hündin anschwillt
+            und blutiger Scheidenausfluss auftritt.\n\nDie Dauer liegt durschnittlich
+            bei 9 Tagen und kann von 3 - 17 Tagen variieren.\n\nDieses Datum muss
+            immer ausgefüllt werden."
+          close: "OK"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+      estrus_start_date:
+        label: "Beginn Brunst (Estrus)"
+        info:
+          title: "Brunst (Estrus)"
+          message: "Mit einsetzen der Brunst, zeigt deine Hündin Deckungsbereitschaft
+            (Standhitze). Es ist weiterhin ein vaginaler Ausfluss möglich, jedoch
+            eher fleischwasserähnlich und möglicherweise schleimig.\n\nDie Dauer liegt
+            durschnittlich bei 9 Tagen und kann zwischen 3 - 21 Tagen variieren.\n
+            \nWenn diese Phase noch nicht begonnen hat, oder du diese Phase nicht
+            dokumentieren möchtest, lasse diese Feld leer."
+          close: "OK"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+      metestrus_start_date:
+        label: "Beginn Nachbrunst (Metestrus)"
+        info:
+          title: "Nachbrunst (Metestrus)"
+          message: "Die Nachbrunst wird durch das Ende der Paarungsbereitschaft gekennzeichnet.
+            Außerdem endet der Vaginalausfluß und die Vulva bildet sich zurück. Eine
+            Scheinschwangerschaft ist in dieser Zeit möglich.\n\nWenn diese Phase
+            noch nicht begonnen hat, oder du diese Phase nicht dokumentieren möchtest,
+            lasse diese Feld leer."
+          close: "OK"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+      end_date:
+        label: "Ende Zyklus (Ruhephase)"
+        info:
+          title: "Ruhephase (Anestrus)"
+          message: "Die Ruhephase zeigt keine Anzeichen des Sexualzyklus. Die Vulva
+            ist nun komplett zurückgebildet.\n\nLasse dieses Feld leer, wenn dieser
+            Zyklus noch nicht beendet ist."
+          close: "OK"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+    false_pregnancy:
+      title: "Scheinschwangerschaft"
+      enable: "Scheinsschwangerschaft hinzufügen"
+      disable: "Scheinsschwangerschaft löschen"
+      start_date:
+        label: "Beginn Scheinschwangerschaft"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+      end_date:
+        label: "Ende Scheinschwangerschaft"
+        error:
+          in_future: "Das Datum darf nicht in der Zukunft liegen"
+    features:
+      title: "Merkmale"
+      mood:
+        label: "Stimmung"
+        no_selection: "Keine Stimmungen ausgewählt"
+      symptom:
+        label: "Symptome"
+        no_selection: "Keine Symptome ausgewählt"
+      behavior:
+        label: "Verhalten"
+        no_selection: "Kein Verhalten ausgewählt"
+      secretion:
+        label: "Ausfluss"
+        no_selection: "Kein Ausfluss ausgewählt"
+      weight:
+        weight:
+          label: "Gewicht"
+        unit:
+          label: "Einheit"
+          kilogram: "kg"
+    notes:
+      title: "Notizen"
+      notes:
+        label: "Notizen"
+    action:
+      save: "Speichern"
+  mood:
+    fearful: "Ängstlich"
+    courageous: "Mutig"
+    brave: "Tapfer"
+    sleepy: "Schläfrig"
+    sniffy: "Schnüffelnd"
+    aggressive: "Aggressiv"
+    nervous: "Nervös"
+    satisfied: "Zufrieden"
+    stressed: "Gestresst"
+    sleepless: "Schlaflos"
+    dissatisfied: "Unzufrieden"
+    depressed: "Deprimiert"
+    defiant: "Trotzig"
+    relaxed: "Entspannt"
+    happy: "Glücklich"
+    obedient: "Gehorsam"
+    balanced: "Ausgeglichen"
+    fiepsy: "Fiepsig"
+    grumpy: "Mürrisch"
+    weepy: "Quängelig"
+    attentive: "Aufmerkam"
+    sad: "Traurig"
+    stormy: "Stürmisch"
+    crazy: "Verrückt"
+    calm: "Gelassen"
+    cuddly: "Kuschelig"
+    appetiteless: "Appetitlos"
+    indecisive: "Unentschlossen"
+    exhausted: "Erschöpft"
+    frustrated: "Frustriert"
+    bitchy: "Zickig"
+    troubled: "Unruhig"
+    jittery: "Hibbelig"
+  behavior:
+    herding: "Hüten"
+    adopting: "Adoptieren"
+    nesting: "Nestbau"
+    howling: "Jaulen"
+    restless: "Rastlos"
+  symptom:
+    stomach_cramps: "Magenkrämpfe"
+    flatulence: "Blähungen"
+    diarrhea: "Durchfall"
+    constipation: "Verstopfung"
+    bloody_stool: "Blutiger Stuhlgang"
+    milk_discharge: "Milchausfluss"
+    swollen_teats: "Geschwollenes Gesäuge"
+    vomit: "Erbrechen"
+    dandruff: "Schuppendes Fell"
+  secretion:
+    bloody: "Blutig"
+    watery: "Wässrig"
+    creamy: "Cremig"
+    dryly: "Trocken"
+    stinky: "Stinkend"
+    purulent: "Eitrig"
+
+overview:
+  overview:
+    current_period:
+      no_data:
+        cta: "Trage die erste Läufigkeit deiner Hündin ein!"
+        info:
+          title: "Nächste Läufigkeit voraussagen"
+          message: "Heado benötigt einen kompletten Zyklus (inklusive Ruhephase!)
+            von deiner Hündin, um eine Vorhersage zu treffen."
+          close: "OK"
+      days_left: "noch {} Tage"
+      weeks_left: "noch {} Wochen"
+      months_left: "noch {} Monate"
+      until_date: "bis {}"
+      error: "Ein Fehler ist aufgetreteten. Klicken zum Wiederholen."
+      phase:
+        proestrus: "Vorbrunst"
+        estrus: "Brunst"
+        metestrus: "Nachbrunst"
+        anestrus: "Ruhephase"
+    period_dates:
+      last:
+        title: "Letzte Läufigkeit"
+        none: "Es wurde noch keine Periode eingetragen."
+        from: "vom"
+        to: "bis"
+      next:
+        title: "Nächste Läufigkeit"
+        from: "vom"
+        to: "bis"
+        none: "Es gibt noch nicht genügend Perioden, um eine Vorhersage zu treffen."
+    period_count:
+      period:
+        title: "Anzahl Läufigkeiten"
+        time: "Mal"
+        times: "Mal"
+      false_pregnancy:
+        title: "Anzahl Scheinsschwangerschaften"
+        time: "Mal"
+        times: "Mal"
+    menu:
+      calendar: "Kalender"
+      settings: "Einstellungen"
+  ad_banner:
+    title: "Deine werbefreie Testphase endet bald!"
+    message: "Deine Testphase endet am {}. Nach diesem Tag werden dir Werbeanzeigen
+      eingeblendet. Wenn du die App ohne Werbung verwenden möchtest, kannst du die
+      Premium Variante erwerben."
+    become_member: "Mitglied werden"
+    left_days: "{}/{} Tage verbleibend"
+
+premium:
+  title: "Heado Premium"
+  buy:
+    teaser: "Werde Heado Premium Mitglied und nutze die App ohne Werbung."
+    purchase_single: "Werde ein Premium Mitglied"
+    purchase_single_hint: "{} • Einmalig {}"
+    purchase_family: "Werde eine Premium Familie"
+    purchase_family_hint: "{} • Einmalig {}"
+    restore_purchase: "Käufe wiederherstellen"
+  membership:
+    member:
+      teaser: "Du bist Heado Premium Mitglied und kannst die App ohne Werbung nutzen!"
+      info: "Du bist seit dem {} Heado Premium Mitglied."
+    family:
+      teaser: "Du und deine Familie seid Heado Premium Mitglieder. Ihr könnt die App
+        ohne Werbung nutzen!"
+      info: "Deine Familie ist seit dem {} Heado Premium Mitglied."
+
+settings:
+  title: "Einstellungen"
+  footer: "Made with {} for Kori {} and Mayo {}."
+  family:
+    title: "Familie"
+    dogs:
+      title: "Hunde"
+    members:
+      title: "Mitglieder"
+    family:
+      title: "Familie"
+  account:
+    title: "Konto"
+    premium:
+      title: "Premium"
+    settings:
+      title: "Kontoeinstellungen"
+    cookies:
+      title: Cookie Einwilligungen
+  demo:
+    title: "Demo"
+    test_login:
+      title: "Testnutzer Zugang"
+  contact:
+    title: "Kontakt"
+    website:
+      title: "Webseite"
+      link: "https://heado.de/"
+    mail:
+      title: "E-Mail"
+      link: "mailto:wuff@heado.app"
+    instagram:
+      title: "Instagram"
+      link: "https://www.instagram.com/heado.de"
+    tiktok:
+      title: "TikTok"
+      link: "https://tiktok.com/@heado.de"
+    twitter:
+      title: "Twitter"
+      link: "https://twitter.com/heado_de"
+  legal:
+    title: "Rechtliches"
+    terms:
+      title: "Nutzungsbedingungen"
+      link: "https://heado.de/terms"
+    privacy:
+      title: "Datenschutzbedingungen"
+      link: "https://heado.de/privacy"
+  about:
+    title: "Über"
+    status:
+      title: "Status"
+    version:
+      title: "Version"
+
+    translation:
+      title: Übersetzungen
+  app:
+    design:
+      light: Hell
+      dark: Dunkel
+      title: Design
+    title: App
+account_settings:
+  title: "Kontoeinstellungen"
+  logins:
+    title: "Kontoverbindungen"
+    google:
+      label: "Google"
+    apple:
+      label: "Apple"
+    test:
+      label: "Testnutzer"
+    error:
+      already_in_use:
+        title: "Bereits verbunden"
+        message: "Der ausgewählte Account ist bereits mit einem anderen Nutzer verbunden."
+        close: "OK"
+  disconnect:
+    label: "Konto entkoppeln"
+    confirm:
+      title: "Konto entkoppeln"
+      message: "Möchtest du dein Konto wirklich entkoppeln? Du kannst dich mit diesem
+        Anbieter dann nicht mehr einloggen. Du kannst dein Konto später erneut verbinden."
+      no: "Abbrechen"
+      yes: "Ja, entkoppeln"
+  logout:
+    label: "Abmelden"
+    confirm:
+      title: "Abmelden"
+      message: "Möchtest du dich wirklich abmelden? Du kannst dich mit deinem Google
+        oder Apple Konto erneut einloggen."
+      no: "Abbrechen"
+      yes: "Ja, ausloggen"
+  delete:
+    label: "Konto löschen"
+    confirm:
+      title: "Konto löschen"
+      message: "Möchtest du dein Konto wirklich löschen? Du kannst diese Familie nicht
+        mehr aufrufen und benötigst eine neue Einladung. Wenn du der letzte Nutzer
+        dieser Familie bist, wird die Familie ebenfalls gelöscht. Alle Hunde und zugehörigen
+        Daten werden ebenfalls gelöscht. Dies kann nicht rückgängig gemacht werden!"
+      no: "Abbrechen"
+      yes: "Ja, löschen"
+
+onboarding:
+  next: "Weiter"
+  welcome:
+    task: "Hast du bereits ein Konto?"
+    action:
+      register: "Ein neues Konto erstellen"
+      login: "Ich habe bereits ein Konto"
+  member:
+    task: "Wie darf ich dich nennen?"
+    name:
+      label: "Name"
+  lonely:
+    task: "Wurdes du zu einer Familie eingeladen?"
+    action:
+      create_family: "Neue Familie erstellen"
+      join_family: "Bestehender Familie beitreten"
+  login:
+    task: "Logge dich in dein bestehendes Konto ein"
+    action:
+      google: "Google"
+      apple: "Apple"
+  test_login:
+    task: "PIN-Code Login für Demobenutzer"
+    code:
+      error:
+        min_length: "Der Code muss aus 5 Ziffern bestehen"
+        invalid: "Ungültiger Code"
+    action:
+      login: "Login"
+  join:
+    task: "Einladungscode deiner Familie"
+    code:
+      error:
+        min_length: "Der Code muss aus 5 Ziffern bestehen"
+  finish:
+    task: "Du bist bereit!"
+    legal:
+      hint: "Mit Klick auf „Akzeptieren & Konto erstellen“ stimmst du den folgenden
+        Bedingungen zu:"
+      terms:
+        label: 1. Nutzungsbedingungen
+        link: https://heado.de/terms
+      privacy:
+        label: 2. Datenschutzbedingungen
+        link: https://heado.de/privacy
+    action:
+      accept_and_register: "Akzeptieren und Konto erstellen"
+  family:
+    task: "Gebe deiner Familie einen Namen"
+    name:
+      label: "(Fiktiver) Familien Name"
+      help: "Wähle einen ausgedachten Namen, der deine Familie gut beschreibt. Dein
+        Nachname ist hier nicht notwendig."
+  dog:
+    task: "Wie lautet der Name deines Hundes?"
+    name:
+      label: "Name des Hundes"
+  auth:
+    task: "Einloggen, Kontodaten sichern & mehrere Geräte verwenden"
+    action:
+      google: "Google"
+      apple: "Apple"
+      skip: "Ich möchte mich nicht einloggen"
+generic:
+  system_default: Systemstandard
+  cancel: Abbrechen
