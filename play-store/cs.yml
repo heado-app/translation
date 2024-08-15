@@ -1,0 +1,62 @@
+title: 'Heado: Teplotní kalendář'
+description:
+  long: "Heado vám nabízí jednoduchý a přehledný kalendář hárání vaší feny.\n\n<b>🔄
+    Aktuální hárání 🔄</b>\n\nPřímo na úvodní stránce se můžete podívat, v jaké fázi
+    se vaše fena nachází. Jednoduché zobrazení vám ukáže, jak dlouho bude aktuální
+    fáze cyklu trvat. Pro výpočet jsou použity všechny předchozí cykly vašeho psa.\n
+    \n<b>✨ Předpověď příštího hárání ✨</b>\n\nAplikace Heado vám řekne, kdy bude mít
+    váš mazlíček příští hárání. Díky tomu si můžete mnohem snadněji naplánovat dovolenou,
+    hlídání psa a návštěvy u rodičů. Aplikace \nVýpočet příští říje vychází z předchozích
+    cyklů vašeho psa.\n\n<b>😇 Nálada vašeho psa 😇</b>\n\nDenně si zapisujte náladu
+    svého psa. Stejně jako u lidí se hormonální rovnováha vašeho psa s každým cyklem
+    výrazně mění. To může mít za následek různé nálady vašeho psa před háráním, během
+    něj nebo po něm. Používejte Heado a dokumentujte nálady svého psa. Pomůže vám
+    to lépe porozumět svému zvířeti a dlouhodobě rozpoznat, zda bude vaše fena před
+    cyklem přítulná nebo úzkostná. \n\n<b>🩸 Konzistence výtoku 🩸</b>\n\nKonzistence
+    výtoku je důležitým faktorem během říje. Podobně jako u menstruačních kalendářů
+    pro ženy, i zde můžete zdokumentovat charakteristiku výtoku vaší feny. Tyto údaje
+    vám pomohou odhalit neobvyklé výtoky a sledovat zdravotní stav vašeho zvířete.\n
+    \n<b>ℹ️ Tipy a informace o hárání ℹ️</b>.\n\n S Heado máte věrného společníka
+    na téma hárání. V aplikaci najdete všechny potřebné informace o cyklu vašeho psa.
+    Chybí vám nějaké téma nebo máte dotaz? Napište mi na wuff@heado.app a já se budu
+    snažit vám odpovědět a přidat do aplikace.\n \n<b>🐶 Pro všechny vaše fenky 🐶</b>\n
+    \nMáte několik fenek? To je skvělé! V aplikaci Heado si můžete přidat libovolný
+    počet psů. Jednoduše přepínejte mezi svými mazlíčky, stejně jako to děláte v aplikacích
+    na sociálních sítích.\n \n<b>👨‍👩‍👧‍👧 Pro celou rodinu 👨‍👩‍👧‍👧</b>.\n\nPartner,
+    hlídání psa, děti? Žádný problém! Do aplikace můžete pozvat všechny členy domácnosti
+    a společně dohlížet na horko. Každý člen rodiny má přístup ke všem údajům a může
+    přidávat potřebné informace.\n\n<b>🐾 Od majitelů psů pro majitele psů 🐾</b>\n\n
+    Jako vývojář aplikace mám sám (Fabian) psa. Společně se svým partnerem jsme Heado
+    navrhli, protože jsme sami viděli, že takový kalendář je potřeba. Každý pes je
+    samozřejmě jiný a každý člen rodiny má své vlastní požadavky. Neváhejte se na
+    mě obrátit se svými připomínkami a přáními k aplikaci. Na mail: wuff@heado.app
+    nebo zde v recenzích.\n\n<b>💰 Zdarma s reklamou 💰</b>\n\nIdeální by bylo, kdyby
+    Heado bylo zdarma a bez reklam. Ale tak jednoduché to není. Projekt jako Heado
+    stojí spoustu peněz a spoustu času. Aby byl projekt udržitelný, umisťuji do něj
+    reklamy. Pokud nechcete reklamy vidět, můžete si za jednorázovou platbu koupit
+    prémiovou verzi bez reklam. Pokud Heado používáte s rodinou, můžete si také zakoupit
+    rodinný balíček za výhodnou cenu a všichni členové mohou aplikaci používat bez
+    reklam.\n\n<b>🇩🇪 Ochrana dat made in Germany 🇩🇪</b>\n \nHeado je německý projekt.
+    Vývoj a servery se nacházejí v Německu. Minimalizoval jsem používání poskytovatelů
+    třetích stran. Aplikace se vás před použitím zeptá na vaše preference ohledně
+    zpracování dat. Heado je proto v souladu s nařízením GDPR."
+  short: Heado, horký kalendář pro všechny vaše feny!
+screenshot:
+  '1':
+    title: Stále sledujte cyklus
+  '2':
+    title: Denní dokumentace
+  '4':
+    title: Všimněte si vybití
+  '3':
+    title: Zachycení nálady
+  '5':
+    title: Pro celou rodinu
+purchase:
+  premium:
+    member:
+      description: Vaše osobní a celoživotní členství.
+      title: Heado Premium - Člen
+    family:
+      description: Prémiové členství pro celou rodinu na celý život.
+      title: Heado Premium - Rodina

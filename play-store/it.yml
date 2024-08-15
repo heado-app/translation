@@ -1,0 +1,67 @@
+title: 'Heado: Calendario del calore'
+description:
+  long: "Heado ti offre un calendario semplice e chiaro del calore della tua cagna.\n
+    \n<b>🔄 Calore attuale 🔄</b>\n\nPuoi vedere in quale fase si trova il tuo cane
+    direttamente nella pagina iniziale. Il semplice display ti mostra quanto durerà
+    la fase del ciclo attuale. Per il calcolo vengono utilizzati tutti i cicli precedenti
+    del tuo cane.\n\n<b>✨ Previsione del prossimo calore ✨</b>\n\nL'app Heado ti dice
+    quando il tuo animale andrà in calore. In questo modo è molto più facile pianificare
+    le vacanze, l'asilo per cani e le visite ai genitori. Il \ncalcolo del prossimo
+    calore si basa sui cicli precedenti del tuo cane.\n\n<b>😇 L'umore del tuo cane
+    😇</b>\n\nTieni un registro giornaliero dell'umore del tuo cane. Come per gli esseri
+    umani, l'equilibrio ormonale del tuo cane cambia in modo significativo ad ogni
+    ciclo. Questo può portare a uno stato d'animo diverso nel cane prima, durante
+    o dopo il calore. Usa Heado e documenta gli stati d'animo del tuo cane. Ti aiuterà
+    a capire meglio il tuo animale e a riconoscere a lungo termine se la tua femmina
+    sarà coccolona o ansiosa prima del ciclo. \n\n<b>🩸 Consistenza delle perdite 🩸</b>\n
+    \nLa consistenza delle perdite è un fattore importante durante il calore. Come
+    nel caso del calendario delle mestruazioni per le donne, anche in questo caso
+    puoi documentare le caratteristiche delle perdite del tuo cane. Questi dati ti
+    aiuteranno a individuare secrezioni insolite e a tenere sotto controllo la salute
+    del tuo animale.\n\n<b>ℹ️ Consigli e informazioni sul calore ℹ️</b>\n\n Con Heado
+    hai un compagno fedele sul tema del calore. Nell'app troverai tutte le informazioni
+    sul ciclo del tuo cane. Ti manca un argomento o hai una domanda? Contattami all'indirizzo
+    wuff@heado.app e farò del mio meglio per rispondere alla tua domanda e aggiungerla
+    all'app.\n \n<b>🐶 Per tutte le tue cagne 🐶</b>\n\nHai diversi cani femmina? Perfetto!
+    Puoi aggiungere tutti i cani che vuoi nell'app Heado. Basta passare da un animale
+    all'altro, proprio come fai con le app dei social media.\n \n<b>👨‍👩‍👧‍👧 Per tutta
+    la famiglia 👨‍👩‍👧‍👧</b>\n\nPartner, dog sitter, figli? Nessun problema! Puoi invitare
+    tutti i membri della famiglia nell'app e tenere d'occhio il calore insieme. Ogni
+    membro della famiglia ha accesso a tutti i dati e può aggiungere le informazioni
+    necessarie.\n\n<b>🐾 Dai proprietari di cani per i proprietari di cani 🐾</b>\n\n
+    Come sviluppatore dell'app, io stesso (Fabian) ho un cane. Insieme alla mia compagna,
+    abbiamo progettato Heado perché ci siamo resi conto della necessità di un calendario
+    di questo tipo. Naturalmente, ogni cane è diverso e ogni membro della famiglia
+    ha le proprie esigenze. Non esitare a contattarmi per esprimere il tuo parere
+    e i tuoi desideri sull'applicazione. Via mail: wuff@heado.app o qui nelle recensioni.\n
+    \n<b>💰 Gratis con la pubblicità 💰</b>\n\nL'ideale sarebbe che Heado fosse gratuito
+    e senza pubblicità. Ma non è così semplice. Un progetto come Heado costa molto
+    denaro e molto tempo. Per rendere il progetto sostenibile, inserisco degli annunci
+    pubblicitari. Se non vuoi vedere la pubblicità, puoi acquistare la versione premium
+    senza pubblicità pagando una sola volta. Se utilizzi Heado con la tua famiglia,
+    puoi anche acquistare un pacchetto famiglia a un prezzo vantaggioso e tutti i
+    membri potranno utilizzare l'app senza pubblicità.\n\n<b>🇩🇪 Protezione dei dati
+    made in Germany 🇩🇪</b>\n \nHeado è un progetto tedesco. Lo sviluppo e i server
+    si trovano in Germania. Ho ridotto al minimo l'utilizzo di fornitori terzi. L'app
+    ti chiede le tue preferenze sul trattamento dei dati prima di utilizzarla. Heado
+    è quindi conforme al GDPR."
+  short: Heado, il calendario del calore per tutte le tue cagne!
+screenshot:
+  '1':
+    title: Tieni sempre d'occhio il ciclo
+  '2':
+    title: Documentazione giornaliera
+  '4':
+    title: Nota lo scarico
+  '3':
+    title: Cattura l'atmosfera
+  '5':
+    title: Per tutta la famiglia
+purchase:
+  premium:
+    member:
+      description: La tua iscrizione personale e a vita.
+      title: Heado Premium - Membro
+    family:
+      description: Un abbonamento premium per tutta la tua famiglia, a vita.
+      title: Heado Premium - Famiglia

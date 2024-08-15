@@ -1,0 +1,64 @@
+screenshot:
+  '2':
+    title: Codzienna dokumentacja
+  '3':
+    title: Uchwyć nastrój
+  '4':
+    title: Zwróć uwagę na rozładowanie
+  '5':
+    title: Dla całej rodziny
+  '1':
+    title: Zawsze miej oko na cykl
+title: 'Heado: Kalendarz ciąży psów'
+description:
+  long: "Heado oferuje prosty i klarowny kalendarz cieczki twojej suki.\n\n<b>🔄 Bieżąca
+    cieczka 🔄</b>\n\nNa stronie głównej widzisz, w jakiej fazie jest twój pies. Prosta
+    prezentacja pokazuje, jak długo trwa obecna faza cyklu. Wszystkie dotychczasowe
+    cykle twojej suki są uwzględniane w obliczeniach.\n\n<b>✨ Przewidywana następna
+    cieczka ✨</b>\n\nAplikacja Heado ujawnia, kiedy twoje zwierzę będzie miało kolejną
+    cieczkę. Dzięki temu możesz lepiej zaplanować swoje wakacje, pobyt w przedszkolu
+    dla psów oraz wizytę u rodziców. Obliczenia kolejnych cieczek opierają się na
+    dotychczasowych cyklach twojej suki.\n\n<b>😇 Nastroje twojego psa 😇</b>\n\nCodziennie
+    zapisuj nastroje swojej suki. Podobnie jak u ludzi, hormony twojego psa zmieniają
+    się wraz z każdym cyklem. Może to prowadzić do różnych nastrojów u twojego psa
+    przed, w trakcie lub po cieczce. Korzystaj z Heado i dokumentuj nastroje swojej
+    suki. To pomoże ci lepiej zrozumieć swoje zwierzę i długoterminowo zauważyć, czy
+    twoja suka staje się przytulna czy bojaźliwa przed cyklem.\n\n<b>🩸 Konsystencja
+    wydzieliny 🩸</b>\n\nKonsystencja wydzieliny jest ważnym elementem podczas cieczki.
+    Podobnie jak w kalendarzu menstruacyjnym dla kobiet, tutaj również możesz dokumentować
+    cechy wydzieliny twojej suki. Te dane pomagają ci zauważyć niezwykłe wydzieliny
+    i monitorować zdrowie twojego pupila.\n\n<b>ℹ️ Porady i informacje na temat cieczki
+    ℹ️</b>\n\nDzięki Heado masz wiernego towarzysza w temacie cieczki. W aplikacji
+    znajdziesz wszystkie niezbędne informacje dotyczące cyklu twojego psa. Brakuje
+    ci jakiegoś tematu lub masz pytanie? Skontaktuj się ze mną pod adresem wuff@heado.app,
+    a postaram się jak najlepiej odpowiedzieć na twoje pytania i dodać je do aplikacji.\n
+    \n<b>🐶 Dla wszystkich twoich psów 🐶</b>\n\nMasz kilka suk? Świetnie! W aplikacji
+    Heado możesz dodać tyle psów, ile chcesz. Łatwo przełączaj się między swoimi zwierzętami,
+    tak jak w aplikacjach społecznościowych.\n\n<b>👨‍👩‍👧‍👧 Dla całej rodziny 👨‍👩‍👧‍👧</b>\n
+    \nPartner, opiekun dla psów, dzieci? Żaden problem! Możesz zaprosić wszystkich
+    członków rodziny do aplikacji i wspólnie monitorować cieczkę. Każdy członek rodziny
+    ma dostęp do wszystkich danych i może dodawać niezbędne informacje.\n\n<b>🐾 Od
+    właściciela psa dla właściciela psa 🐾</b>\n\nJa (Fabian) jako twórca aplikacji
+    sam mam psa. Razem z moją partnerką stworzyliśmy Heado, ponieważ sami uznaliśmy
+    potrzebę posiadania takiego kalendarza. Oczywiście każdy pies jest inny, a każdy
+    członek rodziny ma swoje własne wymagania. Chętnie skontaktuj się ze mną ze swoją
+    opinią i sugestiami dotyczącymi aplikacji. Mail: wuff@heado.app lub tutaj w recenzjach.\n
+    \n<b>💰 Darmowa z reklamami 💰</b>\n\nOptymalnie Heado byłoby darmowe i bez reklam.
+    Ale takie proste to nie jest. Projekt tak jak Heado kosztuje dużo pieniędzy i
+    czasu. Aby projekt był przyszłościowy, emituję reklamy. Jeśli nie chcesz widzieć
+    reklam, możesz kupić wersję premium bez reklam za jednorazową opłatą. Jeśli korzystasz
+    z Heado wraz z rodziną, możesz również zakupić tanie pakiet rodzinny, dzięki czemu
+    wszyscy członkowie rodziny mogą korzystać z aplikacji bez reklam.\n\n<b>🇩🇪 Prywatność
+    danych w niemieckim stylu 🇩🇪</b>\n\nHeado to niemiecki projekt. Rozwój i serwery
+    znajdują się w Niemczech. Zminimalizowałem korzystanie z usług osób trzecich do
+    minimum. Przed użyciem aplikacji zostaniesz zapytany o preferencje dotyczące przetwarzania
+    danych. Heado jest zgodne z RODO."
+  short: Heado, kalendarz rui dla wszystkich Twoich suczek!
+purchase:
+  premium:
+    member:
+      description: Twoje osobiste i dożywotnie członkostwo.
+      title: Heado Premium - Członek
+    family:
+      description: Dożywotnie członkostwo premium dla całej Twojej rodziny.
+      title: Heado Premium - Family

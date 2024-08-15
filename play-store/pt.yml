@@ -1,0 +1,68 @@
+title: 'Heado: Calendário de calor'
+description:
+  long: "Heado oferece-te um calendário simples e claro do cio da tua cadela.\n\n
+    <b>🔄 Cio atual 🔄</b>\n\nPodes ver em que fase se encontra a tua cadela diretamente
+    na página inicial. O visor simples mostra-te quanto tempo durará a fase do ciclo
+    atual. Todos os ciclos anteriores do teu cão são utilizados para o cálculo.\n\n
+    <b>✨ Previsão do próximo cio ✨</b>\n\nA aplicação Heado diz-te quando é que a
+    tua cadela vai entrar no próximo cio. Isto torna muito mais fácil planear as tuas
+    férias, a creche para cães e as visitas aos teus pais. O cálculo \ncálculo do
+    próximo cio é baseado nos ciclos anteriores da tua cadela.\n\n<b>😇 O estado de
+    espírito da tua cadela 😇</b>\n\nMantém um registo diário do estado de espírito
+    da tua cadela. Tal como acontece com os humanos, o equilíbrio hormonal do teu
+    cão muda significativamente em cada ciclo. Isto pode resultar em diferentes estados
+    de espírito no teu cão antes, durante ou depois do cio. Utiliza o Heado e documenta
+    os estados de espírito do teu cão. Isso ajudar-te-á a compreender melhor o teu
+    animal de estimação e a reconhecer, a longo prazo, se a tua cadela estará mais
+    carinhosa ou ansiosa antes do ciclo. \n\n<b>🩸 Consistência do corrimento 🩸</b>\n
+    \nA consistência do corrimento é um fator importante durante o cio. À semelhança
+    dos calendários de períodos para as mulheres, também podes documentar aqui as
+    características do corrimento da tua cadela. Estes dados vão ajudar-te a detetar
+    secreções invulgares e a vigiar a saúde do teu animal.\n\n<b>ℹ️ Dicas e informações
+    sobre o cio ℹ️</b>\n\n Com o Heado, tens um companheiro fiel sobre o tema do cio.
+    Encontrarás toda a informação que precisas sobre o ciclo do teu cão na aplicação.
+    Falta-te um tema ou tens uma pergunta? Contacta-me em wuff@heado.app e eu farei
+    o meu melhor para responder à tua pergunta e adicioná-la à aplicação.\n \n<b>🐶
+    Para todas as tuas cadelas 🐶</b>\n\nTens várias cadelas? Isso é ótimo!!! Podes
+    adicionar quantos cães quiseres na aplicação Heado. Basta alternares entre os
+    teus animais de estimação, tal como fazes nas apps de redes sociais.\n \n<b>👨‍👩‍👧‍👧
+    Para toda a família 👨‍👩‍👧‍👧</b>\n\nParceiro, babá de cães, filhos? Não tens problema
+    nenhum! Podes convidar todos os membros da família para a aplicação e vigiar o
+    calor em conjunto. Cada membro da família tem acesso a todos os dados e pode adicionar
+    as informações necessárias.\n\n<b>🐾 De donos de cães para donos de cães 🐾</b>\n
+    \nComo desenvolvedor do aplicativo, eu (Fabian) também tenho um cachorro. Juntamente
+    com o meu parceiro, criámos o Heado porque nós próprios vimos a necessidade de
+    um calendário deste tipo. Claro que cada cão é diferente e cada membro da família
+    tem as suas próprias necessidades. Não hesites em contactar-me com os teus comentários
+    e desejos para a aplicação. Por correio: wuff@heado.app ou aqui nos comentários.\n
+    \n<b>💰 Grátis com publicidade 💰</b>\n\nO ideal seria que o Heado fosse gratuito
+    e sem anúncios. Mas não é assim tão simples. Um projeto como o Heado custa muito
+    dinheiro e muito tempo. Para tornar o projeto sustentável, coloco anúncios. Se
+    não quiseres ver anúncios, podes comprar a versão premium sem anúncios por um
+    pagamento único. Se utilizas o Heado com a tua família, também podes comprar um
+    pacote familiar a um preço favorável e todos os membros podem utilizar a aplicação
+    sem anúncios.\n\n<b>🇩🇪 Proteção de dados made in Germany 🇩🇪</b>\n \nO Heado é
+    um projeto alemão. O desenvolvimento e os servidores estão localizados na Alemanha.
+    Reduzi ao mínimo a utilização de fornecedores terceiros. A aplicação pede-te as
+    tuas preferências de processamento de dados antes de a utilizares. Por isso, o
+    Heado está em conformidade com o RGPD."
+  short: Heado, o calendário do cio para todas as tuas cabras!
+screenshot:
+  '1':
+    title: Mantém-te sempre atento ao ciclo
+  '2':
+    title: Documentação diária
+  '4':
+    title: Observa a descarga
+  '3':
+    title: Capta o ambiente
+  '5':
+    title: Para toda a família
+purchase:
+  premium:
+    member:
+      description: A tua adesão pessoal e vitalícia.
+      title: Heado Premium - Membro
+    family:
+      title: Heado Premium - Família
+      description: Subscrição Premium para toda a tua família, para toda a vida.

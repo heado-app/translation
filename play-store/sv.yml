@@ -1,0 +1,63 @@
+title: 'Heado: Värmekalender'
+description:
+  long: "Heado ger dig en enkel och tydlig kalender över din tiks värme.\n\n<b>🔄 Aktuell
+    löpning 🔄</b>\n\nDu kan se vilken fas din hund befinner sig i direkt på startsidan.
+    Den enkla displayen visar hur länge den aktuella cykelfasen kommer att pågå. Alla
+    din hunds tidigare cykler används för beräkningen.\n\n<b>✨ Förutsägelse av nästa
+    löp ✨</b>\n\nHeado-appen talar om för dig när ditt husdjur kommer att löpa nästa
+    gång. Detta gör det mycket enklare att planera din semester, hunddagis och besök
+    hos dina föräldrar. Beräkningen \nberäkningen av nästa löpning baseras på din
+    hunds tidigare cykler.\n\n<b>😇 Din hunds humör 😇</b>\n\nHåll ett dagligt register
+    över din hunds humör. Precis som hos människor förändras din hunds hormonbalans
+    avsevärt med varje cykel. Detta kan resultera i olika humör hos din hund före,
+    under eller efter värmen. Använd Heado och dokumentera din hunds humör. Det kommer
+    att hjälpa dig att förstå ditt husdjur bättre och på lång sikt känna igen om din
+    tik kommer att vara gosig eller orolig före sin cykel. \n\n<b>🩸 Utflödets jämnhet
+    🩸</b>\n\nUtflödets konsistens är en viktig faktor under brunsten. I likhet med
+    menstruationskalendrar för kvinnor kan du också dokumentera egenskaperna hos din
+    hunds urladdning här. Dessa uppgifter hjälper dig att upptäcka ovanligt sekret
+    och hålla ett öga på ditt husdjurs hälsa.\n\n<b>ℹ️ Tips & information om löp ℹ️</b>\n
+    \n Med Heado har du en trogen följeslagare när det gäller löptikar. Du hittar
+    all information du behöver om din hunds cykel i appen. Saknar du något ämne eller
+    har du en fråga? Kontakta mig på wuff@heado.app så ska jag göra mitt bästa för
+    att svara på din fråga och lägga till den i appen.\n \n<b>🐶 För alla dina tikar
+    🐶</b>\n\nHar du flera tikar? Det är jättebra! Du kan lägga till så många hundar
+    du vill i Heado-appen. Växla helt enkelt mellan dina husdjur, precis som du gör
+    i appar för sociala medier.\n \n<b>👨‍👩‍👧‍👧 För hela familjen 👨‍👩‍👧‍👧</b>\n\nPartner,
+    hundvakt, barn? Inga problem alls! Du kan bjuda in alla medlemmar i hushållet
+    till appen och hålla ett öga på värmen tillsammans. Varje familjemedlem har tillgång
+    till alla data och kan lägga till nödvändig information.\n\n<b>🐾 Från hundägare
+    för hundägare 🐾</b>\n\nSom appens utvecklare har jag (Fabian) själv en hund. Tillsammans
+    med min partner designade vi Heado eftersom vi själva såg behovet av en sådan
+    kalender. Naturligtvis är varje hund annorlunda och varje familjemedlem har sina
+    egna krav. Kontakta mig gärna med din feedback och dina önskemål för appen. Via
+    e-post: wuff@heado.app eller här i recensionerna.\n\n<b>💰 Gratis med reklam 💰</b>\n
+    \nHelst skulle Heado vara gratis och reklamfri. Men det är inte så enkelt. Ett
+    projekt som Heado kostar mycket pengar och mycket tid. För att göra projektet
+    hållbart placerar jag annonser. Om du inte vill se annonser kan du köpa den annonsfria
+    premiumversionen för en engångsbetalning. Om du använder Heado med din familj
+    kan du också köpa ett familjepaket till ett förmånligt pris så att alla medlemmar
+    kan använda appen utan annonser.\n\n<b>🇩🇪 Dataskydd made in Germany 🇩🇪</b>\n \n
+    Heado är ett tyskt projekt. Utvecklingen och servrarna finns i Tyskland. Jag har
+    minimerat användningen av tredjepartsleverantörer. Appen frågar dig om dina preferenser
+    för databehandling innan du använder den. Heado är därför förenlig med GDPR."
+  short: Heado, värmekalendern för alla dina tikar!
+screenshot:
+  '1':
+    title: Håll alltid ett öga på cykeln
+  '2':
+    title: Daglig dokumentation
+  '4':
+    title: Notera utsläpp
+  '3':
+    title: Fånga stämningen
+  '5':
+    title: För hela familjen
+purchase:
+  premium:
+    member:
+      description: Ditt personliga och livslånga medlemskap.
+      title: Heado Premium - Medlem
+    family:
+      description: Premiummedlemskap för hela din familj, livet ut.
+      title: Heado Premium - Familj

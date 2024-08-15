@@ -1,0 +1,69 @@
+title: 'Heado: Läufigkeitskalender'
+description:
+  long: "Heado bietet dir einen einfachen und übersichtlichen Kalender über die Läufigkeit
+    deiner Hündin.\n\n<b>🔄 Aktuelle Läufigkeit 🔄</b>\n\nDirekt auf der Startseite
+    sieht du in welcher Phase dein Hund sich befindet. Die einfache Darstellung zeigt
+    dir, wie lange die aktuelle Zyklus Phase noch anhält. Alle bisherigen Zyklen deiner
+    Hündin werden zur Berechnung verwendet.\n\n<b>✨ Vorhersage der nächsten Läufigkeit
+    ✨</b>\n\nDie Heado App verrät dir, wann dein Haustier die nächste Läufigkeit haben
+    wird. Somit lässt sich dein Urlaub, der Hundetagesstätten aufenthalt und auch
+    der Besuch bei den Eltern viel besser planen. Die \nBerechnung der nächsten Läufigkeiten
+    basiert auf den bisherigen Zyklen deiner Hündin.\n\n<b>😇 Stimmung deines Hundes
+    😇</b>\n\nHalte täglich die Stimmung deiner Hünding fest. Wie beim Menschen, wird
+    mit jedem Zyklus bei deinem Hund der Hormonhaushalt stark verändert. Das kann
+    in verschiedenen Stimmungen bei deinem Hund vor, während oder nach der Läufigkeit
+    resultieren. Verwende Heado und dokumentiere die Stimmmung deiner Hünding. Es
+    hilft dir dein Haustier besser zu verstehen und erkennst so langfristig, ob dein
+    Weibchen vor dem Zyklus kuschlig oder ängstlich wird. \n\n<b>🩸 Konsistenz des
+    Ausflusses 🩸</b>\n\nDie Konsistenz des Ausflusses ist ein wichtiger Bestandteil
+    während der Läufigkeit. Ähnlich wie Periodenkalender für Frauen, kannst du auch
+    hier die Eigenschaften des Ausflusses deiner Hündin dokumentieren. Diese Daten
+    helfen dir ungewöhnliche Sekrete festzustellen und die Gesundheit deines Lieblings
+    im Auge zu behalten.\n\n<b>ℹ️ Tipps & Informationen zur Läufigkeit ℹ️</b>\n\n
+    Mit Heado hast du einen treuen Begleiter zum Thema Läufigkeit. Du findest in der
+    App alle notwendigen Informationen zu dem Zyklus deines Hundes. Dir fehlt eine
+    Thema oder du hast eine Frage? Kontaktiere mich unter wuff@heado.app und ich werde
+    mein bestmögliches tun, um deine Fragestellung zu beantworten und in der App einzupflegen.\n
+    \n<b>🐶 Für alle deine Hündinnen 🐶</b>\n\nDu hast mehrere Hunde Weibchen? Super!
+    Du kannst in der Heado App so viele Hunde hinzufügen wie du möchtest. Wechsel
+    ganz einfach zwischen deinen Haustieren, so wie du es aus Sozial Media Apps kennst.\n
+    \n<b>👨‍👩‍👧‍👧 Für die ganze Familie 👨‍👩‍👧‍👧</b>\n\nPartner, Hundesitter, Kinder?
+    Kein Problem! Du kannst alle Haushalsmitglieder in die App einladen, und zusammen
+    die Läufigkeit im Auge behalten. Jedes Familienmitglied hat Zugriff auf alle Daten
+    und kann die notwendigen Informationen hinzufügen.\n\n<b>🐾 Vom Hundehalter für
+    Hundehalter 🐾</b>\n\nIch (Fabian) als Entwickler der App, habe selbst einen Hund.
+    Zusammen mit meiner Partnerin haben wir Heado entworfen, da wir selbst die Notwendigkeit
+    für solch einen Kalender gesehen haben. Selbstverständlich ist jeder Hund anders
+    und auch jedes Familienmitglied hat seine eigenen Anforderungen. Kontaktiert mich
+    gerne mit eurem Feedback & Wünschen zur App. Per Mail: wuff@heado.app oder hier
+    in den Rezensionen.\n\n<b>💰 Kostenlos mit Werbung 💰</b>\n\nIm Idealfall wäre Heado
+    kostenlos und werbefrei. So einfach ist es aber nicht. Ein Projekt wie Heado kostet
+    viel Geld und viel Zeit. Damit das Projekt zukunftsfähig ist, schalte ich Werbung.
+    Wenn du keine Werbung sehen möchtest, kannst du dir gegen eine einmalige Bezahlung
+    die werbefreie Premium Version kaufen. Wenn du Heado zusammen mit deiner Familie
+    verwendest, kannst du auch ein günstiges Familienpaket erwerben, und alle Mitglieder
+    können die App werbefrei nutzen.\n\n<b>🇩🇪 Datenschutz made in Germany 🇩🇪</b>\n
+    \nHeado ist ein deutsches Projekt. Die Entwicklung und die Server befinden sich
+    in Deutschland. Ich habe die Verwendung von Drittanbietern auf ein minimum reduziert.
+    Die App fragt dich vor der Verwendung nach deinen Präferenzen der Datenverarbeitung.
+    Heado ist damit DSGVO konform."
+  short: Heado, der Läufigkeitskalender für alle deine Hündinnen!
+screenshot:
+  '1':
+    title: Den Zyklus immer im Blick
+  '2':
+    title: Taggenaue Dokumentation
+  '4':
+    title: Notiere den Ausfluss
+  '3':
+    title: Halte die Stimmung fest
+  '5':
+    title: Für die ganze Familie
+purchase:
+  premium:
+    member:
+      description: Deine persönliche & lebenslange Mitgliedschaft.
+      title: Heado Premium - Mitglied
+    family:
+      description: Die Premium Mitgliedschaft für deine ganze Familie, ein Leben lang.
+      title: Heado Premium - Familie

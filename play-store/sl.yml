@@ -1,0 +1,64 @@
+title: 'Heado: koledar toplote'
+purchase:
+  premium:
+    family:
+      description: Doživljenjsko članstvo Premium za vso družino.
+      title: Heado Premium - družina
+    member:
+      description: Vaše osebno in doživljenjsko članstvo.
+      title: Heado Premium - član
+description:
+  long: "Heado vam ponuja preprost in jasen koledar rje vaše psice.\n\n<b>🔄 Trenutna
+    rja 🔄</b>\n\nNeposredno na začetni strani si lahko ogledate, v kateri fazi je
+    vaša psica. Preprost prikaz vam pokaže, kako dolgo bo trajala trenutna faza cikla.
+    Za izračun se uporabijo vsi prejšnji cikli vašega psa.\n\n<b>✨ Napoved naslednje
+    rje ✨</b>\n\nAplikacija Heado vam pove, kdaj bo vaš hišni ljubljenček naslednjič
+    v rji. Tako boste veliko lažje načrtovali počitnice, pasje varstvo in obiske pri
+    starših. Spletna stran \nizračun naslednje rje temelji na prejšnjih ciklih vašega
+    psa.\n\n<b>😇 Razpoloženje vašega psa 😇</b>\n\nDnevno beležite razpoloženje svojega
+    psa. Tako kot pri ljudeh se tudi pri vašem psu hormonsko ravnovesje z vsakim ciklusom
+    bistveno spremeni. Posledica tega so lahko različna razpoloženja vašega psa pred,
+    med ali po rjuhi. Uporabite Heado in dokumentirajte razpoloženje svojega psa.
+    To vam bo pomagalo bolje razumeti svojega ljubljenčka in dolgoročno prepoznati,
+    ali bo vaša psička pred ciklusom prijetna ali tesnobna. \n\n<b>🩸 Konsistentnost
+    izcedka 🩸</b>\n\nKonsistenca izcedka je pomemben dejavnik v času rje. Podobno
+    kot pri koledarjih menstruacije za ženske lahko tudi tukaj dokumentirate značilnosti
+    izcedka vaše psičke. Ti podatki vam bodo pomagali pri odkrivanju nenavadnih izločkov
+    in spremljanju zdravja vašega ljubljenčka.\n\n<b>ℹ️ Nasveti in informacije o vročini
+    ℹ️</b>\n\n S Heado imate zvestega spremljevalca na temo vročine. V aplikaciji
+    boste našli vse potrebne informacije o ciklusu vašega psa. Ali vam manjka kakšna
+    tema ali imate vprašanje? Pišite mi na wuff@heado.app in potrudil se bom, da odgovorim
+    na vaše vprašanje in ga dodam v aplikacijo.\n \n<b>🐶 Za vse vaše psičke 🐶</b>\n
+    \nImate več psov ženskega spola? To je super! V aplikacijo Heado lahko dodate
+    poljubno število psov. Preprosto preklapljajte med svojimi hišnimi ljubljenčki,
+    tako kot to počnete v aplikacijah družabnih omrežij.\n \n<b>👨‍👩‍👧‍👧 Za vso družino
+    👨‍👩‍👧‍👧</b>\n\nPartner, varuška psa, otroci? Brez težav! V aplikacijo lahko povabite
+    vse člane gospodinjstva in skupaj spremljajte vročino. Vsak družinski član ima
+    dostop do vseh podatkov in lahko doda potrebne informacije.\n\n<b>🐾 Od lastnikov
+    psov za lastnike psov 🐾</b>\n\nKot razvijalec aplikacije imam tudi sam (Fabian)
+    psa. Skupaj z mojim partnerjem sva zasnovala Heado, ker sva sama videla potrebo
+    po takšnem koledarju. Seveda je vsak pes drugačen in vsak družinski član ima svoje
+    zahteve. Lahko me kontaktirate s svojimi pripombami in željami za aplikacijo.
+    Po pošti: wuff@heado.app ali tukaj v pregledih.\n\n<b>💰 Brezplačno z oglaševanjem
+    💰</b>\n\nV idealnem primeru bi bila aplikacija Heado brezplačna in brez oglasov.
+    Vendar to ni tako preprosto. Projekt, kot je Heado, stane veliko denarja in veliko
+    časa. Da bi bil projekt vzdržen, nameščam oglase. Če ne želite videti oglasov,
+    lahko za enkratno plačilo kupite premijsko različico brez oglasov. Če Heado uporabljate
+    z družino, lahko po ugodni ceni kupite tudi družinski paket in vsi člani lahko
+    aplikacijo uporabljajo brez oglasov.\n\n<b>🇩🇪 Zaščita podatkov izdelano v Nemčiji
+    🇩🇪</b>\n \nHeado je nemški projekt. Razvoj in strežniki se nahajajo v Nemčiji.
+    Uporabo ponudnikov storitev tretjih oseb sem zmanjšal na najmanjšo možno mero.
+    Aplikacija vas pred uporabo vpraša za vaše želje glede obdelave podatkov. Heado
+    je zato skladen z uredbo GDPR."
+  short: Heado, koledar toplote za vse vaše psice!
+screenshot:
+  '1':
+    title: Vedno spremljajte cikel
+  '2':
+    title: Dnevna dokumentacija
+  '4':
+    title: Upoštevajte razrešnico
+  '3':
+    title: Ujemite razpoloženje
+  '5':
+    title: Za vso družino

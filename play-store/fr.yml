@@ -1,0 +1,71 @@
+title: 'Heado : Calendrier des chaleurs'
+description:
+  long: "Heado te propose un calendrier simple et clair sur les chaleurs de ta chienne.\n
+    \n<b>🔄 Les chaleurs actuelles 🔄</b>\n\nDirectement sur la page d'accueil, tu vois
+    dans quelle phase se trouve ton chien. La représentation simple te montre combien
+    de temps dure la phase actuelle du cycle. Tous les cycles précédents de ta chienne
+    sont utilisés pour le calcul.\n\n<b>✨ Prédiction des prochaines chaleurs ✨</b>\n\
+    \nL'application Heado te dit quand ton animal de compagnie aura ses prochaines
+    chaleurs. Tu peux ainsi mieux planifier tes vacances, ton séjour à la garderie
+    pour chiens et même ta visite chez tes parents. Le site \nLe calcul des prochaines
+    chaleurs se base sur les cycles précédents de ta chienne.\n\n<b>😇 L'humeur de
+    ton chien 😇</b>.\n\nEnregistre chaque jour l'humeur de ta chienne. Comme chez
+    les humains, chaque cycle de ton chien modifie considérablement son équilibre
+    hormonal. Cela peut se traduire par différentes humeurs chez ton chien avant,
+    pendant ou après les chaleurs. Utilise Heado et documente l'humeur de ta chienne.
+    Cela t'aide à mieux comprendre ton animal de compagnie et à reconnaître à long
+    terme si ta femelle devient câline ou anxieuse avant le cycle. \n\n<b>🩸 Consistance
+    de l'écoulement 🩸</b>\n\nLa consistance des écoulements est un élément important
+    pendant les chaleurs. Tout comme les calendriers périodiques pour les femmes,
+    tu peux documenter les caractéristiques des écoulements de ta chienne. Ces données
+    t'aideront à détecter les sécrétions inhabituelles et à garder un œil sur la santé
+    de ton animal préféré.\n\n<b>ℹ️ conseils et informations sur les chaleurs ℹ️</b>\n
+    \n Avec Heado, tu as un fidèle compagnon sur le thème des chaleurs. Tu trouveras
+    dans l'appli toutes les informations nécessaires sur le cycle de ton chien. Il
+    te manque un sujet ou tu as une question ? Contacte-moi à wuff@heado.app et je
+    ferai de mon mieux pour répondre à ta question et l'intégrer dans l'application.\n
+    \n<b>🐶 Pour toutes tes chiennes 🐶</b>.\n\nTu as plusieurs femelles chiens ? Super
+    ! Tu peux ajouter autant de chiens que tu le souhaites dans l'application Heado.
+    Change facilement entre tes animaux de compagnie, comme tu le fais dans les apps
+    de médias sociaux.\n \n<b>👨‍👩‍👧‍👧 Pour toute la famille 👨‍👩‍👧‍👧</b>\n\nPartenaire,
+    garde de chien, enfants ? Pas de problème ! Tu peux inviter tous les membres de
+    la maison sur l'application et garder un œil sur les chaleurs ensemble. Chaque
+    membre de la famille a accès à toutes les données et peut ajouter les informations
+    nécessaires.\n\n<b>🐾 Par les propriétaires de chiens pour les propriétaires de
+    chiens 🐾</b>.\n\nMoi (Fabian), en tant que développeur de l'application, j'ai
+    moi-même un chien. Avec ma partenaire, nous avons créé Heado parce que nous avons
+    nous-mêmes vu la nécessité d'un tel calendrier. Bien sûr, chaque chien est différent
+    et chaque membre de la famille a ses propres exigences. N'hésite pas à me contacter
+    pour me faire part de tes commentaires et de tes souhaits concernant l'application.
+    Par e-mail : wuff@heado.app ou ici dans les critiques.\n\n<b>💰 Gratuit avec publicité
+    💰</b>.\n\nDans l'idéal, Heado serait gratuit et sans publicité. Mais ce n'est
+    pas si simple. Un projet comme Heado coûte beaucoup d'argent et beaucoup de temps.
+    Pour que le projet soit viable, je mets de la publicité. Si tu ne veux pas voir
+    de publicité, tu peux acheter la version premium sans publicité contre un paiement
+    unique. Si tu utilises Heado avec ta famille, tu peux aussi acheter un pack familial
+    bon marché et tous les membres pourront utiliser l'application sans publicité.\n
+    \n<b>🇩🇪 Protection des données made in Germany 🇩🇪</b>\n \nHeado est un projet
+    allemand. Le développement et les serveurs se trouvent en Allemagne. J'ai réduit
+    au minimum l'utilisation de fournisseurs tiers. L'application te demande tes préférences
+    en matière de traitement des données avant de l'utiliser. Heado est donc conforme
+    au RGPD."
+  short: Heado, le calendrier des chaleurs pour toutes tes chiennes !
+screenshot:
+  '1':
+    title: Toujours garder un œil sur le cycle
+  '2':
+    title: Documentation au jour le jour
+  '4':
+    title: Note l'écoulement
+  '3':
+    title: Fixe l'ambiance
+  '5':
+    title: Pour toute la famille
+purchase:
+  premium:
+    member:
+      description: Ton adhésion personnelle & à vie.
+      title: Heado Premium - Membre
+    family:
+      description: L'adhésion premium pour toute ta famille, pour toute la vie.
+      title: Heado Premium - Famille

@@ -1,0 +1,62 @@
+title: 'Heado: Kalendarski estrusa'
+description:
+  long: "Heado vam pruža jednostavan i pregledan kalendar vašeg kučnog ljubimca.\n
+    \n<b>🔄 Trenutni estrus 🔄</b>\n\nIzravno na početnom zaslonu možete vidjeti u kojoj
+    se fazi nalazi vaš pas. Jednostavno prikazuje koliko još traje trenutna faza ciklusa.
+    Svi dosadašnji ciklusi vašeg psa koriste se za izračun.\n\n<b>✨ Predviđanje sljedećeg
+    estrusa ✨</b>\n\nHeado aplikacija otkriva vam kada će vaš ljubimac imati sljedeći
+    estrus. Time se vaš odmor, boravak u dječjem vrtiću za pse i čak posjeta roditeljima
+    puno bolje planira. Izračun sljedećih estrusa temelji se na dosadašnjim ciklusima
+    vašeg psa.\n\n<b>😇 Raspoloženje vašeg psa 😇</b>\n\nSvakodnevno zapišite raspoloženje
+    svog psa. Kao i kod ljudi, hormonska ravnoteža kod vašeg psa se mijenja s svakim
+    ciklusom. To može rezultirati različitim raspoloženjima vašeg psa prije, tijekom
+    ili nakon estrusa. Koristite Heado i dokumentirajte raspoloženje svog psa. Pomoći
+    će vam da bolje razumijete svog ljubimca i dugoročno prepoznate jesu li vaša ženka
+    prije ciklusa nježna ili uplašena.\n\n<b>🩸 Konzistencija izlučevina 🩸</b>\n\n
+    Konzistencija izlučevina važan je dio tijekom estrusa. Slično kao i menstrualni
+    kalendar za žene, ovdje možete dokumentirati karakteristike izlučevina vašeg psa.
+    Ti podaci pomažu vam da primijetite neobične sekrete i pratite zdravlje svog ljubimca.\n
+    \n<b>ℹ️ Savjeti i informacije o estrusu ℹ️</b>\n\n S Headom imate pouzdanog suputnika
+    za temu estrusa. U aplikaciji ćete pronaći sve potrebne informacije o ciklusu
+    vašeg psa. Nedostaje vam tema ili imate pitanje? Kontaktirajte me na wuff@heado.app
+    i učinit ću sve što je u mojoj moći da odgovorim na vaša pitanja i ugradim ih
+    u aplikaciju.\n\n<b>🐶 Za sve vaše ženke 🐶</b>\n\nImate više ženki? Super! U Heado
+    aplikaciji možete dodati koliko god ženki želite. Lako prelazite između svojih
+    ljubimaca, baš kao što to radite na društvenim mrežama.\n\n<b>👨‍👩‍👧‍👧 Za cijelu
+    obitelj 👨‍👩‍👧‍👧</b>\n\nPartner, čuvar pasa, djeca? Nema problema! Možete pozvati
+    sve članove kućanstva u aplikaciju i zajedno pratiti estrus. Svaki član obitelji
+    ima pristup svim podacima i može dodavati potrebne informacije.\n\n<b>🐾 Od vlasnika
+    pasa za vlasnike pasa 🐾</b>\n\nJa (Fabian) kao developer aplikacije, imam i samog
+    psa. Skupa s partnericom osmislili smo Heado jer smo i sami vidjeli potrebu za
+    takvim kalendarom. Naravno, svaki je pas drugačiji, a svaki član obitelji ima
+    svoje zahtjeve. Slobodno me kontaktirajte s povratnim informacijama i željama
+    za aplikacijom. Putem e-pošte: wuff@heado.app ili ovdje u recenzijama.\n\n<b>💰
+    Besplatno s oglasima 💰</b>\n\nIdealno bi bilo da je Heado besplatan i bez oglasa.
+    Međutim, to nije tako jednostavno. Projekt poput Headoa košta puno novca i puno
+    vremena. Kako bi projekt bio održiv u budućnosti, prikazujem oglase. Ako ne želite
+    vidjeti oglase, možete kupiti premium verziju bez oglasa po jednokratnoj cijeni.
+    Ako koristite Heado zajedno sa svojom obitelji, možete kupiti i povoljni obiteljski
+    paket, a svi članovi mogu koristiti aplikaciju bez oglasa.\n\n<b>🇩🇪 Zaštita privatnosti
+    izrađena u Njemačkoj 🇩🇪</b>\n\nHeado je njemački projekt. Razvoj i serveri nalaze
+    se u Njemačkoj. Smanjio sam upotrebu trećih strana na minimum. Aplikacija vas
+    pita za vaše postavke obrade podataka prije korištenja. Heado je usklađen s GDPR-om."
+  short: Heado, kalendar estrusa za sve vaše ženke!
+screenshot:
+  '1':
+    title: Uvijek imajte ciklus na oku
+  '2':
+    title: Točna dokumentacija po danima
+  '4':
+    title: Zabilježite izlučevine
+  '3':
+    title: Zadržite raspoloženje
+  '5':
+    title: Za cijelu obitelj
+purchase:
+  premium:
+    member:
+      description: Vaše osobno i doživotno članstvo.
+      title: Heado Premium - Član
+    family:
+      description: Premium članstvo za vašu cijelu obitelj, doživotno.
+      title: Heado Premium - Obitelj

@@ -1,0 +1,63 @@
+title: 'Heado: Šilumos kalendorius'
+description:
+  long: "\"Heado\" siūlo paprastą ir aiškų kalės rujos kalendorių.\n\n<b>🔄 Dabartinis
+    rujos laikotarpis 🔄</b>\n\nKurioje fazėje yra jūsų šuo, galite matyti tiesiai
+    pradiniame puslapyje. Paprastame ekrane rodoma, kiek laiko truks dabartinė rujos
+    fazė. Skaičiuojant naudojami visi ankstesni jūsų šuns ciklai.\n\n<b>✨ Kitos rujos
+    prognozė ✨</b>\n\nProgramėlė \"Heado\" nurodo, kada jūsų augintiniui bus kita
+    rujos fazė. Taip daug lengviau planuoti atostogas, šunų priežiūrą ir apsilankymus
+    pas tėvus. Svetainėje \nkitos rujos apskaičiavimas grindžiamas ankstesniais jūsų
+    šuns ciklais.\n\n<b>😇 Jūsų šuns nuotaika 😇</b>\n\nKasdien fiksuokite savo šuns
+    nuotaiką. Kaip ir žmonių, Jūsų šuns hormonų pusiausvyra labai keičiasi kiekvieno
+    ciklo metu. Dėl to jūsų šuns nuotaika gali skirtis prieš rują, jos metu ar po
+    jos. Naudokite \"Heado\" ir fiksuokite savo šuns nuotaikas. Tai padės jums geriau
+    suprasti savo augintinį ir ilgainiui atpažinti, ar jūsų kalytė prieš ciklą bus
+    guvi, ar nerami. \n\n<b>🩸 Išskyrų pastovumas 🩸</b>\n\nIšskyrų konsistencija yra
+    svarbus veiksnys rujos metu. Panašiai kaip moterų mėnesinių kalendoriuose, čia
+    taip pat galite užfiksuoti savo šuns išskyrų ypatumus. Šie duomenys padės jums
+    aptikti neįprastas išskyras ir stebėti savo augintinio sveikatą.\n\n<b>ℹ️ Patarimai
+    ir informacija apie rują ℹ️</b>\n\n Su \"Heado\" turite ištikimą palydovą rujos
+    tema. Programėlėje rasite visą reikiamą informaciją apie savo šuns ciklą. Trūksta
+    temos arba turite klausimų? Susisiekite su manimi el. paštu wuff@heado.app ir
+    aš pasistengsiu atsakyti į jūsų klausimą bei įtraukti jį į programėlę.\n \n<b>🐶
+    Visoms jūsų kalėms 🐶</b>\n\nAr turite kelias kalytes? Tai puiku! Heado programėlėje
+    galite pridėti tiek šunų, kiek norite. Paprasčiausiai perjunkite savo augintinius,
+    kaip tai darote socialinės žiniasklaidos programėlėse.\n \n<b>👨‍👩‍👧‍👧 Visai šeimai
+    👨‍👩‍👧‍👧</b>.\n\nPartneris, šunų prižiūrėtojas, vaikai? Jokių problemų! Į programėlę
+    galite pakviesti visus namų ūkio narius ir kartu stebėti karštį. Kiekvienas šeimos
+    narys turi prieigą prie visų duomenų ir gali pridėti reikiamą informaciją.\n\n
+    <b>🐾 Nuo šunų šeimininkų šunų šeimininkams 🐾</b>\n\nAš (Fabianas), kaip programėlės
+    kūrėjas, pats turiu šunį. Kartu su partneriu sukūrėme \"Heado\", nes patys matėme
+    tokio kalendoriaus poreikį. Žinoma, kiekvienas šuo yra skirtingas ir kiekvienas
+    šeimos narys turi savo reikalavimus. Drąsiai kreipkitės į mane ir pateikite savo
+    atsiliepimus ir pageidavimus programėlei. Paštu: wuff@heado.app arba čia, atsiliepimuose.\n
+    \n<b>💰 Nemokamai su reklama 💰</b>\n\nIdealiu atveju \"Heado\" būtų nemokama ir
+    be reklamos. Tačiau tai nėra taip paprasta. Toks projektas kaip \"Heado\" kainuoja
+    daug pinigų ir daug laiko. Kad projektas būtų tvarus, aš talpinu reklamas. Jei
+    nenorite matyti reklamų, už vienkartinį mokestį galite įsigyti \"Premium\" versiją
+    be reklamų. Jei \"Heado\" naudojate su šeima, taip pat galite įsigyti šeimos paketą
+    už palankią kainą ir visi nariai galės naudotis programėle be reklamų.\n\n<b>🇩🇪
+    Duomenų apsauga pagaminta Vokietijoje 🇩🇪</b>\n \nHeado yra Vokietijos projektas.
+    Kūrimas ir serveriai yra Vokietijoje. Iki minimumo sumažinau trečiųjų šalių paslaugų
+    teikėjų naudojimą. Prieš pradėdami naudotis programa, klausiame jūsų duomenų tvarkymo
+    nuostatų. Todėl \"Heado\" atitinka BDAR reikalavimus."
+  short: '"Heado", šilumos kalendorius visoms jūsų kalėms!'
+screenshot:
+  '1':
+    title: Visada stebėkite ciklą
+  '2':
+    title: Kasdieniai dokumentai
+  '4':
+    title: Atkreipkite dėmesį į iškrovimą
+  '3':
+    title: Užfiksuokite nuotaiką
+  '5':
+    title: Visai šeimai
+purchase:
+  premium:
+    member:
+      description: Jūsų asmeninė narystė visam gyvenimui.
+      title: '"Heado Premium" - narys'
+    family:
+      description: '"Premium" narystė visai šeimai visam gyvenimui.'
+      title: '"Heado Premium" - Šeima'

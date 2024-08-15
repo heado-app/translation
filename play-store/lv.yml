@@ -1,0 +1,65 @@
+title: 'Heado: Siltuma kalendārs'
+description:
+  long: "Heado piedāvā vienkāršu un skaidru jūsu kuces rēgu kalendāru.\n\n<b>🔄 Pašreizējais
+    rējiens 🔄</b>\n\nJūs varat redzēt, kurā fāzē atrodas jūsu suns, tieši sākuma lapā.
+    Vienkāršais displejs parāda, cik ilgi ilgs būs pašreizējā cikla fāze. Aprēķiniem
+    tiek izmantoti visi jūsu suņa iepriekšējie cikli.\n\n<b>✨ Nākamās grūsnības prognozēšana
+    ✨</b>\n\nLietojumprogramma Heado jums norāda, kad jūsu mīlulim būs nākamā rēga.
+    Tas ievērojami atvieglo atvaļinājuma, suņa dienas aprūpes un vizīšu pie vecākiem
+    plānošanu. Lietotne \nnākamās rēres aprēķins ir balstīts uz jūsu suņa iepriekšējiem
+    cikliem.\n\n<b>😇 Jūsu suņa noskaņojums 😇</b>\n\nVeiciet sava suņa garastāvokļa
+    ikdienas uzskaiti. Tāpat kā cilvēkiem, arī jūsu suņa hormonu līdzsvars katrā ciklā
+    ievērojami mainās. Tas var izraisīt atšķirīgu jūsu suņa garastāvokli pirms, rēgas
+    laikā vai pēc tās. Izmantojiet Heado un dokumentējiet sava suņa noskaņojumu. Tas
+    palīdzēs jums labāk izprast savu mīluli un ilgtermiņā atpazīt, vai pirms cikla
+    jūsu kuce būs omulīga vai nemierīga. \n\n<b>🩸 Izkārnījumu konsekvence 🩸</b>\n\n
+    Izkārnījumu konsistence ir svarīgs faktors grūsnības laikā. Līdzīgi kā sieviešu
+    mēnešreižu kalendāros, arī šeit varat dokumentēt sava suņa izdalījumu īpašības.
+    Šie dati palīdzēs jums atklāt neparastus izdalījumus un sekot līdzi sava mīluļa
+    veselībai.\n\n<b>ℹ️ Padomi un informācija par rēgu ℹ️</b>\n\n Ar Heado jums ir
+    uzticams palīgs par rēgu. Lietotnē atradīsiet visu nepieciešamo informāciju par
+    sava suņa ciklu. Vai jums trūkst kādas tēmas, vai jums ir kāds jautājums? Sazinieties
+    ar mani pa e-pastu wuff@heado.app, un es darīšu visu iespējamo, lai atbildētu
+    uz jūsu jautājumu un pievienotu to lietotnei.\n \n<b>🐶 Visām jūsu kucēm 🐶</b>\n
+    \nVai jums ir vairākas suņu mātītes? Tas ir lieliski! Heado lietotnē varat pievienot
+    tik daudz suņu, cik vēlaties. Vienkārši pārslēdzieties starp saviem mīluļiem,
+    līdzīgi kā to darāt sociālo mediju lietotnēs.\n \n<b>👨‍👩‍👧‍👧 Visai ģimenei 👨‍👩‍👧‍👧</b>.\n
+    \nPartneris, suņa sargs, bērni? Nekādu problēmu! Jūs varat uzaicināt visus mājsaimniecības
+    locekļus lietotnē un kopā sekot līdzi karstumam. Katram ģimenes loceklim ir piekļuve
+    visiem datiem un viņš var pievienot nepieciešamo informāciju.\n\n<b>🐾 No suņu
+    īpašniekiem suņu īpašniekiem 🐾</b>\n\nKā lietotnes izstrādātājam man (Fabianam)
+    pašam ir suns. Kopā ar savu partneri mēs izstrādājām Heado, jo paši redzējām vajadzību
+    pēc šāda kalendāra. Protams, katrs suns ir atšķirīgs, un katram ģimenes loceklim
+    ir savas prasības. Nevilcinieties sazināties ar mani, lai sniegtu savas atsauksmes
+    un vēlmes par lietotni. Pa pastu: wuff@heado.app vai šeit atsauksmēs.\n\n<b>💰
+    Bezmaksas ar reklāmu 💰</b>\n\nIdeālā gadījumā Heado būtu bezmaksas un bez reklāmām.
+    Taču tas nav tik vienkārši. Tāds projekts kā Heado maksā daudz naudas un daudz
+    laika. Lai projekts būtu ilgtspējīgs, es ievietoju reklāmas. Ja nevēlaties redzēt
+    reklāmas, varat iegādāties bez reklāmām pieejamu Premium versiju par vienreizēju
+    samaksu. Ja lietojat Heado kopā ar ģimeni, varat iegādāties arī ģimenes paketi
+    par izdevīgu cenu, un visi lietotnes lietotāji var lietot lietot lietotni bez
+    reklāmām.\n\n<b>🇩🇪 Datu aizsardzība Ražots Vācijā 🇩🇪</b>\n \nHeado ir Vācijas
+    projekts. Izstrāde un serveri atrodas Vācijā. Esmu līdz minimumam samazinājis
+    trešo pušu pakalpojumu sniedzēju izmantošanu. Pirms lietojumprogrammas lietošanas
+    jums tiek lūgts norādīt savas datu apstrādes preferences. Tāpēc Heado atbilst
+    GDPR."
+  short: Heado, siltuma kalendārs visām jūsu kucēm!
+screenshot:
+  '1':
+    title: Vienmēr seko līdzi ciklam
+  '2':
+    title: Ikdienas dokumentācija
+  '4':
+    title: Ņemiet vērā izlādi
+  '3':
+    title: Uztveriet noskaņu
+  '5':
+    title: Visai ģimenei
+purchase:
+  premium:
+    member:
+      description: Jūsu personīgā un mūža dalība.
+      title: Heado Premium - dalībnieks
+    family:
+      description: Premium klases dalība visai ģimenei uz mūžu.
+      title: Heado Premium - Ģimene

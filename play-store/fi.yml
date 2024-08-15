@@ -1,0 +1,63 @@
+title: 'Heado: Lämpökalenteri'
+description:
+  long: "Heado tarjoaa sinulle yksinkertaisen ja selkeän kalenterin narttusi kiimasta.\n
+    \n<b>🔄 Nykyinen kiima 🔄</b>\n\nNäet suoraan aloitussivulta, missä vaiheessa koirasi
+    on. Yksinkertainen näyttö näyttää, kuinka kauan nykyinen kiimavaihe kestää. Laskennassa
+    käytetään koirasi kaikkia aiempia syklejä.\n\n<b>✨ Seuraavan kiiman ennustaminen
+    ✨</b>\n\nHeado-sovellus kertoo, milloin lemmikkisi on seuraavaksi kiimassa. Tämä
+    helpottaa huomattavasti loman, koiran päivähoidon ja vierailujen suunnittelua
+    vanhempien luona. . \nseuraavan kiiman laskeminen perustuu koirasi aiempiin kiimakausiin.\n
+    \n<b>😇 Koirasi mieliala 😇</b>\n\nPidä päivittäin kirjaa koirasi mielialasta. Kuten
+    ihmisillä, koirasi hormonitasapaino muuttuu merkittävästi jokaisen kierron myötä.
+    Tämä voi aiheuttaa koirallesi erilaisia mielialoja ennen kiimaa, kiiman aikana
+    tai sen jälkeen. Käytä Headoa ja dokumentoi koirasi mielialat. Se auttaa sinua
+    ymmärtämään lemmikkiäsi paremmin ja tunnistamaan pitkällä aikavälillä, onko narttusi
+    ennen kiertoa hellä vai ahdistunut. \n\n<b>🩸 Vuodon johdonmukaisuus 🩸</b>\n\n
+    Vuodon johdonmukaisuus on tärkeä tekijä kiiman aikana. Samoin kuin naisten kuukautiskalenterit,
+    voit dokumentoida koirasi vuodon ominaisuudet myös tässä. Nämä tiedot auttavat
+    sinua havaitsemaan epätavalliset eritteet ja pitämään silmällä lemmikkisi terveyttä.\n
+    \n<b>ℹ️ Vinkkejä ja tietoa kiimasta ℹ️</b>.\n\n Headon avulla sinulla on uskollinen
+    kumppani kiima-aiheessa. Sovelluksesta löydät kaikki tarvitsemasi tiedot koirasi
+    kiertokulusta. Puuttuuko jokin aihe tai onko sinulla kysymys? Ota minuun yhteyttä
+    osoitteeseen wuff@heado.app, niin teen parhaani vastatakseni kysymykseesi ja lisätäkseni
+    sen sovellukseen.\n \n<b>🐶 Kaikille nartuille 🐶</b>\n\nOnko sinulla useita narttukoiria?
+    Sehän on hienoa! Voit lisätä niin monta koiraa kuin haluat Heado-sovelluksessa.
+    Vaihda vain lemmikkisi välillä, aivan kuten sosiaalisen median sovelluksissa.\n
+    \n<b>👨‍👩‍👧‍👧 Koko perheelle 👨‍👩‍👧‍👧</b>\n\nKumppani, koiranvahti, lapset? Ei mitään
+    ongelmaa! Voit kutsua kaikki perheenjäsenet sovellukseen ja pitää lämpöä silmällä
+    yhdessä. Jokaisella perheenjäsenellä on pääsy kaikkiin tietoihin ja hän voi lisätä
+    tarvittavat tiedot.\n\n<b>🐾 Koiranomistajilta koiranomistajille 🐾</b>\n\nSovelluksen
+    kehittäjänä minulla (Fabian) on itselläni koira. Yhdessä kumppanini kanssa suunnittelimme
+    Headon, koska näimme itse tarpeen tällaiselle kalenterille. Jokainen koira on
+    tietysti erilainen ja jokaisella perheenjäsenellä on omat vaatimuksensa. Ota rohkeasti
+    yhteyttä minuun ja kerro palautteesi & toiveesi sovelluksesta. Postitse: wuff@heado.app
+    tai täällä arvosteluissa.\n\n<b>💰 Ilmaiseksi mainostamalla 💰</b>\n\nIhannetapauksessa
+    Heado olisi ilmainen ja mainokseton. Mutta se ei ole niin yksinkertaista. Headon
+    kaltainen projekti maksaa paljon rahaa ja paljon aikaa. Jotta projekti olisi kestävä,
+    laitan mainoksia. Jos et halua nähdä mainoksia, voit ostaa mainoksettoman premium-version
+    kertamaksulla. Jos käytät Headoa perheesi kanssa, voit myös ostaa perhepaketin
+    edulliseen hintaan, jolloin kaikki jäsenet voivat käyttää sovellusta ilman mainoksia.\n
+    \n<b>🇩🇪 Tietosuoja made in Germany 🇩🇪</b>\n \nHeado on saksalainen projekti. Kehitys
+    ja palvelimet sijaitsevat Saksassa. Olen minimoinut kolmansien osapuolien palveluntarjoajien
+    käytön. Sovellus kysyy tietojenkäsittelyasetuksiasi ennen käyttöä. Heado on siis
+    GDPR:n mukainen."
+  short: Heado, lämpökalenteri kaikille nartuillesi!
+screenshot:
+  '1':
+    title: Pidä sykliä aina silmällä
+  '2':
+    title: Päivittäinen dokumentointi
+  '4':
+    title: Huomaa vastuuvapauden myöntäminen
+  '3':
+    title: Sieppaa tunnelma
+  '5':
+    title: Koko perheelle
+purchase:
+  premium:
+    member:
+      description: Henkilökohtainen ja elinikäinen jäsenyytesi.
+      title: Heado Premium - jäsen
+    family:
+      description: Premium-jäsenyys koko perheellesi, koko eliniäksi.
+      title: Heado Premium - Perhe

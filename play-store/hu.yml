@@ -1,0 +1,66 @@
+title: 'Heado: Hőnaptár'
+description:
+  long: "A Heado egy egyszerű és világos naptárat kínál Önnek a szuka hőségéről.\n
+    \n<b>🔄 Aktuális tüzelés 🔄</b>\n\nKözvetlenül a kezdőlapon láthatod, hogy melyik
+    fázisban van a kutyád. Az egyszerű kijelző mutatja, hogy az aktuális ciklusfázis
+    meddig tart. A számításhoz kutyája összes korábbi ciklusát felhasználjuk.\n\n
+    <b>✨ A következő tüzelés előrejelzése ✨</b>\n\nA Heado alkalmazás megmondja, hogy
+    kedvence mikor lesz legközelebb tüzes. Így sokkal könnyebbé válik a nyaralás,
+    a kutyanapközi és a szülőknél tett látogatások megtervezése. A \nkövetkező tüzelés
+    kiszámítása kutyája korábbi ciklusai alapján történik.\n\n<b>😇 Kutyád hangulata
+    😇</b>\n\nNaponta vezessen feljegyzést kutyája hangulatáról. Az emberekhez hasonlóan
+    kutyád hormonháztartása is jelentősen változik minden egyes ciklusban. Ez azt
+    eredményezheti, hogy kutyád hangulata eltérő lehet a hőség előtt, alatt vagy után.
+    Használja a Heado-t és dokumentálja kutyája hangulatát. Ez segít jobban megérteni
+    kedvencét, és hosszú távon felismerni, hogy szukája a ciklusa előtt bújós vagy
+    szorongó lesz-e. \n\n<b>🩸 A folyás állandósága 🩸</b>\n\nA váladék állaga fontos
+    tényező a hőség idején. A nők menstruációs naptárához hasonlóan itt is dokumentálhatod
+    a kutyád ürülésének jellemzőit. Ezek az adatok segítenek a szokatlan váladék felismerésében
+    és kedvence egészségének szemmel tartásában.\n\n<b>ℹ️ Tippek és információk a
+    hőséggel kapcsolatban ℹ️</b>\n\n A Heado segítségével hűséges társad van a hőség
+    témájában. Az alkalmazásban minden szükséges információt megtalálsz kutyád ciklusáról.
+    Hiányzik egy téma, vagy kérdése van? Írj nekem a wuff@heado.app címre, és mindent
+    megteszek, hogy megválaszoljam a kérdésedet, és felvegyem az alkalmazásba.\n \n
+    <b>🐶 Minden szukádnak 🐶</b>\n\nTöbb szuka kutyád is van? Az nagyszerű! Annyi kutyát
+    adhatsz hozzá a Heado alkalmazásban, amennyit csak szeretnél. Egyszerűen váltogathatsz
+    a kedvenceid között, akárcsak a közösségi médiaalkalmazásokban.\n \n<b>👨‍👩‍👧‍👧
+    Az egész családnak 👨‍👩‍👧‍👧</b>\n\nPartner, kutyaszitter, gyerekek? Egyáltalán
+    nem probléma! A háztartás minden tagját meghívhatja az alkalmazásba, és együtt
+    tarthatják szemmel a hőséget. Minden családtag hozzáférhet az összes adathoz,
+    és hozzáadhatja a szükséges információkat.\n\n<b>🐾 Kutyatulajdonosoktól kutyatulajdonosoknak
+    🐾</b>\n\nAz alkalmazás fejlesztőjeként nekem (Fábián) magamnak is van kutyám.
+    A párommal együtt azért terveztük meg a Heado-t, mert magunk is láttuk, hogy szükség
+    van egy ilyen naptárra. Természetesen minden kutya más és más, és minden családtagnak
+    megvannak a saját igényei. Bátran forduljon hozzám visszajelzéseivel és az alkalmazással
+    kapcsolatos kívánságaival. E-mailben: wuff@heado.app vagy itt a vélemények között.\n
+    \n<b>💰 Ingyenes reklámmal 💰</b>\n\nIdeális esetben a Heado ingyenes és reklámmentes
+    lenne. De ez nem ilyen egyszerű. Egy olyan projekt, mint a Heado sok pénzbe és
+    sok időbe kerül. Ahhoz, hogy a projekt fenntartható legyen, hirdetéseket helyezek
+    el. Ha nem szeretnél reklámokat látni, egyszeri díj ellenében megvásárolhatod
+    a reklámmentes prémium verziót. Ha a családoddal együtt használod a Headót, kedvező
+    áron családi csomagot is vásárolhatsz, és az alkalmazás minden tagja reklámmentesen
+    használhatja az alkalmazást.\n\n<b>🇩🇪 Adatvédelem made in Germany 🇩🇪</b>\n \n
+    A Heado egy német projekt. A fejlesztés és a szerverek Németországban találhatóak.
+    A harmadik féltől származó szolgáltatók használatát minimálisra csökkentettem.
+    Az alkalmazás használat előtt megkérdezi az adatkezelési preferenciáit. A Heado
+    ezért megfelel a GDPR-nak."
+  short: Heado, a hőségnaptár minden szukának!
+screenshot:
+  '1':
+    title: Mindig szemmel tartva a ciklust
+  '2':
+    title: Napi dokumentáció
+  '4':
+    title: Figyeljük meg a mentesítést
+  '3':
+    title: A hangulat megragadása
+  '5':
+    title: Az egész családnak
+purchase:
+  premium:
+    member:
+      description: Az Ön személyes és élethosszig tartó tagsága.
+      title: Heado Premium - Tag
+    family:
+      description: Prémium tagság az egész családnak, egy életre.
+      title: Heado Premium - Családi

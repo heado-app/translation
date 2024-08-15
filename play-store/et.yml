@@ -1,0 +1,63 @@
+title: 'Heado: soojuskalender'
+description:
+  long: "Heado pakub teile lihtsat ja selget kalendrit teie emasloomade kuumuse kohta.\n
+    \n<b>🔄 Praegune tiinus 🔄</b>\n\nSaate otse avalehel näha, millises faasis teie
+    koer parasjagu on. Lihtne ekraan näitab teile, kui kaua praegune tsüklifaas kestab.
+    Arvutamisel kasutatakse kõiki teie koera eelnevaid tsükleid.\n\n<b>✨ Järgmise
+    jooksu ennustamine ✨</b>\n\nHeado rakendus ütleb teile, millal teie lemmikloomal
+    on järgmine tiinus. See muudab puhkuse, koera päevahoiu ja vanemate külastuste
+    planeerimise palju lihtsamaks. Veebileht \njärgmise tiinuse arvutamine põhineb
+    teie koera eelmistel tsüklitel.\n\n<b>😇 Sinu koera meeleolu 😇</b>\n\nHoidke igapäevaselt
+    arvestust oma koera meeleolu kohta. Nagu inimestelgi, muutub teie koera hormoonide
+    tasakaal iga tsükliga oluliselt. See võib põhjustada teie koeral erinevaid meeleolusid
+    enne, ajal või pärast kuumust. Kasutage Headot ja dokumenteerige oma koera meeleolud.
+    See aitab teil oma lemmiklooma paremini mõista ja pikemas perspektiivis ära tunda,
+    kas teie emane on enne tsüklit kaisus või ärevuses. \n\n<b>🩸 Väljalangemise järjepidevus
+    🩸</b>\n\nErituse järjepidevus on kuumuse ajal oluline tegur. Sarnaselt naiste
+    menstruatsioonikalendritega saate ka siin dokumenteerida oma koera erituse omadusi.
+    Need andmed aitavad teil avastada ebatavalisi erandeid ja hoida silma peal teie
+    lemmiklooma tervislikul seisundil.\n\n<b>ℹ️ Näpunäiteid ja teavet kuumuse kohta
+    ℹ️</b>\n\n Headoga on teil kuumuse teemal ustav kaaslane. Rakendusest leiate kogu
+    vajaliku teabe oma koera tsükli kohta. Kas sul on mõni teema puudu või on sul
+    küsimus? Võta minuga ühendust aadressil wuff@heado.app ja ma annan endast parima,
+    et vastata sinu küsimusele ja lisada see rakendusse.\n \n<b>🐶 Kõigile teie emastele
+    🐶</b>\n\nKas teil on mitu emast koera? See on suurepärane! Heado rakenduses saad
+    lisada nii palju koeri kui soovid. Lihtsalt vaheta oma lemmikloomade vahel, täpselt
+    nagu sotsiaalmeedia rakendustes.\n \n<b>👨‍👩‍👧‍👧 Kogu perele 👨‍👩‍👧‍👧</b>\n\nPartner,
+    koerahoidja, lapsed? Pole mingit probleemi! Saate kõiki pereliikmeid rakendusse
+    kutsuda ja üheskoos kuumusel silma peal hoida. Igal pereliikmel on juurdepääs
+    kõikidele andmetele ja ta saab lisada vajalikku teavet.\n\n<b>🐾 Koeraomanikelt
+    koeraomanikele 🐾</b>\n\nRakenduse arendajana on mul (Fabian) ka endal koer. Koos
+    oma elukaaslasega disainisime Heado, sest nägime ise vajadust sellise kalendri
+    järele. Loomulikult on iga koer erinev ja igal pereliikmel on oma nõuded. Võtke
+    minuga julgelt ühendust oma tagasiside & soovidega rakenduse kohta. Posti teel:
+    wuff@heado.app või siin arvustustes.\n\n<b>💰 Tasuta koos reklaamiga 💰</b>\n\n
+    Ideaalis oleks Heado tasuta ja reklaamivaba. Aga see ei ole nii lihtne. Selline
+    projekt nagu Heado maksab palju raha ja palju aega. Et projekt oleks jätkusuutlik,
+    panen ma reklaami. Kui te ei soovi reklaame näha, saate ühekordse makse eest osta
+    reklaamivaba premium-versiooni. Kui kasutate Headot koos perega, saate osta ka
+    soodsa hinnaga perepaketi ja kõik liikmed saavad rakendust reklaamivabalt kasutada.\n
+    \n<b>🇩🇪 Andmekaitse made in Germany 🇩🇪</b>\n \nHeado on Saksamaa projekt. Arendus
+    ja serverid asuvad Saksamaal. Olen minimeerinud kolmandate osapoolte teenusepakkujate
+    kasutamist. Rakendus küsib enne kasutamist teie andmetöötluse eelistusi. Heado
+    on seega GDPRi nõuetele vastav."
+  short: Heado, kuumakalender kõigile sinu ämmadele!
+screenshot:
+  '1':
+    title: Alati silm peal hoidmine tsüklile
+  '2':
+    title: Igapäevane dokumentatsioon
+  '4':
+    title: Pange tähele heakskiidu andmist
+  '3':
+    title: Jäädvustage meeleolu
+  '5':
+    title: Kogu perele
+purchase:
+  premium:
+    member:
+      description: Teie isiklik ja elukestev liikmelisus.
+      title: Heado Premium - liige
+    family:
+      title: Heado Premium - perekond
+      description: Premium liikmesus kogu perele, kogu eluks ajaks.

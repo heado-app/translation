@@ -1,0 +1,70 @@
+title: 'Heado: Calendar termic'
+description:
+  long: "Heado vă oferă un calendar simplu și clar al căldurilor cățelei dumneavoastră.\n
+    \n<b>🔄 Căldura actuală 🔄</b>\n\nPuteți vedea în ce fază se află cățeaua dvs. direct
+    de pe pagina de start. Afișajul simplu vă arată cât timp va dura faza actuală
+    a ciclului. Toate ciclurile anterioare ale câinelui dvs. sunt folosite pentru
+    calcul.\n\n<b>✨ Predicția următoarei călduri ✨</b></b>.\n\nAplicația Heado vă
+    spune când animalul dvs. de companie va avea următoarea perioadă de călduri. Acest
+    lucru facilitează mult planificarea vacanțelor, a îngrijirilor pentru câini și
+    a vizitelor la părinți. Aplicația \ncalcularea următoarei călduri se bazează pe
+    ciclurile anterioare ale câinelui dumneavoastră.\n\n<b>😇 Starea de spirit a câinelui
+    tău 😇</b>\n\nȚineți o evidență zilnică a stării de spirit a câinelui dumneavoastră.
+    Ca și în cazul oamenilor, echilibrul hormonal al câinelui dumneavoastră se schimbă
+    semnificativ cu fiecare ciclu. Acest lucru poate duce la stări de spirit diferite
+    la câinele dumneavoastră înainte, în timpul sau după călduri. Folosiți Heado și
+    documentați stările de spirit ale câinelui dumneavoastră. Vă va ajuta să vă înțelegeți
+    mai bine animalul de companie și să recunoașteți pe termen lung dacă femela dvs.
+    va fi drăgălașă sau anxioasă înainte de ciclu. \n\n<b>🩸 Consistența secreției
+    🩸</b>\n\nConsistența secreției este un factor important în timpul căldurii. La
+    fel ca în cazul calendarelor menstruale pentru femei, puteți documenta aici și
+    caracteristicile descărcărilor câinelui dumneavoastră. Aceste date vă vor ajuta
+    să detectați secrețiile neobișnuite și să urmăriți starea de sănătate a animalului
+    dumneavoastră de companie.\n\n<b>ℹ️ Sfaturi și informații despre călduri ℹ️</b>\n
+    \n Cu Heado, aveți un companion loial pe tema căldurii. Veți găsi în aplicație
+    toate informațiile de care aveți nevoie despre ciclul câinelui dumneavoastră.
+    Îți lipsește un subiect sau ai o întrebare? Contactați-mă la wuff@heado.app și
+    voi face tot posibilul să vă răspund la întrebare și să o adaug în aplicație.\n
+    \n<b>🐶 Pentru toate cățelele tale 🐶</b>\n\nAveți mai multe femele de câine? Asta
+    este minunat! Puteți adăuga câți câini doriți în aplicația Heado. Pur și simplu
+    treceți de la un animal de companie la altul, așa cum faceți în aplicațiile de
+    socializare.\n \n<b>👨‍👩‍👧‍👧 Pentru întreaga familie 👨‍👩‍👧‍👧</b>.\n\nPartener,
+    dog sitter, copii? Nici o problemă! Puteți invita toți membrii gospodăriei în
+    aplicație și să supravegheați împreună căldura. Fiecare membru al familiei are
+    acces la toate datele și poate adăuga informațiile necesare.\n\n<b>🐾 De la proprietarii
+    de câini pentru proprietarii de câini 🐾</b> <b>.\n\nÎn calitate de dezvoltator
+    al aplicației, eu însumi (Fabian) am un câine. Împreună cu partenerul meu, am
+    conceput Heado pentru că am văzut noi înșine nevoia unui astfel de calendar. Bineînțeles,
+    fiecare câine este diferit și fiecare membru al familiei are propriile cerințe.
+    Nu ezitați să mă contactați cu feedback-ul & dorințele dumneavoastră pentru aplicație.
+    Pe mail: wuff@heado.app sau aici în comentarii.\n\n<b>💰 Gratuit cu publicitate
+    💰</b>\n\nIdeal ar fi ca Heado să fie gratuită și fără publicitate. Dar nu este
+    atât de simplu. Un proiect ca Heado costă mulți bani și mult timp. Pentru ca proiectul
+    să fie sustenabil, pun reclame. Dacă nu doriți să vedeți reclame, puteți cumpăra
+    versiunea premium fără reclame pentru o plată unică. Dacă folosiți Heado împreună
+    cu familia, puteți achiziționa, de asemenea, un pachet de familie la un preț avantajos
+    și toți membrii pot folosi aplicația fără reclame.\n\n<b>🇩🇪 Protecția datelor
+    made in Germany 🇩🇪</b>\n \nHeado este un proiect german. Dezvoltarea și serverele
+    se află în Germania. Am redus la minimum utilizarea furnizorilor terți. Aplicația
+    vă solicită preferințele dvs. privind prelucrarea datelor înainte de a o utiliza.
+    Prin urmare, Heado este conformă cu GDPR."
+  short: Heado, calendarul căldurii pentru toate cățelele tale!
+screenshot:
+  '1':
+    title: Întotdeauna cu ochii pe ciclu
+  '2':
+    title: Documentație zilnică
+  '4':
+    title: A se observa descărcarea
+  '3':
+    title: Captați starea de spirit
+  '5':
+    title: Pentru întreaga familie
+purchase:
+  premium:
+    member:
+      description: Apartenența dumneavoastră personală și pe viață.
+      title: Heado Premium - Membru
+    family:
+      description: Abonament premium pentru întreaga familie, pe viață.
+      title: Heado Premium - Familie
