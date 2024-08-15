@@ -394,6 +394,29 @@ settings:
       dark: Sötét
       title: Tervezés
     title: App
+  mayo: "Hé, szőrös orr! 🐾\n\nÖrülök, hogy megtaláltad az utat a titkos területemre!
+    Talán már ismersz is engem. Ha nem, a nevem Mayo és egy Appenzell hegyi kutya
+    vagyok. Természetesen szuka! Most vagyok 2 éves. A fenti illusztráció én vagyok.
+    Csak hogy felismerhessetek, ha egyszer találkoztok velem.\n\nSajnos a családommal
+    rájöttünk, hogy vannak szorongásos fázisaim. Valamikor mindannyiunknak az volt
+    a benyomásunk, hogy a hormonjaim megőrültek a hőemelkedésem előtt, és hogy nem
+    vagyok olyan bátor, mint régen. De nem voltunk benne teljesen biztosak.\n\nA gazdimnak,
+    Korinnának ekkor támadt az az ötlete, hogy készíthetnénk egy naptárat a nőstény
+    kutyáknak, ahogyan az emberi nőstényeknek is. Alighogy kimondtuk, máris megtörtént!
+    Fábián gazdám programozó. Ő is úgy gondolta, hogy ez egy nagyszerű ötlet, és rögtön
+    belevágott.\n\nFábián azonban hamar rájött, hogy fogalma sincs a kutyák ciklusáról.
+    Vagy arról, hogy mi tartozik hozzá. Ezért rengeteget kutatott az interneten, rengeteg
+    kérdést tett fel Korinnának, és összehasonlította az emberi hölgyek számára már
+    létező alkalmazásokkal.\n\nNéhány hónap és a mancsos barátokkal való tesztelési
+    fázis után eljött az idő! 2023. november 27-én megjelent a Heado az App Store-ban
+    Androidra és iOS-re.\n\nA szorongásos fázisaim valójában a hormonjaimtól származnak.
+    De úgy tűnik, hogy ez is sokkal jobb lesz minden egyes hőséggel. Mindenképpen
+    rajta tartjuk a szemünket.\n\nRemélem, hogy ezzel az alkalmazással neked és az
+    embereidnek is tudunk segíteni, és gyorsabban megtaláljuk a problémákat vagy a
+    szabálytalanságokat. És az állatorvosnál is meglesznek a szükséges bizonyítékok.\n
+    \nHa Önnek vagy embereinek bármilyen ötlete vagy kérése van, kérem, keressenek
+    meg a mayo@heado.app címen. Problémák, hibák vagy nehézségek esetén is.\n\nJó
+    szórakozást az alkalmazással! <3\n\nMayo, Korinna & Fabian"
 account_settings:
   title: Fiókbeállítások
   logins:
@@ -458,6 +481,8 @@ onboarding:
     code:
       error:
         min_length: A kódnak 5 számjegyből kell állnia
+      invalid: "Érvénytelen meghívó kód.\nA kód nem létezik, vagy már felhasználásra
+        került."
   finish:
     task: Készen állsz!
     legal:
