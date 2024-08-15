@@ -6,7 +6,7 @@ purchase:
     member:
       title: Heado Premium - Medlem
       description: Ditt livslånga medlemskap.
-title: 'Heado: Värmekalender'
+title: 'Heado: Löpkalender'
 description: "Heado ger dig en enkel och tydlig kalender över din tiks värme.\n\n
   * Aktuell löptid\n\nDu kan se vilken fas din hund befinner sig i direkt på startsidan.
   Den enkla displayen visar hur länge den aktuella cykelfasen kommer att pågå. Alla
@@ -47,5 +47,16 @@ description: "Heado ger dig en enkel och tydlig kalender över din tiks värme.\
   Jag har minimerat användningen av tredjepartsleverantörer. Appen frågar dig om dina
   preferenser för databehandling före användning. Heado är därför förenlig med GDPR."
 subtitle: Kalender för hundars brunst
-promotion: Heado, värmekalendern för alla dina tikar!
-tags: heado,värme,hund,tik,värmekalender,värmekalender,kalender värme,hundar,djur
+promotion: Heado, löpkalender för alla dina tikar!
+tags: heado,värme,hund,tik,värmekalender,värmekalender,kalender värme,hundar,djur,löpkalender
+screenshot:
+  '2':
+    title: Daglig dokumentation
+  '3':
+    title: Fånga stämningen
+  '4':
+    title: Notera utsläpp
+  '1':
+    title: Håll alltid ett öga på cykeln
+  '5':
+    title: För hela familjen
