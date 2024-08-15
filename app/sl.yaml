@@ -393,6 +393,27 @@ settings:
       title: Oblikovanje
       light: Svetloba
     title: Aplikacija
+  mayo: "Hej, krznen nos! 🐾\n\nVesel sem, da si našel pot do mojega skrivnega prostora!
+    Morda me že poznaš. Če ne, mi je ime Mayo in sem appenzellski planinski pes. Samica,
+    seveda! Stara sem dve leti. Na zgornji ilustraciji sem jaz. Samo zato, da me boste
+    lahko prepoznali, če me boste kdaj videli.\n\nNa žalost smo z družino ugotovili,
+    da imam anksiozne faze. V nekem trenutku smo vsi dobili vtis, da so se moji hormoni
+    pred vročino pošalili in da nisem več tako pogumna, kot sem bila včasih. Vendar
+    nismo bili povsem prepričani.\n\nMoja gospodarica Korinna je takrat dobila idejo,
+    da bi lahko naredili koledar za pasje samice, tako kot to počnemo za človeške
+    samice. Prej je bilo rečeno kot storjeno! Moj gospodar Fabian je programer. Tudi
+    njemu se je ideja zdela odlična in takoj se je lotil dela.\n\nVendar je Fabian
+    kmalu ugotovil, da nima pojma o pasjem ciklusu. Ali kaj vključuje. Zato je veliko
+    raziskoval na internetu, Korinni zastavil veliko vprašanj in jo primerjal z obstoječimi
+    aplikacijami za človeške dame.\n\nPo nekaj mesecih in testni fazi z mojimi prijatelji
+    iz šap je napočil čas! 27. novembra 2023 sva aplikacijo Heado objavila v trgovini
+    App Store za operacijska sistema Android in iOS.\n\nMoje faze tesnobe so pravzaprav
+    posledica mojih hormonov. Vendar se zdi, da je z vsako vročino tudi veliko bolje.
+    Vsekakor jo bomo še naprej spremljali.\n\nUpam, da bomo s to aplikacijo lahko
+    pomagali tudi vam in vašim ljudem ter hitreje odkrili težave ali nepravilnosti.
+    In da boste imeli tudi potrebne dokaze pri veterinarju.\n\nČe imate vi ali vaši
+    ljudje kakršne koli zamisli ali zahteve, mi pišite na mayo@heado.app. Tudi v primeru
+    težav, napak ali težav.\n\nUživajte z aplikacijo! <3\n\nMayo, Korinna in Fabian"
 account_settings:
   title: Nastavitve računa
   logins:
@@ -468,6 +489,7 @@ onboarding:
     code:
       error:
         min_length: Koda mora biti sestavljena iz petih številk.
+      invalid: "Neveljavna koda vabila.\nKoda ne obstaja ali je bila že uporabljena."
   finish:
     task: Pripravljeni ste!
     legal:
