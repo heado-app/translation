@@ -142,6 +142,31 @@ settings:
       dark: Sombre
       title: Design
     title: App
+  mayo: "Salut, ma puce ! 🐾\n\nJe suis ravie que tu aies trouvé ma zone secrète !
+    Peut-être que tu me connais déjà. Si ce n'est pas le cas : je m'appelle Mayo et
+    je suis un bouvier appenzellois. Une femelle, bien sûr ! J'ai maintenant deux
+    ans. L'illustration ci-dessus, c'est moi. Juste pour que tu me reconnaisses si
+    tu me vois un jour.\n\nMalheureusement, ma famille et moi avons constaté que j'ai
+    toujours des phases de peur. A un moment donné, nous avons tous eu l'impression
+    que mes hormones devenaient folles avant les chaleurs et que je n'étais donc plus
+    aussi courageuse. Mais nous n'en étions pas tout à fait sûrs.\n\nMa maîtresse
+    Korinna a alors eu l'idée de faire un calendrier pour les dames-chiens, comme
+    pour les femelles humaines. Et voilà, c'est fait ! Mon maître Fabian est en effet
+    programmeur. Il a également trouvé l'idée très bonne et s'est immédiatement mis
+    au travail.\n\nMais Fabian s'est vite rendu compte qu'il n'avait aucune idée du
+    cycle d'un chien. Ou ce qui est important. Il a donc fait beaucoup de recherches
+    sur Internet, a posé des questions à Korinna et l'a comparée aux applications
+    existantes pour les femmes.\n\nAprès quelques mois et une phase de test avec mes
+    amis à pattes, le moment était venu ! Le 27 novembre 2023, nous avons publié Heado
+    dans l'App Store pour Android & iOS.\n\nEn fait, mes phases d'anxiété viennent
+    de mes hormones. Mais il semble que cela s'améliore aussi nettement à chaque période
+    de chaleur. Nous gardons certainement un œil sur cela.\n\nJ'espère que nous pourrons
+    aussi t'aider un peu, toi et tes humains, avec cette application, et trouver plus
+    rapidement les problèmes ou les irrégularités. Et aussi avoir les preuves nécessaires
+    chez le vétérinaire.\n\nSi toi ou tes proches avez des idées et des souhaits,
+    n'hésite pas à me contacter à mayo@heado.app. Même en cas de problèmes, d'erreurs
+    ou de difficultés.\n\nAmuse-toi bien avec l'application ! <3\n\nMayo, Korinna
+    & Fabian"
 calendar:
   mood:
     exhausted: Épuisé
@@ -495,6 +520,8 @@ onboarding:
     code:
       error:
         min_length: Le code doit être composé de 5 chiffres
+      invalid: "Code d'invitation non valide.\nLe code n'existe pas ou a déjà été
+        utilisé."
   finish:
     task: Tu es prêt !
     legal:
