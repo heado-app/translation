@@ -35,6 +35,7 @@ onboarding:
     code:
       error:
         min_length: De code moet uit 5 cijfers bestaan
+      invalid: "Ongeldige uitnodigingscode.\nDe code bestaat niet of is al gebruikt."
   finish:
     task: Je bent er klaar voor!
     legal:
@@ -460,6 +461,29 @@ settings:
       title: Ontwerp
       light: Licht
     title: App
+  mayo: "Hé bontneus! 🐾\n\nIk ben blij dat je de weg naar mijn geheime gebied hebt
+    gevonden! Misschien ken je me al. Zo niet, dan heet ik Mayo en ben ik een Appenzeller
+    berghond. Een teefje natuurlijk! Ik ben nu 2 jaar oud. De illustratie hierboven
+    ben ik. Gewoon zodat je me kunt herkennen als je me ooit tegenkomt.\n\nHelaas
+    realiseerden mijn familie en ik ons dat ik angstige fases heb. Op een gegeven
+    moment hadden we allemaal de indruk dat mijn hormonen op hol sloegen voor mijn
+    loopsheid en dat ik niet meer zo dapper was als vroeger. Maar we wisten het niet
+    helemaal zeker.\n\nMijn bazin Korinna kwam toen op het idee dat we een kalender
+    konden maken voor vrouwelijke honden, net zoals we dat doen voor vrouwelijke mensen.
+    Zo gezegd, zo gedaan! Mijn baasje Fabian is een programmeur. Hij vond het ook
+    een geweldig idee en ging meteen aan de slag.\n\nFabian realiseerde zich echter
+    al snel dat hij geen enkel idee had van de cyclus van een hond. Of wat er allemaal
+    bij komt kijken. Dus deed hij veel onderzoek op internet, stelde Korinna veel
+    vragen en vergeleek haar met bestaande apps voor menselijke dames.\n\nNa een paar
+    maanden en een testfase met mijn pootvrienden was het zover! Op 27 november 2023
+    publiceerden we Heado in de App Store voor Android & iOS.\n\nMijn angstfases komen
+    eigenlijk door mijn hormonen. Maar het lijkt ook veel beter te worden met elke
+    loopsheid. We houden het zeker in de gaten.\n\nIk hoop dat we jou en je mensen
+    ook kunnen helpen met deze app en problemen of onregelmatigheden sneller kunnen
+    vinden. En ook de nodige bewijzen hebben bij de dierenarts.\n\nAls jij of je mensen
+    ideeën of verzoeken hebben, neem dan contact met me op via mayo@heado.app. Ook
+    bij problemen, fouten of moeilijkheden.\n\nVeel plezier met de app! <3\n\nMayo,
+    Korinna & Fabian"
 account_settings:
   title: Accountinstellingen
   logins:
