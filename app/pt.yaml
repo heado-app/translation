@@ -525,3 +525,5 @@ premium:
 generic:
   system_default: Norma do sistema
   cancel: Cancela
+  delete: Elimina
+  done: Prepara-te
