@@ -524,3 +524,5 @@ onboarding:
 generic:
   system_default: Systemets standard
   cancel: Annuller
+  delete: Slet
+  done: Færdig
