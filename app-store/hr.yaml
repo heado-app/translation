@@ -38,3 +38,21 @@ description: "Heado vam nudi jednostavan i pregledan kalendar o toplini vašeg p
   u Njemačkoj *\n\nHeado je njemački projekt. Razvoj i serveri nalaze se u Njemačkoj.
   Smanjio sam upotrebu vanjskih dobavljača na minimum. Aplikacija vas pita za vaše
   preferencije obrade podataka prije upotrebe. Heado je stoga usklađen s DSGVO-om."
+screenshot:
+  '2':
+    title: Točna dokumentacija po danima
+  '3':
+    title: Zadržite raspoloženje
+  '5':
+    title: Za cijelu obitelj
+  '1':
+    title: Uvijek imajte ciklus na oku
+  '4':
+    title: Zabilježite izlučevine
+purchase:
+  premium:
+    family:
+      title: Heado Premium - Obitelj
+    member:
+      title: Heado Premium - Član
+promotion: Heado, kalendar estrusa za sve vaše ženke!
