@@ -522,3 +522,5 @@ onboarding:
 generic:
   system_default: Järjestelmän standardi
   cancel: Peruuta
+  delete: Poista
+  done: Valmis
