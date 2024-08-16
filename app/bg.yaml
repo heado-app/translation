@@ -530,3 +530,5 @@ onboarding:
 generic:
   system_default: Стандарт на системата
   cancel: Отмяна на
+  delete: Изтриване на
+  done: Завършен
