@@ -529,3 +529,5 @@ account_settings:
 generic:
   system_default: Standard de sistem
   cancel: Anulează
+  delete: Ștergeți
+  done: Terminat
