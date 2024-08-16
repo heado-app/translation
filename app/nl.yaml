@@ -528,3 +528,5 @@ account_settings:
 generic:
   system_default: Systeemstandaard
   cancel: Annuleren
+  delete: Verwijder
+  done: Afgewerkt
