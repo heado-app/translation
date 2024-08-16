@@ -554,3 +554,5 @@ onboarding:
 generic:
   system_default: Standard du système
   cancel: Annuler
+  delete: Supprimer
+  done: Prêt
