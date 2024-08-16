@@ -520,3 +520,5 @@ app:
 generic:
   system_default: Systémový standard
   cancel: Zrušit
+  delete: Odstranit
+  done: Připraveno
