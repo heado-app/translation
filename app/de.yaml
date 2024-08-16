@@ -539,3 +539,5 @@ onboarding:
 generic:
   system_default: Systemstandard
   cancel: Abbrechen
+  delete: Löschen
+  done: Fertig
