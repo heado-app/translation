@@ -536,3 +536,5 @@ settings:
 generic:
   system_default: Πρότυπο συστήματος
   cancel: Ακύρωση
+  delete: Διαγραφή
+  done: Τελειωμένο
