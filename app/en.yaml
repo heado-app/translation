@@ -522,3 +522,5 @@ app:
 generic:
   system_default: System standard
   cancel: Cancel
+  delete: Delete
+  done: Done
