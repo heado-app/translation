@@ -521,3 +521,5 @@ onboarding:
 generic:
   system_default: Süsteemi standard
   cancel: Tühista
+  delete: Kustuta
+  done: Valmis
