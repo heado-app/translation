@@ -526,3 +526,5 @@ onboarding:
 generic:
   system_default: Systemstandard
   cancel: Avbryt
+  delete: Radera
+  done: Färdig
