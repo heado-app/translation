@@ -526,3 +526,5 @@ account_settings:
 generic:
   system_default: Sistema estándar
   cancel: Cancelar
+  delete: Borra
+  done: Listo
