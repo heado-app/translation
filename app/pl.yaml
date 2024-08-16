@@ -523,3 +523,5 @@ account_settings:
 generic:
   system_default: Standard systemu
   cancel: Anuluj
+  delete: Usuń
+  done: Zakończony
