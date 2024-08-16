@@ -525,3 +525,5 @@ onboarding:
 generic:
   system_default: Rendszer szabvány
   cancel: Törölje
+  delete: Törölje a címet.
+  done: Kész
