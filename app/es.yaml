@@ -207,7 +207,7 @@ family:
         title: Eliminar invitación
         message: ¿Realmente quieres eliminar esta invitación? Entonces ya no podrás
           utilizar este PIN de invitación. No se puede cancelar y tendrás que crear
-          un nuevo PIN.
+          un nuevo PIN!
         no: Cancelar
         yes: Borra
   family_form:
