@@ -41,7 +41,7 @@ family:
           ennek a családnak, a család is törlésre kerül. Az összes kutya és a kapcsolódó
           adatok is törlődnek. Ezt nem lehet visszacsinálni!
         no: Törölje
-        yes: Törölje a  címet.
+        yes: Törlés
   invitation_form:
     title: Meghívó
     share:
@@ -52,7 +52,7 @@ family:
       copy:
         hint: A "{}" PIN kódot másolták.
     action:
-      delete: Törölje a  címet.
+      delete: Törlés
     delete:
       confirm:
         title: Meghívó törlése
