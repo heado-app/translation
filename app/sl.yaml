@@ -466,6 +466,7 @@ onboarding:
     task: Kako te lahko kličem?
     name:
       label: Ime
+    default_name: "{}'s companion"
   lonely:
     task: Ste bili povabljeni v družino?
     action:
@@ -508,6 +509,7 @@ onboarding:
       label: (Izmišljeno) družinsko ime
       help: Izberite namišljeno ime, ki dobro opisuje vašo družino. Vaš priimek tu
         ni potreben.
+    default_name: '{}jegova družina'
   dog:
     task: Kako je vašemu psu ime?
     name:
