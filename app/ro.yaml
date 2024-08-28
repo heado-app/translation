@@ -119,6 +119,7 @@ onboarding:
     task: Cum pot să-ți spun?
     name:
       label: Nume
+    default_name: însoțitorul lui {}
   lonely:
     task: Ați fost invitat la o familie?
     action:
@@ -162,6 +163,7 @@ onboarding:
       label: Nume de familie (fictiv)
       help: Alegeți un nume imaginar care să vă descrie bine familia. Numele dvs.
         de familie nu este necesar aici.
+    default_name: Familia lui {}
 calendar:
   calendar:
     details:
