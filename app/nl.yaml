@@ -59,6 +59,7 @@ onboarding:
     task: Hoe kan ik je noemen?
     name:
       label: Naam
+    default_name: Metgezel van {}
   lonely:
     task: Ben je uitgenodigd voor een familie?
     action:
@@ -70,6 +71,7 @@ onboarding:
       label: (Fictieve) Achternaam
       help: Kies een denkbeeldige naam die je familie goed beschrijft. Je achternaam
         is hier niet nodig.
+    default_name: Familie van {}
   dog:
     task: Wat is de naam van je hond?
     name:
