@@ -466,6 +466,7 @@ onboarding:
     task: Kuidas ma võin teid kutsuda?
     name:
       label: Nimi
+    default_name: "{}'s companion"
   lonely:
     task: Kas teid on kutsutud perekonda?
     action:
@@ -508,6 +509,7 @@ onboarding:
       label: (Fiktiivne) Perekonnanimi
       help: Valige kujuteldav nimi, mis kirjeldab hästi teie perekonda. Teie perekonnanimi
         ei ole siinkohal vajalik.
+    default_name: '{} perekond'
   dog:
     task: Mis on teie koera nimi?
     name:
