@@ -468,6 +468,7 @@ onboarding:
     task: Hvad kan jeg kalde dig?
     name:
       label: Navn
+    default_name: "{}'s ledsager"
   lonely:
     task: Er du blevet inviteret til en familie?
     action:
@@ -511,6 +512,7 @@ onboarding:
       label: (Fiktivt) Efternavn
       help: Vælg et fantasinavn, der beskriver din familie godt. Dit efternavn er
         ikke nødvendigt her.
+    default_name: "{}'s familie"
   dog:
     task: Hvad hedder din hund?
     name:
