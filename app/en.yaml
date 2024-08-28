@@ -463,6 +463,7 @@ onboarding:
     task: What may I call you?
     name:
       label: Name
+    default_name: "{}'s companion"
   lonely:
     task: Do you invited to a family?
     action:
@@ -505,6 +506,7 @@ onboarding:
       label: (Fictional) Family name
       help: Choose a fantasy name that describes your family well. Your surname is
         not required here.
+    default_name: "{}'s family"
   dog:
     task: What is the name of your dog?
     name:
