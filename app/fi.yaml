@@ -467,6 +467,7 @@ onboarding:
     task: Millä nimellä voin kutsua sinua?
     name:
       label: Nimi
+    default_name: '{y:i}:n kumppani'
   lonely:
     task: Onko sinut kutsuttu perheeseen?
     action:
@@ -509,6 +510,7 @@ onboarding:
       label: (Fiktiivinen) Sukunimi
       help: Valitse mielikuvitusnimi, joka kuvaa hyvin perhettäsi. Sukunimesi ei ole
         välttämätön tässä yhteydessä.
+    default_name: '{}:n perhe'
   dog:
     task: Mikä on koirasi nimi?
     name:
