@@ -497,6 +497,7 @@ onboarding:
     task: Comment puis-je t'appeler ?
     name:
       label: Nom
+    default_name: Les compagnons de {}
   lonely:
     task: As-tu été invité dans une famille ?
     action:
@@ -541,6 +542,7 @@ onboarding:
       label: Nom de famille (fictif)
       help: Choisis un nom imaginaire qui décrit bien ta famille. Ton nom de famille
         n'est pas nécessaire ici.
+    default_name: La famille de {}
   dog:
     task: Quel est le nom de ton chien ?
     name:
