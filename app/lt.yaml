@@ -51,6 +51,7 @@ onboarding:
     task: Kaip tave vadinti?
     name:
       label: Pavadinimas
+    default_name: "{}'s companion"
   lonely:
     task: Ar buvote pakviestas į šeimą?
     action:
@@ -93,6 +94,7 @@ onboarding:
       label: (Išgalvota) pavardė
       help: Pasirinkite įsivaizduojamą vardą, kuris gerai apibūdintų jūsų šeimą. Jūsų
         pavardė čia nebūtina.
+    default_name: '{} šeima'
   dog:
     task: Koks jūsų šuns vardas?
     name:
