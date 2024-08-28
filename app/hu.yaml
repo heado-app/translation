@@ -502,6 +502,7 @@ onboarding:
       label: (fiktív) családi név
       help: Válasszon egy olyan képzeletbeli nevet, amely jól jellemzi a családját.
         A vezetéknevedre itt nincs szükség.
+    default_name: '{} családja'
   dog:
     task: Mi a kutyád neve?
     name:
@@ -522,6 +523,7 @@ onboarding:
     task: Hogy hívhatlak?
     name:
       label: Név
+    default_name: '{} társa'
 generic:
   system_default: Rendszer szabvány
   cancel: Törölje
