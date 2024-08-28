@@ -98,6 +98,7 @@ onboarding:
     task: Jak mogę cię nazywać?
     name:
       label: Nazwa
+    default_name: Towarzysz {}
   lonely:
     task: Czy zostałeś zaproszony do rodziny?
     action:
@@ -128,6 +129,7 @@ onboarding:
       label: (Fikcyjne) Nazwisko rodowe
       help: Wybierz wymyślone imię, które dobrze opisuje Twoją rodzinę. Twoje nazwisko
         nie jest tutaj konieczne.
+    default_name: Rodzina {}
   dog:
     task: Jak ma na imię Twój pies?
     name:
