@@ -444,6 +444,7 @@ onboarding:
     task: Kā es varu jūs saukt?
     name:
       label: Nosaukums
+    default_name: "{}'s companion"
   lonely:
     task: Vai esat uzaicināts uz ģimeni?
     action:
@@ -492,6 +493,7 @@ onboarding:
       label: (Fiktīvs) uzvārds
       help: Izvēlieties iedomātu vārdu, kas labi raksturo jūsu ģimeni. Jūsu uzvārds
         šeit nav nepieciešams.
+    default_name: '{} ģimene'
   dog:
     task: Kāds ir jūsu suņa vārds?
     name:
