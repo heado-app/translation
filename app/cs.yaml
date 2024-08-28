@@ -461,6 +461,7 @@ onboarding:
     task: Jak ti mám říkat?
     name:
       label: Název
+    default_name: '{}jeho společník'
   lonely:
     task: Byli jste pozváni do rodiny?
     action:
@@ -503,6 +504,7 @@ onboarding:
       label: (Fiktivní) příjmení
       help: Vyberte si imaginární jméno, které dobře vystihuje vaši rodinu. Vaše příjmení
         zde není nutné.
+    default_name: '{}jeho rodina'
   dog:
     task: Jak se váš pes jmenuje?
     name:
