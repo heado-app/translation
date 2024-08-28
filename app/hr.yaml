@@ -507,6 +507,7 @@ onboarding:
     task: Kako mogu da te zovem?
     name:
       label: Ime
+    default_name: '{} pratilac'
   lonely:
     task: Jesi li pozvan u porodicu?
     action:
@@ -537,6 +538,7 @@ onboarding:
       label: (Fiktivno) Ime obitelji
       help: Odaberite fiktivno ime koje dobro opisuje vašu obitelj. Vaše prezime ovdje
         nije potrebno.
+    default_name: '{} obitelj'
   dog:
     task: Kako se zove vaš pas?
     name:
