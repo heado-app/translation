@@ -507,7 +507,8 @@ onboarding:
     task: Kako mogu da te zovem?
     name:
       label: Ime
-    default_name: '{} pratilac'
+    default_name: 'Pratilac'
+    default_name_dog: '{} pratilac'
   lonely:
     task: Jesi li pozvan u porodicu?
     action:
