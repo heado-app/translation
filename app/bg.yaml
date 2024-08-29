@@ -474,7 +474,8 @@ onboarding:
     task: Как да ви наричам?
     name:
       label: Име
-    default_name: Спътник на {}
+    default_name: Спътник
+    default_name_dog: Спътник на {}
   lonely:
     task: Били ли сте поканени в семейство?
     action:
