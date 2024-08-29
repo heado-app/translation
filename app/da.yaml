@@ -468,7 +468,8 @@ onboarding:
     task: Hvad kan jeg kalde dig?
     name:
       label: Navn
-    default_name: "{}'s ledsager"
+    default_name: "Ledsager"
+    default_name_dog: "{}'s ledsager"
   lonely:
     task: Er du blevet inviteret til en familie?
     action:
