@@ -325,7 +325,8 @@ onboarding:
     task: Como te posso chamar?
     name:
       label: Nome
-    default_name: '{Acompanha o teu companheiro'
+    default_name: 'Companheiro'
+    default_name_dog: '{} companheiro'
   lonely:
     task: Foste convidado para uma família?
     action:
