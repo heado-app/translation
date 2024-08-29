@@ -181,7 +181,8 @@ onboarding:
     name:
       label: Nome
     task: Come posso chiamarti?
-    default_name: Il compagno di {}
+    default_name: Compagno
+    default_name_dog: Il compagno di {}
   welcome:
     task: Hai già un account?
     action:
