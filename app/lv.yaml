@@ -444,7 +444,8 @@ onboarding:
     task: Kā es varu jūs saukt?
     name:
       label: Nosaukums
-    default_name: "{}'s companion"
+    default_name: "Companion"
+    default_name_dog: "{}'s companion"
   lonely:
     task: Vai esat uzaicināts uz ģimeni?
     action:
