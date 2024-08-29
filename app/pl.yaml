@@ -98,7 +98,8 @@ onboarding:
     task: Jak mogę cię nazywać?
     name:
       label: Nazwa
-    default_name: Towarzysz {}
+    default_name: Towarzysz
+    default_name_dog: Towarzysz {}
   lonely:
     task: Czy zostałeś zaproszony do rodziny?
     action:
