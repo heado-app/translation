@@ -471,7 +471,8 @@ onboarding:
     task: Vad kan jag kalla dig?
     name:
       label: Namn
-    default_name: '{}:s följeslagare'
+    default_name: 'Kompanjon'
+    default_name_dog: '{}:s följeslagare'
   lonely:
     task: Har du blivit inbjuden till en familj?
     action:
