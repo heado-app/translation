@@ -356,7 +356,8 @@ onboarding:
     task: Πώς μπορώ να σας αποκαλώ;
     name:
       label: Όνομα
-    default_name: Ο σύντροφος του {}
+    default_name: Συνοδός
+    default_name_dog: Ο σύντροφος του {}
   lonely:
     task: Έχετε προσκληθεί σε μια οικογένεια;
     action:
