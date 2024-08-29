@@ -523,7 +523,8 @@ onboarding:
     task: Hogy hívhatlak?
     name:
       label: Név
-    default_name: '{} társa'
+    default_name: 'Társ'
+    default_name_dog: '{} társa'
 generic:
   system_default: Rendszer szabvány
   cancel: Törölje
