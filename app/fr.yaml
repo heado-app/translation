@@ -497,7 +497,8 @@ onboarding:
     task: Comment puis-je t'appeler ?
     name:
       label: Nom
-    default_name: Les compagnons de {}
+    default_name: Compagnon
+    default_name_dog: Les compagnons de {}
   lonely:
     task: As-tu été invité dans une famille ?
     action:
