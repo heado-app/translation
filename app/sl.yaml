@@ -466,7 +466,8 @@ onboarding:
     task: Kako te lahko kličem?
     name:
       label: Ime
-    default_name: "{}'s companion"
+    default_name: "Spremljevalec"
+    default_name_dog: "{}'s companion"
   lonely:
     task: Ste bili povabljeni v družino?
     action:
