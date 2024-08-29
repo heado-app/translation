@@ -466,7 +466,8 @@ onboarding:
     task: Kuidas ma võin teid kutsuda?
     name:
       label: Nimi
-    default_name: "{}'s companion"
+    default_name: "Kaaslane"
+    default_name_dog: "{}'s companion"
   lonely:
     task: Kas teid on kutsutud perekonda?
     action:
