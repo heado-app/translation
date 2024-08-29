@@ -119,7 +119,8 @@ onboarding:
     task: Cum pot să-ți spun?
     name:
       label: Nume
-    default_name: însoțitorul lui {}
+    default_name: Companion
+    default_name_dog: însoțitorul lui {}
   lonely:
     task: Ați fost invitat la o familie?
     action:
