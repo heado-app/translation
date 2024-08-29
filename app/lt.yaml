@@ -51,7 +51,8 @@ onboarding:
     task: Kaip tave vadinti?
     name:
       label: Pavadinimas
-    default_name: "{}'s companion"
+    default_name: "Kompanionas"
+    default_name_dog: "{}'s companion"
   lonely:
     task: Ar buvote pakviestas į šeimą?
     action:
