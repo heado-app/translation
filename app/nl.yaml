@@ -59,7 +59,8 @@ onboarding:
     task: Hoe kan ik je noemen?
     name:
       label: Naam
-    default_name: Metgezel van {}
+    default_name: Metgezel
+    default_name_dog: Metgezel van {}
   lonely:
     task: Ben je uitgenodigd voor een familie?
     action:
