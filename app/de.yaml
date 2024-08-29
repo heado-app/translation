@@ -482,7 +482,8 @@ onboarding:
     task: "Wie darf ich dich nennen?"
     name:
       label: "Name"
-    default_name: "{}'s Begleiter:in"
+    default_name: "Begleiter:in"
+    default_name_dog: "{}'s Begleiter:in"
   lonely:
     task: "Wurdes du zu einer Familie eingeladen?"
     action:
