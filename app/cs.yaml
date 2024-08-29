@@ -461,7 +461,8 @@ onboarding:
     task: Jak ti mám říkat?
     name:
       label: Název
-    default_name: '{}jeho společník'
+    default_name: 'Společník'
+    default_name_dog: '{}jeho společník'
   lonely:
     task: Byli jste pozváni do rodiny?
     action:
