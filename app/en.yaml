@@ -463,7 +463,8 @@ onboarding:
     task: What may I call you?
     name:
       label: Name
-    default_name: "{}'s companion"
+    default_name: "Companion"
+    default_name_dog: "{}'s companion"
   lonely:
     task: Do you invited to a family?
     action:
