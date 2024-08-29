@@ -467,7 +467,8 @@ onboarding:
     task: Millä nimellä voin kutsua sinua?
     name:
       label: Nimi
-    default_name: '{y:i}:n kumppani'
+    default_name: 'Seuralainen'
+    default_name_dog: '{}:n kumppani'
   lonely:
     task: Onko sinut kutsuttu perheeseen?
     action:
