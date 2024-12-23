@@ -1,188 +1,178 @@
 app:
-  title: "Heado - Kalendar ciklusa"
+  title: "Heado - Kalendar za kuje"
   title_short: "Heado"
-  slogan: "Kalendar ciklusa"
+  slogan: "Kalendar za kuje"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
 
 generic:
-  system_default: Sustavno zadan
-  cancel: Odustani
-
-  delete: Izbriši
-  done: Gotovo
-core:
+  system_default: "Zadano u sustavu"
+  cancel: "Odustani"
+  delete: "Obriši"
+  done: "Gotovo"
+  close: "Zatvori"
+  count:
+    time: "{} puta"
+    times: "{} puta"
   date:
-    long: "dd. MMMM yyyy."
-    short: "dd.MM.yyyy."
-    month_year: "MMMM yyyy."
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Nema dovoljno podataka"
+  error:
+    title: "Pogreška"
+    message:
+      long: "Došlo je do pogreške. Pokušajte ponovno kasnije."
+    open_details: "Prikaži detalje"
+    close_details: "Sakrij detalje"
+  validation:
+    in_future: "Datum ne smije biti u budućnosti"
+  name: "Ime"
+  save: "Spremi"
+  ok: "U redu"
+  from: "od"
+  to: "do"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Ciklusi"
+  false_pregnancies: "Lažne trudnoće"
+
+core:
   error:
     generic:
-      short: "Dogodila se pogreška!"
-      long: "Ups, dogodila se pogreška! Isprika."
+      short: "Nešto je pošlo po zlu!"
+      long: "Ups, nešto je pošlo po zlu! Ispričavamo se."
     retry:
-      short: "Ponovno"
-      long: "Pokušaj ponovno"
+      short: "Pokušaj ponovno"
+      long: "Pokušajte ponovno"
   empty:
     hint: "Nema unosa."
-  close: "Zatvori"
   copy: "Kopiraj"
   share: "Podijeli"
   unknown: "Nepoznato"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
 
 family:
+  family: "Obitelj"
+  your_title: "Tvoja obitelj"
+  members: "Članovi"
+  dogs: "Psi"
+  add_dog: "Dodaj novog psa"
+  delete_account:
+    reason:
+      label: "Zašto želite obrisati svoj račun?"
+      hint: "Ne sviđa mi se jer..."
+      validation:
+        empty: "Molimo recite nam zašto želite obrisati svoj Heado račun."
+    family:
+      delete: "Obriši obitelj"
+      confirm:
+        message: "Želite li stvarno obrisati cijelu svoju obitelj? Vaš račun, svi članovi obitelji i psi, uključujući povezane podatke iz kalendara, bit će obrisani. Ovo se ne može poništiti!"
+    member:
+      delete: "Obriši račun"
+      confirm:
+        message: "Želite li stvarno obrisati svoj račun? Više nećete imati pristup ovoj obitelji i trebat će vam nova pozivnica za ponovno pridruživanje. Ako ste posljednji član ove obitelji, obitelj će također biti obrisana. Svi psi i povezani podaci također će biti obrisani. Ovo se ne može poništiti!"
+    confirm:
+      accept: "Da, obriši"
+  validation:
+    empty_name: "Ime ne smije biti prazno."
   member_list:
-    title: "Članovi"
     invitation:
       label: "Poziv „{}“"
     add_invitation: "Pozovi novog člana"
   member_form:
     title: "Uredi člana"
-    name:
-      label: "Ime"
-    action:
-      delete: "Izbriši"
-      save: "Spremi"
     delete:
       confirm:
-        title: "Izbriši člana"
-        message: "Jeste li sigurni da želite izbrisati člana {}? Taj član više neće
-          moći pristupiti ovoj obitelji i trebat će mu novi poziv. Ako je taj korisnik
-          posljednji u obitelji, obitelj će biti izbrisana. Svi podaci o psima i povezani
-          podaci bit će također izbrisani. Ovo se ne može poništiti!"
-        no: "Odustani"
-        yes: "Izbriši"
+        title: "Obriši člana"
+        message: "Želite li stvarno obrisati člana {}? Član više neće imati pristup obitelji i trebat će mu nova pozivnica za ponovno pridruživanje. Ako je ovo posljednji član obitelji, obitelj će također biti obrisana. Svi psi i povezani podaci također će biti obrisani. Ovo se ne može poništiti!"
   invitation_form:
-    title: "Pozivnica"
+    title: "Poziv"
     share:
-      hint: "Koristite PIN pozivnice „{}“ za pozivanje još jednog člana u svoju obitelj.
-        Svaki PIN može se koristiti samo jednom."
-      content: "Pozivam te u svoju obitelj! Preuzmi Heado aplikaciju (https://heado.de/)
-        i prilikom registracije koristi obiteljski PIN „{}“."
+      hint: "Koristite pozivni kod „{}“ kako biste omogućili novom članu da se pridruži vašoj obitelji. Svaki kod je važeći samo jednom."
+      content: "Pozivam vas u svoju obitelj! Molimo preuzmite aplikaciju Heado (https://heado.app/) i koristite pozivni kod „{}“ tijekom procesa registracije."
       copy:
-        hint: "PIN „{}“ je kopiran."
-    action:
-      delete: "Izbriši"
+        hint: "Kod „{}“ je kopiran."
     delete:
       confirm:
-        title: "Izbriši pozivnicu"
-        message: "Jeste li sigurni da želite izbrisati ovu pozivnicu? Nećete moći
-          koristiti ovaj PIN za pozivanje nakon toga. Ovo se ne može poništiti, i
-          morat ćete stvoriti novi PIN!"
-        no: "Odustani"
-        yes: "Izbriši"
+        title: "Obriši poziv"
+        message: "Želite li stvarno obrisati ovaj poziv? Nakon operacije, pozivni kod više neće biti upotrebljiv. Ovo se ne može poništiti i morat ćete stvoriti novi kod!"
   family_form:
     title: "Uredi obitelj"
-    name:
-      label: "Ime"
-    action:
-      delete: "Izbriši"
-      save: "Spremi"
-    delete:
-      confirm:
-        title: "Izbriši obitelj"
-        message: "Jeste li sigurni da želite izbrisati obitelj {}? Vaš račun, svi
-          članovi obitelji i psi, uključujući i kalendarske podatke, bit će izbrisani.
-          Ovo se ne može poništiti!"
-        no: "Odustani"
-        yes: "Izbriši"
-  dog_selection:
-    add: "Dodaj novog psa"
-  dog_list:
-    title: "Psi"
-    add: "Dodaj novog psa"
   dog_form:
-    title:
-      add: "Dodaj psa"
-      edit: "Uredi psa"
-    name:
-      label: "Ime"
-    action:
-      delete: "Izbriši"
-      save: "Spremi"
+    edit: "Uredi psa"
     delete:
       confirm:
-        title: "Izbriši psa"
-        message: "Jeste li sigurni da želite izbrisati psa {}? Svi kalendarski podaci
-          bit će također izbrisani. Ovo se ne može poništiti."
-        no: "Odustani"
-        yes: "Izbriši"
+        title: "Obriši psa"
+        message: "Želite li stvarno obrisati svog psa {}? Svi povezani podaci iz kalendara bit će obrisani. Ovo se ne može poništiti."
 
 calendar:
+  phases:
+    anestrus: "Faza mirovanja"
+  weight: "Težina"
+  notes: "Bilješke"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
         label: "Faza"
-        proestrus: "Predistanje"
-        estrus: "Ždrijelo"
-        metestrus: "Nakon ždrijela"
-        anestrus: "Faza odmora"
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
       false_pregnancy:
         label: "Lažna trudnoća"
         active_info: "Aktivna lažna trudnoća"
-      mood:
-        label: "Raspoloženje"
-      symptom:
-        label: "Simptomi"
-      behavior:
-        label: "Ponašanje"
-      secretion:
-        label: "Izlučivanje"
-      weight:
-        label: "Težina"
-        unit: "kg"
-      note:
-        label: "Bilješke"
   day_form:
     period:
       title: "Period"
-      enable: "Dodaj menstrualni ciklus"
-      disable: "Izbriši menstrualni ciklus"
+      enable: "Dodaj ciklus perioda"
+      disable: "Obriši ciklus perioda"
       proestrus_start_date:
-        label: "Početak predistanja (Proestrus)"
+        label: "Početak proestrusa"
         info:
-          title: "Predistanje (Proestrus)"
-          message: "Predistanje počinje kada vulva vaše kuje nabubri i pojavi se krvavi
-            iscjedak iz vagine.\n\nTrajanje je prosječno 9 dana i može varirati između
-            3 - 17 dana.\n\nOvo polje uvijek mora biti popunjeno."
-          close: "U redu"
+          title: "Proestrus"
+          message: "Estrus počinje kada se vulva vaše kuje nabrekne i pojavi se krvavi vaginalni iscjedak.\n\nProsječno trajanje je 9 dana i može varirati između 3 i 17 dana.\n\nDatum uvijek treba biti naveden."
         error:
           in_future: "Datum ne smije biti u budućnosti"
       estrus_start_date:
-        label: "Početak ždrijela (Estrus)"
+        label: "Početak estrusa"
         info:
-          title: "Ždrijelo (Estrus)"
-          message: "Ždrijelo se pokazuje željom za parenjem vaše kuje (šiljak). Također
-            je moguće prisustvo vaginalnog iscjetka, ali više nalikuje bistrom mesnom
-            juhu i može biti sluzav.\n\nTrajanje je prosječno 9 dana i može varirati
-            između 3 - 21 dan.\n\nAko ova faza još nije počela ili ne želite dokumentirati
-            ovu fazu, ostavite ovo polje prazno."
-          close: "U redu"
+          title: "Estrus"
+          message: "Na početku estrusa, vaša kuja pokazuje spremnost za parenje (stojeći estrus). Vaginalni iscjedak je još uvijek moguć, ali više nalikuje mesnoj vodi i može biti sluzav.\n\nProsječno trajanje je 9 dana i može varirati između 3 i 21 dana.\n\nAko ova faza još nije počela ili ne želite dokumentirati ovu fazu, ostavite ovo polje prazno."
         error:
           in_future: "Datum ne smije biti u budućnosti"
       metestrus_start_date:
-        label: "Početak nakon ždrijela (Metestrus)"
+        label: "Početak metestrusa"
         info:
-          title: "Nakon ždrijela (Metestrus)"
-          message: "Nakon ždrijela označava kraj spremnosti za parenje. Također se
-            završava iscjedak iz vagine i vulva se povlači. Tijekom ovog razdoblja
-            moguća je lažna trudnoća.\n\nAko ova faza još nije počela ili ne želite
-            dokumentirati ovu fazu, ostavite ovo polje prazno."
-          close: "U redu"
+          title: "Metestrus"
+          message: "Period nakon estrusa karakterizira kraj parenja. Osim toga, vaginalni iscjedak prestaje i vulva se povlači. Lažna trudnoća je moguća tijekom ovog vremena.\n\nAko ova faza još nije počela ili ne želite dokumentirati ovu fazu, ostavite ovo polje prazno."
         error:
           in_future: "Datum ne smije biti u budućnosti"
       end_date:
-        label: "Kraj ciklusa (Faza odmora)"
+        label: "Kraj perioda (početak faze mirovanja)"
         info:
-          title: "Faza odmora (Anestrus)"
-          message: "Faza odmora ne pokazuje znakove reproduktivnog ciklusa. Vulva
-            sada potpuno nestaje.\n\nOstavite ovo polje prazno ako ovaj ciklus još
-            nije završen."
-          close: "U redu"
+          title: "Faza mirovanja (anestrus)"
+          message: "Nema znakova seksualnog ciklusa tijekom faze mirovanja. Vulva je sada potpuno povučena.\n\nOstavite ovo polje prazno ako period još nije završio."
         error:
           in_future: "Datum ne smije biti u budućnosti"
     false_pregnancy:
       title: "Lažna trudnoća"
       enable: "Dodaj lažnu trudnoću"
-      disable: "Izbriši lažnu trudnoću"
+      disable: "Obriši lažnu trudnoću"
       start_date:
         label: "Početak lažne trudnoće"
         error:
@@ -194,172 +184,141 @@ calendar:
     features:
       title: "Značajke"
       mood:
-        label: "Raspoloženje"
-        no_selection: "Nema odabranih raspoloženja"
+        no_selection: "Nije odabrano raspoloženje"
       symptom:
-        label: "Simptomi"
-        no_selection: "Nema odabranih simptoma"
+        no_selection: "Nije odabran simptom"
       behavior:
-        label: "Ponašanje"
-        no_selection: "Nema odabranih ponašanja"
+        no_selection: "Nije odabrano ponašanje"
       secretion:
-        label: "Izlučivanje"
-        no_selection: "Nema odabranih izlučivanja"
+        no_selection: "Nije odabran iscjedak"
       weight:
-        weight:
-          label: "Težina"
         unit:
           label: "Jedinica"
-          kilogram: "kg"
-    notes:
-      title: "Bilješke"
-      notes:
-        label: "Bilješke"
-    action:
-      save: "Spremi"
   mood:
-    fearful: "Bojažljiv"
-    courageous: "Hrabar"
-    brave: "Odlučan"
-    sleepy: "Pospan"
-    sniffy: "Osmišljen"
-    aggressive: "Agresivan"
-    nervous: "Napet"
-    satisfied: "Zadovoljan"
+    mood: "Raspoloženje"
+    fearful: "Uplašena"
+    courageous: "Hrabro"
+    brave: "Odvažno"
+    sleepy: "Pospano"
+    sniffy: "Njuškajući"
+    aggressive: "Agresivno"
+    nervous: "Nervozno"
+    satisfied: "Zadovoljno"
     stressed: "Pod stresom"
-    sleepless: "Nesanica"
-    dissatisfied: "Nezadovoljan"
-    depressed: "Depresivan"
-    defiant: "Otporan"
-    relaxed: "Opustio se"
-    happy: "Sretan"
-    obedient: "Poslušan"
-    balanced: "Uravnotežen"
-    fiepsy: "Plačljiv"
-    grumpy: "Mrzovoljan"
-    weepy: "Plačljiv"
-    attentive: "Pažljiv"
-    sad: "Tužan"
-    stormy: "Nestabilan"
-    crazy: "Lud"
+    sleepless: "Bez sna"
+    dissatisfied: "Nezadovoljno"
+    depressed: "Depresivno"
+    defiant: "Prkosno"
+    relaxed: "Opusteno"
+    happy: "Sretno"
+    obedient: "Poslušno"
+    balanced: "Uravnoteženo"
+    fiepsy: "Fiepsy"
+    grumpy: "Gunđavo"
+    weepy: "Plačljivo"
+    attentive: "Pažljivo"
+    sad: "Tužno"
+    stormy: "Olujno"
+    crazy: "Ludo"
     calm: "Mirno"
-    cuddly: "Mazen"
+    cuddly: "Mazno"
     appetiteless: "Bez apetita"
-    indecisive: "Neodlučan"
-    exhausted: "Iscrpljen"
-    frustrated: "Frustriran"
-    bitchy: "Iziritiran"
-    troubled: "Uznemiren"
-    jittery: "Nervoza"
+    indecisive: "Neodlučno"
+    exhausted: "Iscrpljeno"
+    frustrated: "Frustrirano"
+    bitchy: "Zlobno"
+    troubled: "Zabrinuto"
+    jittery: "Nemirno"
   behavior:
-    herding: "Gonjenje"
-    adopting: "Udomljavanje"
-    nesting: "Gnijezdenje"
+    behavior: "Ponašanje"
+    herding: "Pasući"
+    adopting: "Usvajajuće"
+    nesting: "Gnjezdeće"
     howling: "Zavijanje"
-    restless: "Nemiran"
+    restless: "Nemirno"
   symptom:
+    symptom: "Simptom"
     stomach_cramps: "Grčevi u trbuhu"
-    flatulence: "Prljav zrak"
+    flatulence: "Nadutost"
     diarrhea: "Proljev"
     constipation: "Zatvor"
-    bloody_stool: "Krvavi izmet"
-    milk_discharge: "Iscjedak mlijeka"
-    swollen_teats: "Naduti vime"
+    bloody_stool: "Krvava stolica"
+    milk_discharge: "Mliječni iscjedak"
+    swollen_teats: "Otekle sise"
     vomit: "Povraćanje"
     dandruff: "Perut"
   secretion:
-    bloody: "Krvav"
-    watery: "Voden"
-    creamy: "Kremast"
-    dryly: "Suho"
-    stinky: "Smrdljiv"
-    purulent: "Gnojav"
+    secretion: "Iscjedak"
+    bloody: "Krvavi"
+    watery: "Vodeni"
+    creamy: "Kremasti"
+    dryly: "Suhi"
+    stinky: "Smrdljivi"
+    purulent: "Gnojni"
 
 overview:
+  last_cycle: "Zadnji ciklus"
+  next_cycle: "Sljedeći ciklus"
   overview:
     current_period:
       no_data:
-        cta: "Unesite prvo razdoblje vaše kuje!"
+        cta: "Unesi prvi ciklus svog psa!"
         info:
-          title: "Predviđanje sljedećeg ždrijela"
-          message: "Heado treba potpuni ciklus (uključujući fazu odmora!) vaše kuje
-            kako bi napravio predviđanje."
-          close: "U redu"
-      days_left: "još {} dana"
-      weeks_left: "još {} tjedana"
-      months_left: "još {} mjeseci"
+          title: "Predvidi sljedeći ciklus"
+          message: "Heado treba potpuni ciklus (uključujući fazu mirovanja) tvog psa kako bi napravio predviđanje."
+      days_left: "{} dana preostalo"
+      weeks_left: "{} tjedana preostalo"
+      months_left: "{} mjeseci preostalo"
       until_date: "do {}"
-      error: "Dogodila se pogreška. Kliknite za ponovni pokušaj."
+      error: "Nešto je pošlo po zlu. Klikni za pokušaj ponovo."
       phase:
-        proestrus: "Predistanje"
-        estrus: "Ždrijelo"
-        metestrus: "Nakon ždrijela"
-        anestrus: "Faza odmora"
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
     period_dates:
       last:
-        title: "Zadnje ždrijelo"
-        none: "Još nije uneseno razdoblje."
-        from: "od"
-        to: "do"
+        title: "Zadnji period"
+        none: "Još nema zadnjeg perioda."
       next:
-        title: "Sljedeće ždrijelo"
-        from: "od"
-        to: "do"
-        none: "Nema dovoljno razdoblja za predviđanje."
+        title: "Sljedeći period"
+        none: "Nema dovoljno podataka za predviđanje sljedećeg perioda."
     period_count:
       period:
-        title: "Broj ždrijela"
-        time: "Put"
-        times: "Puta"
+        title: "Broj perioda"
+        time: "put"
+        times: "puta"
       false_pregnancy:
         title: "Broj lažnih trudnoća"
-        time: "Put"
-        times: "Puta"
+        time: "put"
+        times: "puta"
     menu:
       calendar: "Kalendar"
-      settings: "Postavke"
   ad_banner:
-    title: "Vaše besplatno razdoblje bez reklama uskoro završava!"
-    message: "Vaše besplatno razdoblje završava {}. Nakon toga će vam se prikazivati
-      oglasi. Ako želite koristiti aplikaciju bez oglasa, možete kupiti Premium verziju."
-    become_member: "Postanite član"
-    left_days: "{}/{} dana ostalo"
+    title: "Tvoj probni period bez reklama uskoro završava!"
+    message: "Tvoj probni period završava {}. Nakon ovog datuma prikazivat ćemo ti reklame. Ako želiš nastaviti koristiti Heado bez reklama, možeš uzeti naš premium paket."
+    become_member: "Postani član"
+    left_days: "{}/{} dana preostalo"
 
 premium:
   title: "Heado Premium"
   buy:
-    teaser: "Postanite Heado Premium član i koristite aplikaciju bez oglasa."
-    purchase_single: "Postanite Premium član"
+    teaser: "Postani Heado Premium član sada i koristi aplikaciju bez reklama."
+    purchase_single: "Postani premium član"
     purchase_single_hint: "{} • Jednokratno {}"
-    purchase_family: "Postanite Premium obitelj"
+    purchase_family: "Postani premium obitelj"
     purchase_family_hint: "{} • Jednokratno {}"
-    restore_purchase: "Vrati kupnju"
+    restore_purchase: "Obnovi kupnju"
   membership:
     member:
-      teaser: "Vi ste Heado Premium član i možete koristiti aplikaciju bez oglasa!"
-      info: "Član ste Heado Premium od {}."
+      teaser: "Ti si Heado Premium član i možeš koristiti aplikaciju bez reklama!"
+      info: "Ti si Heado Premium član od {}."
     family:
-      teaser: "Vi i vaša obitelj ste Heado Premium članovi. Možete koristiti aplikaciju
-        bez oglasa!"
-      info: "Vaša obitelj je Heado Premium član od {}."
+      teaser: "Ti i tvoja obitelj ste Heado Premium članovi i možete koristiti aplikaciju bez reklama!"
+      info: "Tvoja obitelj je Heado Premium član od {}."
 
 settings:
-  title: "Postavke"
-  footer: "Napravljeno s {} za Kori {} i Mayo {}."
-  app:
-    title: Aplikacija
-    design:
-      title: Dizajn
-      light: Svijetlo
-      dark: Tamno
-  family:
-    title: "Obitelj"
-    dogs:
-      title: "Psi"
-    members:
-      title: "Članovi"
-    family:
-      title: "Obitelj"
+  settings: "Postavke"
+  footer: "Izrađeno s ljubavlju {} za Kori {} i Mayo {}."
   account:
     title: "Račun"
     premium:
@@ -367,186 +326,121 @@ settings:
     settings:
       title: "Postavke računa"
     cookies:
-      title: "Kolačići"
-    logout:
-      title: "Odjava"
-      confirm:
-        title: "Odjava"
-        message: "Jeste li sigurni da želite odjaviti?"
-        no: "Odustani"
-        yes: "Odjava"
-  legal:
-    title: "Pravna obavijest"
-    imprint: "Tiskarska pogreška"
-    privacy_policy: "Pravila o zaštiti podataka"
-    terms_of_service: "Opći uvjeti poslovanja"
-    opensource: "Izvorni kod"
-    privacy:
-      title: Pravila o zaštiti privatnosti
-      link: https://heado.app/privacy
-    terms:
-      title: Uvjeti korištenja
-      link: https://heado.app/terms
+      title: "Suglasnost za kolačiće"
+  demo:
+    title: "Demo"
+    test_login:
+      title: "Prijava testnog korisnika"
   contact:
     title: "Kontakt"
-    mail:
-      link: mailto:wuff@heado.app
-      title: E-pošta
     website:
-      title: Web stranica
-      link: https://heado.app/
+      title: "Web stranica"
+    mail:
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.app
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.app
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_app
-  feedback:
-    title: "Pošalji povratne informacije"
-    hint: "Molimo vas, pišite na engleskom jeziku. Hvala!"
-  privacy:
-    title: "Pravila o zaštiti podataka"
-  security:
-    title: "Sigurnost"
+      title: "Twitter"
+  legal:
+    title: "Pravno"
+    terms:
+      title: "Uvjeti korištenja"
+    privacy:
+      title: "Izjava o privatnosti"
   about:
-    title: "O nama"
+    title: "O aplikaciji"
     status:
-      title: Status
+      title: "Status"
     version:
-      title: Verzija
+      title: "Verzija"
     translation:
-      title: Prijevodi
-  demo:
-    test_login:
-      title: Testni korisnički pristup
-    title: Demo
-  mayo: "Hej krzneni nos! 🐾\n\nLijepo što si pronašao put do mog tajnog područja!
-    Možda me već poznaješ. Ako ne, moje ime je Mayo i ja sam planinski pas Appenzell.
-    Ženka, naravno! Sada imam 2 godine. Gornja ilustracija sam ja. Samo da me prepoznaš
-    ako me ikad vidiš.\n\nNažalost, moja obitelj i ja morali smo shvatiti da uvijek
-    imam anksiozne faze. Svi smo u nekom trenutku pomislili da su moji hormoni poludjeli
-    prije vrućine i da zato više nisam bila tako hrabra. Ali nismo baš bili sigurni.\n
-    \nMoja vlasnica Korinna tada je dobila ideju da se može napraviti kalendar za
-    ženke pasa, kao i za ljudske ženke. Rečeno, učinjeno! Moj majstor Fabian je programer.
-    Također je mislio da je to odlična ideja i odmah je počeo.\n\nAli Fabian je ubrzo
-    shvatio da nema pojma o psećem ciklusu. Ili što to uključuje. Stoga je mnogo istraživao
-    na internetu, postavio Korinni mnogo pitanja i usporedio je s postojećim aplikacijama
-    za žene.\n\nNakon nekoliko mjeseci i testne faze s mojim prijateljima šapama,
-    došlo je vrijeme! Dana 27.11.2023. objavili smo Heado u App Storeu za Android
-    i iOS.\n\nZapravo, moje faze tjeskobe dolaze od mojih hormona. Ali čini se da
-    je sa svakom toplinom puno bolje. Svakako ćemo ga držati na oku.\n\nNadam se da
-    s ovom aplikacijom također možemo pomoći vama i vašim ljudima i brže pronaći probleme
-    ili nepravilnosti. I također imati potrebne dokaze kod veterinara.\n\nAko vi ili
-    vaši ljudi imate bilo kakvih ideja ili zahtjeva, kontaktirajte me na mayo@heado.app.
-    Također u slučaju problema, grešaka ili poteškoća.\n\nZabavite se s aplikacijom!
-    <3\n\nMayo, Korinna & Fabian"
+      title: "Prijevodi"
+  app:
+    design:
+      light: "Svijetli"
+      dark: "Tamni"
+      title: "Dizajn"
+    title: "Aplikacija"
+  mayo: "Bok, šapice! 🐾\n\nDrago mi je da si pronašao put do mog tajnog prostora! Možda me već poznaješ. Ako ne, moje ime je Mayo i ja sam Appenzeller Sennenhund. Naravno, ženka sam! Sada imam 2 godine. Ilustracija iznad je ja. Samo da me prepoznaš ako me ikad vidiš.\n\nNažalost, moja obitelj i ja smo morali shvatiti da stalno imam faze tjeskobe. U jednom trenutku smo svi mislili da moji hormoni polude prije mog ciklusa i zato više nisam tako hrabra. Ali nismo bili potpuno sigurni.\n\nTada je moja vlasnica Korinna dobila ideju da bi se mogao napraviti kalendar za ženke pasa, kao što je to za žene. Rečeno učinjeno! Moj gospodar Fabian je programer. Također je mislio da je to fantastična ideja i odmah je počeo raditi.\n\nAli Fabian je ubrzo shvatio da nema pojma o ciklusu psa. Ili što to uključuje. Tako je puno istraživao na internetu, postavljao puno pitanja Korinni i uspoređivao to s postojećim aplikacijama za žene.\n\nNakon nekoliko mjeseci i faze testiranja s mojim prijateljima s šapama, bilo je vrijeme! 27.11.2023. izdali smo Heado u App Storeu za Android i iOS.\n\nZapravo, moje faze tjeskobe dolaze od mojih hormona. Ali čini se da postaje puno bolje sa svakim ciklusom. Sigurno ćemo to pratiti.\n\nNadam se da ova aplikacija može pomoći tebi i tvojim ljudima da brže pronađete probleme ili nepravilnosti. I također imati potrebne dokaze kod veterinara.\n\nAko ti ili tvoji ljudi imate ideje ili želje, slobodno me kontaktirajte na mayo@heado.app. Također u slučaju problema, grešaka ili poteškoća.\n\nUživaj u aplikaciji! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
+  title: "Postavke računa"
   logins:
+    title: "Povezivanje računa"
+    test:
+      label: "Testni korisnik"
     error:
       already_in_use:
-        title: Račun već u upotrebi
-        message: Izabrani račun već je povezan s drugim korisnikom.
-        close: U redu
-    title: Povezanost računa
-    google:
-      label: Google
-    apple:
-      label: Apple
-    test:
-      label: Testni korisnik
+        title: "Račun je već u upotrebi"
+        message: "Odabrani račun je već povezan s drugim korisnikom."
   disconnect:
+    disconnect:
+      short: "Odspoji"
+      long: "Odspoji račun"
     confirm:
-      message: Želite li stvarno isključiti svoj račun? Nakon toga se ne možete prijaviti
-        s ovim pružateljem usluga. Račun možete ponovno povezati kasnije.
-      title: Isključi račun
-      no: Odustani
-      yes: Da, isključi
-    label: Isključi račun
-  delete:
-    confirm:
-      message: Želite li zaista izbrisati svoj račun? Više nećete moći pristupiti
-        ovoj obitelji i trebat ćete novi poziv za ponovno pridruživanje. Ako ste posljednji
-        član ove obitelji, obitelj će također biti izbrisana. Svi psi i povezani podaci
-        bit će također izbrisani. Ovo se ne može poništiti!
-      title: Izbriši račun
-      no: Odustani
-      yes: Da, izbriši
-    label: Izbriši račun
-  title: Postavke računa
+      message: "Želite li stvarno odspojiti svoj račun? Nakon toga nećete moći prijaviti se s ovim pružateljem usluga. Račun možete ponovno povezati kasnije."
+      yes: "Da, odspoji"
   logout:
-    label: Odjava
+    logout: "Odjavi se"
     confirm:
-      title: Odjava
-      message: Jeste li sigurni da se želite odjaviti? Možete se ponovno prijaviti
-        sa svojim Google ili Apple računom.
-      no: Odustani
-      yes: Da, odjava
+      message: "Želite li stvarno odjaviti se? Možete se ponovno prijaviti sa svojim Google ili Apple računom."
+      yes: "Da, odjavi se"
+
 onboarding:
-  finish:
-    legal:
-      privacy:
-        label: 2. Pravila o privatnosti
-        link: https://heado.app/privacy
-      hint: 'Klikom na „Prihvati & stvori račun“ prihvaćate sljedeće uvjete:'
-      terms:
-        label: 1. Uvjeti korištenja
-        link: https://heado.app/terms
-    task: Spremni ste!
-    action:
-      accept_and_register: Prihvati i stvori račun
-  next: Nastavi
+  code:
+    validation:
+      min_length: "Kôd mora sadržavati 5 znamenki"
+  next: "Nastavi"
   welcome:
-    task: Imate li već račun?
+    task: "Već imate račun?"
     action:
-      register: Kreirajte novi račun
-      login: Već imam račun
+      register: "Kreiraj novi račun"
+      login: "Već imam račun"
   member:
-    task: Kako mogu da te zovem?
-    name:
-      label: Ime
-    default_name: 'Pratilac'
-    default_name_dog: '{} pratilac'
+    task: "Kako da vas zovem?"
+    default_name: "Pratitelj"
+    default_name_dog: "Pratitelj od {}"
   lonely:
-    task: Jesi li pozvan u porodicu?
+    task: "Jeste li pozvani u obitelj?"
     action:
-      create_family: Kreiraj novu porodicu
-      join_family: Pridruži se postojećoj porodici
+      create_family: "Kreiraj novu obitelj"
+      join_family: "Pridruži se postojećoj obitelji"
   login:
-    task: Prijavi se na svoj postojeći račun
-    action:
-      google: Google
-      apple: Apple
+    task: "Prijavite se na svoj postojeći račun"
   test_login:
-    task: Prijava s PIN kodom za demo račune
+    task: "Prijavite se pomoću PIN-a za demo račune"
     code:
       error:
-        min_length: Kôd mora sadržavati 5 znamenki
-        invalid: Nevažeći PIN kôd
+        invalid: "Nevažeći PIN"
     action:
-      login: Prijava
+      login: "Prijavi se"
   join:
-    task: Kôd za poziv u obitelj
+    task: "Kôd za pozivanje u obitelj"
     code:
-      error:
-        min_length: Kôd mora sadržavati 5 znamenki
-      invalid: "Nevažeći kod pozivnice.\nKod ne postoji ili je već korišten."
-  family:
-    task: Dajte ime vašoj obitelji
-    name:
-      label: (Fiktivno) Ime obitelji
-      help: Odaberite fiktivno ime koje dobro opisuje vašu obitelj. Vaše prezime ovdje
-        nije potrebno.
-    default_name: '{} obitelj'
-  dog:
-    task: Kako se zove vaš pas?
-    name:
-      label: Ime psa
-  auth:
-    task: Prijavite se i spremite svoje podatke te koristite svoj profil na više uređaja
+      invalid: "Nevažeći kôd za pozivanje.\nKôd ne postoji ili je već upotrijebljen."
+  finish:
+    task: "Spremni ste!"
+    legal:
+      hint: "Klikom na „Prihvati i kreiraj račun“ prihvaćate sljedeće uvjete:"
+      terms:
+        label: "1. Uvjeti korištenja"
+      privacy:
+        label: "2. Izjava o privatnosti"
     action:
-      google: Google
-      apple: Apple
-      skip: Ne želim se prijaviti
+      accept_and_register: "Prihvati i kreiraj račun"
+  family:
+    task: "Dajte svojoj obitelji ime"
+    name:
+      label: "Ime obitelji (fiktivno)"
+      help: "Odaberite maštovito ime koje dobro opisuje vašu obitelj. Ovdje nije potreban vaš prezime."
+    default_name: "{} obitelj"
+  dog:
+    task: "Kako se zove vaš pas?"
+    name:
+      label: "Ime psa"
+  auth:
+    task: "Prijavite se, spremite svoje podatke i koristite svoj profil na više uređaja"
+    action:
+      skip: "Ne želim se prijaviti"

@@ -1,535 +1,446 @@
-core:
-  copy: Kopie
-  share: Deel
+app:
+  title: "Heado - Honden Hitte Kalender"
+  title_short: "Heado"
+  slogan: "Honden Hitte Kalender"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Systeemstandaard"
+  cancel: "Annuleren"
+  delete: "Verwijderen"
+  done: "Klaar"
+  close: "Sluiten"
+  count:
+    time: "{} keer"
+    times: "{} keren"
   date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Onvoldoende gegevens"
+  error:
+    title: "Fout"
+    message:
+      long: "Er is een fout opgetreden. Probeer het later opnieuw."
+    open_details: "Details weergeven"
+    close_details: "Details verbergen"
+  validation:
+    in_future: "Datum mag niet in de toekomst liggen"
+  name: "Naam"
+  save: "Opslaan"
+  ok: "OK"
+  from: "van"
+  to: "tot"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cycli"
+  false_pregnancies: "Schijnzwangerschappen"
+
+core:
   error:
     generic:
-      short: Er is een fout opgetreden!
-      long: Oeps, er is een fout opgetreden! Sorry.
+      short: "Er is iets misgegaan!"
+      long: "Oeps, er is iets misgegaan! Onze excuses."
     retry:
-      short: Herhaal
-      long: Probeer het opnieuw
+      short: "Probeer opnieuw"
+      long: "Probeer het opnieuw"
   empty:
-    hint: Geen inzendingen.
-  close: Sluit
-  unknown: Onbekend
-onboarding:
-  login:
-    task: Log in op je bestaande account
-    action:
-      google: Google
-      apple: Appel
-  test_login:
-    task: Inloggen met PIN-code voor demo-gebruikers
-    code:
-      error:
-        min_length: De code moet uit 5 cijfers bestaan
-        invalid: Ongeldige code
-    action:
-      login: Inloggen
-  join:
-    task: Uitnodigingscode van je familie
-    code:
-      error:
-        min_length: De code moet uit 5 cijfers bestaan
-      invalid: "Ongeldige uitnodigingscode.\nDe code bestaat niet of is al gebruikt."
-  finish:
-    task: Je bent er klaar voor!
-    legal:
-      hint: 'Door te klikken op "Accepteren & account aanmaken" ga je akkoord met
-        de volgende voorwaarden:'
-      terms:
-        label: 1. gebruiksvoorwaarden
-        link: https://heado.de/terms
-      privacy:
-        label: 2. voorwaarden voor gegevensbescherming
-        link: https://heado.de/privacy
-    action:
-      accept_and_register: Accepteren en account aanmaken
-  next: Verder
-  welcome:
-    task: Heb je al een account?
-    action:
-      register: Een nieuw account maken
-      login: Ik heb al een account
-  member:
-    task: Hoe kan ik je noemen?
-    name:
-      label: Naam
-    default_name: Metgezel
-    default_name_dog: Metgezel van {}
-  lonely:
-    task: Ben je uitgenodigd voor een familie?
-    action:
-      create_family: Nieuwe familie maken
-      join_family: Sluit je aan bij een bestaande familie
-  family:
-    task: Geef je familie een naam
-    name:
-      label: (Fictieve) Achternaam
-      help: Kies een denkbeeldige naam die je familie goed beschrijft. Je achternaam
-        is hier niet nodig.
-    default_name: Familie van {}
-  dog:
-    task: Wat is de naam van je hond?
-    name:
-      label: Naam van de hond
-  auth:
-    task: Inloggen, accountgegevens opslaan & meerdere apparaten gebruiken
-    action:
-      google: Google
-      apple: Appel
-      skip: Ik wil niet inloggen
+    hint: "Geen vermeldingen."
+  copy: "Kopiëren"
+  share: "Delen"
+  unknown: "Onbekend"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
 family:
-  invitation_form:
-    share:
-      content: Ik nodig je uit om lid te worden van mijn familie! Download de Heado
-        app (https://heado.de/) en gebruik de familie PIN "{}" bij het registreren.
-      hint: Gebruik de uitnodigings-PIN "{}" om een ander gezinslid uit te nodigen.
-        Elke PIN-code kan maar één keer worden gebruikt.
-      copy:
-        hint: De PIN "{}" is gekopieerd.
-    title: Uitnodiging
-    action:
-      delete: Verwijder
-    delete:
+  family: "Familie"
+  your_title: "Jouw familie"
+  members: "Leden"
+  dogs: "Honden"
+  add_dog: "Nieuwe hond toevoegen"
+  delete_account:
+    reason:
+      label: "Waarom wil je je account verwijderen?"
+      hint: "Ik vind het niet leuk omdat..."
+      validation:
+        empty: "Vertel ons alstublieft waarom je je Heado-account wilt verwijderen."
+    family:
+      delete: "Familie verwijderen"
       confirm:
-        title: Uitnodiging verwijderen
-        message: Wil je deze uitnodiging echt verwijderen? Dan kun je deze uitnodigings-PIN
-          niet meer gebruiken. Deze kan niet worden geannuleerd en je zult een nieuwe
-          PIN moeten aanmaken!
-        no: Annuleren
-        yes: Verwijder
+        message: "Wil je echt je hele familie verwijderen? Je account, alle familieleden en honden, inclusief gerelateerde kalendergegevens, worden verwijderd. Dit kan niet ongedaan worden gemaakt!"
+    member:
+      delete: "Account verwijderen"
+      confirm:
+        message: "Wil je echt je account verwijderen? Je hebt geen toegang meer tot deze familie en je hebt een nieuwe uitnodiging nodig om opnieuw deel te nemen. Als je het laatste lid van deze familie bent, wordt de familie ook verwijderd. Alle honden en gerelateerde gegevens worden ook verwijderd. Dit kan niet ongedaan worden gemaakt!"
+    confirm:
+      accept: "Ja, verwijderen"
+  validation:
+    empty_name: "Naam mag niet leeg zijn."
   member_list:
-    title: Leden
     invitation:
-      label: Uitnodiging "{}"
-    add_invitation: Nodig een nieuw lid uit
+      label: "Uitnodiging „{}“"
+    add_invitation: "Nieuw lid uitnodigen"
   member_form:
-    title: Lid bewerken
-    name:
-      label: Naam
-    action:
-      delete: Verwijder
-      save: Sla
+    title: "Lid bewerken"
     delete:
       confirm:
-        title: Lid verwijderen
-        message: Wil je echt het lid {} verwijderen? Het lid heeft geen toegang meer
-          tot deze familie en heeft een nieuwe uitnodiging nodig. Als deze gebruiker
-          de laatste van deze familie is, wordt de familie ook verwijderd. Alle honden
-          en bijbehorende gegevens worden ook verwijderd. Dit kan niet ongedaan worden
-          gemaakt!
-        no: Annuleren
-        yes: Verwijder
+        title: "Lid verwijderen"
+        message: "Wil je echt het lid {} verwijderen? Het lid heeft geen toegang meer tot de familie en heeft een nieuwe uitnodiging nodig om opnieuw deel te nemen. Als dit het laatste familielid is, wordt de familie ook verwijderd. Alle honden en gerelateerde gegevens worden ook verwijderd. Dit kan niet ongedaan worden gemaakt!"
+  invitation_form:
+    title: "Uitnodiging"
+    share:
+      hint: "Gebruik de uitnodigingscode „{}“ om een nieuw lid toe te laten treden tot je familie. Elke code is slechts één keer geldig."
+      content: "Ik nodig je uit in mijn familie! Download de Heado-app (https://heado.app/) en gebruik de uitnodigingscode „{}“ tijdens het registratieproces."
+      copy:
+        hint: "De code „{}“ is gekopieerd."
+    delete:
+      confirm:
+        title: "Uitnodiging verwijderen"
+        message: "Wil je echt deze uitnodiging verwijderen? Na de operatie is de uitnodigingscode niet meer bruikbaar. Dit kan niet ongedaan worden gemaakt en je moet een nieuwe code aanmaken!"
   family_form:
-    title: Familie bewerken
-    name:
-      label: Naam
-    action:
-      delete: Verwijder
-      save: Sla
-    delete:
-      confirm:
-        title: Familie verwijderen
-        message: Wil je echt de familie {} verwijderen? Je account, alle gezinsleden
-          & honden, inclusief de kalendergegevens worden verwijderd. Dit kan niet
-          ongedaan worden gemaakt!
-        no: Annuleren
-        yes: Verwijder
-  dog_selection:
-    add: Een nieuwe hond toevoegen
-  dog_list:
-    title: Honden
-    add: Een nieuwe hond toevoegen
+    title: "Familie bewerken"
   dog_form:
-    title:
-      add: Hond toevoegen
-      edit: Hond bewerken
-    name:
-      label: Naam
-    action:
-      delete: Verwijder
-      save: Sla
+    edit: "Hond bewerken"
     delete:
       confirm:
-        title: Hond verwijderen
-        message: Wil je echt je hond {} verwijderen? Alle kalendergegevens worden
-          ook verwijderd. Dit kan niet ongedaan worden gemaakt.
-        no: Annuleren
-        yes: Verwijder
-app:
-  title: Heado - warmtekalender
-  title_short: Heado
-  slogan: Warmtekalender
+        title: "Hond verwijderen"
+        message: "Wil je echt je hond {} verwijderen? Alle gerelateerde kalendergegevens worden verwijderd. Dit kan niet ongedaan worden gemaakt."
+
 calendar:
+  phases:
+    anestrus: "Rustfase"
+  weight: "Gewicht"
+  notes: "Notities"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Fase
-        proestrus: Voorverwarmen
-        estrus: bronst
-        metestrus: Naverbranding
-        anestrus: Rustfase
+        label: "Fase"
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metaöstrus"
       false_pregnancy:
-        label: Valse zwangerschap
-        active_info: Actieve schijnzwangerschap
-      mood:
-        label: Stemming
-      symptom:
-        label: Symptomen
-      behavior:
-        label: Gedrag
-      secretion:
-        label: Uitstroom
-      weight:
-        label: Gewicht
-        unit: kg
-      note:
-        label: Opmerkingen
+        label: "Schijnzwangerschap"
+        active_info: "Actieve schijnzwangerschap"
   day_form:
     period:
-      title: Periode
-      enable: Periodecyclus toevoegen
-      disable: Periodecyclus verwijderen
+      title: "Periode"
+      enable: "Periodecyclus toevoegen"
+      disable: "Periodecyclus verwijderen"
       proestrus_start_date:
-        label: Begin van de voordracht (proestrus)
+        label: "Begin proöstrus"
         info:
-          title: Pre-ovulatie (bronst)
-          message: "Pre-oestrus begint wanneer de vulva van je teef opzwelt en er
-            bloederige vaginale afscheiding verschijnt.\n\nDe gemiddelde duur is 9
-            dagen en kan variëren van 3 tot 17 dagen.\n\nDeze datum moet altijd ingevuld
-            worden."
-          close: OK
+          title: "Proöstrus"
+          message: "Östrus begint wanneer de vulva van je hond opzwelt en er bloedige vaginale afscheiding optreedt.\n\nDe gemiddelde duur is 9 dagen en kan variëren van 3 tot 17 dagen.\n\nDe datum moet altijd worden opgegeven."
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
       estrus_start_date:
-        label: Begin van bronst (oestrus)
+        label: "Begin östrus"
         info:
-          title: Oestrus (Estrus)
-          message: "Met het begin van de bronst laat je teef zien dat ze bereid is
-            om te dekken (loopsheid). Vaginale afscheiding is nog steeds mogelijk,
-            maar het zal meer op vleeswater lijken en mogelijk slijmerig zijn.\n\n
-            De gemiddelde duur is 9 dagen en kan variëren tussen 3 en 21 dagen.\n
-            \nAls deze fase nog niet is begonnen of als je deze fase niet wilt documenteren,
-            laat dit veld dan leeg."
-          close: OK
+          title: "Östrus"
+          message: "Bij het begin van de östrus zal je hond bereidheid tot paren tonen (staande östrus). Vaginale afscheiding is nog steeds mogelijk, maar lijkt meer op vleeswater en kan slijmerig zijn.\n\nDe gemiddelde duur is 9 dagen en kan variëren van 3 tot 21 dagen.\n\nAls deze fase nog niet is begonnen of je wilt deze fase niet documenteren, laat dit veld dan leeg."
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
       metestrus_start_date:
-        label: Begin nabloei (Metestrus)
+        label: "Begin metaöstrus"
         info:
-          title: Afterburn (Metestrus)
-          message: "De periode na de borstvoeding wordt gekenmerkt door het einde
-            van de paringsbereidheid. Bovendien stopt de vaginale afscheiding en trekt
-            de vulva zich terug. Een schijnzwangerschap is in deze periode mogelijk.\n
-            \nAls deze fase nog niet is begonnen of als je deze fase niet wilt documenteren,
-            laat dit veld dan leeg."
-          close: OK
+          title: "Metaöstrus"
+          message: "De periode na de östrus wordt gekenmerkt door het einde van de paring. Bovendien stopt de vaginale afscheiding en trekt de vulva zich terug. Een schijnzwangerschap is mogelijk in deze tijd.\n\nAls deze fase nog niet is begonnen of je wilt deze fase niet documenteren, laat dit veld dan leeg."
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
       end_date:
-        label: Einde cyclus (rustfase)
+        label: "Einde periode (begin rustfase)"
         info:
-          title: Rustfase (anestrus)
-          message: "De rustfase vertoont geen tekenen van de seksuele cyclus. De vulva
-            is nu volledig teruggevallen.\n\nLaat dit veld leeg als deze cyclus nog
-            niet is afgelopen."
-          close: OK
+          title: "Rustfase (anöstrus)"
+          message: "Tijdens de rustfase zijn er geen tekenen van de seksuele cyclus. De vulva is nu volledig teruggetrokken.\n\nLaat dit veld leeg als de periode nog niet is geëindigd."
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
     false_pregnancy:
-      title: Valse zwangerschap
-      enable: Een schijnzwangerschap toevoegen
-      disable: Valse zwangerschap verwijderen
+      title: "Schijnzwangerschap"
+      enable: "Schijnzwangerschap toevoegen"
+      disable: "Schijnzwangerschap verwijderen"
       start_date:
-        label: Begin van een schijnzwangerschap
+        label: "Begin schijnzwangerschap"
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
       end_date:
-        label: Einde van een schijnzwangerschap
+        label: "Einde schijnzwangerschap"
         error:
-          in_future: De datum mag niet in de toekomst liggen
+          in_future: "Datum mag niet in de toekomst liggen"
     features:
-      title: Kenmerken
+      title: "Kenmerken"
       mood:
-        label: Stemming
-        no_selection: Geen stemmingen geselecteerd
+        no_selection: "Geen gemoedstoestand geselecteerd"
       symptom:
-        label: Symptomen
-        no_selection: Geen symptomen geselecteerd
+        no_selection: "Geen symptoom geselecteerd"
       behavior:
-        label: Gedrag
-        no_selection: Geen gedrag geselecteerd
+        no_selection: "Geen gedrag geselecteerd"
       secretion:
-        label: Uitstroom
-        no_selection: Geen afvoer geselecteerd
+        no_selection: "Geen afscheiding geselecteerd"
       weight:
-        weight:
-          label: Gewicht
         unit:
-          label: Eenheid
-          kilogram: kg
-    notes:
-      title: Opmerkingen
-      notes:
-        label: Opmerkingen
-    action:
-      save: Sla
+          label: "Eenheid"
   mood:
-    fearful: Angstig
-    courageous: Moedig
-    brave: Dapper
-    sleepy: Slaperig
-    sniffy: Snuffelen
-    aggressive: Agressief
-    nervous: Zenuwachtig
-    satisfied: Tevreden
-    stressed: Gestresst
-    sleepless: Slapeloos
-    dissatisfied: Ontevreden
-    depressed: Depressief
-    defiant: Opstandig
-    relaxed: Ontspannen
-    happy: Happy
-    obedient: Gehoorzaamheid
-    balanced: Uitgebalanceerd
-    fiepsy: Fiepsig
-    grumpy: Knorrig
-    weepy: Ruziënd
-    attentive: Attentie
-    sad: Droevig
-    stormy: Stormy
-    crazy: Gekke
-    calm: Kalm
-    cuddly: Gezellig
-    appetiteless: Eet smakelijk
-    indecisive: Onbeslist
-    exhausted: Uitgeput
-    frustrated: Gefrustreerd
-    bitchy: Truttig
-    troubled: Onrustig
-    jittery: Jitterig
+    mood: "Gemoedstoestand"
+    fearful: "Bang"
+    courageous: "Moedig"
+    brave: "Dapper"
+    sleepy: "Slaperig"
+    sniffy: "Snuffelend"
+    aggressive: "Agressief"
+    nervous: "Nerveus"
+    satisfied: "Tevreden"
+    stressed: "Gestrest"
+    sleepless: "Slapeloos"
+    dissatisfied: "Ontevreden"
+    depressed: "Depressief"
+    defiant: "Opstandig"
+    relaxed: "Ontspannen"
+    happy: "Blij"
+    obedient: "Gehoorzaam"
+    balanced: "Gebalanceerd"
+    fiepsy: "Fiepsy"
+    grumpy: "Chagrijnig"
+    weepy: "Jankerig"
+    attentive: "Aandachtig"
+    sad: "Verdrietig"
+    stormy: "Stormachtig"
+    crazy: "Gek"
+    calm: "Kalm"
+    cuddly: "Knuffelig"
+    appetiteless: "Zonder eetlust"
+    indecisive: "Besluiteloos"
+    exhausted: "Uitgeput"
+    frustrated: "Gefrustreerd"
+    bitchy: "Bitchy"
+    troubled: "Bezorgd"
+    jittery: "Zenuwachtig"
   behavior:
-    herding: Hoeden
-    adopting: Adopteer
-    nesting: Nest bouwen
-    howling: Yelp
-    restless: Onrustig
+    behavior: "Gedrag"
+    herding: "Hoedend"
+    adopting: "Adopterend"
+    nesting: "Nestelend"
+    howling: "Huilend"
+    restless: "Rusteloos"
   symptom:
-    stomach_cramps: Maagkrampen
-    flatulence: Winderigheid
-    diarrhea: Diarree
-    constipation: Constipatie
-    bloody_stool: Bloederige ontlasting
-    milk_discharge: Melkafvoer
-    swollen_teats: Gezwollen billen
-    vomit: Braken
-    dandruff: Roos vacht
+    symptom: "Symptoom"
+    stomach_cramps: "Buikkrampen"
+    flatulence: "Winderigheid"
+    diarrhea: "Diarree"
+    constipation: "Obstipatie"
+    bloody_stool: "Bloedige ontlasting"
+    milk_discharge: "Melkachtige afscheiding"
+    swollen_teats: "Gezwollen tepels"
+    vomit: "Braken"
+    dandruff: "Roos"
   secretion:
-    bloody: Bloederig
-    watery: Waterig
-    creamy: Romig
-    dryly: Droog
-    stinky: Stinkende
-    purulent: Festering
+    secretion: "Afscheiding"
+    bloody: "Bloedig"
+    watery: "Waterig"
+    creamy: "Romig"
+    dryly: "Droog"
+    stinky: "Stinkend"
+    purulent: "Pusachtig"
+
 overview:
+  last_cycle: "Laatste cyclus"
+  next_cycle: "Volgende cyclus"
   overview:
     current_period:
       no_data:
-        cta: Registreer de eerste loopsheid van je teef!
+        cta: "Voer de eerste cyclus van je hond in!"
         info:
-          title: De volgende hitte voorspellen
-          message: Heado heeft een complete cyclus (inclusief rustfase!) van je teef
-            nodig om een voorspelling te kunnen doen.
-          close: OK
-      days_left: nog {} dagen
-      weeks_left: nog {} weken
-      months_left: nog {} maanden
-      until_date: naar {}
-      error: Er is een fout opgetreden. Klik om te herhalen.
+          title: "Voorspel de volgende cyclus"
+          message: "Heado heeft een volledige cyclus (inclusief rustfase) van je hond nodig om een voorspelling te doen."
+      days_left: "{} dagen over"
+      weeks_left: "{} weken over"
+      months_left: "{} maanden over"
+      until_date: "tot {}"
+      error: "Er ging iets mis. Klik om opnieuw te proberen."
       phase:
-        proestrus: Voorverwarmen
-        estrus: bronst
-        metestrus: Naverbranding
-        anestrus: Rustfase
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metaöstrus"
     period_dates:
       last:
-        title: Laatste warmte
-        none: Er is nog geen periode ingevoerd.
-        from: van de
-        to: tot
+        title: "Laatste periode"
+        none: "Er is nog geen laatste periode."
       next:
-        title: Volgende warmte
-        from: van de
-        to: tot
-        none: Er zijn nog niet genoeg perioden om een voorspelling te doen.
+        title: "Volgende periode"
+        none: "Er zijn niet genoeg gegevens om de volgende periode te voorspellen."
     period_count:
       period:
-        title: Aantal verwarmingen
-        time: Verf
-        times: Verf
+        title: "Aantal perioden"
+        time: "keer"
+        times: "keren"
       false_pregnancy:
-        title: Aantal schijnzwangerschappen
-        time: Verf
-        times: Verf
+        title: "Aantal schijnzwangerschappen"
+        time: "keer"
+        times: "keren"
     menu:
-      calendar: Kalender
-      settings: Instellingen
+      calendar: "Kalender"
   ad_banner:
-    title: Je reclamevrije proefperiode eindigt binnenkort!
-    message: Je testfase eindigt op {}. Na deze dag zul je advertenties te zien krijgen.
-      Als je de app zonder advertenties wilt gebruiken, kun je de Premium versie kopen.
-    become_member: Lid worden
-    left_days: '{}/{} Resterende dagen'
+    title: "Je gratis proefperiode zonder advertenties eindigt binnenkort!"
+    message: "Je proefperiode eindigt op {}. Na deze datum zullen we advertenties tonen. Als je Heado zonder advertenties wilt blijven gebruiken, kun je ons premium pakket aanschaffen."
+    become_member: "Word lid"
+    left_days: "{}/{} dagen over"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Word Heado Premium lid en gebruik de app zonder advertenties.
-    purchase_single: Premium Lid worden
-    purchase_single_hint: '{} - Uniek {}'
-    purchase_family: Premium gezin worden
-    purchase_family_hint: '{} - Uniek {}'
-    restore_purchase: Aankopen herstellen
+    teaser: "Word nu lid van Heado Premium en gebruik de app zonder advertenties."
+    purchase_single: "Word premium lid"
+    purchase_single_hint: "{} • Eenmalig {}"
+    purchase_family: "Word premium familie"
+    purchase_family_hint: "{} • Eenmalig {}"
+    restore_purchase: "Herstel aankoop"
   membership:
     member:
-      teaser: Je bent een Heado Premium lid en kunt de app zonder advertenties gebruiken!
-      info: Je bent een Heado Premium lid sinds {}.
+      teaser: "Je bent een Heado Premium lid en kunt de app zonder advertenties gebruiken!"
+      info: "Je bent een Heado Premium lid sinds {}."
     family:
-      teaser: Jij en je familie zijn Heado Premium leden. Je kunt de app gebruiken
-        zonder advertenties!
-      info: Je gezin is sinds {} lid van Heado Premium.
+      teaser: "Jij en je familie zijn Heado Premium leden en kunnen de app zonder advertenties gebruiken!"
+      info: "Je familie is een Heado Premium lid sinds {}."
+
 settings:
-  title: Instellingen
-  footer: Gemaakt met {} voor Kori {} en Mayo {}.
-  family:
-    title: Familie
-    dogs:
-      title: Honden
-    members:
-      title: Leden
-    family:
-      title: Familie
+  settings: "Instellingen"
+  footer: "Gemaakt met liefde {} voor Kori {} en Mayo {}."
   account:
-    title: Account
+    title: "Account"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Accountinstellingen
+      title: "Accountinstellingen"
     cookies:
-      title: Cookie toestemmingen
+      title: "Cookie-toestemmingen"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Test gebruikerstoegang
+      title: "Testgebruikersinlog"
   contact:
-    title: Neem contact met ons op
+    title: "Contact"
     website:
-      title: Website
-      link: https://heado.de/
+      title: "Website"
     mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Juridische zaken
+    title: "Juridisch"
     terms:
-      title: Gebruiksvoorwaarden
-      link: https://heado.de/terms
+      title: "Gebruiksvoorwaarden"
     privacy:
-      title: Voorwaarden gegevensbescherming
-      link: https://heado.de/privacy
+      title: "Privacyverklaring"
   about:
-    title: Over
+    title: "Over"
     status:
-      title: Status
+      title: "Status"
     version:
-      title: Versie
+      title: "Versie"
     translation:
-      title: Vertalingen
+      title: "Vertalingen"
   app:
     design:
-      dark: Donker
-      title: Ontwerp
-      light: Licht
-    title: App
-  mayo: "Hé bontneus! 🐾\n\nIk ben blij dat je de weg naar mijn geheime gebied hebt
-    gevonden! Misschien ken je me al. Zo niet, dan heet ik Mayo en ben ik een Appenzeller
-    berghond. Een teefje natuurlijk! Ik ben nu 2 jaar oud. De illustratie hierboven
-    ben ik. Gewoon zodat je me kunt herkennen als je me ooit tegenkomt.\n\nHelaas
-    realiseerden mijn familie en ik ons dat ik angstige fases heb. Op een gegeven
-    moment hadden we allemaal de indruk dat mijn hormonen op hol sloegen voor mijn
-    loopsheid en dat ik niet meer zo dapper was als vroeger. Maar we wisten het niet
-    helemaal zeker.\n\nMijn bazin Korinna kwam toen op het idee dat we een kalender
-    konden maken voor vrouwelijke honden, net zoals we dat doen voor vrouwelijke mensen.
-    Zo gezegd, zo gedaan! Mijn baasje Fabian is een programmeur. Hij vond het ook
-    een geweldig idee en ging meteen aan de slag.\n\nFabian realiseerde zich echter
-    al snel dat hij geen enkel idee had van de cyclus van een hond. Of wat er allemaal
-    bij komt kijken. Dus deed hij veel onderzoek op internet, stelde Korinna veel
-    vragen en vergeleek haar met bestaande apps voor menselijke dames.\n\nNa een paar
-    maanden en een testfase met mijn pootvrienden was het zover! Op 27 november 2023
-    publiceerden we Heado in de App Store voor Android & iOS.\n\nMijn angstfases komen
-    eigenlijk door mijn hormonen. Maar het lijkt ook veel beter te worden met elke
-    loopsheid. We houden het zeker in de gaten.\n\nIk hoop dat we jou en je mensen
-    ook kunnen helpen met deze app en problemen of onregelmatigheden sneller kunnen
-    vinden. En ook de nodige bewijzen hebben bij de dierenarts.\n\nAls jij of je mensen
-    ideeën of verzoeken hebben, neem dan contact met me op via mayo@heado.app. Ook
-    bij problemen, fouten of moeilijkheden.\n\nVeel plezier met de app! <3\n\nMayo,
-    Korinna & Fabian"
+      light: "Licht"
+      dark: "Donker"
+      title: "Ontwerp"
+    title: "App"
+  mayo: "Hallo, pluizige neus! 🐾\n\nIk ben blij dat je mijn geheime ruimte hebt gevonden! Misschien ken je me al. Zo niet, mijn naam is Mayo en ik ben een Appenzeller Sennenhond. Natuurlijk ben ik een teef! Ik ben nu 2 jaar oud. De illustratie hierboven ben ik. Alleen zodat je me kunt herkennen als je me ooit ziet.\n\nHelaas moest mijn familie en ik ontdekken dat ik altijd angstfases heb. Op een gegeven moment dachten we allemaal dat mijn hormonen gek werden voordat mijn cyclus begon en daarom was ik niet meer zo dapper. Maar we waren niet helemaal zeker.\n\nMijn baasje Korinna bedacht toen dat er een kalender voor teven gemaakt kon worden, net zoals voor vrouwen. Zo gezegd, zo gedaan! Mijn baasje Fabian is een programmeur. Hij vond het ook een fantastisch idee en begon meteen.\n\nMaar Fabian realiseerde zich al snel dat hij geen idee had van de cyclus van een hond. Of wat dat inhield. Dus deed hij veel onderzoek op internet, stelde veel vragen aan Korinna en vergeleek het met bestaande apps voor vrouwen.\n\nNa een paar maanden en een testfase met mijn pootvrienden was het tijd! Op 27-11-2023 brachten we Heado uit in de App Store voor Android en iOS.\n\nEigenlijk komen mijn angstfases door mijn hormonen. Maar het lijkt veel beter te worden met elke cyclus. We zullen het zeker in de gaten houden.\n\nIk hoop dat deze app jou en je mensen kan helpen om sneller problemen of onregelmatigheden te vinden. En ook om de nodige bewijzen bij de dierenarts te hebben.\n\nAls jij of je mensen ideeën of wensen hebben, neem dan gerust contact met me op via mayo@heado.app. Ook in geval van problemen, fouten of moeilijkheden.\n\nGeniet van de app! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Accountinstellingen
+  title: "Accountinstellingen"
   logins:
-    title: Accountgegevens
-    google:
-      label: Google
-    apple:
-      label: Appel
+    title: "Accountkoppelingen"
     test:
-      label: Testgebruiker
+      label: "Testgebruiker"
     error:
       already_in_use:
-        title: Al aangesloten
-        message: Het geselecteerde account is al verbonden met een andere gebruiker.
-        close: OK
+        title: "Account is al in gebruik"
+        message: "Het geselecteerde account is al gekoppeld aan een andere gebruiker."
   disconnect:
-    label: Account ontkoppelen
+    disconnect:
+      short: "Ontkoppelen"
+      long: "Account ontkoppelen"
     confirm:
-      title: Account ontkoppelen
-      message: Wil je je account echt ontkoppelen? Dan kun je niet meer inloggen bij
-        deze provider. Je kunt je account later weer koppelen.
-      no: Annuleren
-      yes: Ja, ontkoppelen
+      message: "Wil je echt je account ontkoppelen? Daarna kun je niet meer inloggen met deze provider. Je kunt het account later opnieuw koppelen."
+      yes: "Ja, ontkoppelen"
   logout:
-    label: Afmelden
+    logout: "Uitloggen"
     confirm:
-      title: Afmelden
-      message: Wil je echt uitloggen? Je kunt opnieuw inloggen met je Google of Apple
-        account.
-      no: Annuleren
-      yes: Ja, uitloggen
-  delete:
-    label: Account verwijderen
-    confirm:
-      title: Account verwijderen
-      message: Wil je echt je account verwijderen? Je hebt geen toegang meer tot deze
-        familie en hebt een nieuwe uitnodiging nodig. Als je de laatste gebruiker
-        van deze familie bent, wordt de familie ook verwijderd. Alle honden en bijbehorende
-        gegevens worden ook verwijderd. Dit kan niet ongedaan worden gemaakt!
-      no: Annuleren
-      yes: Ja, verwijderen
-generic:
-  system_default: Systeemstandaard
-  cancel: Annuleren
-  delete: Verwijder
-  done: Afgewerkt
+      message: "Wil je echt uitloggen? Je kunt opnieuw inloggen met je Google- of Apple-account."
+      yes: "Ja, uitloggen"
+
+onboarding:
+  code:
+    validation:
+      min_length: "De code moet uit 5 cijfers bestaan"
+  next: "Volgende"
+  welcome:
+    task: "Heb je al een account?"
+    action:
+      register: "Maak een nieuw account aan"
+      login: "Ik heb al een account"
+  member:
+    task: "Hoe heet je?"
+    default_name: "Maatje"
+    default_name_dog: "Maatje van {}"
+  lonely:
+    task: "Ben je uitgenodigd voor een familie?"
+    action:
+      create_family: "Maak een nieuwe familie"
+      join_family: "Sluit aan bij een bestaande familie"
+  login:
+    task: "Log in op je bestaande account"
+  test_login:
+    task: "Log in met PIN voor demo-accounts"
+    code:
+      error:
+        invalid: "Ongeldige PIN"
+    action:
+      login: "Inloggen"
+  join:
+    task: "Familie-uitnodigingscode"
+    code:
+      invalid: "Ongeldige uitnodigingscode.\nDe code bestaat niet of is al gebruikt."
+  finish:
+    task: "Je bent klaar!"
+    legal:
+      hint: "Door op „Accepteren en account aanmaken“ te klikken, ga je akkoord met de volgende voorwaarden:"
+      terms:
+        label: "1. Gebruiksvoorwaarden"
+      privacy:
+        label: "2. Privacyverklaring"
+    action:
+      accept_and_register: "Accepteren en account aanmaken"
+  family:
+    task: "Geef je familie een naam"
+    name:
+      label: "Familienaam (fictief)"
+      help: "Kies een fantasienaam die je familie goed beschrijft. Je achternaam is hier niet nodig."
+    default_name: "{} familie"
+  dog:
+    task: "Hoe heet je hond?"
+    name:
+      label: "Naam van de hond"
+  auth:
+    task: "Log in, sla je gegevens op en gebruik je profiel op meerdere apparaten"
+    action:
+      skip: "Ik wil niet inloggen"

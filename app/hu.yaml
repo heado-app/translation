@@ -1,532 +1,446 @@
 app:
-  title: Heado - hőlégköri naptár
-  title_short: Heado
-  slogan: Hő naptár
-core:
+  title: "Heado - Kutya Hőciklus Naptár"
+  title_short: "Heado"
+  slogan: "Kutya Hőciklus Naptár"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Rendszer alapértelmezett"
+  cancel: "Mégse"
+  delete: "Törlés"
+  done: "Kész"
+  close: "Bezárás"
+  count:
+    time: "{} alkalom"
+    times: "{} alkalommal"
   date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Hiányzó adatok"
+  error:
+    title: "Hiba"
+    message:
+      long: "Hiba történt. Kérlek próbáld újra később."
+    open_details: "Részletek megjelenítése"
+    close_details: "Részletek elrejtése"
+  validation:
+    in_future: "A dátum nem lehet a jövőben"
+  name: "Név"
+  save: "Mentés"
+  ok: "OK"
+  from: "tól"
+  to: "ig"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Ciklusok"
+  false_pregnancies: "Álterhességek"
+
+core:
   error:
     generic:
-      short: Hiba történt!
-      long: Hoppá, hiba történt! Sajnálom.
+      short: "Valami elromlott!"
+      long: "Hoppá, valami elromlott! Elnézést."
     retry:
-      short: Ismétlés
-      long: Próbálja újra
+      short: "Próbáld újra"
+      long: "Próbáld meg újra"
   empty:
-    hint: Nincsenek bejegyzések.
-  close: Zárja be a
-  copy: Másolás
-  share: Megosztás
-  unknown: Ismeretlen
+    hint: "Nincsenek bejegyzések."
+  copy: "Másolás"
+  share: "Megosztás"
+  unknown: "Ismeretlen"
+  date:
+    long: "yyyy. MMMM d."
+    short: "yyyy/MM/dd"
+    month_year: "MMMM yyyy"
+
 family:
+  family: "Család"
+  your_title: "A te családod"
+  members: "Tagok"
+  dogs: "Kutyák"
+  add_dog: "Új kutya hozzáadása"
+  delete_account:
+    reason:
+      label: "Miért akarod törölni a fiókodat?"
+      hint: "Nem tetszik, hogy.."
+      validation:
+        empty: "Kérlek mondd el nekünk, miért akarod törölni a Heado fiókodat."
+    family:
+      delete: "Család törlése"
+      confirm:
+        message: "Tényleg törölni akarod az egész családodat? A fiókodat, az összes családtagot és kutyát, beleértve a kapcsolódó naptári adatokat is, törölni fogjuk. Ez nem vonható vissza!"
+    member:
+      delete: "Fiók törlése"
+      confirm:
+        message: "Tényleg törölni akarod a fiókodat? Nem fogsz tudni hozzáférni ehhez a családhoz, és új meghívóra lesz szükséged az újbóli csatlakozáshoz. Ha te vagy az utolsó tag ebben a családban, a család is törlődik. Az összes kutya és a kapcsolódó adatok is törlődnek. Ez nem vonható vissza!"
+    confirm:
+      accept: "Igen, törlés"
+  validation:
+    empty_name: "A név nem lehet üres."
   member_list:
-    title: Tagok
     invitation:
-      label: Meghívó "{}"
-    add_invitation: Új tag meghívása
+      label: "Meghívó „{}“"
+    add_invitation: "Új tag meghívása"
   member_form:
-    title: Tag szerkesztése
-    name:
-      label: Név
-    action:
-      delete: Törölje a címet.
-      save: Mentés
+    title: "Tag szerkesztése"
     delete:
       confirm:
-        title: Tag törlése
-        message: Tényleg törölni akarja a {} tagot? A tag már nem férhet hozzá ehhez
-          a családhoz, és új meghívót igényel. Ha ez a felhasználó az utolsó tagja
-          ennek a családnak, a család is törlésre kerül. Az összes kutya és a kapcsolódó
-          adatok is törlődnek. Ezt nem lehet visszacsinálni!
-        no: Törölje
-        yes: Törlés
+        title: "Tag törlése"
+        message: "Tényleg törölni akarod a tagot {}? A tag nem fog tudni többé hozzáférni a családhoz, és új meghívóra lesz szüksége az újbóli csatlakozáshoz. Ha ez az utolsó tag a családban, a család is törlődik. Az összes kutya és a kapcsolódó adatok is törlődnek. Ez nem vonható vissza!"
   invitation_form:
-    title: Meghívó
+    title: "Meghívó"
     share:
-      hint: A "{}" meghívó PIN-kóddal meghívhat egy másik családtagot a családjához.
-        Minden PIN-kód csak egyszer használható.
-      content: Meghívom Önt, hogy csatlakozzon a családomhoz! Töltsd le a Heado alkalmazást
-        (https://heado.de/) és használd a "{}" családi PIN-kódot a regisztráció során.
+      hint: "Használd a meghívókódot „{}“, hogy egy új tag csatlakozhasson a családodhoz. Minden kód csak egyszer érvényes."
+      content: "Meghívlak a családomba! Kérlek töltsd le a Heado alkalmazást (https://heado.app/) és használd a meghívókódot „{}“ a regisztráció során."
       copy:
-        hint: A "{}" PIN kódot másolták.
-    action:
-      delete: Törlés
+        hint: "A kód „{}“ másolva."
     delete:
       confirm:
-        title: Meghívó törlése
-        message: Tényleg törölni szeretné ezt a meghívót? Akkor többé nem használhatja
-          ezt a meghívó PIN-kódot. Ezt nem lehet törölni, és új PIN-kódot kell létrehoznia!
-        no: Törölje
-        yes: Törölje a  címet.
+        title: "Meghívó törlése"
+        message: "Tényleg törölni akarod ezt a meghívót? A művelet után a meghívókód többé nem lesz használható. Ez nem vonható vissza, és új kódot kell létrehozni!"
   family_form:
-    title: Család szerkesztése
-    name:
-      label: Név
-    action:
-      delete: Törölje a  címet.
-      save: Mentés
-    delete:
-      confirm:
-        title: Család törlése
-        message: Tényleg törölni akarja a családot {}? A fiókja, az összes családtag
-          és kutya, beleértve a naptáradatokat is, törlődik. Ezt nem lehet visszacsinálni!
-        no: Törölje
-        yes: Törölje a  címet.
-  dog_selection:
-    add: Új kutya hozzáadása
-  dog_list:
-    title: Kutyák
-    add: Új kutya hozzáadása
+    title: "Család szerkesztése"
   dog_form:
-    title:
-      add: Kutyát hozzáadni
-      edit: Edit kutya
-    name:
-      label: Név
-    action:
-      delete: Törölje a  címet.
-      save: Mentés
+    edit: "Kutya szerkesztése"
     delete:
       confirm:
-        title: Kutyát törölni
-        message: Tényleg törölni akarja a kutyáját {}? Minden naptáradat is törlődik.
-          Ezt nem lehet visszacsinálni.
-        no: Törölje
-        yes: Törölje a  címet.
+        title: "Kutya törlése"
+        message: "Tényleg törölni akarod a kutyádat {}? Az összes kapcsolódó naptári adat törlődik. Ez nem vonható vissza."
+
 calendar:
+  phases:
+    anestrus: "Nyugalmi fázis"
+  weight: "Súly"
+  notes: "Jegyzetek"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Fázis
-        proestrus: Előmelegítés
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Pihenő fázis
+        label: "Fázis"
+        proestrus: "Proösztrusz"
+        estrus: "Ösztrusz"
+        metestrus: "Metösztrusz"
       false_pregnancy:
-        label: Hamis terhesség
-        active_info: Aktív álterhesség
-      mood:
-        label: Hangulat
-      symptom:
-        label: Tünetek
-      behavior:
-        label: Viselkedés
-      secretion:
-        label: Kiáramlás
-      weight:
-        label: Súly
-        unit: kg
-      note:
-        label: Megjegyzések
+        label: "Álterhesség"
+        active_info: "Aktív álterhesség"
   day_form:
     period:
-      title: Időszak
-      enable: Időszakos ciklus hozzáadása
-      disable: Időszakciklus törlése
+      title: "Periódus"
+      enable: "Periódusciklus hozzáadása"
+      disable: "Periódusciklus törlése"
       proestrus_start_date:
-        label: Az ivarzás előtti időszak kezdete (proestrus)
+        label: "Proösztrusz kezdete"
         info:
-          title: Ovuláció előtti (Proestrus)
-          message: "Az ivarzás előtti időszak akkor kezdődik, amikor a szuka szeméremteste
-            megduzzad és véres hüvelyváladék jelenik meg.\n\nAz átlagos időtartam
-            9 nap, de 3 és 17 nap között változhat.\n\nEzt az időpontot mindig ki
-            kell tölteni."
-          close: OK
+          title: "Proösztrusz"
+          message: "Az ösztrusz akkor kezdődik, amikor a szuka vulvája megduzzad és véres hüvelyi folyás jelentkezik.\n\nAz átlagos időtartam 9 nap, de 3 és 17 nap között változhat.\n\nA dátumot mindig meg kell adni."
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
       estrus_start_date:
-        label: Az ivarzás (ösztrusz) kezdete
+        label: "Ösztrusz kezdete"
         info:
-          title: Oestrus (ösztrusz)
-          message: "Az ivarzás kezdetével a szuka párosodási hajlandóságot mutat (álló
-            ivarzás). A hüvelyváladékozás még lehetséges, de inkább húsvízszerű és
-            esetleg nyálkás lesz.\n\nAz átlagos időtartam 9 nap, de 3 és 21 nap között
-            változhat.\n \nHa ez a fázis még nem kezdődött el, vagy nem kívánja dokumentálni,
-            hagyja üresen ezt a mezőt."
-          close: OK
+          title: "Ösztrusz"
+          message: "Az ösztrusz kezdetén a szuka párosodási hajlandóságot mutat (álló ösztrusz). A hüvelyi folyás még mindig lehetséges, de inkább húsos vízre hasonlít és lehet nyálkás.\n\nAz átlagos időtartam 9 nap, de 3 és 21 nap között változhat.\n\nHa ez a fázis még nem kezdődött el, vagy nem kívánod dokumentálni ezt a fázist, hagyd ezt a mezőt üresen."
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
       metestrus_start_date:
-        label: Az utóégés kezdete (Metestrus)
+        label: "Metösztrusz kezdete"
         info:
-          title: Utóégetés (Metestrus)
-          message: "A szoptatás utáni időszakot a párzási készség megszűnése jellemzi.
-            Emellett a hüvelyi folyás megszűnik és a szeméremtest visszahúzódik. Ebben
-            az időszakban lehetséges a téves vemhesség.\n\nHa ez a fázis még nem kezdődött
-            el, vagy nem kívánja dokumentálni ezt a szakaszt, hagyja üresen ezt a
-            mezőt."
-          close: OK
+          title: "Metösztrusz"
+          message: "Az ösztrusz utáni időszakot a párosodás vége jellemzi. Emellett a hüvelyi folyás megszűnik és a vulva visszahúzódik. Az álterhesség ebben az időszakban lehetséges.\n\nHa ez a fázis még nem kezdődött el, vagy nem kívánod dokumentálni ezt a fázist, hagyd ezt a mezőt üresen."
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
       end_date:
-        label: A ciklus vége (nyugalmi fázis)
+        label: "Periódus vége (nyugalmi fázis kezdete)"
         info:
-          title: Nyugalmi fázis (anesztrusz)
-          message: "A nyugalmi fázis nem mutatja a szexuális ciklus jeleit. A szeméremtest
-            már teljesen visszafejlődött.\n\nHagyja üresen ezt a mezőt, ha ez a ciklus
-            még nem ért véget."
-          close: OK
+          title: "Nyugalmi fázis (anösztrusz)"
+          message: "A nyugalmi fázis alatt nincs jele a szexuális ciklusnak. A vulva most teljesen visszahúzódott.\n\nHagyd ezt a mezőt üresen, ha a periódus még nem ért véget."
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
     false_pregnancy:
-      title: Hamis terhesség
-      enable: Hamis terhesség hozzáadása
-      disable: Hamis terhesség törlése
+      title: "Álterhesség"
+      enable: "Álterhesség hozzáadása"
+      disable: "Álterhesség törlése"
       start_date:
-        label: Hamis terhesség kezdete
+        label: "Álterhesség kezdete"
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
       end_date:
-        label: A hamis terhesség vége
+        label: "Álterhesség vége"
         error:
-          in_future: A dátum nem lehet a jövőben
+          in_future: "A dátum nem lehet a jövőben"
     features:
-      title: Jellemzők
+      title: "Jellemzők"
       mood:
-        label: Hangulat
-        no_selection: Nincs kiválasztott hangulat
+        no_selection: "Nincs kiválasztott hangulat"
       symptom:
-        label: Tünetek
-        no_selection: Nincs kiválasztott tünet
+        no_selection: "Nincs kiválasztott tünet"
       behavior:
-        label: Viselkedés
-        no_selection: Nincs kiválasztott viselkedés
+        no_selection: "Nincs kiválasztott viselkedés"
       secretion:
-        label: Kiáramlás
-        no_selection: Nincs kiválasztott ürítés
+        no_selection: "Nincs kiválasztott váladék"
       weight:
-        weight:
-          label: Súly
         unit:
-          label: Egység
-          kilogram: kg
-    notes:
-      title: Megjegyzések
-      notes:
-        label: Megjegyzések
-    action:
-      save: Mentés
+          label: "Egység"
   mood:
-    defiant: Dacos
-    fearful: Anxious
-    courageous: Bátor
-    brave: Bátor
-    sleepy: Álmos
-    sniffy: Szimatolás
-    aggressive: Agresszív
-    nervous: Ideges
-    satisfied: Elégedett
-    stressed: Stresszelt
-    sleepless: Álmatlan
-    dissatisfied: Elégedetlen
-    depressed: Depressziós
-    relaxed: Laza
-    happy: Boldog
-    obedient: Engedelmesség
-    balanced: Kiegyensúlyozott
-    fiepsy: Fiepsig
-    grumpy: Grumpy
-    weepy: Veszekedő
-    attentive: Figyelem
-    sad: Szomorú
-    stormy: Stormy
-    crazy: Őrült
-    calm: Nyugalom
-    cuddly: Hangulatos
-    appetiteless: Étvágytalan
-    indecisive: Határozatlan
-    exhausted: Kimerült
-    frustrated: Frusztrált
-    bitchy: Bitchy
-    troubled: Nyugtalan
-    jittery: Jittery
+    mood: "Hangulat"
+    fearful: "Félelemteli"
+    courageous: "Bátor"
+    brave: "Merész"
+    sleepy: "Álmos"
+    sniffy: "Szimatol"
+    aggressive: "Agresszív"
+    nervous: "Ideges"
+    satisfied: "Elégedett"
+    stressed: "Stresszes"
+    sleepless: "Alvás nélküli"
+    dissatisfied: "Elégedetlen"
+    depressed: "Depressziós"
+    defiant: "Dacos"
+    relaxed: "Laza"
+    happy: "Boldog"
+    obedient: "Engedelmes"
+    balanced: "Kiegyensúlyozott"
+    fiepsy: "Fiepsy"
+    grumpy: "Mogorva"
+    weepy: "Síró"
+    attentive: "Figyelmes"
+    sad: "Szomorú"
+    stormy: "Viharos"
+    crazy: "Őrült"
+    calm: "Nyugodt"
+    cuddly: "Bújós"
+    appetiteless: "Étvágytalan"
+    indecisive: "Határozatlan"
+    exhausted: "Kimerült"
+    frustrated: "Frusztrált"
+    bitchy: "Szemtelen"
+    troubled: "Gondterhelt"
+    jittery: "Izgatott"
   behavior:
-    herding: Kalapok
-    adopting: Fogadja el a  címet.
-    nesting: Fészeképítés
-    howling: Yelp
-    restless: Nyugtalan
+    behavior: "Viselkedés"
+    herding: "Terelés"
+    adopting: "Örökbefogadás"
+    nesting: "Fészekrakás"
+    howling: "Üvöltés"
+    restless: "Nyughatatlan"
   symptom:
-    stomach_cramps: Gyomorgörcsök
-    flatulence: Flatulencia
-    diarrhea: Hasmenés
-    constipation: Székrekedés
-    bloody_stool: Véres széklet
-    milk_discharge: Tejelválasztás
-    swollen_teats: Duzzadt fenék
-    vomit: Hányás
-    dandruff: Korpás kabát
+    symptom: "Tünet"
+    stomach_cramps: "Gyomorgörcsök"
+    flatulence: "Puffadás"
+    diarrhea: "Hasmenés"
+    constipation: "Székrekedés"
+    bloody_stool: "Véres széklet"
+    milk_discharge: "Tejszerű váladék"
+    swollen_teats: "Duzzadt emlők"
+    vomit: "Hányás"
+    dandruff: "Korpásodás"
   secretion:
-    bloody: Bloody
-    watery: Vizes
-    creamy: Krémes
-    dryly: Száraz
-    stinky: Büdös
-    purulent: Festering
+    secretion: "Váladék"
+    bloody: "Véres"
+    watery: "Vizes"
+    creamy: "Krémes"
+    dryly: "Száraz"
+    stinky: "Büdös"
+    purulent: "Gennyes"
+
 overview:
+  last_cycle: "Utolsó ciklus"
+  next_cycle: "Következő ciklus"
   overview:
     current_period:
       no_data:
-        cta: Regisztráld a szukád első tüzelését!
+        cta: "Add meg a kutyád első tüzelését!"
         info:
-          title: A következő hőség előrejelzése
-          message: A Headónak egy teljes ciklusra (beleértve a nyugalmi fázist is!)
-            van szüksége a szukádtól, hogy előrejelzést tudjon készíteni.
-          close: OK
-      days_left: Még mindig...
-      weeks_left: még mindig {} hetek
-      months_left: még mindig {} hónapok
-      until_date: a {}
-      error: Hiba történt. Kattintson az ismétléshez.
+          title: "Következő tüzelés előrejelzése"
+          message: "A Heado-nak szüksége van a kutyád teljes ciklusára (beleértve a pihenési fázist is) az előrejelzéshez."
+      days_left: "{} nap van hátra"
+      weeks_left: "{} hét van hátra"
+      months_left: "{} hónap van hátra"
+      until_date: "eddig: {}"
+      error: "Valami hiba történt. Kattints az újrapróbálkozáshoz."
       phase:
-        proestrus: Előmelegítés
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Pihenő fázis
+        proestrus: "Proösztrusz"
+        estrus: "Ösztrusz"
+        metestrus: "Metösztrusz"
     period_dates:
       last:
-        title: Utolsó hőség
-        none: Még nem adtak meg időszakot.
-        from: a
-        to: amíg
+        title: "Utolsó periódus"
+        none: "Még nincs utolsó periódus."
       next:
-        title: Következő hőség
-        from: a
-        to: amíg
-        none: Még nincs elég időszak ahhoz, hogy előrejelzést lehessen tenni.
+        title: "Következő periódus"
+        none: "Nincs elég adat a következő periódus előrejelzéséhez."
     period_count:
       period:
-        title: Fűtések száma
-        time: Festék
-        times: Festék
+        title: "Periódusok száma"
+        time: "alkalom"
+        times: "alkalom"
       false_pregnancy:
-        title: A téves terhességek száma
-        time: Festék
-        times: Festék
+        title: "Álterhességek száma"
+        time: "alkalom"
+        times: "alkalom"
     menu:
-      calendar: Naptár
-      settings: Beállítások
+      calendar: "Naptár"
   ad_banner:
-    title: A reklámmentes próbaidőszak hamarosan véget ér!
-    message: A tesztfázisod {}-kor ér véget. Ezt a napot követően hirdetéseket fog
-      látni. Ha reklámok nélkül szeretné használni az alkalmazást, megvásárolhatja
-      a Prémium verziót.
-    become_member: Legyen tag
-    left_days: '{}/{} Maradék napok'
+    title: "Ingyenes próbaidőszakod hirdetések nélkül hamarosan véget ér!"
+    message: "Próbaidőszakod {}-án/-én véget ér. E dátum után hirdetéseket fogunk megjeleníteni. Ha továbbra is hirdetések nélkül szeretnéd használni a Heado-t, válthatsz prémium csomagunkra."
+    become_member: "Legyél tag"
+    left_days: "{}/{} nap van hátra"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Legyen Heado Premium tag, és használja az alkalmazást reklámok nélkül.
-    purchase_single: Legyen Prémium tag
-    purchase_single_hint: '{} - Unique {}'
-    purchase_family: Legyen Prémium család
-    purchase_family_hint: '{} - Unique {}'
-    restore_purchase: Vásárlások visszaállítása
+    teaser: "Válj most Heado Premium taggá, és használd az alkalmazást hirdetések nélkül."
+    purchase_single: "Legyél prémium tag"
+    purchase_single_hint: "{} • Egyszeri {}"
+    purchase_family: "Legyél prémium család"
+    purchase_family_hint: "{} • Egyszeri {}"
+    restore_purchase: "Vásárlás visszaállítása"
   membership:
     member:
-      teaser: Ön Heado Premium tag, és reklámok nélkül használhatja az alkalmazást!
-      info: Ön {} óta Heado Premium tag.
+      teaser: "Te Heado Premium tag vagy, és hirdetések nélkül használhatod az alkalmazást!"
+      info: "Heado Premium tag vagy {} óta."
     family:
-      teaser: Ön és családja Heado Premium tagok. Reklámok nélkül használhatod az
-        alkalmazást!
-      info: Az Ön családja {} óta Heado Premium tag.
+      teaser: "Te és családod Heado Premium tagok vagytok, és hirdetések nélkül használhatjátok az alkalmazást!"
+      info: "Családod {} óta Heado Premium tag."
+
 settings:
-  title: Beállítások
-  footer: Kori {} és Mayo {} számára készült.
-  family:
-    title: Család
-    dogs:
-      title: Kutyák
-    members:
-      title: Tagok
-    family:
-      title: Család
+  settings: "Beállítások"
+  footer: "Készítette szeretettel {} Kori {} és Mayo {} számára."
   account:
-    title: Számla
+    title: "Fiók"
     premium:
-      title: Prémium
+      title: "Premium"
     settings:
-      title: Fiókbeállítások
+      title: "Fiók beállításai"
     cookies:
-      title: Cookie hozzájárulások
+      title: "Sütik hozzájárulása"
   demo:
-    title: Demo
+    title: "Bemutató"
     test_login:
-      title: Felhasználói hozzáférés tesztelése
+      title: "Tesztfelhasználó bejelentkezés"
   contact:
-    title: Kapcsolatfelvétel
+    title: "Kapcsolat"
     website:
-      title: Weboldal
-      link: https://heado.de/
+      title: "Weboldal"
     mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Jogi kérdések
+    title: "Jogi"
     terms:
-      title: Használati feltételek
-      link: https://heado.de/terms
+      title: "Felhasználási feltételek"
     privacy:
-      title: Adatvédelmi feltételek
-      link: https://heado.de/privacy
+      title: "Adatvédelmi irányelvek"
   about:
-    title: A  oldalról
+    title: "Rólunk"
     status:
-      title: Állapot
+      title: "Állapot"
     version:
-      title: Verzió
+      title: "Verzió"
     translation:
-      title: Fordítások
+      title: "Fordítások"
   app:
     design:
-      light: Fény
-      dark: Sötét
-      title: Tervezés
-    title: App
-  mayo: "Hé, szőrös orr! 🐾\n\nÖrülök, hogy megtaláltad az utat a titkos területemre!
-    Talán már ismersz is engem. Ha nem, a nevem Mayo és egy Appenzell hegyi kutya
-    vagyok. Természetesen szuka! Most vagyok 2 éves. A fenti illusztráció én vagyok.
-    Csak hogy felismerhessetek, ha egyszer találkoztok velem.\n\nSajnos a családommal
-    rájöttünk, hogy vannak szorongásos fázisaim. Valamikor mindannyiunknak az volt
-    a benyomásunk, hogy a hormonjaim megőrültek a hőemelkedésem előtt, és hogy nem
-    vagyok olyan bátor, mint régen. De nem voltunk benne teljesen biztosak.\n\nA gazdimnak,
-    Korinnának ekkor támadt az az ötlete, hogy készíthetnénk egy naptárat a nőstény
-    kutyáknak, ahogyan az emberi nőstényeknek is. Alighogy kimondtuk, máris megtörtént!
-    Fábián gazdám programozó. Ő is úgy gondolta, hogy ez egy nagyszerű ötlet, és rögtön
-    belevágott.\n\nFábián azonban hamar rájött, hogy fogalma sincs a kutyák ciklusáról.
-    Vagy arról, hogy mi tartozik hozzá. Ezért rengeteget kutatott az interneten, rengeteg
-    kérdést tett fel Korinnának, és összehasonlította az emberi hölgyek számára már
-    létező alkalmazásokkal.\n\nNéhány hónap és a mancsos barátokkal való tesztelési
-    fázis után eljött az idő! 2023. november 27-én megjelent a Heado az App Store-ban
-    Androidra és iOS-re.\n\nA szorongásos fázisaim valójában a hormonjaimtól származnak.
-    De úgy tűnik, hogy ez is sokkal jobb lesz minden egyes hőséggel. Mindenképpen
-    rajta tartjuk a szemünket.\n\nRemélem, hogy ezzel az alkalmazással neked és az
-    embereidnek is tudunk segíteni, és gyorsabban megtaláljuk a problémákat vagy a
-    szabálytalanságokat. És az állatorvosnál is meglesznek a szükséges bizonyítékok.\n
-    \nHa Önnek vagy embereinek bármilyen ötlete vagy kérése van, kérem, keressenek
-    meg a mayo@heado.app címen. Problémák, hibák vagy nehézségek esetén is.\n\nJó
-    szórakozást az alkalmazással! <3\n\nMayo, Korinna & Fabian"
+      light: "Világos"
+      dark: "Sötét"
+      title: "Dizájn"
+    title: "Alkalmazás"
+  mayo: "Szia, szőrös orr! 🐾\n\nÖrülök, hogy rátaláltál a titkos részemre! Lehet, hogy már ismersz. Ha nem, a nevem Mayo, és egy Appenzeller Sennenhund vagyok. Természetesen szuka vagyok! Most 2 éves vagyok. A fenti illusztráció én vagyok. Csak azért, hogy felismerj, ha valaha találkozunk.\n\nSajnos a családomnak és nekem rá kellett jönnünk, hogy mindig vannak szorongásos fázisaim. Egy időben mindannyian azt hittük, hogy a hormonjaim megbolondulnak a tüzelés előtt, és ezért nem vagyok már annyira bátor. De nem voltunk teljesen biztosak.\n\nGazdám, Korinna akkoriban kitalálta, hogy lehetne egy naptárat készíteni szuka kutyáknak, mint ahogy nőknek is van. Mondta és megtette! Gazdám, Fabian programozó. Ő is fantasztikus ötletnek találta, és azonnal elkezdett dolgozni rajta.\n\nDe Fabian hamar rájött, hogy fogalma sincs a kutya ciklusáról. Vagy arról, mit is jelent ez. Így sok kutatást végzett az interneten, sok kérdést tett fel Korinnának, és összehasonlította a már meglévő női alkalmazásokkal.\n\nNéhány hónap és egy tesztelési fázis után a mancsos barátaimmal elérkezett az idő! 2023.11.27-én kiadtuk a Heado-t az Android és iOS alkalmazásboltokban.\n\nValójában a szorongásos fázisaim a hormonjaimból fakadnak. De úgy tűnik, hogy minden tüzeléssel egyre jobb lesz. Mindenképpen figyelemmel kísérjük.\n\nRemélem, hogy ez az alkalmazás segíthet neked és a gazdáidnak, hogy gyorsabban találjatok problémákat vagy rendellenességeket. És hogy az állatorvosnál is meglegyenek a szükséges bizonyítékok.\n\nHa neked vagy a gazdáidnak vannak ötleteitek vagy kívánságaitok, kérlek, lépjetek velem kapcsolatba a mayo@heado.app címen. Problémák, hibák vagy nehézségek esetén is.\n\nJó szórakozást az alkalmazáshoz! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Fiókbeállítások
+  title: "Fiók beállításai"
   logins:
-    title: Számlaadatok
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Fiók kapcsolatok"
     test:
-      label: Tesztelő felhasználó
+      label: "Tesztfelhasználó"
     error:
       already_in_use:
-        title: Már csatlakoztatva
-        message: A kiválasztott fiók már egy másik felhasználóhoz kapcsolódik.
-        close: OK
+        title: "A fiók már használatban van"
+        message: "A kiválasztott fiók már másik felhasználóhoz van csatlakoztatva."
   disconnect:
-    label: Leválasztott számla
+    disconnect:
+      short: "Kapcsolat bontása"
+      long: "Fiók kapcsolatának bontása"
     confirm:
-      title: Leválasztott számla
-      message: Tényleg fel akarod oldani a fiókodat? Akkor többé nem fog tudni bejelentkezni
-        ennél a szolgáltatónál. Fiókját később újracsatlakoztathatja.
-      no: Törölje
-      yes: Igen, szétválasztás
+      message: "Biztosan le szeretnéd bontani a fiók kapcsolatát? Ezután nem tudsz bejelentkezni ezzel a szolgáltatóval. Később újra csatlakoztathatod a fiókot."
+      yes: "Igen, bontás"
   logout:
-    label: Kijelentkezés
+    logout: "Kijelentkezés"
     confirm:
-      title: Kijelentkezés
-      message: Tényleg ki akarsz jelentkezni? Google- vagy Apple-fiókjával újra bejelentkezhet.
-      no: Törölje
-      yes: Igen, jelentkezzen ki
-  delete:
-    label: Fiók törlése
-    confirm:
-      title: Fiók törlése
-      message: Tényleg törölni szeretné a fiókját? Többé nem férhetsz hozzá ehhez
-        a családhoz, és új meghívóra van szükséged. Ha Ön az utolsó felhasználója
-        ennek a családnak, a család is törlésre kerül. Az összes kutya és a kapcsolódó
-        adatok is törlődnek. Ezt nem lehet visszacsinálni!
-      no: Tényleg ki akarsz jelentkezni? Google- vagy Apple-fiókjával újra bejelentkezhet.
-      yes: Igen, törölni
+      message: "Biztosan ki szeretnél jelentkezni? Újra bejelentkezhetsz a Google vagy Apple fiókoddal."
+      yes: "Igen, kijelentkezés"
+
 onboarding:
-  lonely:
-    task: Meghívtak egy családhoz?
-    action:
-      create_family: Új család létrehozása
-      join_family: Csatlakozzon egy meglévő családhoz
-  login:
-    task: Jelentkezzen be meglévő fiókjába
-    action:
-      google: Google
-      apple: Apple
-  test_login:
-    task: PIN kódos bejelentkezés demó felhasználók számára
-    code:
-      error:
-        min_length: A kódnak 5 számjegyből kell állnia
-        invalid: Érvénytelen kód
-    action:
-      login: Bejelentkezés
-  join:
-    task: Családja meghívási kódja
-    code:
-      error:
-        min_length: A kódnak 5 számjegyből kell állnia
-      invalid: "Érvénytelen meghívó kód.\nA kód nem létezik, vagy már felhasználásra
-        került."
-  finish:
-    task: Készen állsz!
-    legal:
-      hint: 'Az "Elfogadás és fiók létrehozása" gombra kattintva Ön elfogadja az alábbi
-        feltételeket:'
-      terms:
-        label: 1. használati feltételek
-        link: https://heado.de/terms
-      privacy:
-        label: 2. adatvédelmi feltételek
-        link: https://heado.de/privacy
-    action:
-      accept_and_register: Elfogadni és fiókot létrehozni
-  family:
-    task: Adj nevet a családodnak
-    name:
-      label: (fiktív) családi név
-      help: Válasszon egy olyan képzeletbeli nevet, amely jól jellemzi a családját.
-        A vezetéknevedre itt nincs szükség.
-    default_name: '{} családja'
-  dog:
-    task: Mi a kutyád neve?
-    name:
-      label: A kutya neve
-  auth:
-    task: Bejelentkezés, fiókadatok mentése és több eszköz használata
-    action:
-      google: Google
-      apple: Apple
-      skip: Nem akarok bejelentkezni
-  next: További
+  code:
+    validation:
+      min_length: "A kódnak 5 számjegyből kell állnia"
+  next: "Következő"
   welcome:
-    task: Van már fiókja?
+    task: "Van már fiókod?"
     action:
-      register: Új fiók létrehozása
-      login: Már van egy fiókom
+      register: "Új fiók létrehozása"
+      login: "Már van fiókom"
   member:
-    task: Hogy hívhatlak?
+    task: "Hogyan szólíthatlak?"
+    default_name: "Társ"
+    default_name_dog: "{} társa"
+  lonely:
+    task: "Meghívtak egy családba?"
+    action:
+      create_family: "Új család létrehozása"
+      join_family: "Csatlakozás meglévő családhoz"
+  login:
+    task: "Jelentkezz be meglévő fiókoddal"
+  test_login:
+    task: "Bejelentkezés PIN kóddal tesztfiókokhoz"
+    code:
+      error:
+        invalid: "Érvénytelen PIN kód"
+    action:
+      login: "Bejelentkezés"
+  join:
+    task: "Családi meghívó kód"
+    code:
+      invalid: "Érvénytelen meghívó kód.\nA kód nem létezik vagy már felhasználták."
+  finish:
+    task: "Kész vagy!"
+    legal:
+      hint: "A „Elfogadom és létrehozom a fiókot” gombra kattintva elfogadod a következő feltételeket:"
+      terms:
+        label: "1. Felhasználási feltételek"
+      privacy:
+        label: "2. Adatvédelmi irányelvek"
+    action:
+      accept_and_register: "Elfogadom és létrehozom a fiókot"
+  family:
+    task: "Adj nevet a családodnak"
     name:
-      label: Név
-    default_name: 'Társ'
-    default_name_dog: '{} társa'
-generic:
-  system_default: Rendszer szabvány
-  cancel: Törölje
-  delete: Törölje a címet.
-  done: Kész
+      label: "Család neve (képzeletbeli)"
+      help: "Válassz egy képzeletbeli nevet, amely jól jellemzi a családodat. A vezetékneved itt nem szükséges."
+    default_name: "{} családja"
+  dog:
+    task: "Mi a kutyád neve?"
+    name:
+      label: "Kutyaneve"
+  auth:
+    task: "Jelentkezz be, mentsd el az adataidat, és használd a profilodat több eszközön"
+    action:
+      skip: "Nem akarok bejelentkezni"

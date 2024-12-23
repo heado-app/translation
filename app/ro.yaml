@@ -1,536 +1,446 @@
-family:
-  invitation_form:
-    share:
-      copy:
-        hint: PIN-ul "{}" a fost copiat.
-      hint: Utilizați PIN-ul de invitație "{}" pentru a invita un alt membru al familiei
-        să se alăture familiei dvs. Fiecare PIN poate fi utilizat o singură dată.
-      content: Vă invit să vă alăturați familiei mele! Descărcați aplicația Heado
-        (https://heado.de/) și folosiți PIN-ul familiei "{}" atunci când vă înregistrați.
-    title: Invitație
-    action:
-      delete: Ștergeți
-    delete:
-      confirm:
-        title: Ștergeți invitația
-        message: Chiar doriți să ștergeți această invitație? Atunci nu mai puteți
-          utiliza acest PIN de invitație. Aceasta nu poate fi anulată și va trebui
-          să creați un nou PIN!
-        no: Anulează
-        yes: Ștergeți
-  member_list:
-    title: Membri
-    invitation:
-      label: Invitație "{}"
-    add_invitation: Invitați un nou membru
-  member_form:
-    title: Editează membru
-    name:
-      label: Nume
-    action:
-      delete: Ștergeți
-      save: Salvați
-    delete:
-      confirm:
-        title: Ștergeți membrul
-        message: Chiar doriți să ștergeți membrul {}? Membrul nu mai poate accesa
-          această familie și are nevoie de o nouă invitație. Dacă acest utilizator
-          este ultimul membru al acestei familii, familia va fi, de asemenea, ștearsă.
-          Toți câinii și datele asociate vor fi, de asemenea, șterse. Acest lucru
-          nu poate fi anulat!
-        no: Anulează
-        yes: Ștergeți
-  family_form:
-    title: Editează familia
-    name:
-      label: Nume
-    action:
-      delete: Ștergeți
-      save: Salvați
-    delete:
-      confirm:
-        title: Ștergeți familia
-        message: Chiar vrei să ștergi familia {}? Contul dvs., toți membrii familiei
-          și câinii, inclusiv datele din calendar vor fi șterse. Acest lucru nu poate
-          fi anulat!
-        no: Anulează
-        yes: Ștergeți
-  dog_selection:
-    add: Adăugați un câine nou
-  dog_list:
-    title: Câini
-    add: Adăugați un câine nou
-  dog_form:
-    title:
-      add: Adaugă câine
-      edit: Editare câine
-    name:
-      label: Nume
-    action:
-      delete: Ștergeți
-      save: Salvați
-    delete:
-      confirm:
-        title: Șterge câinele
-        message: Chiar vrei să-ți ștergi câinele {}? Toate datele din calendar vor
-          fi, de asemenea, șterse. Acest lucru nu poate fi anulat.
-        no: Anulează
-        yes: Ștergeți
 app:
-  title: Heado - calendar termic
-  title_short: Heado
-  slogan: Calendar termic
-core:
+  title: "Heado - Calendarul ciclului de călduri pentru câini"
+  title_short: "Heado"
+  slogan: "Calendarul ciclului de călduri pentru câini"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Implicitul sistemului"
+  cancel: "Anulează"
+  delete: "Șterge"
+  done: "Gata"
+  close: "Închide"
+  count:
+    time: "{} dată"
+    times: "{} ori"
   date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Date insuficiente"
+  error:
+    title: "Eroare"
+    message:
+      long: "A apărut o eroare. Te rog, încearcă din nou mai târziu."
+    open_details: "Afișează detalii"
+    close_details: "Ascunde detalii"
+  validation:
+    in_future: "Data nu poate fi în viitor"
+  name: "Nume"
+  save: "Salvează"
+  ok: "OK"
+  from: "de la"
+  to: "până la"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cicluri"
+  false_pregnancies: "Sarcini false"
+
+core:
   error:
     generic:
-      short: A apărut o eroare!
-      long: Oops, a apărut o eroare! Îmi pare rău.
+      short: "Ceva a mers prost!"
+      long: "Ups, ceva a mers prost! Ne pare rău."
     retry:
-      short: Repetați
-      long: Încearcă din nou
+      short: "Încearcă din nou"
+      long: "Te rog, încearcă din nou"
   empty:
-    hint: Nu există intrări.
-  close: Închideți
-  copy: Copiați
-  share: Share
-  unknown: Necunoscut
-onboarding:
-  dog:
-    task: Care este numele câinelui tău?
-    name:
-      label: Numele câinelui
-  auth:
-    task: Conectați-vă, salvați datele contului și utilizați mai multe dispozitive
-    action:
-      google: Google
-      apple: Apple
-      skip: Nu vreau să mă conectez
-  next: Mai departe
-  welcome:
-    task: Aveți deja un cont?
-    action:
-      register: Creați un cont nou
-      login: Am deja un cont
-  member:
-    task: Cum pot să-ți spun?
-    name:
-      label: Nume
-    default_name: Companion
-    default_name_dog: însoțitorul lui {}
-  lonely:
-    task: Ați fost invitat la o familie?
-    action:
-      create_family: Creați o nouă familie
-      join_family: Alăturați-vă unei familii existente
-  login:
-    task: Conectați-vă la contul dvs. existent
-    action:
-      google: Google
-      apple: Apple
-  test_login:
-    task: Conectare cu cod PIN pentru utilizatorii demo
-    code:
-      error:
-        min_length: Codul trebuie să fie format din 5 cifre
-        invalid: Cod invalid
-    action:
-      login: Autentificare
-  join:
-    task: Codul de invitație al familiei tale
-    code:
-      error:
-        min_length: Codul trebuie să fie format din 5 cifre
-      invalid: "Cod de invitație nevalid.\nCodul nu există sau a fost deja utilizat."
-  finish:
-    task: Sunteți gata!
-    legal:
-      hint: 'Făcând clic pe "Acceptă și creează cont", sunteți de acord cu următoarele
-        condiții:'
-      terms:
-        label: 1. condiții de utilizare
-        link: https://heado.de/terms
-      privacy:
-        label: 2. Condiții de protecție a datelor
-        link: https://heado.de/privacy
-    action:
-      accept_and_register: Acceptați și creați un cont
-  family:
-    task: Dați un nume familiei dvs.
-    name:
-      label: Nume de familie (fictiv)
-      help: Alegeți un nume imaginar care să vă descrie bine familia. Numele dvs.
-        de familie nu este necesar aici.
-    default_name: Familia lui {}
+    hint: "Nicio înregistrare."
+  copy: "Copiază"
+  share: "Partajează"
+  unknown: "Necunoscut"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
+family:
+  family: "Familie"
+  your_title: "Familia ta"
+  members: "Membri"
+  dogs: "Câini"
+  add_dog: "Adaugă un nou câine"
+  delete_account:
+    reason:
+      label: "De ce vrei să ștergi contul tău?"
+      hint: "Nu-mi place că.."
+      validation:
+        empty: "Te rog să ne spui de ce vrei să ștergi contul tău Heado."
+    family:
+      delete: "Șterge familia"
+      confirm:
+        message: "Ești sigur că vrei să ștergi întreaga ta familie? Contul tău, toți membrii familiei și câinii, inclusiv datele aferente din calendar, vor fi șterse. Aceasta nu poate fi anulată!"
+    member:
+      delete: "Șterge contul"
+      confirm:
+        message: "Ești sigur că vrei să ștergi contul tău? Nu vei mai avea acces la această familie și vei avea nevoie de o nouă invitație pentru a te alătura din nou. Dacă ești ultimul membru al acestei familii, familia va fi, de asemenea, ștearsă. Toți câinii și datele aferente vor fi, de asemenea, șterse. Aceasta nu poate fi anulată!"
+    confirm:
+      accept: "Da, șterge"
+  validation:
+    empty_name: "Numele nu poate fi gol."
+  member_list:
+    invitation:
+      label: "Invitație „{}“"
+    add_invitation: "Invită un nou membru"
+  member_form:
+    title: "Editează membrul"
+    delete:
+      confirm:
+        title: "Șterge membrul"
+        message: "Ești sigur că vrei să ștergi membrul {}? Membrul nu va mai avea acces la familie și va avea nevoie de o nouă invitație pentru a se alătura din nou. Dacă acesta este ultimul membru al familiei, familia va fi, de asemenea, ștearsă. Toți câinii și datele aferente vor fi, de asemenea, șterse. Aceasta nu poate fi anulată!"
+  invitation_form:
+    title: "Invitație"
+    share:
+      hint: "Folosește codul de invitație „{}“ pentru a permite unui nou membru să se alăture familiei tale. Fiecare cod este valabil o singură dată."
+      content: "Te invit în familia mea! Te rog să descarci aplicația Heado (https://heado.app/) și să folosești codul de invitație „{}“ în timpul înregistrării."
+      copy:
+        hint: "Codul „{}“ a fost copiat."
+    delete:
+      confirm:
+        title: "Șterge invitația"
+        message: "Ești sigur că vrei să ștergi această invitație? După operație, codul de invitație nu va mai fi utilizabil. Aceasta nu poate fi anulată și va trebui să creezi un nou cod!"
+  family_form:
+    title: "Editează familia"
+  dog_form:
+    edit: "Editează câinele"
+    delete:
+      confirm:
+        title: "Șterge câinele"
+        message: "Ești sigur că vrei să ștergi câinele tău {}? Toate datele aferente din calendar vor fi șterse. Aceasta nu poate fi anulată."
+
 calendar:
+  phases:
+    anestrus: "Faza de repaus"
+  weight: "Greutate"
+  notes: "Note"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Faza
-        proestrus: Preîncălziți
-        estrus: Oestru
-        metestrus: Afterburn
-        anestrus: Faza de odihnă
+        label: "Fază"
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
       false_pregnancy:
-        label: Sarcina falsă
-        active_info: Sarcina falsă activă
-      mood:
-        label: Stare de spirit
-      symptom:
-        label: Simptomele
-      behavior:
-        label: Comportament
-      secretion:
-        label: Ieșire
-      weight:
-        label: Greutate
-        unit: kg
-      note:
-        label: Note
+        label: "Sarcină falsă"
+        active_info: "Sarcină falsă activă"
   day_form:
     period:
-      title: Perioada
-      enable: Adăugați ciclul perioadei
-      disable: Ștergerea ciclului de perioade
+      title: "Perioadă"
+      enable: "Adaugă ciclul perioadei"
+      disable: "Șterge ciclul perioadei"
       proestrus_start_date:
-        label: Începutul perioadei de pre-rut (proestru)
+        label: "Începutul proestrusului"
         info:
-          title: Pre-ovulație (Proestru)
-          message: "Pre-estrul începe atunci când vulva cățelei se umflă și apar scurgeri
-            vaginale cu sânge.\n\nDurata medie este de 9 zile și poate varia de la
-            3 la 17 zile.\n\nAceastă dată trebuie completată întotdeauna."
-          close: OK
+          title: "Proestrus"
+          message: "Estrusul începe când vulva câinelui tău se umflă și apare o secreție vaginală sângeroasă.\n\nDurata medie este de 9 zile și poate varia între 3 și 17 zile.\n\nData trebuie întotdeauna specificată."
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
       estrus_start_date:
-        label: Începutul estrului (estru)
+        label: "Începutul estrusului"
         info:
-          title: Oestru (Estru)
-          message: "Odată cu debutul estrului, cățeaua dvs. își manifestă dorința
-            de a se împerechea (în călduri). Scurgerea vaginală este încă posibilă,
-            dar va fi mai mult ca apa de carne și posibil mucoasă.\n\nDurata medie
-            este de 9 zile și poate varia între 3 și 21 de zile.\n \nDacă această
-            fază nu a început încă sau dacă nu doriți să documentați această fază,
-            lăsați acest câmp gol."
-          close: OK
+          title: "Estrus"
+          message: "La începutul estrusului, câinele tău va arăta dorința de a se împerechea (estrusul în picioare). Secreția vaginală este încă posibilă, dar seamănă mai mult cu apa de carne și poate fi mucoasă.\n\nDurata medie este de 9 zile și poate varia între 3 și 21 de zile.\n\nDacă această fază nu a început încă sau nu dorești să documentezi această fază, lasă acest câmp gol."
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
       metestrus_start_date:
-        label: Începutul postcombustiei (Metestru)
+        label: "Începutul metestrusului"
         info:
-          title: Afterburn (Metestrus)
-          message: "Perioada de după alăptare se caracterizează prin încetarea pregătirii
-            pentru împerechere. În plus, secrețiile vaginale încetează și vulva se
-            retrage. O sarcină falsă este posibilă în această perioadă.\n\nDacă această
-            fază nu a început încă sau dacă nu doriți să documentați această fază,
-            lăsați acest câmp gol."
-          close: OK
+          title: "Metestrus"
+          message: "Perioada după estrus este caracterizată prin sfârșitul împerecherii. În plus, secreția vaginală se oprește și vulva se retrage. O sarcină falsă este posibilă în acest timp.\n\nDacă această fază nu a început încă sau nu dorești să documentezi această fază, lasă acest câmp gol."
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
       end_date:
-        label: Sfârșitul ciclului (faza de repaus)
+        label: "Sfârșitul perioadei (începutul fazei de repaus)"
         info:
-          title: Faza de repaus (anestro)
-          message: "Faza de repaus nu prezintă semne ale ciclului sexual. Vulva este
-            acum complet regresată.\n\nLăsați acest câmp gol dacă acest ciclu nu s-a
-            încheiat încă."
-          close: OK
+          title: "Faza de repaus (anestrus)"
+          message: "În timpul fazei de repaus, nu există semne ale ciclului sexual. Vulva este acum complet retrasă.\n\nLasă acest câmp gol dacă perioada nu s-a încheiat încă."
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
     false_pregnancy:
-      title: Sarcina falsă
-      enable: Adăugarea unei sarcini false
-      disable: Ștergeți sarcina falsă
+      title: "Sarcină falsă"
+      enable: "Adaugă sarcina falsă"
+      disable: "Șterge sarcina falsă"
       start_date:
-        label: Începutul unei sarcini false
+        label: "Începutul sarcinii false"
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
       end_date:
-        label: Sfârșitul sarcinii false
+        label: "Sfârșitul sarcinii false"
         error:
-          in_future: Data nu trebuie să fie în viitor
+          in_future: "Data nu poate fi în viitor"
     features:
-      title: Caracteristici
+      title: "Caracteristici"
       mood:
-        label: Stare de spirit
-        no_selection: Nu sunt selectate stări de spirit
+        no_selection: "Nici o dispoziție selectată"
       symptom:
-        label: Simptomele
-        no_selection: Niciun simptom selectat
+        no_selection: "Niciun simptom selectat"
       behavior:
-        label: Comportament
-        no_selection: Niciun comportament selectat
+        no_selection: "Niciun comportament selectat"
       secretion:
-        label: Ieșire
-        no_selection: Nu s-a selectat nicio descărcare
+        no_selection: "Nici o secreție selectată"
       weight:
-        weight:
-          label: Greutate
         unit:
-          label: Unitatea
-          kilogram: kg
-    notes:
-      title: Note
-      notes:
-        label: Note
-    action:
-      save: Salvați
+          label: "Unitate"
   mood:
-    fearful: Anxios
-    courageous: Curajos
-    brave: Brave
-    sleepy: Sleepy
-    sniffy: Sniffing
-    aggressive: Agresivitate
-    nervous: Nervos
-    satisfied: Satisfăcut
-    stressed: Stresat
-    sleepless: Insomnii
-    dissatisfied: Nemulțumit
-    depressed: Deprimat
-    defiant: Sfidător
-    relaxed: Relaxat
-    happy: Fericit
-    obedient: Obediență
-    balanced: Echilibrat
-    fiepsy: Fiepsig
-    grumpy: Grumpy
-    weepy: Certăreț
-    attentive: Atenție
-    sad: Trist
-    stormy: Stormy
-    crazy: Crazy
-    calm: Calm
-    cuddly: Confortabil
-    appetiteless: Fără apetit
-    indecisive: Indecis
-    exhausted: Epuizat
-    frustrated: Frustrat
-    bitchy: Bitchy
-    troubled: Neliniștit
-    jittery: Jittery
+    mood: "Dispoziție"
+    fearful: "Fricoasă"
+    courageous: "Curajoasă"
+    brave: "Curajos"
+    sleepy: "Somnoros"
+    sniffy: "Mirositor"
+    aggressive: "Agresivă"
+    nervous: "Nervos"
+    satisfied: "Mulțumit"
+    stressed: "Stresat"
+    sleepless: "Insomniac"
+    dissatisfied: "Nemulțumit"
+    depressed: "Depresiv"
+    defiant: "Sfida"
+    relaxed: "Relaxat"
+    happy: "Fericit"
+    obedient: "Ascultător"
+    balanced: "Echilibrat"
+    fiepsy: "Fiepsy"
+    grumpy: "Morcovită"
+    weepy: "Plângăcios"
+    attentive: "Atent"
+    sad: "Trist"
+    stormy: "Furtunos"
+    crazy: "Nebun"
+    calm: "Calm"
+    cuddly: "Pufos"
+    appetiteless: "Fără poftă de mâncare"
+    indecisive: "Nehotărât"
+    exhausted: "Epuizat"
+    frustrated: "Frustrat"
+    bitchy: "Ticălos"
+    troubled: "Îngrijorat"
+    jittery: "Nervos"
   behavior:
-    herding: Pălării
-    adopting: Adoptați
-    nesting: Construirea cuibului
-    howling: Yelp
-    restless: Neliniștit
+    behavior: "Comportament"
+    herding: "Păstor"
+    adopting: "Adoptat"
+    nesting: "Cuibărit"
+    howling: "Urlând"
+    restless: "Neliniștit"
   symptom:
-    stomach_cramps: Crampe la stomac
-    flatulence: Flatulență
-    diarrhea: Diareea
-    constipation: Constipație
-    bloody_stool: Scaune cu sânge
-    milk_discharge: Scurgerea laptelui
-    swollen_teats: Fese umflate
-    vomit: Vărsături
-    dandruff: Mătreață haină
+    symptom: "Simptom"
+    stomach_cramps: "Crampe stomacale"
+    flatulence: "Flatulență"
+    diarrhea: "Diaree"
+    constipation: "Constipație"
+    bloody_stool: "Scaun sângeros"
+    milk_discharge: "Secreție lactată"
+    swollen_teats: "Sfârcuri umflate"
+    vomit: "Vărsături"
+    dandruff: "Mătreață"
   secretion:
-    bloody: Bloody
-    watery: Aqueous
-    creamy: Cremos
-    dryly: Uscat
-    stinky: Mirositor
-    purulent: Festering
+    secretion: "Secreție"
+    bloody: "Sângeroasă"
+    watery: "Apoasă"
+    creamy: "Cremă"
+    dryly: "Uscată"
+    stinky: "Urât mirositoare"
+    purulent: "Purulentă"
+
 overview:
+  last_cycle: "Ultimul ciclu"
+  next_cycle: "Următorul ciclu"
   overview:
     current_period:
       no_data:
-        cta: Înregistrează prima căldurică a cățelei tale!
+        cta: "Introduceți primul ciclu al câinelui dvs.!"
         info:
-          title: Predicția următoarei călduri
-          message: Heado are nevoie de un ciclu complet (inclusiv faza de repaus!)
-            de la cățea ta pentru a face o predicție.
-          close: OK
-      days_left: încă {} zile
-      weeks_left: încă {} săptămâni
-      months_left: încă {} luni
-      until_date: la {}
-      error: S-a produs o eroare. Faceți clic pentru a repeta.
+          title: "Previzionează următorul ciclu"
+          message: "Heado are nevoie de un ciclu complet (inclusiv faza de odihnă) al câinelui dvs. pentru a face o previziune."
+      days_left: "{} zile rămase"
+      weeks_left: "{} săptămâni rămase"
+      months_left: "{} luni rămase"
+      until_date: "până la {}"
+      error: "Ceva nu a mers bine. Faceți clic pentru a încerca din nou."
       phase:
-        proestrus: Preîncălziți
-        estrus: Oestru
-        metestrus: Afterburn
-        anestrus: Faza de odihnă
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
     period_dates:
       last:
-        title: Ultima căldură
-        none: Încă nu a fost introdusă nicio perioadă.
-        from: de la
-        to: până la
+        title: "Ultima perioadă"
+        none: "Nu există încă ultima perioadă."
       next:
-        title: Următoarea căldură
-        from: de la
-        to: până la
-        none: Nu există încă suficiente perioade pentru a face o predicție.
+        title: "Următoarea perioadă"
+        none: "Date insuficiente pentru a previziona următoarea perioadă."
     period_count:
       period:
-        title: Numărul de încălziri
-        time: Vopsea
-        times: Vopsea
+        title: "Numărul de perioade"
+        time: "dată"
+        times: "ori"
       false_pregnancy:
-        title: Numărul de sarcini false
-        time: Vopsea
-        times: Vopsea
+        title: "Numărul de sarcini false"
+        time: "dată"
+        times: "ori"
     menu:
-      calendar: Calendar
-      settings: Setări
+      calendar: "Calendar"
   ad_banner:
-    title: Perioada de probă fără reclame se încheie în curând!
-    message: Faza de testare se încheie pe {}. După această zi, veți vedea reclame.
-      Dacă doriți să utilizați aplicația fără reclame, puteți achiziționa versiunea
-      Premium.
-    become_member: Deveniți membru
-    left_days: '{}/{} Zile rămase'
+    title: "Perioada dvs. de probă gratuită fără reclame se va încheia în curând!"
+    message: "Perioada dvs. de probă se va încheia pe {}. După această dată, vă vom arăta reclame. Dacă doriți să continuați să utilizați Heado fără reclame, puteți achiziționa pachetul nostru premium."
+    become_member: "Devino membru"
+    left_days: "{}/{} zile rămase"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Deveniți un membru Heado Premium și utilizați aplicația fără reclame.
-    purchase_single: Deveniți un membru Premium
-    purchase_single_hint: '{} - Unic {}'
-    purchase_family: Deveniți o familie Premium
-    purchase_family_hint: '{} - Unic {}'
-    restore_purchase: Restabilirea achizițiilor
+    teaser: "Devino membru Heado Premium acum și folosește aplicația fără reclame."
+    purchase_single: "Devino membru premium"
+    purchase_single_hint: "{} • O singură dată {}"
+    purchase_family: "Devino familie premium"
+    purchase_family_hint: "{} • O singură dată {}"
+    restore_purchase: "Restabilește achiziția"
   membership:
     member:
-      teaser: Sunteți membru Heado Premium și puteți utiliza aplicația fără reclame!
-      info: Sunteți membru Heado Premium de la {}.
+      teaser: "Ești membru Heado Premium și poți folosi aplicația fără reclame!"
+      info: "Ești membru Heado Premium din {}."
     family:
-      teaser: Tu și familia ta sunteți membri Heado Premium. Puteți utiliza aplicația
-        fără reclame!
-      info: Familia dvs. este membru Heado Premium de la {}.
+      teaser: "Tu și familia ta sunteți membri Heado Premium și puteți folosi aplicația fără reclame!"
+      info: "Familia ta este membru Heado Premium din {}."
+
 settings:
-  title: Setări
-  footer: Făcut cu {} pentru Kori {} și Mayo {}.
-  family:
-    title: Familie
-    dogs:
-      title: Câini
-    members:
-      title: Membri
-    family:
-      title: Familie
+  settings: "Setări"
+  footer: "Creat cu dragoste {} de Kori {} și Mayo {}."
   account:
-    title: Cont
+    title: "Cont"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Setări de cont
+      title: "Setările contului"
     cookies:
-      title: Consimțământul pentru cookie-uri
+      title: "Consimțământ pentru cookie-uri"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Testați accesul utilizatorilor
+      title: "Autentificare utilizator test"
   contact:
-    title: Contactați-ne
+    title: "Contact"
     website:
-      title: Site web
-      link: https://heado.de/
+      title: "Site web"
     mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Aspecte juridice
+    title: "Legal"
     terms:
-      title: Termeni de utilizare
-      link: https://heado.de/terms
+      title: "Termeni și condiții"
     privacy:
-      title: Condiții de protecție a datelor
-      link: https://heado.de/privacy
+      title: "Politica de confidențialitate"
   about:
-    title: Despre
+    title: "Despre"
     status:
-      title: Stare
+      title: "Status"
     version:
-      title: Versiunea
+      title: "Versiune"
     translation:
-      title: Traduceri
+      title: "Traduceri"
   app:
-    title: Aplicație
     design:
-      title: Design
-      light: Lumină
-      dark: Întuneric
-  mayo: "Hei nas de blană! 🐾\n\nMă bucur că ai găsit drumul spre zona mea secretă!
-    Poate că mă cunoști deja. Dacă nu, numele meu este Mayo și sunt un câine de munte
-    Appenzell. O femelă, desigur! Acum am 2 ani. Ilustrația de mai sus sunt eu. Doar
-    ca să mă puteți recunoaște dacă mă vedeți vreodată.\n\nDin păcate, eu și familia
-    mea ne-am dat seama că am faze anxioase. La un moment dat am avut cu toții impresia
-    că hormonii mei o luaseră razna înainte de călduri și că nu mai eram la fel de
-    curajoasă ca înainte. Dar nu eram foarte siguri.\n\nStăpâna mea Korinna a avut
-    atunci ideea că am putea face un calendar pentru femelele de câine, la fel cum
-    facem pentru femelele umane. Nici vorbă! Stăpânul meu Fabian este programator.
-    Și lui i s-a părut o idee grozavă și s-a apucat imediat de treabă.\n\nCu toate
-    acestea, Fabian și-a dat repede seama că nu avea nicio idee despre ciclul unui
-    câine. Sau ce implică acesta. Așa că a făcut multe cercetări pe internet, i-a
-    pus Korinnei o mulțime de întrebări și a comparat-o cu aplicațiile existente pentru
-    doamnele umane.\n\nDupă câteva luni și o fază de testare cu prietenii mei labați,
-    a venit momentul! Pe 27 noiembrie 2023, am publicat Heado în App Store pentru
-    Android și iOS.\n\nFazele mele de anxietate vin de fapt de la hormonii mei. Dar,
-    de asemenea, pare să devină mult mai bine cu fiecare căldură. Cu siguranță vom
-    fi cu ochii pe ea.\n\nSper să vă putem ajuta și pe dvs. și pe oamenii dvs. cu
-    această aplicație și să găsim probleme sau nereguli mai repede. Și, de asemenea,
-    să aveți dovezile necesare la veterinar.\n\nDacă tu sau oamenii tăi aveți idei
-    sau solicitări, vă rog să luați legătura cu mine la mayo@heado.app. De asemenea,
-    în caz de probleme, erori sau dificultăți.\n\nDistracție plăcută cu aplicația!
-    <3\n\nMayo, Korinna & Fabian"
+      light: "Luminos"
+      dark: "Întunecat"
+      title: "Design"
+    title: "Aplicație"
+  mayo: "Bună, nas pufos! 🐾\n\nMă bucur că ai găsit drumul către locul meu secret! Poate mă cunoști deja. Dacă nu, mă numesc Mayo și sunt un câine Appenzeller Sennenhund. Desigur, sunt o femelă! Am acum 2 ani. Ilustrația de mai sus sunt eu. Doar pentru a mă recunoaște dacă mă vezi vreodată.\n\nDin păcate, familia mea și cu mine a trebuit să înțelegem că întotdeauna am faze de anxietate. La un moment dat, toți am crezut că hormonii mei înnebunesc înainte de ciclul meu și de aceea nu mai sunt atât de curajoasă. Dar nu eram complet siguri.\n\nStăpâna mea Korinna a venit atunci cu ideea că ar putea fi creat un calendar pentru femele, la fel ca pentru femei. Zis și făcut! Stăpânul meu Fabian este un programator. El a crezut, de asemenea, că este o idee fantastică și a început imediat.\n\nDar Fabian și-a dat seama repede că nu avea nicio idee despre ciclul unui câine. Sau despre ce implică acesta. Așa că a făcut multe cercetări pe internet, a pus multe întrebări Korinnei și a comparat cu aplicațiile existente pentru femei.\n\nDupă câteva luni și o fază de testare cu prietenii mei cu patru labe, a venit timpul! Pe 27.11.2023, am lansat Heado în App Store pentru Android și iOS.\n\nDe fapt, fazele mele de anxietate provin din hormonii mei. Dar pare să devină mult mai bine cu fiecare ciclu. Cu siguranță vom monitoriza asta.\n\nSper că această aplicație poate ajuta și pe tine și pe oamenii tăi să găsiți probleme sau nereguli mai repede. Și să aveți, de asemenea, dovezile necesare la veterinar.\n\nDacă tu sau oamenii tăi aveți idei sau dorințe, nu ezitați să mă contactați la mayo@heado.app. De asemenea, în caz de probleme, erori sau dificultăți.\n\nBucurați-vă de aplicație! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Setări de cont
+  title: "Setările contului"
   logins:
-    title: Detalii de cont
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Conexiuni de cont"
     test:
-      label: Utilizator de test
+      label: "Utilizator de test"
     error:
       already_in_use:
-        title: Deja conectat
-        message: Contul selectat este deja conectat la un alt utilizator.
-        close: OK
+        title: "Contul este deja utilizat"
+        message: "Contul selectat este deja conectat la un alt utilizator."
   disconnect:
-    label: Contul de decuplare
+    disconnect:
+      short: "Deconectează"
+      long: "Deconectează contul"
     confirm:
-      title: Contul de decuplare
-      message: Chiar vreți să vă deconectați contul? Atunci nu vă veți mai putea conecta
-        la acest furnizor. Vă puteți reconecta contul mai târziu.
-      no: Anulează
-      yes: Da, decuplați
+      message: "Ești sigur că vrei să deconectezi contul tău? După aceasta, nu vei mai putea să te autentifici cu acest furnizor. Poți reconecta contul mai târziu."
+      yes: "Da, deconectează"
   logout:
-    label: Deconectați-vă
+    logout: "Deconectează-te"
     confirm:
-      title: Deconectați-vă
-      message: Chiar doriți să vă deconectați? Vă puteți autentifica din nou cu contul
-        Google sau Apple.
-      no: Anulează
-      yes: Da, deconectați-vă
-  delete:
-    label: Ștergeți contul
-    confirm:
-      title: Ștergeți contul
-      message: Chiar doriți să vă ștergeți contul? Nu mai puteți accesa această familie
-        și aveți nevoie de o nouă invitație. Dacă sunteți ultimul utilizator al acestei
-        familii, familia va fi, de asemenea, ștearsă. Toți câinii și datele asociate
-        vor fi, de asemenea, șterse. Acest lucru nu poate fi anulat!
-      no: Chiar doriți să vă deconectați? Vă puteți autentifica din nou cu contul
-        Google sau Apple.
-      yes: Da, ștergeți
-generic:
-  system_default: Standard de sistem
-  cancel: Anulează
-  delete: Ștergeți
-  done: Terminat
+      message: "Ești sigur că vrei să te deconectezi? Poți să te autentifici din nou cu contul tău Google sau Apple."
+      yes: "Da, deconectează-te"
+
+onboarding:
+  code:
+    validation:
+      min_length: "Codul trebuie să aibă 5 cifre"
+  next: "Continuă"
+  welcome:
+    task: "Ai deja un cont?"
+    action:
+      register: "Creează un cont nou"
+      login: "Am deja un cont"
+  member:
+    task: "Cum te numești?"
+    default_name: "Prietene"
+    default_name_dog: "Prietenele lui {}"
+  lonely:
+    task: "Ai fost invitat într-o familie?"
+    action:
+      create_family: "Creează o nouă familie"
+      join_family: "Alătură-te unei familii existente"
+  login:
+    task: "Autentifică-te în contul tău existent"
+  test_login:
+    task: "Autentifică-te cu PIN pentru conturile demo"
+    code:
+      error:
+        invalid: "PIN invalid"
+    action:
+      login: "Autentificare"
+  join:
+    task: "Cod de invitație pentru familie"
+    code:
+      invalid: "Cod de invitație invalid.\nCodul nu există sau a fost deja folosit."
+  finish:
+    task: "Ești gata!"
+    legal:
+      hint: "Făcând clic pe „Acceptă și creează cont”, ești de acord cu următorii termeni:"
+      terms:
+        label: "1. Termeni și condiții"
+      privacy:
+        label: "2. Politica de confidențialitate"
+    action:
+      accept_and_register: "Acceptă și creează cont"
+  family:
+    task: "Dă un nume familiei tale"
+    name:
+      label: "Numele familiei (fictiv)"
+      help: "Alege un nume fictiv care descrie bine familia ta. Nu este necesar numele tău de familie aici."
+    default_name: "Familia {}"
+  dog:
+    task: "Cum se numește câinele tău?"
+    name:
+      label: "Numele câinelui"
+  auth:
+    task: "Autentifică-te, salvează datele tale și folosește profilul tău pe mai multe dispozitive"
+    action:
+      skip: "Nu vreau să mă autentific"

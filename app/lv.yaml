@@ -1,528 +1,446 @@
+app:
+  title: "Heado - Suņu cikla kalendārs"
+  title_short: "Heado"
+  slogan: "Suņu cikla kalendārs"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Sistēmas noklusējums"
+  cancel: "Atcelt"
+  delete: "Dzēst"
+  done: "Pabeigts"
+  close: "Aizvērt"
+  count:
+    time: "{} reizi"
+    times: "{} reizes"
+  date:
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Nepietiekami dati"
+  error:
+    title: "Kļūda"
+    message:
+      long: "Radās kļūda. Lūdzu, mēģiniet vēlreiz vēlāk."
+    open_details: "Rādīt detaļas"
+    close_details: "Slēpt detaļas"
+  validation:
+    in_future: "Datums nedrīkst būt nākotnē"
+  name: "Vārds"
+  save: "Saglabāt"
+  ok: "Labi"
+  from: "no"
+  to: "līdz"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cikli"
+  false_pregnancies: "Nepatiesas grūtniecības"
+
+core:
+  error:
+    generic:
+      short: "Kaut kas nogāja greizi!"
+      long: "Ops, kaut kas nogāja greizi! Atvainojamies."
+    retry:
+      short: "Mēģiniet vēlreiz"
+      long: "Lūdzu, mēģiniet vēlreiz"
+  empty:
+    hint: "Nav ierakstu."
+  copy: "Kopēt"
+  share: "Dalīties"
+  unknown: "Nezināms"
+  date:
+    long: "yyyy. MMMM d."
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
 family:
-  member_form:
-    name:
-      label: Nosaukums
-    action:
-      delete: Dzēst
-      save: Saglabāt
-    delete:
+  family: "Ģimene"
+  your_title: "Tava ģimene"
+  members: "Dalībnieki"
+  dogs: "Suņi"
+  add_dog: "Pievienot jaunu suni"
+  delete_account:
+    reason:
+      label: "Kāpēc vēlaties dzēst savu kontu?"
+      hint: "Man nepatīk, ka.."
+      validation:
+        empty: "Lūdzu, pastāstiet mums, kāpēc vēlaties dzēst savu Heado kontu."
+    family:
+      delete: "Dzēst ģimeni"
       confirm:
-        title: Dzēst dalībnieku
-        message: Vai jūs patiešām vēlaties dzēst locekli {}? Dalībnieks vairs nevar
-          piekļūt šai ģimenei, un viņam ir nepieciešams jauns ielūgums. Ja šis lietotājs
-          ir pēdējais no šīs ģimenes, tiks dzēsta arī ģimene. Tiks dzēsti arī visi
-          suņi un ar tiem saistītie dati. To nevar atcelt!
-        no: Atcelt
-        yes: Dzēst
-    title: Rediģēt dalībnieku
-  invitation_form:
-    title: Ielūgums
-    share:
-      hint: Izmantojiet uzaicinājuma PIN kodu "{}", lai uzaicinātu citu ģimenes locekli
-        pievienoties jūsu ģimenei. Katru PIN kodu var izmantot tikai vienu reizi.
-      content: Aicinu jūs pievienoties manai ģimenei! Lejupielādējiet lietotni Heado
-        (https://heado.de/) un reģistrējoties izmantojiet ģimenes PIN kodu "{}".
-      copy:
-        hint: PIN kods "{}" ir kopēts.
-    action:
-      delete: Dzēst
-    delete:
+        message: "Vai tiešām vēlaties dzēst visu savu ģimeni? Jūsu konts, visi ģimenes locekļi un suņi, ieskaitot kalendāra datus, tiks dzēsti. Šis process nav atgriezenisks!"
+    member:
+      delete: "Dzēst kontu"
       confirm:
-        title: Dzēst uzaicinājumu
-        message: Vai tiešām vēlaties dzēst šo ielūgumu? Tad jūs vairs nevarat izmantot
-          šo ielūguma PIN kodu. To nevar atcelt, un jums būs jāizveido jauns PIN kods!
-        no: Atcelt
-        yes: Dzēst
-  family_form:
-    title: Rediģēt ģimeni
-    name:
-      label: Nosaukums
-    action:
-      delete: Dzēst
-      save: Saglabāt
-    delete:
-      confirm:
-        title: Dzēst ģimeni
-        message: Vai tiešām vēlaties dzēst ģimeni {}? Jūsu konts, visi ģimenes locekļi
-          un suņi, ieskaitot kalendāra datus, tiks dzēsti. To nevar atcelt!
-        no: Atcelt
-        yes: Dzēst
-  dog_selection:
-    add: Pievienot jaunu suni
-  dog_list:
-    title: Suņi
-    add: Pievienot jaunu suni
-  dog_form:
-    title:
-      add: Pievienot suni
-      edit: Rediģēt suni
-    name:
-      label: Nosaukums
-    action:
-      delete: Dzēst
-      save: Saglabāt
-    delete:
-      confirm:
-        title: Dzēst suni
-        message: Vai jūs patiešām vēlaties dzēst savu suni {}? Tiks dzēsti arī visi
-          kalendāra dati. To nevar atcelt.
-        no: Atcelt
-        yes: Dzēst
+        message: "Vai tiešām vēlaties dzēst savu kontu? Jūs vairs nevarēsit piekļūt šai ģimenei, un jums būs nepieciešams jauns ielūgums, lai atkal pievienotos. Ja esat pēdējais šīs ģimenes dalībnieks, ģimene tiks dzēsta. Visi suņi un saistītie dati tiks dzēsti. Šis process nav atgriezenisks!"
+    confirm:
+      accept: "Jā, dzēst"
+  validation:
+    empty_name: "Vārds nedrīkst būt tukšs."
   member_list:
-    title: Locekļi
     invitation:
-      label: Uzaicinājums "{}"
-    add_invitation: Uzaicināt jaunu dalībnieku
+      label: "Ielūgums „{}“"
+    add_invitation: "Ielūgt jaunu dalībnieku"
+  member_form:
+    title: "Rediģēt dalībnieku"
+    delete:
+      confirm:
+        title: "Dzēst dalībnieku"
+        message: "Vai tiešām vēlaties dzēst dalībnieku {}? Dalībnieks vairs nevarēs piekļūt ģimenei, un būs nepieciešams jauns ielūgums, lai atkal pievienotos. Ja šis ir pēdējais ģimenes dalībnieks, ģimene tiks dzēsta. Visi suņi un saistītie dati tiks dzēsti. Šis process nav atgriezenisks!"
+  invitation_form:
+    title: "Ielūgums"
+    share:
+      hint: "Izmantojiet ielūguma kodu „{}“, lai ļautu jaunam dalībniekam pievienoties jūsu ģimenei. Katrs kods ir derīgs tikai vienu reizi."
+      content: "Es jūs ielūdzu savā ģimenē! Lūdzu, lejupielādējiet Heado lietotni (https://heado.app/) un reģistrācijas laikā izmantojiet ielūguma kodu „{}“."
+      copy:
+        hint: "Kods „{}“ ir kopēts."
+    delete:
+      confirm:
+        title: "Dzēst ielūgumu"
+        message: "Vai tiešām vēlaties dzēst šo ielūgumu? Pēc tam ielūguma kods vairs nebūs izmantojams. Šis process nav atgriezenisks, un jums būs jāizveido jauns kods!"
+  family_form:
+    title: "Rediģēt ģimeni"
+  dog_form:
+    edit: "Rediģēt suni"
+    delete:
+      confirm:
+        title: "Dzēst suni"
+        message: "Vai tiešām vēlaties dzēst savu suni {}? Visi saistītie kalendāra dati tiks dzēsti. Šis process nav atgriezenisks."
+
 calendar:
+  phases:
+    anestrus: "Miera fāze"
+  weight: "Svars"
+  notes: "Piezīmes"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Fāze
-        proestrus: Uzkarsē
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Atpūtas fāze
+        label: "Fāze"
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
       false_pregnancy:
-        label: Viltus grūtniecība
-        active_info: Aktīvā viltus grūtniecība
-      mood:
-        label: Noskaņojums
-      symptom:
-        label: Simptomi
-      behavior:
-        label: Uzvedība
-      secretion:
-        label: Izplūde
-      weight:
-        label: Svars
-        unit: kg
-      note:
-        label: Piezīmes
+        label: "Nepatiesa grūtniecība"
+        active_info: "Aktīva nepatiesa grūtniecība"
   day_form:
     period:
-      title: Periods
-      enable: Pievienot perioda ciklu
-      disable: Dzēst perioda ciklu
+      title: "Periods"
+      enable: "Pievienot perioda ciklu"
+      disable: "Dzēst perioda ciklu"
       proestrus_start_date:
-        label: Pirms atnešanās sākums (proestrus)
+        label: "Proestrus sākums"
         info:
-          title: Pirms ovulācijas (proestrus)
-          message: "Pirms rēsta sākas, kad kucei uzbriest vulva un parādās asiņaini
-            izdalījumi no maksts.\n\nVidējais ilgums ir 9 dienas un var svārstīties
-            no 3 līdz 17 dienām.\n\nŠis datums vienmēr ir jānorāda."
-          close: LABI
+          title: "Proestrus"
+          message: "Estrus sākas, kad jūsu suņa vulva uzbriest un parādās asiņaina maksts izdalījumi.\n\nVidējais ilgums ir 9 dienas un var svārstīties no 3 līdz 17 dienām.\n\nDatums vienmēr jānorāda."
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
       estrus_start_date:
-        label: Rēres sākums (Riesta laiks)
+        label: "Estrus sākums"
         info:
-          title: Riesta laiks (Estruss)
-          message: "Sākoties rērei, kuce izrāda vēlmi pāroties (rēgs). Vaginālie izdalījumi
-            joprojām ir iespējami, bet tie būs vairāk līdzīgi gaļas ūdenim un, iespējams,
-            gļotveidīgi.\n\nVidējais izdalījumu ilgums ir 9 dienas, un tas var svārstīties
-            no 3 līdz 21 dienai.\n \nJa šī fāze vēl nav sākusies vai jūs nevēlaties
-            dokumentēt šo fāzi, atstājiet šo lauku tukšu."
-          close: LABI
+          title: "Estrus"
+          message: "Estrus sākumā jūsu suns parādīs vēlmi pāroties (stāvošais estrus). Maksts izdalījumi joprojām ir iespējami, bet tie vairāk atgādina gaļas ūdeni un var būt gļotaini.\n\nVidējais ilgums ir 9 dienas un var svārstīties no 3 līdz 21 dienai.\n\nJa šī fāze vēl nav sākusies vai nevēlaties to dokumentēt, atstājiet šo lauku tukšu."
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
       metestrus_start_date:
-        label: Pēcdzemdību sākums (Metestrus)
+        label: "Metestrus sākums"
         info:
-          title: Pēc sadedzināšanas (Metestrus)
-          message: "Pēcbarošanas periodu raksturo gatavības pārošanās perioda beigas.
-            Turklāt pārstāj izdalījumi no maksts un vulva atkāpjas. Šajā laikā iespējama
-            viltus grūtniecība.\n\nJa šis posms vēl nav sācies vai jūs nevēlaties
-            dokumentēt šo posmu, atstājiet šo lauku tukšu."
-          close: LABI
+          title: "Metestrus"
+          message: "Periods pēc estrus raksturo pārošanās beigas. Turklāt maksts izdalījumi beidzas un vulva atkāpjas. Nepatiesa grūtniecība ir iespējama šajā laikā.\n\nJa šī fāze vēl nav sākusies vai nevēlaties to dokumentēt, atstājiet šo lauku tukšu."
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
       end_date:
-        label: Cikla beigas (miera fāze)
+        label: "Perioda beigas (miera fāzes sākums)"
         info:
-          title: Miera fāze (anestrus)
-          message: "Atpūtas fāzē nav dzimumcikla pazīmju. Vulva ir pilnībā regresējusi.\n
-            \nAtstājiet šo lauku tukšu, ja šis cikls vēl nav beidzies."
-          close: LABI
+          title: "Miera fāze (anestrus)"
+          message: "Miera fāzē nav redzamas seksuālā cikla pazīmes. Vulva tagad ir pilnībā atkāpusi.\n\nJa periods vēl nav beidzies, atstājiet šo lauku tukšu."
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
     false_pregnancy:
-      title: Viltus grūtniecība
-      enable: Viltus grūtniecības pievienošana
-      disable: Dzēst viltus grūtniecību
+      title: "Nepatiesa grūtniecība"
+      enable: "Pievienot nepatiesu grūtniecību"
+      disable: "Dzēst nepatiesu grūtniecību"
       start_date:
-        label: Viltus grūtniecības sākums
+        label: "Nepatiesas grūtniecības sākums"
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
       end_date:
-        label: Viltus grūtniecības beigas
+        label: "Nepatiesas grūtniecības beigas"
         error:
-          in_future: Datums nedrīkst būt nākotnē.
+          in_future: "Datums nedrīkst būt nākotnē"
     features:
-      title: Funkcijas
+      title: "Funkcijas"
       mood:
-        label: Noskaņojums
-        no_selection: Nav atlasīti noskaņojumi
+        no_selection: "Nav izvēlēta noskaņa"
       symptom:
-        label: Simptomi
-        no_selection: Nav izvēlēti nekādi simptomi
+        no_selection: "Nav izvēlēta simptoma"
       behavior:
-        label: Uzvedība
-        no_selection: Nav izvēlēta uzvedība
+        no_selection: "Nav izvēlēta uzvedība"
       secretion:
-        label: Izplūde
-        no_selection: Nav izvēlēta izkraušana
+        no_selection: "Nav izvēlēta izdalījuma"
       weight:
-        weight:
-          label: Svars
         unit:
-          label: Vienība
-          kilogram: kg
-    notes:
-      title: Piezīmes
-      notes:
-        label: Piezīmes
-    action:
-      save: Saglabāt
+          label: "Vienība"
   mood:
-    bitchy: Bitchy
-    fearful: Trauksmains
-    courageous: Drosmīgs
-    brave: Drosmīgs
-    sleepy: Sleepy
-    sniffy: Sniffing
-    aggressive: Agresīvs
-    nervous: Nervozitāte
-    satisfied: Apmierināts
-    stressed: Stresa situācijā
-    sleepless: Bezmiegs
-    dissatisfied: Neapmierinātie
-    depressed: Depresija
-    defiant: Izaicinošs
-    relaxed: Relaksēts
-    happy: Laimīgs
-    obedient: Paklausība
-    balanced: Līdzsvarots
-    fiepsy: Fiepsig
-    grumpy: Grumpy
-    weepy: Strīdīgs
-    attentive: Uzmanību
-    sad: Skumji
-    stormy: Stormy
-    crazy: Traks
-    calm: Mierīgs
-    cuddly: Mājīgs
-    appetiteless: Bez apetītes
-    indecisive: Neizlēmuši
-    exhausted: Izsmelts
-    frustrated: Neapmierināts
-    troubled: Nemierīgs
-    jittery: Jittery
+    mood: "Noskaņa"
+    fearful: "Bailīga"
+    courageous: "Drosmīga"
+    brave: "Drosmīgs"
+    sleepy: "Miegaina"
+    sniffy: "Ošņājot"
+    aggressive: "Agresīva"
+    nervous: "Nervozs"
+    satisfied: "Apmierināts"
+    stressed: "Stresains"
+    sleepless: "Bezmiegs"
+    dissatisfied: "Neapmierināts"
+    depressed: "Nomākts"
+    defiant: "Uzsvaidīgs"
+    relaxed: "Atslābināts"
+    happy: "Laimīgs"
+    obedient: "Paklausīgs"
+    balanced: "Līdzsvarots"
+    fiepsy: "Fiepsy"
+    grumpy: "Dumīgs"
+    weepy: "Raudulīgs"
+    attentive: "Uzmanīgs"
+    sad: "Skumjš"
+    stormy: "Vētrains"
+    crazy: "Traks"
+    calm: "Mierīgs"
+    cuddly: "Mīļš"
+    appetiteless: "Bez apetītes"
+    indecisive: "Neizlēmīgs"
+    exhausted: "Izsmelts"
+    frustrated: "Frustrēts"
+    bitchy: "Rupjš"
+    troubled: "Nemierīgs"
+    jittery: "Nervozs"
   behavior:
-    herding: Cepures
-    adopting: Pieņemt
-    nesting: Ligzdu būvēšana
-    howling: Yelp
-    restless: Nemierīgs
+    behavior: "Uzvedība"
+    herding: "Ganīt"
+    adopting: "Adoptēt"
+    nesting: "Ligzdot"
+    howling: "Gaudošana"
+    restless: "Nemierīgs"
   symptom:
-    stomach_cramps: Kuņģa krampji
-    flatulence: Meteorisms
-    diarrhea: Caureja
-    constipation: Aizcietējums
-    bloody_stool: Asiņaini izkārnījumi
-    milk_discharge: Piena izvadīšana
-    swollen_teats: Pietūkušas sēžamvietas
-    vomit: Vemšana
-    dandruff: Blaugznu mētelis
+    symptom: "Simptoms"
+    stomach_cramps: "Vēdera krampji"
+    flatulence: "Gāzes"
+    diarrhea: "Caureja"
+    constipation: "Aizcietējums"
+    bloody_stool: "Asiņainas izkārnījumi"
+    milk_discharge: "Piena izdalījumi"
+    swollen_teats: "Pietūkušas speneles"
+    vomit: "Vemšana"
+    dandruff: "Blaugznas"
   secretion:
-    bloody: Bloody
-    watery: Ūdens
-    creamy: Krēmveida
-    dryly: Dry
-    stinky: Smirdošs
-    purulent: Gandarījums
+    secretion: "Izdalījumi"
+    bloody: "Asiņains"
+    watery: "Ūdeņains"
+    creamy: "Krēmveida"
+    dryly: "Sausi"
+    stinky: "Smirdīgs"
+    purulent: "Strutains"
+
 overview:
+  last_cycle: "Pēdējais cikls"
+  next_cycle: "Nākamais cikls"
   overview:
     current_period:
       no_data:
-        cta: Reģistrējiet savas kuces pirmo riestu!
+        cta: "Ievadiet sava suņa pirmo ciklu!"
         info:
-          title: Nākamā karstuma prognozēšana
-          message: Heado ir nepieciešams pilns cikls (ieskaitot miera fāzi!) no jūsu
-            kuces, lai veiktu prognozi.
-          close: LABI
-      days_left: joprojām {} dienas
-      weeks_left: vēl {} nedēļas
-      months_left: joprojām {} mēneši
-      until_date: uz {}
-      error: Ir notikusi kļūda. Noklikšķiniet, lai atkārtotu.
+          title: "Prognozēt nākamo ciklu"
+          message: "Heado nepieciešams pilns jūsu suņa cikls (ieskaitot atpūtas fāzi), lai izveidotu prognozi."
+      days_left: "{} dienas atlikušas"
+      weeks_left: "{} nedēļas atlikušas"
+      months_left: "{} mēneši atlikuši"
+      until_date: "līdz {}"
+      error: "Kaut kas nogāja greizi. Noklikšķiniet, lai mēģinātu vēlreiz."
       phase:
-        proestrus: Uzkarsē
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Atpūtas fāze
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
     period_dates:
       last:
-        title: Pēdējais karstums
-        none: Pagaidām nav ievadīts neviens periods.
-        from: no
-        to: līdz
+        title: "Pēdējais periods"
+        none: "Vēl nav pēdējā perioda."
       next:
-        title: Nākamais siltums
-        from: no
-        to: līdz
-        none: Pagaidām nav pietiekami daudz periodu, lai varētu izteikt prognozes.
+        title: "Nākamais periods"
+        none: "Nav pietiekami datu, lai prognozētu nākamo periodu."
     period_count:
       period:
-        title: Apkures reižu skaits
-        time: Krāsa
-        times: Krāsa
+        title: "Periodu skaits"
+        time: "reize"
+        times: "reizes"
       false_pregnancy:
-        title: Viltus grūtniecību skaits
-        time: Krāsa
-        times: Krāsa
+        title: "Nepatiesu grūtniecību skaits"
+        time: "reize"
+        times: "reizes"
     menu:
-      calendar: Kalendārs
-      settings: Iestatījumi
+      calendar: "Kalendārs"
   ad_banner:
-    title: Izmēģinājuma periods bez reklāmām drīz beigsies!
-    message: Testa fāze beidzas {}. Pēc šīs dienas jūs redzēsiet reklāmas. Ja vēlaties
-      lietot programmu bez reklāmām, varat iegādāties Premium versiju.
-    become_member: Kļūsti par biedru
-    left_days: '{}/{} Atlikušās dienas'
+    title: "Jūsu bezmaksas izmēģinājuma periods bez reklāmām drīz beigsies!"
+    message: "Jūsu izmēģinājuma periods beigsies {}. Pēc šī datuma mēs rādīsim jums reklāmas. Ja vēlaties turpināt izmantot Heado bez reklāmām, varat iegādāties mūsu premium paketi."
+    become_member: "Kļūstiet par dalībnieku"
+    left_days: "{}/{} dienas atlikušas"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Kļūstiet par Heado Premium biedru un izmantojiet lietotni bez reklāmām.
-    purchase_single: Kļūsti par Premium biedru
-    purchase_single_hint: '{} - Unikāls {}'
-    purchase_family: Kļūsti par Premium ģimeni
-    purchase_family_hint: '{} - Unikāls {}'
-    restore_purchase: Pirkumu atjaunošana
+    teaser: "Kļūstiet par Heado Premium dalībnieku un izmantojiet lietotni bez reklāmām."
+    purchase_single: "Kļūt par premium dalībnieku"
+    purchase_single_hint: "{} • Vienreiz {}"
+    purchase_family: "Kļūt par premium ģimeni"
+    purchase_family_hint: "{} • Vienreiz {}"
+    restore_purchase: "Atjaunot pirkumu"
   membership:
     member:
-      teaser: Jūs esat Heado Premium dalībnieks un varat lietot lietotni bez reklāmām!
-      info: Jūs esat Heado Premium lietotājs kopš {}.
+      teaser: "Jūs esat Heado Premium dalībnieks un varat izmantot lietotni bez reklāmām!"
+      info: "Jūs esat Heado Premium dalībnieks kopš {}."
     family:
-      teaser: Jūs un jūsu ģimene esat Heado Premium lietotājs. Jūs varat lietot lietotni
-        bez reklāmām!
-      info: Jūsu ģimene ir Heado Premium lietotāja kopš {}.
+      teaser: "Jūs un jūsu ģimene esat Heado Premium dalībnieki un varat izmantot lietotni bez reklāmām!"
+      info: "Jūsu ģimene ir Heado Premium dalībnieks kopš {}."
+
 settings:
-  title: Iestatījumi
-  footer: Izgatavots ar {} par Kori {} un Mayo {}.
-  family:
-    dogs:
-      title: Suņi
-    members:
-      title: Locekļi
-    family:
-      title: Ģimene
-    title: Ģimene
+  settings: "Iestatījumi"
+  footer: "Izgatavots ar mīlestību {} Kori {} un Mayo {}."
   account:
-    title: Konts
+    title: "Konts"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Konta iestatījumi
+      title: "Konta iestatījumi"
     cookies:
-      title: Sīkfailu piekrišana
+      title: "Sīkfailu piekrišanas"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Lietotāja piekļuves testēšana
+      title: "Testa lietotāja pieteikšanās"
   contact:
-    title: Sazinieties ar mums
+    title: "Kontakti"
     website:
-      title: Tīmekļa vietne
-      link: https://heado.de/
+      title: "Mājas lapa"
     mail:
-      title: e-pasts
-      link: mailto:wuff@heado.app
+      title: "E-pasts"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Juridiskie jautājumi
+    title: "Juridiskie"
     terms:
-      title: Lietošanas noteikumi
-      link: https://heado.de/terms
+      title: "Lietošanas noteikumi"
     privacy:
-      title: Datu aizsardzības nosacījumi
-      link: https://heado.de/privacy
+      title: "Privātuma politika"
   about:
-    title: Par
+    title: "Par"
     status:
-      title: Statuss
+      title: "Statuss"
     version:
-      title: Versija
+      title: "Versija"
     translation:
-      title: Tulkojumi
+      title: "Tulkot"
   app:
     design:
-      dark: Tumšs
-      title: Dizains
-      light: Gaisma
-    title: Lietotne
-  mayo: "Ei, kažokādas deguns! 🐾\n\nEs priecājos, ka tu atradu ceļu uz manu slepeno
-    zonu! Varbūt tu mani jau pazīsti. Ja nē, tad mani sauc Maijo un es esmu Apencelles
-    kalnu suns. Protams, sieviešu kārtas! Man tagad ir 2 gadi. Ilustrācijā augšā esmu
-    es. Lai jūs varētu mani atpazīt, ja kādreiz mani ieraudzīsiet.\n\nDiemžēl es un
-    mana ģimene sapratām, ka man ir trauksmainas fāzes. Kādā brīdī mums visiem radās
-    iespaids, ka mani hormoni pirms karstuma trakojas un ka es vairs neesmu tik drosmīga
-    kā agrāk. Bet mēs nebijām īsti pārliecināti.\n\nTad manai saimniecei Korinnai
-    radās ideja, ka mēs varētu izveidot kalendāru suņu mātītēm, gluži tāpat kā to
-    darām cilvēku mātītēm. Ne ātrāk pateica, nekā izdarīja! Mans saimnieks Fabians
-    ir programmētājs. Viņš arī uzskatīja, ka tā ir lieliska ideja, un uzreiz ķērās
-    pie darba.\n\nTomēr Fabians drīz vien saprata, ka viņam nav nekāda priekšstata
-    par suņu ciklu. Vai arī par to, ko tas ietver. Tāpēc viņš veica lielu izpēti internetā,
-    uzdeva Korinnai daudz jautājumu un salīdzināja to ar jau esošajām aplikācijām,
-    kas paredzētas cilvēku dāmām.\n\nPēc dažiem mēnešiem un testa posma ar ķepu draugiem
-    bija pienācis laiks! 2023. gada 27. novembrī mēs publicējām Heado aplikāciju veikalā
-    Android un iOS operētājsistēmām.\n\nManas trauksmes fāzes patiesībā rodas no maniem
-    hormoniem. Taču šķiet, ka ar katru karstumu tā kļūst daudz labāka. Mēs to noteikti
-    sekosim līdzi.\n\nEs ceru, ka ar šo lietotni mēs varēsim palīdzēt arī jums un
-    jūsu cilvēkiem un ātrāk atrast problēmas vai pārkāpumus. Un arī iegūt nepieciešamos
-    pierādījumus pie veterinārārsta.\n\nJa jums vai jūsu cilvēkiem ir kādas idejas
-    vai lūgumi, lūdzu, sazinieties ar mani pa e-pastu mayo@heado.app. Arī problēmu,
-    kļūdu vai grūtību gadījumā.\n\nPriecājieties par lietotni! <3\n\nMayo, Korinna
-    & Fabian"
+      light: "Gaišs"
+      dark: "Tumšs"
+      title: "Dizains"
+    title: "Lietotne"
+  mayo: "Sveiki, pūkainais deguns! 🐾\n\nEsmu priecīgs, ka atradāt manu slepeno zonu! Varbūt jūs jau mani pazīstat. Ja nē, mans vārds ir Mayo un esmu Appenzeller Sennenhund. Protams, esmu kuce! Tagad man ir 2 gadi. Augšējā attēlā es esmu es. Tikai, lai jūs mani atpazītu, ja kādreiz mani redzēsiet.\n\nDiemžēl manai ģimenei un man nācās saprast, ka man vienmēr ir trauksmes fāzes. Kādā brīdī mēs visi domājām, ka mani hormoni trako pirms mana cikla, un tāpēc es vairs neesmu tik drosmīga. Bet mēs nebijām pilnīgi pārliecināti.\n\nMana saimniece Korinna tad izdomāja, ka varētu izveidot kalendāru kucēm, tieši tāpat kā sievietēm. Teikts un darīts! Mans saimnieks Fabians ir programmētājs. Viņš arī domāja, ka tā ir lieliska ideja, un nekavējoties sāka.\n\nBet Fabians drīz saprata, ka viņam nav ne jausmas par suņa ciklu. Vai kas tas ir. Tāpēc viņš daudz pētīja internetā, uzdeva daudz jautājumu Korinna un salīdzināja ar esošajām lietotnēm sievietēm.\n\nPēc dažiem mēnešiem un testēšanas fāzes ar maniem draugiem ar ķepām, bija laiks! 27.11.2023. mēs izlaidām Heado Android un iOS ierīcēm App Store.\n\nPatiesībā manas trauksmes fāzes rodas no maniem hormoniem. Bet šķiet, ka ar katru ciklu tas kļūst daudz labāk. Mēs to noteikti turēsim acīs.\n\nCeru, ka šī lietotne var palīdzēt arī jums un jūsu cilvēkiem ātrāk atrast problēmas vai neregularitātes. Un arī iegūt nepieciešamos pierādījumus pie veterinārārsta.\n\nJa jums vai jūsu cilvēkiem ir idejas vai vēlmes, lūdzu, sazinieties ar mani pa e-pastu mayo@heado.app. Arī problēmu, kļūdu vai grūtību gadījumā.\n\nIzbaudiet lietotni! <3\n\nMayo, Korinna & Fabians"
+
 account_settings:
-  title: Konta iestatījumi
+  title: "Konta iestatījumi"
   logins:
-    title: Konta informācija
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Konta savienojumi"
     test:
-      label: Testa lietotājs
+      label: "Testa lietotājs"
     error:
       already_in_use:
-        title: Jau savienots
-        message: Izvēlētais konts jau ir savienots ar citu lietotāju.
-        close: LABI
+        title: "Konts jau tiek izmantots"
+        message: "Izvēlētais konts jau ir pievienots citam lietotājam."
   disconnect:
-    label: Atdalīt kontu
+    disconnect:
+      short: "Atvienot"
+      long: "Atvienot kontu"
     confirm:
-      title: Atdalīt kontu
-      message: Vai tiešām vēlaties atcelt konta sasaisti? Tad vairs nevarēsiet pieteikties
-        pie šī pakalpojumu sniedzēja. Savu kontu varēsiet atkal savienot vēlāk.
-      no: Atcelt
-      yes: Jā, atdaliet
+      message: "Vai tiešām vēlaties atvienot savu kontu? Pēc tam jūs nevarēsit pieteikties ar šo pakalpojumu sniedzēju. Jūs varat vēlāk atkārtoti pievienot kontu."
+      yes: "Jā, atvienot"
   logout:
-    label: Iziet no sistēmas
+    logout: "Izrakstīties"
     confirm:
-      title: Iziet no sistēmas
-      message: Vai tiešām vēlaties iziet no sistēmas? Varat vēlreiz pieteikties, izmantojot
-        Google vai Apple kontu.
-      no: Atcelt
-      yes: Jā, iziet no sistēmas
-  delete:
-    label: Dzēst kontu
-    confirm:
-      title: Dzēst kontu
-      message: Vai tiešām vēlaties dzēst savu kontu? Jūs vairs nevarat piekļūt šai
-        ģimenei, un jums ir nepieciešams jauns ielūgums. Ja esat pēdējais šīs ģimenes
-        lietotājs, tiks dzēsta arī šī ģimene. Tiks dzēsti arī visi suņi un ar tiem
-        saistītie dati. To nevar atcelt!
-      no: Vai tiešām vēlaties iziet no sistēmas? Varat vēlreiz pieteikties, izmantojot
-        Google vai Apple kontu.
-      yes: Jā, dzēst
+      message: "Vai tiešām vēlaties izrakstīties? Jūs varat atkārtoti pieteikties ar savu Google vai Apple kontu."
+      yes: "Jā, izrakstīties"
+
 onboarding:
-  next: Tālāk
+  code:
+    validation:
+      min_length: "Kodam jābūt 5 ciparu garam"
+  next: "Turpināt"
   welcome:
-    task: Vai jums jau ir konts?
+    task: "Vai jums jau ir konts?"
     action:
-      register: Izveidot jaunu kontu
-      login: Man jau ir konts
+      register: "Izveidot jaunu kontu"
+      login: "Man jau ir konts"
   member:
-    task: Kā es varu jūs saukt?
-    name:
-      label: Nosaukums
-    default_name: "Companion"
-    default_name_dog: "{}'s companion"
+    task: "Kā jūs sauc?"
+    default_name: "Draugs"
+    default_name_dog: "{} draugs"
   lonely:
-    task: Vai esat uzaicināts uz ģimeni?
+    task: "Vai esat uzaicināts uz ģimeni?"
     action:
-      create_family: Izveidot jaunu ģimeni
-      join_family: Pievienojieties esošai ģimenei
+      create_family: "Izveidot jaunu ģimeni"
+      join_family: "Pievienoties esošai ģimenei"
   login:
-    task: Piesakieties savā esošajā kontā
-    action:
-      google: Google
-      apple: Apple
+    task: "Pieslēdzieties esošajam kontam"
   test_login:
-    task: PIN koda pieteikšanās demo lietotājiem
+    task: "Pieslēgties ar PIN kodu demo kontiem"
     code:
       error:
-        min_length: Kodam jāsastāv no 5 cipariem
-        invalid: Nederīgs kods
+        invalid: "Nederīgs PIN kods"
     action:
-      login: Pieteikšanās
-  auth:
-    action:
-      apple: Apple
-      skip: Es nevēlos pieteikties
-      google: Google
-    task: Piesakieties, saglabājiet konta datus un izmantojiet vairākas ierīces
+      login: "Pieslēgties"
   join:
-    task: Jūsu ģimenes ielūguma kods
+    task: "Ģimenes uzaicinājuma kods"
     code:
-      error:
-        min_length: Kodam jāsastāv no 5 cipariem
-      invalid: "Nederīgs ielūguma kods.\nKods neeksistē vai jau ir izmantots."
+      invalid: "Nederīgs uzaicinājuma kods.\nKods neeksistē vai ir jau izmantots."
   finish:
-    task: Jūs esat gatavi!
+    task: "Jūs esat gatavs!"
     legal:
-      hint: 'Noklikšķinot uz "Pieņemt un izveidot kontu", jūs piekrītat šādiem nosacījumiem:'
+      hint: "Noklikšķinot uz „Pieņemt un izveidot kontu“, jūs piekrītat šādiem noteikumiem:"
       terms:
-        label: 1. lietošanas noteikumi
-        link: https://heado.de/terms
+        label: "1. Lietošanas noteikumi"
       privacy:
-        label: 2. datu aizsardzības nosacījumi
-        link: https://heado.de/privacy
+        label: "2. Privātuma politika"
     action:
-      accept_and_register: Pieņemt un izveidot kontu
+      accept_and_register: "Pieņemt un izveidot kontu"
   family:
-    task: Dodiet savai ģimenei vārdu
+    task: "Piešķiriet savai ģimenei vārdu"
     name:
-      label: (Fiktīvs) uzvārds
-      help: Izvēlieties iedomātu vārdu, kas labi raksturo jūsu ģimeni. Jūsu uzvārds
-        šeit nav nepieciešams.
-    default_name: '{} ģimene'
+      label: "Ģimenes vārds (izdomāts)"
+      help: "Izvēlieties izdomātu vārdu, kas labi raksturo jūsu ģimeni. Šeit nav nepieciešams jūsu uzvārds."
+    default_name: "{} ģimene"
   dog:
-    task: Kāds ir jūsu suņa vārds?
+    task: "Kāds ir jūsu suņa vārds?"
     name:
-      label: Suņa vārds
-app:
-  title: Heado - siltuma kalendārs
-  title_short: Heado
-  slogan: Siltuma kalendārs
-core:
-  date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
-  error:
-    generic:
-      short: Ir notikusi kļūda!
-      long: Ak, ir notikusi kļūda! Atvainojiet.
-    retry:
-      short: Atkārtojiet
-      long: Mēģiniet vēlreiz
-  empty:
-    hint: Nav ierakstu.
-  close: Aizvērt
-  copy: Kopēt
-  share: Dalīties
-  unknown: Nezināms
-generic:
-  system_default: Sistēmas standarts
-  cancel: Atcelt
-  delete: Dzēst
-  done: Gatavs
+      label: "Suņa vārds"
+  auth:
+    task: "Pieslēdzieties, saglabājiet savus datus un izmantojiet savu profilu vairākās ierīcēs"
+    action:
+      skip: "Es nevēlos pieslēgties"

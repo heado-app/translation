@@ -1,14 +1,61 @@
+app:
+  title: "Heado - Dog heat calendar"
+  title_short: "Heado"
+  slogan: "Dog heat calendar"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter:  "https://twitter.com/heado_app"
+
+generic:
+  system_default: "System standard"
+  cancel: "Cancel"
+  delete: "Delete"
+  done: "Done"
+  close: "Close"
+  count:
+    time: "{} time"
+    times: "{} times"
+  date:
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Not enough data"
+  error:
+    title: "Error"
+    message:
+      long: "An error occurred. Please try again later."
+    open_details: "Show details"
+    close_details: "Hide details"
+  validation:
+    in_future: "The date must not be in the future"
+  name: "Name"
+  save: "Save"
+  ok: "OK"
+  from: "from"
+  to: "to"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cycles"
+  false_pregnancies: "False pregnancies"
+
 core:
   error:
     generic:
-      long: Oops, something went wrong! Sorry.
       short: Something went wrong!
+      long: Oops, something went wrong! Sorry.
     retry:
       short: Retry
       long: Try again
   empty:
     hint: No entries.
-  close: Close
   copy: Copy
   share: Share
   unknown: Unknown
@@ -16,19 +63,37 @@ core:
     long: dd. MMMM yyyy
     short: dd/MM/yyyy
     month_year: MMMM yyyy
+
 family:
+  family: "Family"
+  your_title: "Your family"
+  members: "Members"
+  dogs: "Dogs"
+  add_dog: "Add new dog"
+  delete_account:
+    reason:
+      label: "Why you want delete your account?"
+      hint: "I don't like that.."
+      validation:
+        empty: "Please tell us, why you are want deleting your Heado account."
+    family:
+      delete: "Delete family"
+      confirm:
+        message: "Do you really want delete your whole family? Your account, all family members & dogs, inclusive associated calendar data, will deleted. This can not be undo!"
+    member:
+      delete: "Delete account"
+      confirm:
+        message: "Do you really want delete your account? You can not access this family anymore and need a new invite to join again. If you are the last member of this family, the family will also deleted. All dogs and associated data will be then deleted too. This can not be undone!"
+    confirm:
+      accept: "Yes, delete"
+  validation:
+    empty_name: "The name must not be empty."
   member_list:
-    title: Members
     invitation:
       label: Invitation „{}“
     add_invitation: Invite new member
   member_form:
     title: Edit member
-    name:
-      label: Name
-    action:
-      delete: Delete
-      save: Save
     delete:
       confirm:
         title: Delete member
@@ -36,8 +101,6 @@ family:
           the family anymore and need a new invite to join again. If this is the last
           member of family, the family also will be deleted. All dogs and associated
           data will be deleted too. This can not be undone!
-        no: Cancel
-        yes: Delete
   invitation_form:
     title: Invitation
     share:
@@ -47,53 +110,30 @@ family:
         and use the family invitation code „{}.“ on the registration process.
       copy:
         hint: The code „{}“ was copied.
-    action:
-      delete: Delete
     delete:
       confirm:
         title: Delete invitation
         message: Do you really want delete this invitation? After operation the invitation
           code can not used anymore. This can not be undone and you need to create
           a new code!
-        no: Cancel
-        yes: Delete
   family_form:
     title: Edit family
-    name:
-      label: Name
-    action:
-      delete: Delete
-      save: Save
-    delete:
-      confirm:
-        title: Delete family
-        message: Do you really want delete your family {}? Your account, all family
-          members & dogs inclusive associated calendar data are deleted. This can
-          not be undo!
-        no: Cancel
-        yes: Delete
-  dog_selection:
-    add: Add new dog
-  dog_list:
-    title: Dogs
-    add: Add new dog
   dog_form:
-    title:
-      add: Add new dog
-      edit: Edit dog
-    name:
-      label: Name
-    action:
-      delete: Delete
-      save: Save
+    edit: Edit dog
     delete:
       confirm:
         title: Delete dog
         message: Do you really want delete your dog {}? All associated calendar data
           are deleted. This can not be undo.
-        no: Cancel
-        yes: Delete
+
 calendar:
+  phases:
+    anestrus: "Rest phase"
+  weight: "Weight"
+  notes: "Notes"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
@@ -101,23 +141,9 @@ calendar:
         proestrus: Preheat
         estrus: Heat
         metestrus: Afterburn
-        anestrus: Rest phase
       false_pregnancy:
         label: False pregnancy
         active_info: Active false pregnancy
-      mood:
-        label: Mood
-      symptom:
-        label: Symptoms
-      behavior:
-        label: Behavior
-      secretion:
-        label: Secretion
-      weight:
-        label: Weight
-        unit: kg
-      note:
-        label: Note
   day_form:
     period:
       title: Period
@@ -130,7 +156,6 @@ calendar:
           message: "Oestrus begins when your dog's vulva swells and bloody vaginal
             discharge appears.\n\nThe average duration is 9 days and can vary between
             3 and 17 days.\n\nThe date must always be specified."
-          close: OK
         error:
           in_future: The date must not be in the future
       estrus_start_date:
@@ -142,7 +167,6 @@ calendar:
             meat water and may be mucousy.\n\nThe average duration is 9 days and can
             vary between 3 and 21 days.\n\nIf this phase has not yet begun or you
             do not wish to document this phase, leave this field empty."
-          close: OK
         error:
           in_future: The date must not be in the future
       metestrus_start_date:
@@ -153,7 +177,6 @@ calendar:
             addition, vaginal discharge stops and the vulva recedes. A false pregnancy
             is possible during this time.\n\nIf this phase has not yet begun or you
             do not wish to document this phase, leave this field empty."
-          close: OK
         error:
           in_future: The date must not be in the future
       end_date:
@@ -163,7 +186,6 @@ calendar:
           message: "There are no signs of the sexual cycle during the resting phase.
             The vulva is now completely regressed.\n\nLeave this field empty if the
             period has not yet ended."
-          close: OK
         error:
           in_future: The date must not be in the future
     false_pregnancy:
@@ -181,30 +203,18 @@ calendar:
     features:
       title: Characteristics
       mood:
-        label: Mood
         no_selection: No moods selected
       symptom:
-        label: Symptoms
         no_selection: No symptoms selected
       behavior:
-        label: Behavior
         no_selection: No behaviors selected
       secretion:
-        label: Secretion
         no_selection: No secretions selected
       weight:
-        weight:
-          label: Weight
         unit:
           label: Unit
-          kilogram: kg
-    notes:
-      title: Notes
-      notes:
-        label: Notes
-    action:
-      save: Save
   mood:
+    mood: "Mood"
     fearful: Fearful
     courageous: Courageous
     brave: Brave
@@ -239,12 +249,14 @@ calendar:
     troubled: Troubled
     jittery: Jittery
   behavior:
+    behavior: "Behavior"
     herding: Herding
     adopting: Adopting
     nesting: Nesting
     howling: Howling
     restless: Restless
   symptom:
+    symptom: "Symptom"
     stomach_cramps: Stomach cramps
     flatulence: Flatulence
     diarrhea: Diarrhea
@@ -255,13 +267,17 @@ calendar:
     vomit: Vomit
     dandruff: Dandruff fell
   secretion:
+    secretion: "Secretion"
     bloody: Bloody
     watery: Watery
     creamy: Creamy
     dryly: Dryly
     stinky: Stinky
     purulent: Purulent
+
 overview:
+  last_cycle: "Last cycle"
+  next_cycle: "Next cycle"
   overview:
     current_period:
       no_data:
@@ -270,7 +286,6 @@ overview:
           title: Predict next heat
           message: Heado needs a complete cycle (including resting phase!) from your
             dog, to make a prediction.
-          close: OK
       days_left: '{} days left'
       weeks_left: '{} weeks left'
       months_left: '{} months left'
@@ -280,17 +295,12 @@ overview:
         proestrus: Proestrus
         estrus: Estrus
         metestrus: Metestrus
-        anestrus: Rest phase
     period_dates:
       last:
         title: Last period
         none: There is no last period yet.
-        from: from
-        to: to
       next:
         title: Next period
-        from: from
-        to: to
         none: Too few periods data to predict the next period.
     period_count:
       period:
@@ -303,7 +313,6 @@ overview:
         times: times
     menu:
       calendar: Calendar
-      settings: Settings
   ad_banner:
     title: Your ad-free trail ends soon!
     message: Your test phase ends on {}. After this date we will show you some advertising.
@@ -311,6 +320,7 @@ overview:
       package.
     become_member: Become a member
     left_days: '{}/{} days left'
+
 premium:
   title: Heado Premium
   buy:
@@ -328,17 +338,11 @@ premium:
       teaser: You and your family are Heado Premium members and can use the app without
         advertising!
       info: Your family is Heado Premium member since {}.
+
 settings:
-  title: Settings
+  settings: "Settings"
   footer: Made with {} for Kori {} and Mayo {}.
   family:
-    title: Family
-    dogs:
-      title: Dogs
-    members:
-      title: Members
-    family:
-      title: Family
   account:
     title: Account
     premium:
@@ -355,27 +359,20 @@ settings:
     title: Contact
     website:
       title: Website
-      link: https://heado.app/
     mail:
       title: Mail
-      link: mailto:wuff@heado.app
     instagram:
       title: Instagram
-      link: https://www.instagram.com/heado.app
     tiktok:
       title: TikTok
-      link: https://tiktok.com/@heado.app
     twitter:
       title: Twitter
-      link: https://twitter.com/heado_app
   legal:
     title: Legal
     terms:
       title: Terms
-      link: https://heado.app/terms
     privacy:
       title: Privacy
-      link: https://heado.app/privacy
   about:
     title: About
     status:
@@ -411,48 +408,37 @@ settings:
     humans have any ideas or requests, please contact me at mayo@heado.app. Also in
     case of problems, errors or difficulties.\n\nHave fun with the app! <3\n\nMayo,
     Korinna & Fabian"
+
 account_settings:
   title: Account settings
   logins:
     title: Account connections
-    google:
-      label: Google
-    apple:
-      label: Apple
     test:
       label: Test user
     error:
       already_in_use:
         title: Account already in use
         message: The selected account is already connected to another user.
-        close: OK
   disconnect:
-    label: Disconnect account
+    disconnect:
+      short: "Disconnect"
+      long: "Disconnect account"
     confirm:
-      title: Disconnect account
       message: Do you really want to disconnect your account? After that you can not
         login with this provider. You can connect the account later again.
-      no: Cancel
       yes: Yes, disconnect
+  connect: "Connect"
   logout:
-    label: Logout
+    logout: "Logout"
     confirm:
-      title: Logout
       message: Do you really want to logout? You can sign in again with your Google
         or Apple account.
-      no: Cancel
       yes: Yes, logout
-  delete:
-    label: Delete account
-    confirm:
-      title: Delete account
-      message: Do you really want delete your account? You can not access this family
-        anymore and need a new invite to join again. If you are the last member of
-        this family, the family also will deleted. All dogs and associated data will
-        be deleted too. This can not be undone!
-      no: Cancel
-      yes: Yes, delete
+
 onboarding:
+  code:
+    validation:
+      min_length: "The code must consist of 5 digits"
   next: Continue
   welcome:
     task: Do you have already an account?
@@ -461,8 +447,6 @@ onboarding:
       login: I have already an account
   member:
     task: What may I call you?
-    name:
-      label: Name
     default_name: "Companion"
     default_name_dog: "{}'s companion"
   lonely:
@@ -472,22 +456,16 @@ onboarding:
       join_family: Join existing family
   login:
     task: Login to your existing account
-    action:
-      google: Google
-      apple: Apple
   test_login:
     task: Login with pin code for demo accounts
     code:
       error:
-        min_length: The code must consist of 5 digits
         invalid: Invalid pin code
     action:
       login: Login
   join:
     task: Family invitation code
     code:
-      error:
-        min_length: The code must consist of 5 digits
       invalid: "Invalid invitation code.\nCode not exists or already used."
   finish:
     task: You are ready!
@@ -495,10 +473,8 @@ onboarding:
       hint: 'By clicking on „Accept & create account“ you accept the following conditions:'
       terms:
         label: 1. Terms of use
-        link: https://heado.app/terms
       privacy:
         label: 2. Privacy Policy
-        link: https://heado.app/privacy
     action:
       accept_and_register: Accept & create account
   family:
@@ -515,15 +491,5 @@ onboarding:
   auth:
     task: Login & save your data and use your profile on multiple devices
     action:
-      google: Google
-      apple: Apple
       skip: I don't want to login
-app:
-  title: Heado - Dog heat calendar
-  title_short: Heado
-  slogan: Dog heat calendar
-generic:
-  system_default: System standard
-  cancel: Cancel
-  delete: Delete
-  done: Done
+

@@ -1,533 +1,446 @@
-core:
-  close: Nära
-  copy: Kopia
-  share: Andel
+app:
+  title: "Heado - Hundens värmekalender"
+  title_short: "Heado"
+  slogan: "Hundens värmekalender"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Systemstandard"
+  cancel: "Avbryt"
+  delete: "Radera"
+  done: "Klar"
+  close: "Stäng"
+  count:
+    time: "{} gång"
+    times: "{} gånger"
   date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Otillräckliga data"
+  error:
+    title: "Fel"
+    message:
+      long: "Ett fel inträffade. Försök igen senare."
+    open_details: "Visa detaljer"
+    close_details: "Dölj detaljer"
+  validation:
+    in_future: "Datumet får inte ligga i framtiden"
+  name: "Namn"
+  save: "Spara"
+  ok: "OK"
+  from: "från"
+  to: "till"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cykler"
+  false_pregnancies: "Skendräktigheter"
+
+core:
   error:
     generic:
-      short: Ett fel har uppstått!
-      long: Oops, ett fel har uppstått! Jag beklagar.
+      short: "Något gick fel!"
+      long: "Oj, något gick fel! Ursäkta."
     retry:
-      short: Upprepa
-      long: Försök igen
+      short: "Försök igen"
+      long: "Försök igen"
   empty:
-    hint: Inga poster.
-  unknown: Okänd
-app:
-  title: Heado - Löpkalender
-  title_short: Huvud
-  slogan: Löpkalender
+    hint: "Inga poster."
+  copy: "Kopiera"
+  share: "Dela"
+  unknown: "Okänd"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
 family:
+  family: "Familj"
+  your_title: "Din familj"
+  members: "Medlemmar"
+  dogs: "Hundar"
+  add_dog: "Lägg till ny hund"
+  delete_account:
+    reason:
+      label: "Varför vill du radera ditt konto?"
+      hint: "Jag gillar inte att..."
+      validation:
+        empty: "Berätta för oss varför du vill radera ditt Heado-konto."
+    family:
+      delete: "Radera familj"
+      confirm:
+        message: "Vill du verkligen radera hela din familj? Ditt konto, alla familjemedlemmar och hundar, inklusive relaterade kalenderdata, kommer att raderas. Detta kan inte ångras!"
+    member:
+      delete: "Radera konto"
+      confirm:
+        message: "Vill du verkligen radera ditt konto? Du kommer inte längre ha tillgång till denna familj och du behöver en ny inbjudan för att gå med igen. Om du är den sista medlemmen i denna familj kommer familjen också att raderas. Alla hundar och relaterade data kommer också att raderas. Detta kan inte ångras!"
+    confirm:
+      accept: "Ja, radera"
+  validation:
+    empty_name: "Namnet får inte vara tomt."
   member_list:
-    title: Medlemmar
     invitation:
-      label: Inbjudan "{}"
-    add_invitation: Bjud in en ny medlem
+      label: "Inbjudan „{}“"
+    add_invitation: "Bjud in ny medlem"
   member_form:
-    title: Redigera medlem
-    name:
-      label: Namn
-    action:
-      delete: Radera
-      save: Spara
+    title: "Redigera medlem"
     delete:
       confirm:
-        title: Radera medlem
-        message: Vill du verkligen ta bort medlemmen {}? Medlemmen kan inte längre
-          komma åt den här familjen och behöver en ny inbjudan. Om den här användaren
-          är den sista i den här familjen kommer familjen också att raderas. Alla
-          hundar och tillhörande data kommer också att raderas. Detta kan inte göras
-          ogjort!
-        no: Avbryt
-        yes: Radera
+        title: "Radera medlem"
+        message: "Vill du verkligen radera medlemmen {}? Medlemmen kommer inte längre ha tillgång till familjen och behöver en ny inbjudan för att gå med igen. Om detta är den sista familjemedlemmen kommer familjen också att raderas. Alla hundar och relaterade data kommer också att raderas. Detta kan inte ångras!"
   invitation_form:
-    title: Inbjudan
+    title: "Inbjudan"
     share:
-      hint: Använd PIN-koden "{}" för att bjuda in en annan familjemedlem till din
-        familj. Varje PIN-kod kan bara användas en gång.
-      content: Jag inbjuder dig att bli medlem i min familj! Ladda ner Heado-appen
-        (https://heado.de/) och använd familjens PIN-kod "{}" när du registrerar dig.
+      hint: "Använd inbjudningskoden „{}“ för att låta en ny medlem gå med i din familj. Varje kod är endast giltig en gång."
+      content: "Jag bjuder in dig till min familj! Vänligen ladda ner Heado-appen (https://heado.app/) och använd inbjudningskoden „{}“ under registreringsprocessen."
       copy:
-        hint: PIN-koden "{}" har kopierats.
-    action:
-      delete: Radera
+        hint: "Koden „{}“ är kopierad."
     delete:
       confirm:
-        title: Radera inbjudan
-        message: Vill du verkligen ta bort den här inbjudan? Då kan du inte längre
-          använda PIN-koden för denna inbjudan. Den kan inte annulleras och du måste
-          skapa en ny PIN-kod!
-        no: Avbryt
-        yes: Radera
+        title: "Radera inbjudan"
+        message: "Vill du verkligen radera denna inbjudan? Efter operationen kommer inbjudningskoden inte längre vara användbar. Detta kan inte ångras och du måste skapa en ny kod!"
   family_form:
-    title: Redigera familj
-    name:
-      label: Namn
-    action:
-      delete: Radera
-      save: Spara
-    delete:
-      confirm:
-        title: Radera familj
-        message: Vill du verkligen ta bort familjen {}? Ditt konto, alla familjemedlemmar
-          och hundar, inklusive kalenderdata, kommer att raderas. Detta kan inte ångras!
-        no: Avbryt
-        yes: Radera
-  dog_selection:
-    add: Lägg till en ny hund
-  dog_list:
-    title: Hundar
-    add: Lägg till en ny hund
+    title: "Redigera familj"
   dog_form:
-    title:
-      add: Lägg till hund
-      edit: Redigera hund
-    name:
-      label: Namn
-    action:
-      delete: Radera
-      save: Spara
+    edit: "Redigera hund"
     delete:
       confirm:
-        title: Radera hund
-        message: Vill du verkligen radera din hund {}? Alla kalenderdata kommer också
-          att raderas. Detta kan inte ångras.
-        no: Avbryt
-        yes: Radera
+        title: "Radera hunden"
+        message: "Vill du verkligen radera din hund {}? Alla relaterade kalenderdata kommer att raderas. Detta kan inte ångras."
+
 calendar:
+  phases:
+    anestrus: "Vilo fas"
+  weight: "Vikt"
+  notes: "Anteckningar"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Fas
-        proestrus: Förvärmning
-        estrus: Östrus
-        metestrus: Efterbränning
-        anestrus: Vilofas
+        label: "Fas"
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metöstrus"
       false_pregnancy:
-        label: Falsk graviditet
-        active_info: Aktiv falsk graviditet
-      mood:
-        label: Stämning
-      symptom:
-        label: Symtom
-      behavior:
-        label: Beteende
-      secretion:
-        label: Utflöde
-      weight:
-        label: Vikt
-        unit: kg
-      note:
-        label: Noter
+        label: "Skendräktighet"
+        active_info: "Aktiv skendräktighet"
   day_form:
     period:
-      title: Period
-      enable: Lägg till periodcykel
-      disable: Radera period cykel
+      title: "Period"
+      enable: "Lägg till periodcykel"
+      disable: "Ta bort periodcykel"
       proestrus_start_date:
-        label: Start av förbrunst (proöstrus)
+        label: "Startdatum för proöstrus"
         info:
-          title: Före ägglossning (proöstrus)
-          message: "Förbrunst börjar när din tiks vulva svullnar och blodiga flytningar
-            uppträder.\n\nDen genomsnittliga varaktigheten är 9 dagar och kan variera
-            från 3 till 17 dagar.\n\nDetta datum måste alltid fyllas i."
-          close: OK
+          title: "Proöstrus"
+          message: "Östrus börjar när din hunds vulva sväller och blodiga vaginala flytningar uppträder.\n\nDen genomsnittliga varaktigheten är 9 dagar och kan variera från 3 till 17 dagar.\n\nDatumet måste alltid anges."
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
       estrus_start_date:
-        label: Start av brunst (östrus)
+        label: "Startdatum för östrus"
         info:
-          title: Östrus (Estrus)
-          message: "När brunsten börjar visar din tik en vilja att para sig (stående
-            löpning). Vaginal flytning är fortfarande möjlig, men det kommer att vara
-            mer som köttvatten och eventuellt slemmigt.\n\nDen genomsnittliga varaktigheten
-            är 9 dagar och kan variera mellan 3 och 21 dagar.\n \nOm denna fas ännu
-            inte har börjat eller om du inte vill dokumentera denna fas, lämna detta
-            fält tomt."
-          close: OK
+          title: "Östrus"
+          message: "I början av östrus kommer din hund att visa sig vara redo att para sig (stående östrus). Vaginala flytningar är fortfarande möjliga, men ser mer ut som köttsaft och kan vara slemmiga.\n\nDen genomsnittliga varaktigheten är 9 dagar och kan variera från 3 till 21 dagar.\n\nOm denna fas ännu inte har börjat eller om du inte vill dokumentera denna fas, lämna detta fält tomt."
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
       metestrus_start_date:
-        label: Start av efterbrunst (Metestrus)
+        label: "Startdatum för metöstrus"
         info:
-          title: Efterbränning (Metestrus)
-          message: "Perioden efter amning kännetecknas av att parningsberedskapen
-            upphör. Dessutom upphör flytningarna och vulvan drar sig tillbaka. En
-            falsk graviditet är möjlig under denna tid.\n\nOm denna fas ännu inte
-            har börjat eller om du inte vill dokumentera denna fas, lämna detta fält
-            tomt."
-          close: OK
+          title: "Metöstrus"
+          message: "Perioden efter östrus kännetecknas av slutet på parningen. Dessutom upphör de vaginala flytningarna och vulvan drar sig tillbaka. En skendräktighet är möjlig under denna tid.\n\nOm denna fas ännu inte har börjat eller om du inte vill dokumentera denna fas, lämna detta fält tomt."
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
       end_date:
-        label: Slut på cykeln (vilofas)
+        label: "Slutdatum för period (början på vilofas)"
         info:
-          title: Vilofas (anöstrus)
-          message: "Den vilande fasen visar inga tecken på den sexuella cykeln. Vulvan
-            är nu helt regredierad.\n\nLämna detta fält tomt om denna cykel ännu inte
-            har avslutats."
-          close: OK
+          title: "Vilofas (anöstrus)"
+          message: "Under vilofasen finns det inga tecken på den sexuella cykeln. Vulvan är nu helt indragen.\n\nLämna detta fält tomt om perioden ännu inte har slutat."
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
     false_pregnancy:
-      title: Falsk graviditet
-      enable: Lägga till en falsk graviditet
-      disable: Radera falsk graviditet
+      title: "Skendräktighet"
+      enable: "Lägg till skendräktighet"
+      disable: "Ta bort skendräktighet"
       start_date:
-        label: Start av falsk graviditet
+        label: "Startdatum för skendräktighet"
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
       end_date:
-        label: Slut på falsk graviditet
+        label: "Slutdatum för skendräktighet"
         error:
-          in_future: Datumet får inte ligga i framtiden
+          in_future: "Datumet får inte ligga i framtiden"
     features:
-      title: Funktioner
+      title: "Egenskaper"
       mood:
-        label: Stämning
-        no_selection: Inga stämningar valda
+        no_selection: "Inget humör valt"
       symptom:
-        label: Symtom
-        no_selection: Inga symptom valda
+        no_selection: "Inget symptom valt"
       behavior:
-        label: Beteende
-        no_selection: Inget beteende valt
+        no_selection: "Inget beteende valt"
       secretion:
-        label: Utflöde
-        no_selection: Ingen urladdning vald
+        no_selection: "Ingen sekretion vald"
       weight:
-        weight:
-          label: Vikt
         unit:
-          label: Enhet
-          kilogram: kg
-    notes:
-      title: Noter
-      notes:
-        label: Noter
-    action:
-      save: Spara
+          label: "Enhet"
   mood:
-    defiant: Defiant
-    fearful: Ängslig
-    courageous: Modig
-    brave: Modig
-    sleepy: Sömnig
-    sniffy: Sniffning
-    aggressive: Aggressiv
-    nervous: Nervös
-    satisfied: Nöjd
-    stressed: Stressad
-    sleepless: Sömnlös
-    dissatisfied: Missnöjd
-    depressed: Deprimerad
-    relaxed: Avslappnad
-    happy: Lycklig
-    obedient: Lydnad
-    balanced: Balanserad
-    fiepsy: Fiepsig
-    grumpy: Grinig
-    weepy: Grälsjuk
-    attentive: Uppmärksamhet
-    sad: Sorglig
-    stormy: Stormig
-    crazy: Galet
-    calm: Lugn
-    cuddly: Mysigt
-    appetiteless: Utan aptitretare
-    indecisive: Osäker
-    exhausted: Utmattad
-    frustrated: Frustrerad
-    bitchy: Bitchig
-    troubled: Rastlös
-    jittery: Jittery
+    mood: "Humör"
+    fearful: "Rädd"
+    courageous: "Modig"
+    brave: "Tapper"
+    sleepy: "Sömnig"
+    sniffy: "Sniffande"
+    aggressive: "Aggressiv"
+    nervous: "Nervös"
+    satisfied: "Nöjd"
+    stressed: "Stressad"
+    sleepless: "Sömnlös"
+    dissatisfied: "Missnöjd"
+    depressed: "Deprimerad"
+    defiant: "Trotsig"
+    relaxed: "Avslappnad"
+    happy: "Glad"
+    obedient: "Lydig"
+    balanced: "Balanserad"
+    fiepsy: "Fiepsy"
+    grumpy: "Grinig"
+    weepy: "Gråtande"
+    attentive: "Uppmärksam"
+    sad: "Ledsen"
+    stormy: "Stormig"
+    crazy: "Galna"
+    calm: "Lugn"
+    cuddly: "Kramig"
+    appetiteless: "Aptitlös"
+    indecisive: "Obeslutsam"
+    exhausted: "Uttröttad"
+    frustrated: "Frustrerad"
+    bitchy: "Tjurig"
+    troubled: "Bekymrad"
+    jittery: "Skakig"
   behavior:
-    herding: Hattar
-    adopting: Anta
-    nesting: Byggande av bo
-    howling: Yelp
-    restless: Rastlös
+    behavior: "Beteende"
+    herding: "Herdande"
+    adopting: "Adopterande"
+    nesting: "Bona"
+    howling: "Ylande"
+    restless: "Orolig"
   symptom:
-    stomach_cramps: Kramper i magen
-    flatulence: Flatulens
-    diarrhea: Diarré
-    constipation: Förstoppning
-    bloody_stool: Blodiga avföringar
-    milk_discharge: Utsläpp av mjölk
-    swollen_teats: Svullna skinkor
-    vomit: Kräkningar
-    dandruff: Mjällrock
+    symptom: "Symptom"
+    stomach_cramps: "Magkramper"
+    flatulence: "Gasbildning"
+    diarrhea: "Diarré"
+    constipation: "Förstoppning"
+    bloody_stool: "Blodig avföring"
+    milk_discharge: "Mjölkaktig flytning"
+    swollen_teats: "Svullna spenar"
+    vomit: "Kräkning"
+    dandruff: "Mjäll"
   secretion:
-    bloody: Blodiga
-    watery: Vattenhaltig
-    creamy: Krämig
-    dryly: Torr
-    stinky: Illaluktande
-    purulent: Festering
+    secretion: "Sekretion"
+    bloody: "Blodig"
+    watery: "Vattnig"
+    creamy: "Krämig"
+    dryly: "Torr"
+    stinky: "Illaluktande"
+    purulent: "Varig"
+
 overview:
+  last_cycle: "Senaste cykeln"
+  next_cycle: "Nästa cykel"
   overview:
     current_period:
       no_data:
-        cta: Registrera din tiks första löp!
+        cta: "Ange din hunds första cykel!"
         info:
-          title: Förutsägelse av nästa löp
-          message: Heado behöver en fullständig cykel (inklusive vilofas!) från din
-            tik för att göra en förutsägelse.
-          close: OK
-      days_left: fortfarande {} dagar
-      weeks_left: fortfarande {} veckor
-      months_left: fortfarande {} månader
-      until_date: till {}
-      error: Ett fel har uppstått. Klicka för att upprepa.
+          title: "Förutsäg nästa cykel"
+          message: "Heado behöver en fullständig cykel (inklusive vilofasen) för din hund för att kunna göra en förutsägelse."
+      days_left: "{} dagar kvar"
+      weeks_left: "{} veckor kvar"
+      months_left: "{} månader kvar"
+      until_date: "tills {}"
+      error: "Något gick fel. Klicka för att försöka igen."
       phase:
-        proestrus: Förvärmning
-        estrus: Östrus
-        metestrus: Efterbränning
-        anestrus: Vilofas
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metöstrus"
     period_dates:
       last:
-        title: Sista löp
-        none: Ingen period har ännu angetts.
-        from: från
-        to: till
+        title: "Senaste perioden"
+        none: "Ingen senaste period än."
       next:
-        title: Nästa löp
-        from: från
-        to: till
-        none: Det finns ännu inte tillräckligt med perioder för att göra en förutsägelse.
+        title: "Nästa period"
+        none: "Inte tillräckligt med data för att förutsäga nästa period."
     period_count:
       period:
-        title: Antal löp
-        time: Färg
-        times: Färg
+        title: "Antal perioder"
+        time: "gång"
+        times: "gånger"
       false_pregnancy:
-        title: Antal falska graviditeter
-        time: Färg
-        times: Färg
+        title: "Antal skendräktigheter"
+        time: "gång"
+        times: "gånger"
     menu:
-      calendar: Kalender
-      settings: Inställningar
+      calendar: "Kalender"
   ad_banner:
-    title: Din reklamfria testperiod avslutas snart!
-    message: Din testfas avslutas den {}. Efter denna dag kommer du att se annonser.
-      Om du vill använda appen utan annonser kan du köpa Premium-versionen.
-    become_member: Bli medlem
-    left_days: '{}/{} Återstående dagar'
+    title: "Din gratis provperiod utan annonser slutar snart!"
+    message: "Din provperiod slutar den {}. Efter detta datum kommer vi att visa annonser. Om du vill fortsätta använda Heado utan annonser kan du köpa vårt premiumpaket."
+    become_member: "Bli medlem"
+    left_days: "{}/{} dagar kvar"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Bli medlem i Heado Premium och använd appen utan reklam.
-    purchase_single: Bli Premiummedlem
-    purchase_single_hint: '{} - Unik {}'
-    purchase_family: Bli en Premium-familj
-    purchase_family_hint: '{} - Unik {}'
-    restore_purchase: Återställ inköp
+    teaser: "Bli medlem i Heado Premium nu och använd appen utan annonser."
+    purchase_single: "Bli premiummedlem"
+    purchase_single_hint: "{} • Engångsavgift {}"
+    purchase_family: "Bli premiumfamilj"
+    purchase_family_hint: "{} • Engångsavgift {}"
+    restore_purchase: "Återställ köp"
   membership:
     member:
-      teaser: Du är Heado Premium-medlem och kan använda appen utan reklam!
-      info: Du har varit medlem i Heado Premium sedan {}.
+      teaser: "Du är en Heado Premium-medlem och kan använda appen utan annonser!"
+      info: "Du har varit Heado Premium-medlem sedan {}."
     family:
-      teaser: Du och din familj är Heado Premium-medlemmar. Du kan använda appen utan
-        reklam!
-      info: Din familj har varit medlem i Heado Premium sedan {}.
+      teaser: "Du och din familj är Heado Premium-medlemmar och kan använda appen utan annonser!"
+      info: "Din familj har varit Heado Premium-medlem sedan {}."
+
 settings:
-  title: Inställningar
-  footer: Tillverkad med {} för Kori {} och Mayo {}.
-  family:
-    title: Familj
-    dogs:
-      title: Hundar
-    members:
-      title: Medlemmar
-    family:
-      title: Familj
+  settings: "Inställningar"
+  footer: "Skapad med kärlek {} för Kori {} och Mayo {}."
   account:
-    title: Konto
+    title: "Konto"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Kontoinställningar
+      title: "Kontoinställningar"
     cookies:
-      title: Samtycke till kakor
+      title: "Cookiesamtycke"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Testa användaråtkomst
+      title: "Testanvändarinloggning"
   contact:
-    title: Kontakta oss
+    title: "Kontakt"
     website:
-      title: Webbplats
-      link: https://heado.de/
+      title: "Webbplats"
     mail:
-      title: e-post
-      link: mailto:wuff@heado.app
+      title: "E-post"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Rättsliga frågor
+    title: "Juridiskt"
     terms:
-      title: Användarvillkor
-      link: https://heado.de/terms
+      title: "Användarvillkor"
     privacy:
-      title: Villkor för dataskydd
-      link: https://heado.de/privacy
+      title: "Integritetspolicy"
   about:
-    title: Om
+    title: "Om"
     status:
-      title: Status
+      title: "Status"
     version:
-      title: Version
+      title: "Version"
     translation:
-      title: Översättningar
+      title: "Översättningar"
   app:
     design:
-      dark: Mörk
-      title: Design
-      light: Ljus
-    title: App
-  mayo: "Hej, pälsnäsa! 🐾\n\nJag är glad att du hittade vägen till mitt hemliga område!
-    Du kanske redan känner mig. Om inte, så heter jag Mayo och är en Appenzellerbergshund.
-    En tik, så klart! Jag är nu 2 år gammal. Illustrationen ovan är jag. Bara så att
-    du kan känna igen mig om du någonsin ser mig.\n\nTyvärr har jag och min familj
-    insett att jag har oroliga faser. Vid något tillfälle fick vi alla intrycket av
-    att mina hormoner skenade iväg inför min brunst och att jag inte var lika modig
-    som jag brukade vara. Men vi var inte riktigt säkra.\n\nMin husmor Korinna fick
-    då idén att vi kunde göra en kalender för hundtjejer, precis som vi gör för människotjejer.
-    Sagt och gjort! Min husse Fabian är programmerare. Han tyckte också att det var
-    en jättebra idé och satte igång direkt.\n\nFabian insåg dock snart att han inte
-    hade någon som helst aning om en hunds cykel. Eller vad den innebär. Så han gjorde
-    en hel del efterforskningar på internet, ställde en massa frågor till Korinna
-    och jämförde henne med befintliga appar för mänskliga damer.\n\nEfter några månader
-    och en testfas med mina tassvänner var det dags! Den 27 november 2023 publicerade
-    vi Heado i App Store för Android & iOS.\n\nMina ångestfaser kommer faktiskt från
-    mina hormoner. Men det verkar också bli mycket bättre för varje brunst. Vi kommer
-    definitivt att hålla ett öga på det.\n\nJag hoppas att vi också kan hjälpa dig
-    och dina människor med den här appen och hitta problem eller oegentligheter snabbare.
-    Och även ha de nödvändiga bevisen hos veterinären.\n\nOm du eller dina människor
-    har några idéer eller önskemål, vänligen kontakta mig på mayo@heado.app. Även
-    i händelse av problem, fel eller svårigheter.\n\nHa kul med appen! <3\n\nMayo,
-    Korinna & Fabian"
+      light: "Ljus"
+      dark: "Mörk"
+      title: "Design"
+    title: "App"
+  mayo: "Hej, lurviga nos! 🐾\n\nJag är glad att du hittade min hemliga plats! Kanske känner du redan till mig. Om inte, mitt namn är Mayo och jag är en Appenzeller Sennenhund. Naturligtvis är jag en tik! Jag är nu 2 år gammal. Illustrationen ovan är jag. Bara så att du känner igen mig om du någonsin ser mig.\n\nTyvärr måste min familj och jag förstå att jag alltid har ångestfaser. Vid något tillfälle trodde vi alla att mina hormoner blev galna innan min cykel började och det var därför jag inte längre var så modig. Men vi var inte helt säkra.\n\nMin ägare Korinna kom då på idén att en kalender för tikar kunde skapas, precis som för kvinnor. Sagt och gjort! Min ägare Fabian är programmerare. Han tyckte också att det var en fantastisk idé och började genast.\n\nMen Fabian insåg snabbt att han inte hade någon aning om en hunds cykel. Eller vad det innebar. Så han gjorde mycket forskning på internet, ställde många frågor till Korinna och jämförde med befintliga appar för kvinnor.\n\nEfter några månader och en testfas med mina fyrbenta vänner var det dags! Den 27-11-2023 släppte vi Heado i App Store för Android och iOS.\n\nFaktum är att mina ångestfaser orsakas av mina hormoner. Men det verkar bli mycket bättre med varje cykel. Vi kommer definitivt att hålla ett öga på det.\n\nJag hoppas att denna app kan hjälpa dig och dina människor att hitta problem eller oregelbundenheter snabbare. Och också ha nödvändiga bevis hos veterinären.\n\nOm du eller dina människor har idéer eller önskemål, tveka inte att kontakta mig på mayo@heado.app. Även vid problem, fel eller svårigheter.\n\nNjut av appen! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Kontoinställningar
+  title: "Kontoinställningar"
   logins:
-    title: Kontouppgifter
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Kontokopplingar"
     test:
-      label: Testanvändare
+      label: "Testanvändare"
     error:
       already_in_use:
-        title: Redan ansluten
-        message: Det valda kontot är redan anslutet till en annan användare.
-        close: OK
+        title: "Konto redan i bruk"
+        message: "Det valda kontot är redan kopplat till en annan användare."
   disconnect:
-    label: Frikoppla konto
+    disconnect:
+      short: "Koppla bort"
+      long: "Koppla bort konto"
     confirm:
-      title: Frikoppla konto
-      message: Vill du verkligen ta bort kopplingen till ditt konto? Då kommer du
-        inte längre att kunna logga in med den här leverantören. Du kan återansluta
-        ditt konto senare.
-      no: Avbryt
-      yes: Ja, frikoppla
+      message: "Vill du verkligen koppla bort ditt konto? Efter detta kan du inte logga in med denna leverantör. Du kan återkoppla kontot senare."
+      yes: "Ja, koppla bort"
   logout:
-    label: Logga ut
+    logout: "Logga ut"
     confirm:
-      title: Logga ut
-      message: Vill du verkligen logga ut? Du kan logga in igen med ditt Google- eller
-        Apple-konto.
-      no: Avbryt
-      yes: Ja, logga ut
-  delete:
-    label: Ta bort konto
-    confirm:
-      title: Ta bort konto
-      message: Vill du verkligen ta bort ditt konto? Du kan inte längre komma åt den
-        här familjen och behöver en ny inbjudan. Om du är den sista användaren av
-        denna familj, kommer familjen också att raderas. Alla hundar och tillhörande
-        data kommer också att raderas. Detta kan inte göras ogjort!
-      no: Vill du verkligen logga ut? Du kan logga in igen med ditt Google- eller
-        Apple-konto.
-      yes: Ja, radera
+      message: "Vill du verkligen logga ut? Du kan logga in igen med ditt Google- eller Apple-konto."
+      yes: "Ja, logga ut"
+
 onboarding:
-  next: Vidare
+  code:
+    validation:
+      min_length: "Koden måste vara 5 siffror lång"
+  next: "Nästa"
   welcome:
-    task: Har du redan ett konto?
+    task: "Har du redan ett konto?"
     action:
-      register: Skapa ett nytt konto
-      login: Jag har redan ett konto
+      register: "Skapa ett nytt konto"
+      login: "Jag har redan ett konto"
   member:
-    task: Vad kan jag kalla dig?
-    name:
-      label: Namn
-    default_name: 'Kompanjon'
-    default_name_dog: '{}:s följeslagare'
+    task: "Vad heter du?"
+    default_name: "Kompis"
+    default_name_dog: "{} kompis"
   lonely:
-    task: Har du blivit inbjuden till en familj?
+    task: "Har du blivit inbjuden till en familj?"
     action:
-      create_family: Skapa ny familj
-      join_family: Gå med i en befintlig familj
+      create_family: "Skapa en ny familj"
+      join_family: "Gå med i en befintlig familj"
   login:
-    task: Logga in på ditt befintliga konto
-    action:
-      google: Google
-      apple: Apple
+    task: "Logga in på ditt befintliga konto"
   test_login:
-    task: PIN-kod för inloggning för demoanvändare
+    task: "Logga in med PIN för demokonton"
     code:
       error:
-        min_length: Koden måste bestå av 5 siffror
-        invalid: Ogiltig kod
+        invalid: "Ogiltig PIN"
     action:
-      login: Inloggning
+      login: "Logga in"
   join:
-    task: Inbjudningskod för din familj
+    task: "Familjeinbjudningskod"
     code:
-      error:
-        min_length: Koden måste bestå av 5 siffror
-      invalid: "Ogiltig kod för inbjudan.\nKoden finns inte eller har redan använts."
+      invalid: "Ogiltig inbjudningskod.\nKoden finns inte eller har redan använts."
   finish:
-    task: Du är redo!
+    task: "Du är klar!"
     legal:
-      hint: 'Genom att klicka på "Acceptera & skapa konto" godkänner du följande villkor:'
+      hint: "Genom att klicka på „Acceptera och skapa konto“ godkänner du följande villkor:"
       terms:
-        label: 1. Användarvillkor
-        link: https://heado.de/terms
+        label: "1. Användarvillkor"
       privacy:
-        label: 2. Villkor för dataskydd
-        link: https://heado.de/privacy
+        label: "2. Integritetspolicy"
     action:
-      accept_and_register: Acceptera och skapa konto
+      accept_and_register: "Acceptera och skapa konto"
   family:
-    task: Ge din familj ett namn
+    task: "Ge din familj ett namn"
     name:
-      label: (Påhittat) Familjenamn
-      help: Välj ett fantasinamn som beskriver din familj väl. Ditt efternamn är inte
-        nödvändigt här.
-    default_name: '{}s familj'
+      label: "Familjenamn (fiktivt)"
+      help: "Välj ett fiktivt namn som beskriver din familj väl. Ditt efternamn behövs inte här."
+    default_name: "{} familj"
   dog:
-    task: Vad heter din hund?
+    task: "Vad heter din hund?"
     name:
-      label: Hundens namn
+      label: "Hundens namn"
   auth:
-    task: Logga in, spara kontouppgifter och använd flera enheter
+    task: "Logga in, spara dina data och använd din profil på flera enheter"
     action:
-      google: Google
-      apple: Apple
-      skip: Jag vill inte logga in
-generic:
-  system_default: Systemstandard
-  cancel: Avbryt
-  delete: Radera
-  done: Färdig
+      skip: "Jag vill inte logga in"

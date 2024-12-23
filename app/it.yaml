@@ -1,542 +1,446 @@
+app:
+  title: "Heado - Calendario del calore per cani"
+  title_short: "Heado"
+  slogan: "Calendario del calore per cani"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Predefinito del sistema"
+  cancel: "Annulla"
+  delete: "Elimina"
+  done: "Fatto"
+  close: "Chiudi"
+  count:
+    time: "{} volta"
+    times: "{} volte"
+  date:
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Dati insufficienti"
+  error:
+    title: "Errore"
+    message:
+      long: "Si è verificato un errore. Per favore, riprova più tardi."
+    open_details: "Mostra dettagli"
+    close_details: "Nascondi dettagli"
+  validation:
+    in_future: "La data non deve essere nel futuro"
+  name: "Nome"
+  save: "Salva"
+  ok: "OK"
+  from: "da"
+  to: "a"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cicli"
+  false_pregnancies: "False gravidanze"
+
+core:
+  error:
+    generic:
+      short: "Qualcosa è andato storto!"
+      long: "Ops, qualcosa è andato storto! Mi dispiace."
+    retry:
+      short: "Riprova"
+      long: "Prova di nuovo"
+  empty:
+    hint: "Nessuna voce."
+  copy: "Copia"
+  share: "Condividi"
+  unknown: "Sconosciuto"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
+family:
+  family: "Famiglia"
+  your_title: "La tua famiglia"
+  members: "Membri"
+  dogs: "Cani"
+  add_dog: "Aggiungi nuovo cane"
+  delete_account:
+    reason:
+      label: "Perché vuoi eliminare il tuo account?"
+      hint: "Non mi piace che..."
+      validation:
+        empty: "Per favore, dicci perché vuoi eliminare il tuo account Heado."
+    family:
+      delete: "Elimina famiglia"
+      confirm:
+        message: "Vuoi davvero eliminare tutta la tua famiglia? Il tuo account, tutti i membri della famiglia e i cani, compresi i dati del calendario associati, saranno eliminati. Questo non può essere annullato!"
+    member:
+      delete: "Elimina account"
+      confirm:
+        message: "Vuoi davvero eliminare il tuo account? Non potrai più accedere a questa famiglia e avrai bisogno di un nuovo invito per rientrare. Se sei l'ultimo membro di questa famiglia, anche la famiglia sarà eliminata. Tutti i cani e i dati associati saranno eliminati. Questo non può essere annullato!"
+    confirm:
+      accept: "Sì, elimina"
+  validation:
+    empty_name: "Il nome non può essere vuoto."
+  member_list:
+    invitation:
+      label: "Invito „{}“"
+    add_invitation: "Invita nuovo membro"
+  member_form:
+    title: "Modifica membro"
+    delete:
+      confirm:
+        title: "Elimina membro"
+        message: "Vuoi davvero eliminare il membro {}? Il membro non potrà più accedere alla famiglia e avrà bisogno di un nuovo invito per rientrare. Se è l'ultimo membro della famiglia, anche la famiglia sarà eliminata. Tutti i cani e i dati associati saranno eliminati. Questo non può essere annullato!"
+  invitation_form:
+    title: "Invito"
+    share:
+      hint: "Usa il codice di invito „{}“ per consentire a un nuovo membro di unirsi alla tua famiglia. Ogni codice è valido solo una volta."
+      content: "Ti invito nella mia famiglia! Per favore, scarica l'app Heado (https://heado.app/) e usa il codice di invito „{}“ durante il processo di registrazione."
+      copy:
+        hint: "Il codice „{}“ è stato copiato."
+    delete:
+      confirm:
+        title: "Elimina invito"
+        message: "Vuoi davvero eliminare questo invito? Dopo l'operazione, il codice di invito non sarà più utilizzabile. Questo non può essere annullato e dovrai creare un nuovo codice!"
+  family_form:
+    title: "Modifica famiglia"
+  dog_form:
+    edit: "Modifica cane"
+    delete:
+      confirm:
+        title: "Elimina cane"
+        message: "Vuoi davvero eliminare il tuo cane {}? Tutti i dati del calendario associati saranno eliminati. Questo non può essere annullato."
+
 calendar:
-  mood:
-    happy: Felice
-    sad: Triste
-    stormy: Tempestoso
-    defiant: Sfiduciato
-    relaxed: Rilassato
-    attentive: Attenzione
-    fearful: Ansioso
-    courageous: Coraggioso
-    brave: Coraggioso
-    sleepy: Sonnolento
-    sniffy: Annusare
-    aggressive: Aggressivo
-    nervous: Nervoso
-    satisfied: Soddisfatto
-    stressed: Stressato
-    sleepless: Insonnia
-    dissatisfied: Insoddisfatto
-    depressed: Depresso
-    obedient: Obbedienza
-    balanced: Equilibrato
-    fiepsy: Fiepsig
-    grumpy: Brontolo
-    weepy: Litigioso
-    crazy: Pazzo
-    calm: Calma
-    cuddly: Accogliente
-    appetiteless: Senza appetito
-    indecisive: Indeciso
-    exhausted: Esaurito
-    frustrated: Frustrato
-    bitchy: Stronzo
-    troubled: Irrequieto
-    jittery: Nervosismo
+  phases:
+    anestrus: "Fase di riposo"
+  weight: "Peso"
+  notes: "Note"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        metestrus: Afterburn
-        anestrus: Fase di riposo
-        label: Fase
-        proestrus: Preriscaldare
-        estrus: Estro
+        label: "Fase"
+        proestrus: "Proestro"
+        estrus: "Estro"
+        metestrus: "Metaestro"
       false_pregnancy:
-        label: Falsa gravidanza
-        active_info: Falsa gravidanza attiva
-      mood:
-        label: Stato d'animo
-      symptom:
-        label: Sintomi
-      behavior:
-        label: Comportamento
-      secretion:
-        label: Deflusso
-      weight:
-        label: Peso
-        unit: kg
-      note:
-        label: Note
+        label: "Falsa gravidanza"
+        active_info: "Falsa gravidanza attiva"
   day_form:
     period:
-      title: Periodo
-      enable: Aggiungi il ciclo del periodo
-      disable: Elimina il ciclo del periodo
+      title: "Periodo"
+      enable: "Aggiungi ciclo del periodo"
+      disable: "Elimina ciclo del periodo"
       proestrus_start_date:
-        label: Inizio del pre-rutto (proestro)
+        label: "Inizio del proestro"
         info:
-          title: Pre-ovulazione (Proestrus)
-          message: "Il pre-estro inizia quando la vulva della cagna si gonfia e compaiono
-            delle perdite vaginali sanguinolente.\n\nLa durata media è di 9 giorni
-            e può variare da 3 a 17 giorni.\n\nQuesta data deve essere sempre compilata."
-          close: OK
+          title: "Proestro"
+          message: "L'estro inizia quando la vulva del tuo cane si gonfia e appare una secrezione vaginale sanguinolenta.\n\nLa durata media è di 9 giorni e può variare tra 3 e 17 giorni.\n\nLa data deve sempre essere specificata."
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
       estrus_start_date:
-        label: Inizio dell'estro (estro)
+        label: "Inizio dell'estro"
         info:
-          title: Estro (Estrus)
-          message: "Con l'inizio dell'estro, la cagna mostra la volontà di accoppiarsi
-            (calore in piedi). Le perdite vaginali sono ancora possibili, ma saranno
-            più simili all'acqua di carne e probabilmente mucose.\n\nLa durata media
-            è di 9 giorni e può variare da 3 a 21 giorni.\n \nSe questa fase non è
-            ancora iniziata o non vuoi documentarla, lascia questo campo vuoto."
-          close: OK
+          title: "Estro"
+          message: "Con l'inizio dell'estro, il tuo cane mostrerà disponibilità all'accoppiamento (estro in piedi). La secrezione vaginale è ancora possibile, ma assomiglia più a carne liquida e può essere mucosa.\n\nLa durata media è di 9 giorni e può variare tra 3 e 21 giorni.\n\nSe questa fase non è ancora iniziata o non desideri documentare questa fase, lascia questo campo vuoto."
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
       metestrus_start_date:
-        label: Inizio della postcombustione (Metestrus)
+        label: "Inizio del metaestro"
         info:
-          title: Postcombustione (Metestrus)
-          message: "Il periodo successivo all'allattamento è caratterizzato dalla
-            fine della disponibilità all'accoppiamento. Inoltre, le perdite vaginali
-            cessano e la vulva si ritira. In questo periodo è possibile una falsa
-            gravidanza.\n\nSe questa fase non è ancora iniziata o se non desideri
-            documentarla, lascia questo campo vuoto."
-          close: "Con l'inizio dell'estro, la cagna mostra la volontà di accoppiarsi
-            (calore in piedi). Le perdite vaginali sono ancora possibili, ma saranno
-            più simili all'acqua di carne e probabilmente mucose.\n\nLa durata media
-            è di 9 giorni e può variare da 3 a 21 giorni.\n \nSe questa fase non è
-            ancora iniziata o non vuoi documentarla, lascia questo campo vuoto."
+          title: "Metaestro"
+          message: "Il periodo dopo l'estro è caratterizzato dalla fine dell'accoppiamento. Inoltre, la secrezione vaginale cessa e la vulva si ritrae. Una falsa gravidanza è possibile durante questo periodo.\n\nSe questa fase non è ancora iniziata o non desideri documentare questa fase, lascia questo campo vuoto."
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
       end_date:
-        label: Fine del ciclo (fase di riposo)
+        label: "Fine del periodo (inizio della fase di riposo)"
         info:
-          title: Fase di riposo (anestro)
-          message: "La fase di riposo non mostra alcun segno del ciclo sessuale. La
-            vulva è completamente regredita.\n\nLascia questo campo vuoto se il ciclo
-            non si è ancora concluso."
-          close: "Con l'inizio dell'estro, la cagna mostra la volontà di accoppiarsi
-            (calore in piedi). Le perdite vaginali sono ancora possibili, ma saranno
-            più simili all'acqua di carne e probabilmente mucose.\n\nLa durata media
-            è di 9 giorni e può variare da 3 a 21 giorni.\n \nSe questa fase non è
-            ancora iniziata o non vuoi documentarla, lascia questo campo vuoto."
+          title: "Fase di riposo (anestro)"
+          message: "Non ci sono segni di ciclo sessuale durante la fase di riposo. La vulva è ora completamente ritratta.\n\nLascia questo campo vuoto se il periodo non è ancora terminato."
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
     false_pregnancy:
-      title: Falsa gravidanza
-      enable: Aggiunta di una falsa gravidanza
-      disable: Elimina la falsa gravidanza
+      title: "Falsa gravidanza"
+      enable: "Aggiungi falsa gravidanza"
+      disable: "Elimina falsa gravidanza"
       start_date:
-        label: Inizio di una falsa gravidanza
+        label: "Inizio della falsa gravidanza"
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
       end_date:
-        label: Fine della falsa gravidanza
+        label: "Fine della falsa gravidanza"
         error:
-          in_future: La data non deve essere futura
+          in_future: "La data non deve essere nel futuro"
     features:
-      title: Caratteristiche
+      title: "Caratteristiche"
       mood:
-        label: Stato d'animo
-        no_selection: Non è stato selezionato alcuno stato d'animo
+        no_selection: "Nessun umore selezionato"
       symptom:
-        label: Sintomi
-        no_selection: Nessun sintomo selezionato
+        no_selection: "Nessun sintomo selezionato"
       behavior:
-        label: Comportamento
-        no_selection: Nessun comportamento selezionato
+        no_selection: "Nessun comportamento selezionato"
       secretion:
-        label: Deflusso
-        no_selection: Non è stato selezionato alcuno scarico
+        no_selection: "Nessuna secrezione selezionata"
       weight:
-        weight:
-          label: Peso
         unit:
-          label: Unità
-          kilogram: kg
-    notes:
-      title: Note
-      notes:
-        label: Note
-    action:
-      save: Risparmia
+          label: "Unità"
+  mood:
+    mood: "Umore"
+    fearful: "Pauroso"
+    courageous: "Coraggioso"
+    brave: "Audace"
+    sleepy: "As sonnolento"
+    sniffy: "Annusante"
+    aggressive: "Aggressivo"
+    nervous: "Nervoso"
+    satisfied: "Soddisfatto"
+    stressed: "Stressato"
+    sleepless: "Insonne"
+    dissatisfied: "Insoddisfatto"
+    depressed: "Depresso"
+    defiant: "Ribelle"
+    relaxed: "Rilassato"
+    happy: "Felice"
+    obedient: "Obbediente"
+    balanced: "Equilibrato"
+    fiepsy: "Fiepsy"
+    grumpy: "Scontroso"
+    weepy: "Piangente"
+    attentive: "Attento"
+    sad: "Triste"
+    stormy: "Tempestoso"
+    crazy: "Pazzo"
+    calm: "Calmo"
+    cuddly: "Coccoloso"
+    appetiteless: "Senza appetito"
+    indecisive: "Indeciso"
+    exhausted: "Esausto"
+    frustrated: "Frustrato"
+    bitchy: "Acida"
+    troubled: "Preoccupato"
+    jittery: "Agitato"
   behavior:
-    herding: Cappelli
-    adopting: Adotta
-    nesting: Costruzione del nido
-    howling: Yelp
-    restless: Irrequieto
+    behavior: "Comportamento"
+    herding: "Pastore"
+    adopting: "Adottare"
+    nesting: "Nidificazione"
+    howling: "Ululare"
+    restless: "Irrequieto"
   symptom:
-    stomach_cramps: Crampi allo stomaco
-    flatulence: Flatulenza
-    diarrhea: Diarrea
-    constipation: Costipazione
-    bloody_stool: Feci sanguinolente
-    milk_discharge: Scarico del latte
-    swollen_teats: Natiche gonfie
-    vomit: Vomito
-    dandruff: Cappotto antiforfora
+    symptom: "Sintomo"
+    stomach_cramps: "Crampi allo stomaco"
+    flatulence: "Flatulenza"
+    diarrhea: "Diarrea"
+    constipation: "Costipazione"
+    bloody_stool: "Feci sanguinolente"
+    milk_discharge: "Secrezione di latte"
+    swollen_teats: "Capezzoli gonfi"
+    vomit: "Vomito"
+    dandruff: "Forfora"
   secretion:
-    bloody: Sanguinario
-    watery: Acquosa
-    creamy: Cremoso
-    dryly: Secco
-    stinky: Puzzolente
-    purulent: Festering
-onboarding:
-  next: Ulteriori
-  member:
-    name:
-      label: Nome
-    task: Come posso chiamarti?
-    default_name: Compagno
-    default_name_dog: Il compagno di {}
-  welcome:
-    task: Hai già un account?
-    action:
-      register: Crea un nuovo account
-      login: Ho già un account
-  lonely:
-    task: Sei stato invitato da una famiglia?
-    action:
-      create_family: Crea una nuova famiglia
-      join_family: Unisciti a una famiglia esistente
-  login:
-    task: Accedi al tuo account esistente
-    action:
-      google: Google
-      apple: Apple
-  test_login:
-    task: Accesso con codice PIN per gli utenti demo
-    code:
-      error:
-        min_length: Il codice deve essere composto da 5 cifre
-        invalid: Codice non valido
-    action:
-      login: Accesso
-  join:
-    task: Codice di invito della tua famiglia
-    code:
-      error:
-        min_length: Il codice deve essere composto da 5 cifre
-      invalid: "Codice invito non valido.\nIl codice non esiste o è già stato utilizzato."
-  finish:
-    task: Sei pronto!
-    legal:
-      hint: 'Cliccando su "Accetta e crea account" accetti le seguenti condizioni:'
-      terms:
-        label: 1. condizioni d'uso
-        link: https://heado.de/terms
-      privacy:
-        label: 2. condizioni di protezione dei dati
-        link: https://heado.de/privacy
-    action:
-      accept_and_register: Accetta e crea un account
-  family:
-    task: Dai un nome alla tua famiglia
-    name:
-      label: Nome di famiglia (fittizio)
-      help: Scegli un nome immaginario che descriva bene la tua famiglia. Il tuo cognome
-        non è necessario.
-    default_name: La famiglia di {}
-  dog:
-    task: Come si chiama il tuo cane?
-    name:
-      label: Nome del cane
-  auth:
-    task: Accedi, salva i dati dell'account e utilizza più dispositivi
-    action:
-      google: Google
-      apple: Apple
-      skip: Non voglio accedere
-family:
-  invitation_form:
-    share:
-      content: Ti invito a unirti alla mia famiglia! Scarica l'app Heado (https://heado.de/)
-        e utilizza il PIN di famiglia "{}" al momento della registrazione.
-      hint: Usa il PIN di invito "{}" per invitare un altro membro della famiglia
-        a unirsi alla tua famiglia. Ogni PIN può essere utilizzato una sola volta.
-      copy:
-        hint: Il PIN "{}" è stato copiato.
-    title: Invito
-    action:
-      delete: Elimina
-    delete:
-      confirm:
-        title: Elimina l'invito
-        message: Vuoi davvero cancellare questo invito? Allora non potrai più utilizzare
-          il PIN di questo invito. Non può essere cancellato e dovrai creare un nuovo
-          PIN!
-        no: Annullamento
-        yes: Elimina
-  member_list:
-    title: Membri
-    invitation:
-      label: Invito "{}"
-    add_invitation: Invita un nuovo membro
-  member_form:
-    title: Modifica membro
-    name:
-      label: Nome
-    action:
-      delete: Elimina
-      save: Risparmia
-    delete:
-      confirm:
-        title: Elimina il membro
-        message: Vuoi davvero eliminare il membro {}? Il membro non può più accedere
-          a questa famiglia e richiede un nuovo invito. Se questo utente è l'ultimo
-          di questa famiglia, anche la famiglia verrà eliminata. Anche tutti i cani
-          e i dati associati saranno cancellati. Questa operazione non può essere
-          annullata!
-        no: Annullamento
-        yes: Elimina
-  family_form:
-    title: Modifica la famiglia
-    name:
-      label: Nome
-    action:
-      delete: Elimina
-      save: Risparmia
-    delete:
-      confirm:
-        title: Elimina la famiglia
-        message: Vuoi davvero cancellare la famiglia {}? Il tuo account, tutti i membri
-          della famiglia e i cani, compresi i dati del calendario, saranno cancellati.
-          Non è possibile annullare l'operazione!
-        no: Annullamento
-        yes: Elimina
-  dog_selection:
-    add: Aggiungi un nuovo cane
-  dog_list:
-    title: Cani
-    add: Aggiungi un nuovo cane
-  dog_form:
-    title:
-      add: Aggiungi un cane
-      edit: Modifica cane
-    name:
-      label: Nome
-    action:
-      delete: Elimina
-      save: Risparmia
-    delete:
-      confirm:
-        title: Elimina il cane
-        message: Vuoi davvero cancellare il tuo cane {}? Verranno cancellati anche
-          tutti i dati del calendario. Non è possibile annullare questa operazione.
-        no: Annullamento
-        yes: Elimina
-settings:
-  about:
-    translation:
-      title: Traduzioni
-    title: Informazioni su
-    status:
-      title: Stato
-    version:
-      title: Versione
-  account:
-    cookies:
-      title: Consenso ai cookie
-    settings:
-      title: Impostazioni dell'account
-    title: Conto
-    premium:
-      title: Premium
-  title: Impostazioni
-  footer: Realizzato con {} per Kori {} e Mayo {}.
-  family:
-    title: Famiglia
-    dogs:
-      title: Cani
-    members:
-      title: Membri
-    family:
-      title: Famiglia
-  demo:
-    title: Demo
-    test_login:
-      title: Prova l'accesso dell'utente
-  contact:
-    title: Contattaci
-    website:
-      title: Sito web
-      link: https://heado.de/
-    mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
-    instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
-    tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
-    twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
-  legal:
-    title: Questioni legali
-    terms:
-      title: Condizioni d'uso
-      link: https://heado.de/terms
-    privacy:
-      title: Condizioni di protezione dei dati
-      link: https://heado.de/privacy
-  app:
-    design:
-      dark: Scuro
-      title: Design
-      light: Luce
-    title: App
-  mayo: "Ehi, naso di pelo! 🐾\n\nSono felice che tu abbia trovato la strada per la
-    mia area segreta! Forse mi conosci già. In caso contrario, mi chiamo Mayo e sono
-    un cane da montagna dell'Appenzello. Una femmina, ovviamente! Ora ho 2 anni. L'illustrazione
-    qui sopra sono io. Così potrai riconoscermi se mi vedrai.\n\nPurtroppo io e la
-    mia famiglia ci siamo resi conto che ho delle fasi ansiose. A un certo punto abbiamo
-    avuto l'impressione che i miei ormoni stessero impazzendo prima del parto e che
-    non fossi più coraggiosa come un tempo. Ma non ne eravamo del tutto sicuri.\n\n
-    La mia padrona Korinna ha avuto l'idea di creare un calendario per le femmine
-    di cane, proprio come facciamo per le femmine umane. Non c'è che dire! Il mio
-    padrone Fabian è un programmatore. Anche lui ha pensato che fosse una grande idea
-    e si è messo subito all'opera.\n\nTuttavia, Fabian si è subito reso conto di non
-    avere la minima idea del ciclo di un cane. O di cosa comporti. Così ha fatto molte
-    ricerche su Internet, ha fatto molte domande a Korinna e l'ha confrontata con
-    le app esistenti per le donne umane.\n\nDopo alcuni mesi e una fase di test con
-    i miei amici di zampa, è arrivato il momento! Il 27 novembre 2023 abbiamo pubblicato
-    Heado sull'App Store per Android e iOS.\n\nLe mie fasi di ansia derivano in realtà
-    dai miei ormoni. Ma sembra anche che la situazione migliori ad ogni riscaldamento.
-    Lo terremo sicuramente d'occhio.\n\nSpero di poter aiutare anche te e i tuoi umani
-    con questa app e di poter individuare più rapidamente problemi o irregolarità.
-    E di avere anche le prove necessarie dal veterinario.\n\nSe tu o i tuoi umani
-    avete idee o richieste, contattatemi all'indirizzo mayo@heado.app. Anche in caso
-    di problemi, errori o difficoltà.\n\nBuon divertimento con l'app! <3\n\nMayo,
-    Korinna & Fabian"
-app:
-  title: Heado - calendario termico
-  title_short: Heado
-  slogan: Calendario del calore
-core:
-  date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
-  error:
-    generic:
-      short: Si è verificato un errore!
-      long: Ops, si è verificato un errore! Mi dispiace.
-    retry:
-      short: Ripetere
-      long: Riprova
-  empty:
-    hint: Nessuna voce.
-  close: Chiudi
-  copy: Copia
-  share: Condividi
-  unknown: Sconosciuto
+    secretion: "Secrezione"
+    bloody: "Sanguinolenta"
+    watery: "Acquosa"
+    creamy: "Cremosa"
+    dryly: "Secca"
+    stinky: "Maleodorante"
+    purulent: "Purulenta"
+
 overview:
+  last_cycle: "Ultimo ciclo"
+  next_cycle: "Prossimo ciclo"
   overview:
     current_period:
       no_data:
-        cta: Registra il primo calore della tua cagna!
+        cta: "Inserisci il primo ciclo del tuo cane!"
         info:
-          title: Prevedere il prossimo caldo
-          message: Heado ha bisogno di un ciclo completo (compresa la fase di riposo!)
-            della tua cagna per fare una previsione.
-          close: OK
-      days_left: ancora {} giorni
-      weeks_left: ancora {} settimane
-      months_left: ancora {} mesi
-      until_date: a {}
-      error: Si è verificato un errore. Clicca per ripetere.
+          title: "Prevedi il prossimo ciclo"
+          message: "Heado ha bisogno di un ciclo completo (inclusa la fase di riposo) del tuo cane per effettuare una previsione."
+      days_left: "{} giorni rimanenti"
+      weeks_left: "{} settimane rimanenti"
+      months_left: "{} mesi rimanenti"
+      until_date: "fino a {}"
+      error: "Qualcosa è andato storto. Clicca per riprovare."
       phase:
-        proestrus: Preriscaldare
-        estrus: Estro
-        metestrus: Afterburn
-        anestrus: Fase di riposo
+        proestrus: "Proestro"
+        estrus: "Estro"
+        metestrus: "Metaestro"
     period_dates:
       last:
-        title: Ultimo calore
-        none: Non è stato ancora inserito alcun periodo.
-        from: dal
-        to: fino a quando
+        title: "Ultimo periodo"
+        none: "Non c'è ancora un ultimo periodo."
       next:
-        title: Il prossimo calore
-        from: dal
-        to: fino a quando
-        none: Non ci sono ancora periodi sufficienti per fare una previsione.
+        title: "Prossimo periodo"
+        none: "Dati insufficienti per prevedere il prossimo periodo."
     period_count:
       period:
-        title: Numero di riscaldamenti
-        time: Vernice
-        times: Vernice
+        title: "Numero di periodi"
+        time: "volta"
+        times: "volte"
       false_pregnancy:
-        title: Numero di false gravidanze
-        time: Vernice
-        times: Vernice
+        title: "Numero di false gravidanze"
+        time: "volta"
+        times: "volte"
     menu:
-      calendar: Calendario
-      settings: Impostazioni
+      calendar: "Calendario"
   ad_banner:
-    title: La tua prova gratuita termina presto!
-    message: Il tuo periodo di prova termina il {}. Dopo questo giorno, vedrai gli
-      annunci pubblicitari. Se vuoi utilizzare l'applicazione senza pubblicità, puoi
-      acquistare la versione Premium.
-    become_member: Diventa membro
-    left_days: '{}/{} Giorni rimanenti'
+    title: "Il tuo periodo di prova senza pubblicità sta per terminare!"
+    message: "Il tuo periodo di prova termina il {}. Dopo questa data, ti mostreremo le pubblicità. Se vuoi continuare a usare Heado senza pubblicità, puoi ottenere il nostro pacchetto premium."
+    become_member: "Diventa membro"
+    left_days: "{}/{} giorni rimanenti"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Diventa un membro di Heado Premium e utilizza l'app senza pubblicità.
-    purchase_single: Diventa un Membro Premium
-    purchase_single_hint: '{} - Unique {}'
-    purchase_family: Diventa una famiglia Premium
-    purchase_family_hint: '{} - Unique {}'
-    restore_purchase: Ripristinare gli acquisti
+    teaser: "Diventa membro di Heado Premium ora e usa l'app senza pubblicità."
+    purchase_single: "Diventa membro premium"
+    purchase_single_hint: "{} • Una volta {}"
+    purchase_family: "Diventa famiglia premium"
+    purchase_family_hint: "{} • Una volta {}"
+    restore_purchase: "Ripristina acquisto"
   membership:
     member:
-      teaser: Sei un membro di Heado Premium e puoi utilizzare l'app senza pubblicità!
-      info: Sei un membro Premium di Heado da {}.
+      teaser: "Sei un membro di Heado Premium e puoi usare l'app senza pubblicità!"
+      info: "Sei un membro di Heado Premium dal {}."
     family:
-      teaser: Tu e la tua famiglia siete membri di Heado Premium. Puoi utilizzare
-        l'app senza pubblicità!
-      info: La tua famiglia è un membro di Heado Premium da {}.
+      teaser: "Tu e la tua famiglia siete membri di Heado Premium e potete usare l'app senza pubblicità!"
+      info: "La tua famiglia è membro di Heado Premium dal {}."
+
+settings:
+  settings: "Impostazioni"
+  footer: "Fatto con amore {} per Kori {} e Mayo {}."
+  account:
+    title: "Account"
+    premium:
+      title: "Premium"
+    settings:
+      title: "Impostazioni account"
+    cookies:
+      title: "Consensi sui cookie"
+  demo:
+    title: "Demo"
+    test_login:
+      title: "Accesso utente di prova"
+  contact:
+    title: "Contatto"
+    website:
+      title: "Sito web"
+    mail:
+      title: "E-mail"
+    instagram:
+      title: "Instagram"
+    tiktok:
+      title: "TikTok"
+    twitter:
+      title: "Twitter"
+  legal:
+    title: "Legale"
+    terms:
+      title: "Termini di utilizzo"
+    privacy:
+      title: "Informativa sulla privacy"
+  about:
+    title: "Informazioni"
+    status:
+      title: "Stato"
+    version:
+      title: "Versione"
+    translation:
+      title: "Traduzioni"
+  app:
+    design:
+      light: "Chiaro"
+      dark: "Scuro"
+      title: "Tema"
+    title: "App"
+  mayo: "Ciao, tartufo peloso! 🐾\n\nSono felice che tu abbia trovato la strada per la mia area segreta! Forse mi conosci già. Se no, mi chiamo Mayo e sono un cane di montagna Appenzeller. Ovviamente sono una femmina! Ora ho 2 anni. L'illustrazione sopra sono io. Solo per farti riconoscere se mi vedi mai.\n\nSfortunatamente, la mia famiglia e io abbiamo dovuto capire che ho sempre fasi di ansia. A un certo punto, tutti pensavamo che i miei ormoni impazzissero prima del mio ciclo e per questo non ero più così coraggiosa. Ma non eravamo completamente sicuri.\n\nLa mia padrona Korinna ha poi avuto l'idea che si potrebbe fare un calendario per le cagne, proprio come per le donne. Detto fatto! Il mio padrone Fabian è un programmatore! Anche lui pensava che fosse un'idea fantastica e ha iniziato subito.\n\nMa Fabian si è presto reso conto che non aveva idea del ciclo di una cagna. O di cosa comportasse. Quindi ha fatto molte ricerche su Internet, ha fatto molte domande a Korinna e ha confrontato con le app esistenti per le donne.\n\nDopo alcuni mesi e una fase di test con i miei amici a quattro zampe, è arrivato il momento! Il 27/11/2023 abbiamo rilasciato Heado su App Store per Android e iOS.\n\nIn realtà, le mie fasi di ansia provengono dai miei ormoni. Ma sembra che migliori molto con ogni ciclo. Sicuramente lo terremo sott'occhio.\n\nSpero che questa app possa aiutare anche te e i tuoi umani a trovare problemi o irregolarità più rapidamente. E anche avere le prove necessarie dal veterinario.\n\nSe tu o i tuoi umani avete idee o richieste, contattatemi a mayo@heado.app. Anche in caso di problemi, errori o difficoltà.\n\nDivertiti con l'app! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Impostazioni dell'account
+  title: "Impostazioni account"
   logins:
-    title: Dettagli dell'account
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Collegamenti account"
     test:
-      label: Utente di prova
+      label: "Utente di prova"
     error:
       already_in_use:
-        title: Già connesso
-        message: L'account selezionato è già collegato a un altro utente.
-        close: OK
+        title: "Account già in uso"
+        message: "L'account selezionato è già collegato a un altro utente."
   disconnect:
-    label: Disaccoppia il conto
+    disconnect:
+      short: "Disconnetti"
+      long: "Disconnetti account"
     confirm:
-      title: Disaccoppia il conto
-      message: Vuoi davvero scollegare il tuo account? In questo caso non potrai più
-        accedere a questo provider. Potrai ricollegare il tuo account in un secondo
-        momento.
-      no: Annullamento
-      yes: Sì, disaccoppia
+      message: "Vuoi davvero disconnettere il tuo account? Dopo di ciò, non potrai accedere con questo provider. Puoi ricollegare l'account più tardi."
+      yes: "Sì, disconnetti"
   logout:
-    label: Esci
+    logout: "Disconnetti"
     confirm:
-      title: Esci
-      message: Vuoi davvero effettuare il logout? Puoi accedere nuovamente con il
-        tuo account Google o Apple.
-      no: Annullamento
-      yes: Sì, esci
-  delete:
-    label: Elimina l'account
-    confirm:
-      title: Elimina l'account
-      message: Vuoi davvero cancellare il tuo account? Non puoi più accedere a questa
-        famiglia e hai bisogno di un nuovo invito. Se sei l'ultimo utente di questa
-        famiglia, anche la famiglia verrà cancellata. Anche tutti i cani e i dati
-        associati saranno cancellati. Non è possibile annullare questa operazione!
-      no: Annullamento
-      yes: Sì, elimina
-generic:
-  system_default: Sistema standard
-  cancel: Annullamento
-  delete: Elimina
-  done: Finito
+      message: "Vuoi davvero disconnettere? Puoi accedere di nuovo con il tuo account Google o Apple."
+      yes: "Sì, disconnetti"
+
+onboarding:
+  code:
+    validation:
+      min_length: "Il codice deve essere di 5 cifre"
+  next: "Continua"
+  welcome:
+    task: "Hai già un account?"
+    action:
+      register: "Crea un nuovo account"
+      login: "Ho già un account"
+  member:
+    task: "Come ti chiami?"
+    default_name: "Compagno"
+    default_name_dog: "Compagno di {}"
+  lonely:
+    task: "Sei stato invitato in una famiglia?"
+    action:
+      create_family: "Crea una nuova famiglia"
+      join_family: "Unisciti a una famiglia esistente"
+  login:
+    task: "Accedi al tuo account esistente"
+  test_login:
+    task: "Accedi con PIN per account demo"
+    code:
+      error:
+        invalid: "PIN non valido"
+    action:
+      login: "Accedi"
+  join:
+    task: "Codice di invito familiare"
+    code:
+      invalid: "Codice di invito non valido.\nIl codice non esiste o è già stato utilizzato."
+  finish:
+    task: "Sei pronto!"
+    legal:
+      hint: "Cliccando su „Accetta e crea account“, accetti i seguenti termini:"
+      terms:
+        label: "1. Termini di utilizzo"
+      privacy:
+        label: "2. Informativa sulla privacy"
+    action:
+      accept_and_register: "Accetta e crea account"
+  family:
+    task: "Dai un nome alla tua famiglia"
+    name:
+      label: "Nome della famiglia (fittizio)"
+      help: "Scegli un nome fantasioso che descriva bene la tua famiglia. Non è necessario il tuo cognome qui."
+    default_name: "Famiglia di {}"
+  dog:
+    task: "Qual è il nome del tuo cane?"
+    name:
+      label: "Nome del cane"
+  auth:
+    task: "Accedi, salva i tuoi dati e usa il tuo profilo su più dispositivi"
+    action:
+      skip: "Non voglio accedere"

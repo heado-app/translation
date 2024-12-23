@@ -1,528 +1,446 @@
+app:
+  title: "Heado - Koerte jooksuaegade kalender"
+  title_short: "Heado"
+  slogan: "Koerte jooksuaegade kalender"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter: "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Süsteemi vaikeväärtus"
+  cancel: "Tühista"
+  delete: "Kustuta"
+  done: "Valmis"
+  close: "Sulge"
+  count:
+    time: "{} kord"
+    times: "{} korda"
+  date:
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Ebapiisavad andmed"
+  error:
+    title: "Viga"
+    message:
+      long: "Tekkis viga. Palun proovige hiljem uuesti."
+    open_details: "Näita üksikasju"
+    close_details: "Peida üksikasjad"
+  validation:
+    in_future: "Kuupäev ei tohi olla tulevikus"
+  name: "Nimi"
+  save: "Salvesta"
+  ok: "OK"
+  from: "alates"
+  to: "kuni"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Tsüklid"
+  false_pregnancies: "Vale tiinused"
+
+core:
+  error:
+    generic:
+      short: "Midagi läks valesti!"
+      long: "Vabandust, midagi läks valesti!"
+    retry:
+      short: "Proovi uuesti"
+      long: "Proovi uuesti"
+  empty:
+    hint: "Ei ole kirjeid."
+  copy: "Kopeeri"
+  share: "Jaga"
+  unknown: "Tundmatu"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
+family:
+  family: "Perekond"
+  your_title: "Sinu perekond"
+  members: "Liikmed"
+  dogs: "Koerad"
+  add_dog: "Lisa uus koer"
+  delete_account:
+    reason:
+      label: "Miks soovid oma kontot kustutada?"
+      hint: "Mulle ei meeldi, et.."
+      validation:
+        empty: "Palun ütle meile, miks soovid oma Heado kontot kustutada."
+    family:
+      delete: "Kustuta perekond"
+      confirm:
+        message: "Kas soovid tõesti kogu oma perekonna kustutada? Sinu konto, kõik pereliikmed ja koerad, sealhulgas seotud kalendriandmed, kustutatakse. Seda ei saa tagasi võtta!"
+    member:
+      delete: "Kustuta konto"
+      confirm:
+        message: "Kas soovid tõesti oma kontot kustutada? Sa ei saa enam sellele perele juurde pääseda ja vajad uue kutse, et uuesti liituda. Kui oled selle pere viimane liige, kustutatakse ka pere. Kõik koerad ja seotud andmed kustutatakse samuti. Seda ei saa tagasi võtta!"
+    confirm:
+      accept: "Jah, kustuta"
+  validation:
+    empty_name: "Nimi ei tohi olla tühi."
+  member_list:
+    invitation:
+      label: "Kutse „{}“"
+    add_invitation: "Kutsu uus liige"
+  member_form:
+    title: "Muuda liiget"
+    delete:
+      confirm:
+        title: "Kustuta liige"
+        message: "Kas soovid tõesti kustutada liikme {}? Liige ei saa enam perele juurde pääseda ja vajad uue kutse, et uuesti liituda. Kui see on pere viimane liige, kustutatakse ka pere. Kõik koerad ja seotud andmed kustutatakse samuti. Seda ei saa tagasi võtta!"
+  invitation_form:
+    title: "Kutse"
+    share:
+      hint: "Kasutage kutsekoodi „{}“, et lubada uuel liikmel teie perega liituda. Iga kood on kehtiv ainult üks kord."
+      content: "Kutsun sind oma perre! Palun laadi alla Heado rakendus (https://heado.app/) ja kasuta registreerimisprotsessi ajal kutsekoodi „{}“."
+      copy:
+        hint: "Kood „{}“ kopeeriti."
+    delete:
+      confirm:
+        title: "Kustuta kutse"
+        message: "Kas soovid tõesti selle kutse kustutada? Pärast toimingut ei saa kutsekoodi enam kasutada. Seda ei saa tagasi võtta ja vajad uue koodi loomist!"
+  family_form:
+    title: "Muuda perekonda"
+  dog_form:
+    edit: "Muuda koera"
+    delete:
+      confirm:
+        title: "Kustuta koer"
+        message: "Kas soovid tõesti kustutada oma koera {}? Kõik seotud kalendriandmed kustutatakse. Seda ei saa tagasi võtta."
+
 calendar:
-  secretion:
-    bloody: Verine
-    watery: Veeallikas
-    creamy: Kreemjas
-    stinky: Haisev
-    purulent: Festering
-    dryly: Kuiv
+  phases:
+    anestrus: "Puhkefaasis"
+  weight: "Kaal"
+  notes: "Märkmed"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Faas
-        proestrus: Eelkuumutus
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Puhkefaas
+        label: "Faas"
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metöstrus"
       false_pregnancy:
-        label: Vale rasedus
-        active_info: Aktiivne valerasedus
-      mood:
-        label: Mood
-      symptom:
-        label: Sümptomid
-      behavior:
-        label: Käitumine
-      secretion:
-        label: Väljavool
-      weight:
-        label: Kaal
-        unit: kg
-      note:
-        label: Märkused
+        label: "Vale tiinus"
+        active_info: "Aktiivne vale tiinus"
   day_form:
     period:
-      title: Ajavahemik
-      enable: Lisa periooditsükkel
-      disable: Kustuta periooditsükkel
+      title: "Periood"
+      enable: "Lisa perioodi tsükkel"
+      disable: "Kustuta perioodi tsükkel"
       proestrus_start_date:
-        label: poegimiseelse perioodi algus (proestrus)
+        label: "Proöstruse algus"
         info:
-          title: Ovulatsioonieelne (Proestrus)
-          message: "Esterduse-eelne periood algab, kui teie emaka vulva paisub ja
-            ilmub verine tupevoolus.\n\nKeskmine kestus on 9 päeva ja võib varieeruda
-            3-17 päevani.\n\nSee kuupäev tuleb alati täita."
-          close: OK
+          title: "Proöstrus"
+          message: "Östrus algab, kui sinu koera häbe paisub ja ilmub verine tupeeritus.\n\nKeskmine kestus on 9 päeva ja võib varieeruda 3 kuni 17 päeva.\n\nKuupäev tuleb alati määrata."
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
       estrus_start_date:
-        label: Östruse algus (estrus)
+        label: "Östruse algus"
         info:
-          title: Östrus (Estrus)
-          message: "Östruse algusega näitab teie emakas paaritumisvalmidust (püsirohkus).
-            Vaginaalne eritis on endiselt võimalik, kuid see on pigem lihavesi ja
-            võib-olla limaskestane.\n\nKeskmine kestus on 9 päeva ja võib varieeruda
-            3-21 päeva.\n \nKui see faas ei ole veel alanud või kui te ei soovi seda
-            faasi dokumenteerida, jätke see väli tühjaks."
-          close: OK
+          title: "Östrus"
+          message: "Östruse alguses näitab sinu koer paaritusvalmidust (seisva östruse). Tupeeritus on endiselt võimalik, kuid see meenutab rohkem lihavett ja võib olla limane.\n\nKeskmine kestus on 9 päeva ja võib varieeruda 3 kuni 21 päeva.\n\nKui see faas pole veel alanud või ei soovi seda dokumenteerida, jäta see väli tühjaks."
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
       metestrus_start_date:
-        label: järelpõlemise algus (Metestrus)
+        label: "Metöstruse algus"
         info:
-          title: Afterburn (Metestrus)
-          message: "Imetamisjärgset perioodi iseloomustab paaritusvalmiduse lõppemine.
-            Lisaks lakkab tupevoolus ja vulva taandub. Sel ajal on võimalik valerasedus.\n
-            \nKui see faas ei ole veel alanud või kui te ei soovi seda faasi dokumenteerida,
-            jätke see väli tühjaks."
-          close: OK
+          title: "Metöstrus"
+          message: "Periood pärast östrust iseloomustab paaritumise lõppemist. Lisaks lakkab tupeeritus ja häbe tõmbub kokku. Vale tiinus on selle aja jooksul võimalik.\n\nKui see faas pole veel alanud või ei soovi seda dokumenteerida, jäta see väli tühjaks."
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
       end_date:
-        label: Tsükli lõpp (puhkefaas)
+        label: "Perioodi lõpp (puhkefaasi algus)"
         info:
-          title: Puhkefaas (anestrus)
-          message: "Puhkefaasis puuduvad seksuaalse tsükli tunnused. Vulva on nüüd
-            täielikult taandarenenud.\n\nJätke see väli tühjaks, kui see tsükkel ei
-            ole veel lõppenud."
-          close: OK
+          title: "Puhkefaas (anöstrus)"
+          message: "Puhkefaasis ei ole seksuaaltsükli märke. Häbe on nüüd täielikult kokku tõmbunud.\n\nKui periood pole veel lõppenud, jäta see väli tühjaks."
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
     false_pregnancy:
-      title: Vale rasedus
-      enable: Valeraseduse lisamine
-      disable: Kustuta vale rasedus
+      title: "Vale tiinus"
+      enable: "Lisa vale tiinus"
+      disable: "Kustuta vale tiinus"
       start_date:
-        label: Valeraseduse algus
+        label: "Vale tiinuse algus"
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
       end_date:
-        label: Valeraseduse lõpp
+        label: "Vale tiinuse lõpp"
         error:
-          in_future: Kuupäev ei tohi olla tulevikus
+          in_future: "Kuupäev ei tohi olla tulevikus"
     features:
-      title: Omadused
+      title: "Omadused"
       mood:
-        label: Mood
-        no_selection: Ei ole meeleolusid valitud
+        no_selection: "Meeleolu pole valitud"
       symptom:
-        label: Sümptomid
-        no_selection: Sümptomeid ei ole valitud
+        no_selection: "Sümptom pole valitud"
       behavior:
-        label: Käitumine
-        no_selection: Ei ole valitud käitumist
+        no_selection: "Käitumine pole valitud"
       secretion:
-        label: Väljavool
-        no_selection: Tühjendus ei ole valitud
+        no_selection: "Sekretsioon pole valitud"
       weight:
-        weight:
-          label: Kaal
         unit:
-          label: Üksus
-          kilogram: kg
-    notes:
-      title: Märkused
-      notes:
-        label: Märkused
-    action:
-      save: Muuda perekonda
+          label: "Ühik"
   mood:
-    fearful: Anxious
-    courageous: Julge
-    brave: Brave
-    sleepy: Sleepy
-    sniffy: Nuusutamine
-    aggressive: Agressiivne
-    nervous: Närviline
-    satisfied: Rahulolev
-    stressed: Stressitud
-    sleepless: Unine
-    dissatisfied: Rahulolematu
-    depressed: Depressiivne
-    defiant: Defiant
-    relaxed: Lõdvestunud
-    happy: Õnnelik
-    obedient: Kuulekus
-    balanced: Tasakaalustatud
-    fiepsy: Fiepsig
-    grumpy: Grumpy
-    weepy: Tülika
-    attentive: Tähelepanu
-    sad: Kurb
-    stormy: Stormy
-    crazy: Hullumeelne
-    calm: Rahulik
-    cuddly: Hubane
-    appetiteless: Appetiteess
-    indecisive: Otsustamata
-    exhausted: Kurnatud
-    frustrated: Frustreeritud
-    bitchy: Bitchy
-    troubled: Rahutu
-    jittery: Jittery
+    mood: "Meeleolu"
+    fearful: "Kartlik"
+    courageous: "Julge"
+    brave: "Vapper"
+    sleepy: "Unine"
+    sniffy: "Nuusutav"
+    aggressive: "Agressiivne"
+    nervous: "Närviline"
+    satisfied: "Rahulolev"
+    stressed: "Stressis"
+    sleepless: "Unetu"
+    dissatisfied: "Rahulolematu"
+    depressed: "Masendunud"
+    defiant: "Tõrges"
+    relaxed: "Lõdvestunud"
+    happy: "Õnnelik"
+    obedient: "Kuulekas"
+    balanced: "Tasakaalustatud"
+    fiepsy: "Fiepsy"
+    grumpy: "Torisev"
+    weepy: "Nutune"
+    attentive: "Tähelepanelik"
+    sad: "Kurb"
+    stormy: "Tormine"
+    crazy: "Hull"
+    calm: "Rahulik"
+    cuddly: "Kaisutav"
+    appetiteless: "Isutu"
+    indecisive: "Otsustamatu"
+    exhausted: "Kurnatud"
+    frustrated: "Frustreeritud"
+    bitchy: "Nipsakas"
+    troubled: "Murelik"
+    jittery: "Närviline"
   behavior:
-    herding: Mütsid
-    adopting: Võtke vastu
-    nesting: Pesa ehitamine
-    howling: Yelp
-    restless: Rahutu
+    behavior: "Käitumine"
+    herding: "Karjatamine"
+    adopting: "Lapsendamine"
+    nesting: "Pesitsemine"
+    howling: "Ulguv"
+    restless: "Rahutu"
   symptom:
-    stomach_cramps: Kõhukrambid
-    flatulence: Kõhupuhitus
-    diarrhea: Kõhulahtisus
-    constipation: Kõhukinnisus
-    bloody_stool: Verine väljaheide
-    milk_discharge: Piima väljavoolamine
-    swollen_teats: Paistes tuharad
-    vomit: Oksendamine
-    dandruff: Kõõmmi karvkate
-app:
-  title: Heado - soojuskalender
-  title_short: Heado
-  slogan: Soojuse kalender
-core:
-  date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
-  error:
-    generic:
-      short: Tekkis viga!
-      long: Ups, ilmnes viga! Vabandust.
-    retry:
-      short: Kordus
-      long: Proovi uuesti
-  empty:
-    hint: Kirjeid ei ole.
-  close: Sulge
-  copy: Koopia
-  share: Jaga
-  unknown: Teadmata
-family:
-  member_list:
-    title: Liikmed
-    invitation:
-      label: Kutse "{}"
-    add_invitation: Kutsu uus liige
-  member_form:
-    title: Edit liige
-    name:
-      label: Nimi
-    action:
-      delete: Kustuta
-      save: Salvesta
-    delete:
-      confirm:
-        title: Kustuta liige
-        message: Kas te tõesti soovite kustutada liikme {}? Liige ei saa enam sellele
-          perekonnale juurdepääsu ja vajab uut kutset. Kui see kasutaja on selle perekonna
-          viimane liige, kustutatakse ka perekond. Samuti kustutatakse kõik koerad
-          ja nendega seotud andmed. Seda ei saa tühistada!
-        no: Tühista
-        yes: Kustuta
-  invitation_form:
-    title: Kutse
-    share:
-      hint: Kasutage kutse PIN-koodi "{}", et kutsuda teine pereliige oma perega liituma.
-        Iga PIN-koodi saab kasutada ainult üks kord.
-      content: Kutsun teid oma perega liituma! Lae alla Heado rakendus (https://heado.de/)
-        ja kasuta registreerimisel perekonna PIN-koodi "{}".
-      copy:
-        hint: PIN-kood "{}" on kopeeritud.
-    action:
-      delete: Kustuta
-    delete:
-      confirm:
-        title: Kustuta kutse
-        message: Kas te tõesti soovite selle kutse kustutada? Siis ei saa te seda
-          kutse PIN-koodi enam kasutada. Seda ei saa tühistada ja te peate looma uue
-          PIN-koodi!
-        no: Tühista
-        yes: Kustuta
-  family_form:
-    title: Muuda perekonda
-    name:
-      label: Nimi
-    action:
-      delete: Kustuta
-      save: Salvesta
-    delete:
-      confirm:
-        title: Kustuta perekond
-        message: Kas sa tõesti tahad perekonna {} kustutada? Teie konto, kõik pereliikmed
-          ja koerad, sealhulgas kalendriandmed kustutatakse. Seda ei saa tühistada!
-        no: Tühista
-        yes: Kustuta
-  dog_selection:
-    add: Lisa uus koer
-  dog_list:
-    title: Koerad
-    add: Lisa uus koer
-  dog_form:
-    title:
-      add: Lisa koer
-      edit: Edit koer
-    name:
-      label: Nimi
-    action:
-      delete: Kustuta
-      save: Muuda perekonda
-    delete:
-      confirm:
-        title: Kustuta koer
-        message: Kas sa tõesti tahad oma koera kustutada {}? Kõik kalendriandmed kustutatakse
-          samuti. Seda ei saa tühistada.
-        no: Tühista
-        yes: Kustuta
+    symptom: "Sümptom"
+    stomach_cramps: "Kõhukrambid"
+    flatulence: "Puhitus"
+    diarrhea: "Kõhulahtisus"
+    constipation: "Kõhukinnisus"
+    bloody_stool: "Verine väljaheide"
+    milk_discharge: "Piimaeritus"
+    swollen_teats: "Paistes nisad"
+    vomit: "Oksendamine"
+    dandruff: "Kõõm"
+  secretion:
+    secretion: "Sekretsioon"
+    bloody: "Verine"
+    watery: "Vesis"
+    creamy: "Kreemjas"
+    dryly: "Kuiv"
+    stinky: "Haisev"
+    purulent: "Mädane"
+
 overview:
+  last_cycle: "Viimane tsükkel"
+  next_cycle: "Järgmine tsükkel"
   overview:
     current_period:
       no_data:
-        cta: Registreerige oma ämma esimene jooks!
+        cta: "Sisesta oma koera esimene jooksuaeg!"
         info:
-          title: Järgmise soojuse prognoosimine
-          message: Heado vajab ennustamiseks teie emasloomalt täielikku tsüklit (sealhulgas
-            puhkefaasi!).
-          close: OK
-      days_left: veel {} päevi
-      weeks_left: veel {} nädalaid
-      months_left: veel {} kuud
-      until_date: et {}
-      error: Tekkis viga. Kordamiseks klõpsake.
+          title: "Järgmise jooksuaja ennustamine"
+          message: "Heado vajab teie koera täielikku tsüklit (kaasa arvatud puhkeaeg), et teha ennustus."
+      days_left: "{} päeva jäänud"
+      weeks_left: "{} nädalat jäänud"
+      months_left: "{} kuud jäänud"
+      until_date: "kuni {}"
+      error: "Midagi läks valesti. Proovige uuesti."
       phase:
-        proestrus: Eelkuumutus
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Puhkefaas
+        proestrus: "Proöstrus"
+        estrus: "Östrus"
+        metestrus: "Metöstrus"
     period_dates:
       last:
-        title: Viimane soojus
-        none: Ühtegi perioodi ei ole veel sisestatud.
-        from: alates
-        to: kuni
+        title: "Viimane periood"
+        none: "Veel pole viimast perioodi."
       next:
-        title: Järgmine soojus
-        from: alates
-        to: kuni
-        none: Ennustuse tegemiseks ei ole veel piisavalt palju perioode.
+        title: "Järgmine periood"
+        none: "Järgmise perioodi ennustamiseks pole piisavalt andmeid."
     period_count:
       period:
-        title: Kütmiste arv
-        time: Värvi
-        times: Värvi
+        title: "Perioodide arv"
+        time: "kord"
+        times: "korda"
       false_pregnancy:
-        title: Valeraseduste arv
-        time: Värvi
-        times: Värvi
+        title: "Vale tiinuste arv"
+        time: "kord"
+        times: "korda"
     menu:
-      calendar: Kalender
-      settings: Seaded
+      calendar: "Kalender"
   ad_banner:
-    title: Teie reklaamivaba prooviperiood lõpeb varsti!
-    message: Teie prooviperiood lõpeb {}. Pärast seda päeva näete reklaame. Kui soovite
-      kasutada rakendust ilma reklaamideta, saate osta Premium-versiooni.
-    become_member: Astu liikmeks
-    left_days: '{}/{} Ülejäänud päevad'
+    title: "Teie reklaamivaba prooviperiood lõpeb varsti!"
+    message: "Teie prooviperiood lõpeb {}. Pärast seda kuupäeva kuvame teile reklaame. Kui soovite jätkata Heado kasutamist ilma reklaamideta, võite võtta meie premium paketi."
+    become_member: "Hakka liikmeks"
+    left_days: "{}/{} päeva jäänud"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Hakka Heado Premiumi liikmeks ja kasuta rakendust ilma reklaamideta.
-    purchase_single: Hakka Premium liikmeks
-    purchase_single_hint: '{} - Unikaalne {}'
-    purchase_family: Hakka Premium perekonnaks
-    purchase_family_hint: '{} - Unikaalne {}'
-    restore_purchase: Ostude taastamine
+    teaser: "Hakka Heado Premium liikmeks ja kasuta rakendust ilma reklaamideta."
+    purchase_single: "Hakka premium liikmeks"
+    purchase_single_hint: "{} • Üks kord {}"
+    purchase_family: "Hakka premium perekonnaks"
+    purchase_family_hint: "{} • Üks kord {}"
+    restore_purchase: "Taasta ost"
   membership:
     member:
-      teaser: Sa oled Heado Premium liige ja saad kasutada rakendust ilma reklaamideta!
-      info: Olete Heado Premium liige alates {}.
+      teaser: "Oled Heado Premium liige ja saad rakendust kasutada ilma reklaamideta!"
+      info: "Oled olnud Heado Premium liige alates {}."
     family:
-      teaser: Teie ja teie pere olete Heado Premiumi liikmed. Saate kasutada rakendust
-        ilma reklaamideta!
-      info: Teie pere on Heado Premiumi liige alates {}.
+      teaser: "Sina ja su perekond olete Heado Premium liikmed ja saate rakendust kasutada ilma reklaamideta!"
+      info: "Teie perekond on olnud Heado Premium liige alates {}."
+
 settings:
-  title: Seaded
-  footer: Valmistatud {} Kori {} ja Mayo {} jaoks.
-  family:
-    title: Perekond
-    dogs:
-      title: Koerad
-    members:
-      title: Liikmed
-    family:
-      title: Perekond
+  settings: "Seaded"
+  footer: "Valmistatud armastusega {} Kori {} ja Mayo {} jaoks."
   account:
-    title: Konto
+    title: "Konto"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Konto seaded
+      title: "Konto seaded"
     cookies:
-      title: Küpsiste nõusolekud
+      title: "Küpsiste nõusolekud"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Kasutaja juurdepääsu testimine
+      title: "Testkasutaja sisselogimine"
   contact:
-    title: Võtke meiega ühendust
+    title: "Kontakt"
     website:
-      title: Veebileht
-      link: https://heado.de/
+      title: "Veebisait"
     mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Õiguslikud küsimused
+    title: "Õiguslik"
     terms:
-      title: Kasutustingimused
-      link: https://heado.de/terms
+      title: "Kasutustingimused"
     privacy:
-      title: Andmekaitsetingimused
-      link: https://heado.de/privacy
+      title: "Privaatsuspoliitika"
   about:
-    title: kohta
+    title: "Umbes"
     status:
-      title: Staatus
+      title: "Staatus"
     version:
-      title: Versioon
+      title: "Versioon"
     translation:
-      title: Tõlked
+      title: "Tõlked"
   app:
     design:
-      light: Valgus
-      dark: Tume
-      title: Disain
-    title: App
-  mayo: "Hei karvane nina! 🐾\n\nTore, et sa leidsid tee minu salajasse piirkonda!
-    Võib-olla sa juba tunned mind. Kui mitte, siis minu nimi on Mayo ja ma olen Appenzelli
-    mägikoer. Loomulikult emane! Ma olen nüüd 2 aastat vana. Ülaltoodud illustratsioonil
-    olen mina. Lihtsalt selleks, et te mind ära tunneksite, kui te mind kunagi näete.\n
-    \nKahjuks saime minu perega aru, et mul on ärevusfaasid. Mingil hetkel jäi meile
-    kõigile mulje, et mu hormoonid mängivad enne kuumust hulluks ja ma ei ole enam
-    nii julge kui varem. Aga me ei olnud päris kindlad.\n\nMinu perenaine Korinna
-    tuli siis mõttele, et võiksime teha emaste koerte jaoks kalendri, nagu me teeme
-    seda ka inimeste emaste jaoks. Poleks varem öeldud kui tehtud! Minu peremees Fabian
-    on programmeerija. Ka tema pidas seda suurepäraseks ideeks ja asus kohe tööle.\n
-    \nKuid Fabian sai peagi aru, et tal ei ole koera tsüklist üldse aimu. Või mida
-    see hõlmab. Nii et ta uuris palju internetis, küsis Korinnale palju küsimusi ja
-    võrdles teda olemasolevate rakendustega, mis on mõeldud inimnaisedele.\n\nPärast
-    paari kuud ja testifaasi koos käpiklastega oli aeg käes! 27. novembril 2023 avaldasime
-    Heado App Store'is Androidile ja iOSile.\n\nMinu ärevusfaasid tulevad tegelikult
-    minu hormoonidest. Aga tundub, et ka see muutub iga soojaga palju paremaks. Kindlasti
-    hoiame silma peal.\n\nLoodan, et saame ka teid ja teie inimesi selle äpiga aidata
-    ja kiiremini probleeme või ebakorrapärasusi leida. Ja ka vajalikud tõendid loomaarsti
-    juures.\n\nKui teil või teie inimestel on mingeid ideid või soove, võtke minuga
-    ühendust aadressil mayo@heado.app. Ka probleemide, vigade või raskuste korral.\n
-    \nLõbutsemist rakendusega! <3\n\nMayo, Korinna & Fabian"
+      light: "Hele"
+      dark: "Tume"
+      title: "Disain"
+    title: "Rakendus"
+  mayo: "Tere, karvane nina! 🐾\n\nMul on hea meel, et leidsid tee minu salajasele alale! Võib-olla tunned mind juba. Kui ei, siis minu nimi on Mayo ja ma olen Appenzelleri alpi karjakoer. Loomulikult olen ma emane! Praegu olen 2-aastane. Ülaltoodud illustratsioon olen mina. Lihtsalt selleks, et tunneksid mind ära, kui mind kunagi näed.\n\nKahjuks pidime mina ja minu pere mõistma, et mul on alati ärevuse faase. Mingil hetkel arvasime kõik, et minu hormoonid lähevad enne jooksuaega hulluks ja sellepärast pole ma enam nii julge. Aga me ei olnud täiesti kindlad.\n\nMinu omanik Korinna sai siis idee, et võiks teha kalendri emastele koertele, nagu on naistele. Öeldud-tehtud! Minu isand Fabian on programmeerija. Ka tema leidis, et see on suurepärane idee ja hakkas kohe pihta.\n\nAga Fabian mõistis varsti, et tal pole aimugi koera tsüklist. Või mida see sisaldab. Nii et ta tegi palju uurimistööd internetis, esitas Korinnale palju küsimusi ja võrdles seda olemasolevate naiste rakendustega.\n\nPärast mõnda kuud ja katsefaasi minu käppasõpradega oli aeg käes! 27.11.2023 andsime Heado välja Androidi ja iOS-i jaoks App Store'is.\n\nTegelikult tulevad minu ärevuse faasid minu hormoonidest. Aga tundub, et iga jooksuajaga läheb palju paremaks. Me hoiame seda kindlasti silma peal.\n\nLoodan, et see rakendus võib aidata ka teid ja teie inimesi probleeme või ebanormaalsusi kiiremini leida. Ja samuti vajalikud tõendid loomaarsti juures.\n\nKui teil või teie inimestel on ideid või soove, võtke minuga ühendust aadressil mayo@heado.app. Samuti probleemide, vigade või raskuste korral.\n\nLõbutse rakendusega! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Konto seaded
+  title: "Konto seaded"
   logins:
-    title: Konto andmed
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Konto ühendused"
     test:
-      label: Testi kasutaja
+      label: "Testkasutaja"
     error:
       already_in_use:
-        title: Juba ühendatud
-        message: Valitud konto on juba ühendatud teise kasutajaga.
-        close: OK
+        title: "Konto on juba kasutusel"
+        message: "Valitud konto on juba ühendatud teise kasutajaga."
   disconnect:
-    label: Lahutada konto
+    disconnect:
+      short: "Ühenda lahti"
+      long: "Ühenda konto lahti"
     confirm:
-      title: Lahutada konto
-      message: Kas te tõesti soovite oma konto lahti siduda? Siis ei saa te enam selle
-        teenusepakkujaga sisse logida. Saate oma konto hiljem uuesti ühendada.
-      no: Tühista
-      yes: Jah, lahutada
+      message: "Kas soovid tõesti oma konto lahti ühendada? Pärast seda ei saa sa selle pakkujaga sisse logida. Sa saad konto hiljem uuesti ühendada."
+      yes: "Jah, ühenda lahti"
   logout:
-    label: Logi välja
+    logout: "Logi välja"
     confirm:
-      title: Logi välja
-      message: Kas sa tõesti tahad välja logida? Võite uuesti sisse logida oma Google'i
-        või Apple'i kontoga.
-      no: Tühista
-      yes: Jah, logi välja
-  delete:
-    label: Konto kustutamine
-    confirm:
-      title: Konto kustutamine
-      message: Kas sa tõesti tahad oma konto kustutada? Te ei saa enam sellele perekonnale
-        ligi ja vajate uut kutset. Kui olete selle perekonna viimane kasutaja, kustutatakse
-        ka perekond. Samuti kustutatakse kõik koerad ja nendega seotud andmed. Seda
-        ei saa tühistada!
-      no: Kas sa tõesti tahad välja logida? Võite uuesti sisse logida oma Google'i
-        või Apple'i kontoga.
-      yes: Jah, kustutada
+      message: "Kas soovid tõesti välja logida? Sa saad uuesti sisse logida oma Google'i või Apple'i kontoga."
+      yes: "Jah, logi välja"
+
 onboarding:
-  next: Edasine
+  code:
+    validation:
+      min_length: "Kood peab koosnema 5 numbrist"
+  next: "Jätka"
   welcome:
-    task: Kas teil on juba konto?
+    task: "Kas sul on juba konto?"
     action:
-      register: Uue konto loomine
-      login: Mul on juba konto
+      register: "Loo uus konto"
+      login: "Mul on juba konto"
   member:
-    task: Kuidas ma võin teid kutsuda?
-    name:
-      label: Nimi
+    task: "Kuidas ma peaksin sind kutsuma?"
     default_name: "Kaaslane"
-    default_name_dog: "{}'s companion"
+    default_name_dog: "{} kaaslane"
   lonely:
-    task: Kas teid on kutsutud perekonda?
+    task: "Kas sind kutsuti perre?"
     action:
-      create_family: Uue perekonna loomine
-      join_family: Ühineda olemasoleva perekonnaga
+      create_family: "Loo uus pere"
+      join_family: "Liitu olemasoleva perega"
   login:
-    task: Logi sisse oma olemasolevasse kontosse
-    action:
-      google: Google
-      apple: Apple
+    task: "Logi sisse oma olemasolevale kontole"
   test_login:
-    task: PIN-koodiga sisselogimine demokasutajatele
+    task: "Logi sisse PIN-koodiga demo kontodele"
     code:
       error:
-        min_length: Kood peab koosnema 5 numbrist
-        invalid: Vale kood
+        invalid: "Kehtetu PIN-kood"
     action:
-      login: Logi sisse
+      login: "Logi sisse"
   join:
-    task: Teie perekonna kutsekood
+    task: "Pere kutsekood"
     code:
-      error:
-        min_length: Kood peab koosnema 5 numbrist
-      invalid: "Kutsekood on kehtetu.\nKood ei ole olemas või on juba kasutatud."
+      invalid: "Kehtetu kutsekood.\nKood ei eksisteeri või on juba kasutatud."
   finish:
-    task: Te olete valmis!
+    task: "Oled valmis!"
     legal:
-      hint: 'Klõpsates "Nõustun & loo konto" nõustute järgmiste tingimustega:'
+      hint: "Klõpsates „Nõustu ja loo konto“, nõustud järgmiste tingimustega:"
       terms:
-        label: 1. kasutustingimused
-        link: https://heado.de/terms
+        label: "1. Kasutustingimused"
       privacy:
-        label: 2. andmekaitse tingimused
-        link: https://heado.de/privacy
+        label: "2. Privaatsuspoliitika"
     action:
-      accept_and_register: Aktsepteeri ja loo konto
+      accept_and_register: "Nõustu ja loo konto"
   family:
-    task: Anna oma perele nimi
+    task: "Anna oma perele nimi"
     name:
-      label: (Fiktiivne) Perekonnanimi
-      help: Valige kujuteldav nimi, mis kirjeldab hästi teie perekonda. Teie perekonnanimi
-        ei ole siinkohal vajalik.
-    default_name: '{} perekond'
+      label: "Pere nimi (väljamõeldud)"
+      help: "Vali fantaasiarikas nimi, mis kirjeldab hästi teie peret. Teie perekonnanimi pole siin vajalik."
+    default_name: "{} pere"
   dog:
-    task: Mis on teie koera nimi?
+    task: "Mis on sinu koera nimi?"
     name:
-      label: Koera nimi
+      label: "Koera nimi"
   auth:
-    task: Logi sisse, salvesta konto andmed ja kasuta mitut seadet
+    task: "Logi sisse, salvesta oma andmed ja kasuta oma profiili mitmel seadmel"
     action:
-      google: Google
-      apple: Apple
-      skip: Ma ei taha sisse logida
-generic:
-  system_default: Süsteemi standard
-  cancel: Tühista
-  delete: Kustuta
-  done: Valmis
+      skip: "Ma ei soovi sisse logida"

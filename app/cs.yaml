@@ -1,527 +1,446 @@
-core:
-  share: Sdílet
-  unknown: Neznámé
+app:
+  title: "Heado - Kalendář hárání pro psy"
+  title_short: "Heado"
+  slogan: "Kalendář hárání pro psy"
+  links:
+    terms: "https://heado.app/terms"
+    privacy: "https://heado.app/privacy"
+    translation: "https://github.com/heado-app/translation/tree/main/app"
+    status: "https://status.heado.app/"
+    website: "https://heado.app/"
+    mail: "mailto:wuff@heado.app"
+    instagram: "https://www.instagram.com/heado.app"
+    tiktok: "https://tiktok.com/@heado.app"
+    twitter:  "https://twitter.com/heado_app"
+
+generic:
+  system_default: "Systémový standard"
+  cancel: "Zrušit"
+  delete: "Smazat"
+  done: "Hotovo"
+  close: "Zavřít"
+  count:
+    time: "{} krát"
+    times: "{} krát"
   date:
-    long: dd. MMMM yyyy
-    short: dd.MM.yyyy
-    month_year: MMMM yyyy
+    day_month: "d. MMMM"
+    day_month_mid: "d. MMM"
+  missing_data: "Nedostatečná data"
+  error:
+    title: "Chyba"
+    message:
+      long: "Došlo k chybě. Zkuste to prosím později."
+    open_details: "Zobrazit detaily"
+    close_details: "Skrýt detaily"
+  validation:
+    in_future: "Datum nesmí být v budoucnosti"
+  name: "Jméno"
+  save: "Uložit"
+  ok: "OK"
+  from: "od"
+  to: "do"
+  google: "Google"
+  apple: "Apple"
+
+heat:
+  cycles: "Cyklus"
+  false_pregnancies: "Falešné březosti"
+
+core:
   error:
     generic:
-      short: Došlo k chybě!
-      long: Ups, došlo k chybě! Omlouváme se.
+      short: "Došlo k chybě!"
+      long: "Oups, něco se pokazilo! Promiňte."
     retry:
-      short: Opakování
-      long: Zkuste to znovu
+      short: "Opakovat"
+      long: "Zkuste to znovu"
   empty:
-    hint: Žádné položky.
-  close: Zavřít
-  copy: Kopírovat
+    hint: "Žádné záznamy."
+  copy: "Kopírovat"
+  share: "Sdílet"
+  unknown: "Neznámé"
+  date:
+    long: "dd. MMMM yyyy"
+    short: "dd/MM/yyyy"
+    month_year: "MMMM yyyy"
+
 family:
+  family: "Rodina"
+  your_title: "Vaše rodina"
+  members: "Členové"
+  dogs: "Psi"
+  add_dog: "Přidat nového psa"
+  delete_account:
+    reason:
+      label: "Proč chcete smazat svůj účet?"
+      hint: "Nelíbí se mi, že.."
+      validation:
+        empty: "Prosím, sdělte nám, proč chcete smazat svůj účet Heado."
+    family:
+      delete: "Smazat rodinu"
+      confirm:
+        message: "Opravdu chcete smazat celou svou rodinu? Váš účet, všichni členové rodiny a psi, včetně souvisejících dat v kalendáři, budou smazáni. Toto nelze vrátit zpět!"
+    member:
+      delete: "Smazat účet"
+      confirm:
+        message: "Opravdu chcete smazat svůj účet? Nebudete mít přístup k této rodině a budete potřebovat novou pozvánku, abyste se mohli znovu připojit. Pokud jste posledním členem této rodiny, rodina bude také smazána. Všichni psi a související data budou také smazána. Toto nelze vrátit zpět!"
+    confirm:
+      accept: "Ano, smazat"
+  validation:
+    empty_name: "Jméno nesmí být prázdné."
   member_list:
-    title: Členové
     invitation:
-      label: Pozvánka "{}"
-    add_invitation: Pozvání nového člena
+      label: "Pozvánka „{}“"
+    add_invitation: "Pozvat nového člena"
   member_form:
-    title: Upravit člena
-    name:
-      label: Název
-    action:
-      delete: Odstranit
-      save: Uložit
+    title: "Upravit člena"
     delete:
       confirm:
-        title: Odstranit člena
-        message: Opravdu chcete odstranit člen {}? Člen již nemá přístup k této rodině
-          a vyžaduje novou pozvánku. Pokud je tento uživatel posledním členem této
-          rodiny, bude rodina také smazána. Odstraněni budou také všichni psi a související
-          údaje. Toto nelze vzít zpět!
-        no: Zrušit
-        yes: Odstranit
+        title: "Smazat člena"
+        message: "Opravdu chcete smazat člena {}? Člen nebude mít přístup k rodině a bude potřebovat novou pozvánku, aby se mohl znovu připojit. Pokud je to poslední člen rodiny, rodina bude také smazána. Všichni psi a související data budou také smazána. Toto nelze vrátit zpět!"
   invitation_form:
-    title: Pozvánka
+    title: "Pozvánka"
     share:
-      hint: Pomocí pozvánky PIN "{}" pozvěte dalšího člena rodiny, aby se připojil
-        k vaší rodině. Každý kód PIN lze použít pouze jednou.
-      content: Zvu vás do své rodiny! Stáhněte si aplikaci Heado (https://heado.de/)
-        a při registraci použijte rodinný PIN "{}".
+      hint: "Použijte pozvánkový kód „{}“, aby se nový člen mohl připojit k vaší rodině. Každý kód je platný pouze jednou."
+      content: "Zveme vás do naší rodiny! Prosím, stáhněte si aplikaci Heado (https://heado.app/) a použijte pozvánkový kód „{}“ během registračního procesu."
       copy:
-        hint: PIN "{}" byl zkopírován.
-    action:
-      delete: Odstranit
+        hint: "Kód „{}“ byl zkopírován."
     delete:
       confirm:
-        title: Odstranit pozvánku
-        message: Opravdu chcete tuto pozvánku smazat? Pak již nemůžete použít tento
-          kód PIN pozvánky. Nelze jej zrušit a budete si muset vytvořit nový kód PIN!
-        no: Zrušit
-        yes: Odstranit
+        title: "Smazat pozvánku"
+        message: "Opravdu chcete smazat tuto pozvánku? Po operaci již nebude možné použít pozvánkový kód. Toto nelze vrátit zpět a bude třeba vytvořit nový kód!"
   family_form:
-    title: Upravit rodinu
-    name:
-      label: Název
-    action:
-      delete: Odstranit
-      save: Uložit
-    delete:
-      confirm:
-        title: Odstranit rodinu
-        message: Opravdu chcete odstranit rodinu {}? Váš účet, všichni členové rodiny
-          a psi, včetně dat z kalendáře, budou smazáni. Toto nelze vrátit zpět!
-        no: Zrušit
-        yes: Odstranit
-  dog_selection:
-    add: Přidání nového psa
-  dog_list:
-    title: Psi
-    add: Přidání nového psa
+    title: "Upravit rodinu"
   dog_form:
-    title:
-      add: Přidat psa
-      edit: Upravit psa
-    name:
-      label: Název
-    action:
-      delete: Odstranit
-      save: Uložit
+    edit: "Upravit psa"
     delete:
       confirm:
-        title: Smazat psa
-        message: Opravdu chcete smazat svého psa {}? Všechna data z kalendáře budou
-          také smazána. To nelze vrátit zpět.
-        no: Zrušit
-        yes: Odstranit
+        title: "Smazat psa"
+        message: "Opravdu chcete smazat svého psa {}? Všechna související data v kalendáři budou smazána. Toto nelze vrátit zpět."
+
 calendar:
+  phases:
+    anestrus: "Klidová fáze"
+  weight: "Váha"
+  notes: "Poznámky"
+  unit:
+    kilogram:
+      short: "kg"
   calendar:
     details:
       phase:
-        label: Fáze
-        proestrus: Předehřátí
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Odpočinková fáze
+        label: "Fáze"
+        proestrus: "Předhárání"
+        estrus: "Hárání"
+        metestrus: "Pohárání"
       false_pregnancy:
-        label: Falešné těhotenství
-        active_info: Aktivní falešné těhotenství
-      mood:
-        label: Nálada
-      symptom:
-        label: Příznaky
-      behavior:
-        label: Chování
-      secretion:
-        label: Odtok
-      weight:
-        label: Hmotnost
-        unit: kg
-      note:
-        label: Poznámky
+        label: "Falešná březost"
+        active_info: "Aktivní falešná březost"
   day_form:
     period:
-      title: Období
-      enable: Přidat periodický cyklus
-      disable: Odstranění periodického cyklu
+      title: "Období"
+      enable: "Přidat cyklus období"
+      disable: "Smazat cyklus období"
       proestrus_start_date:
-        label: Začátek období před říjí (proestrus)
+        label: "Začátek předhárání (proestrus)"
         info:
-          title: Předovulační období (proestrus)
-          message: "Období před říjí začíná, když se feně zvětší vulva a objeví se
-            krvavý poševní výtok.\n\nPrůměrná doba trvání je 9 dní a může se pohybovat
-            od 3 do 17 dní.\n\nToto datum musí být vždy vyplněno."
-          close: OK
+          title: "Předhárání (proestrus)"
+          message: "Oestrus začíná, když se vulva vaší fenky zvětší a objeví se krvavý výtok.\n\nPrůměrná doba trvání je 9 dní a může se pohybovat mezi 3 a 17 dny.\n\nDatum musí být vždy uvedeno."
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
       estrus_start_date:
-        label: Začátek říje (estrus)
+        label: "Začátek hárání (estrus)"
         info:
-          title: Říje (Estrus)
-          message: "S nástupem říje projevuje vaše fena ochotu ke krytí (hárání).
-            Vaginální výtok je stále možný, ale bude spíše připomínat masitou vodu
-            a případně bude hlenovitý.\n\nPrůměrná doba trvání je 9 dní a může se
-            pohybovat mezi 3 a 21 dny.\n \nPokud tato fáze ještě nezačala nebo si
-            ji nepřejete dokumentovat, nechte toto pole prázdné."
-          close: OK
+          title: "Hárání (estrus)"
+          message: "S nástupem hárání vaše fenka ukáže ochotu k páření (stojící hárání). Vagínální výtok je stále možný, ale připomíná více masovou vodu a může být slizký.\n\nPrůměrná doba trvání je 9 dní a může se pohybovat mezi 3 a 21 dny.\n\nPokud tato fáze ještě nezačala nebo nechcete tuto fázi dokumentovat, nechte toto pole prázdné."
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
       metestrus_start_date:
-        label: Začátek popálenin (Metestrus)
+        label: "Začátek pohárání (metestrus)"
         info:
-          title: Afterburn (Metestrus)
-          message: "Období po kojení je charakteristické ukončením páření. Kromě toho
-            ustává vaginální výtok a vulva ustupuje. V tomto období je možné falešné
-            těhotenství.\n\nPokud tato fáze ještě nezačala nebo si ji nepřejete dokumentovat,
-            ponechte toto pole prázdné."
-          close: OK
+          title: "Pohárání (metestrus)"
+          message: "Období po hárání se vyznačuje koncem páření. Navíc vaginální výtok přestane a vulva se stáhne. Během této doby je možná falešná březost.\n\nPokud tato fáze ještě nezačala nebo nechcete tuto fázi dokumentovat, nechte toto pole prázdné."
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
       end_date:
-        label: Konec cyklu (klidová fáze)
+        label: "Konec období (začátek klidové fáze)"
         info:
-          title: Klidová fáze (anestrus)
-          message: "Klidová fáze nevykazuje žádné známky pohlavního cyklu. Vulva je
-            nyní zcela regresivní.\n\nPokud tento cyklus ještě neskončil, ponechte
-            toto pole prázdné."
-          close: OK
+          title: "Klidová fáze (anestrus)"
+          message: "Během klidové fáze nejsou žádné známky sexuálního cyklu. Vulva je nyní zcela stažena.\n\nNechte toto pole prázdné, pokud období ještě neskončilo."
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
     false_pregnancy:
-      title: Falešné těhotenství
-      enable: Přidání falešného těhotenství
-      disable: Odstranění falešného těhotenství
+      title: "Falešná březost"
+      enable: "Přidat falešnou březost"
+      disable: "Smazat falešnou březost"
       start_date:
-        label: Začátek falešného těhotenství
+        label: "Začátek falešné březosti"
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
       end_date:
-        label: Konec falešného těhotenství
+        label: "Konec falešné březosti"
         error:
-          in_future: Datum nesmí být v budoucnosti
+          in_future: "Datum nesmí být v budoucnosti"
     features:
-      title: Funkce
+      title: "Vlastnosti"
       mood:
-        label: Nálada
-        no_selection: Nebyly vybrány žádné nálady
+        no_selection: "Žádná nálada není vybrána"
       symptom:
-        label: Příznaky
-        no_selection: Nebyly vybrány žádné příznaky
+        no_selection: "Žádný příznak není vybrán"
       behavior:
-        label: Chování
-        no_selection: Není vybráno žádné chování
+        no_selection: "Žádné chování není vybráno"
       secretion:
-        label: Odtok
-        no_selection: Není vybrán žádný výboj
+        no_selection: "Žádný výtok není vybrán"
       weight:
-        weight:
-          label: Hmotnost
         unit:
-          label: Jednotka
-          kilogram: kg
-    notes:
-      title: Poznámky
-      notes:
-        label: Poznámky
-    action:
-      save: Uložit
+          label: "Jednotka"
   mood:
-    fearful: Anxious
-    courageous: Odvážný
-    brave: Brave
-    sleepy: Sleepy
-    sniffy: Čichání
-    aggressive: Agresivní
-    nervous: Nervozita
-    satisfied: Spokojený
-    stressed: Stresované
-    sleepless: Sleepless
-    dissatisfied: Nespokojenost
-    depressed: Deprese
-    defiant: Defiant
-    relaxed: Uvolněný
-    happy: Happy
-    obedient: Poslušnost
-    balanced: Vyvážený
-    fiepsy: Fiepsig
-    grumpy: Grumpy
-    weepy: Hádavý
-    attentive: Pozor
-    sad: Smutné
-    stormy: Stormy
-    crazy: Crazy
-    calm: Calm
-    cuddly: Útulné
-    appetiteless: Bez chuti k jídlu
-    indecisive: Nerozhodnuto
-    exhausted: Vyčerpaný
-    frustrated: Frustrovaný
-    bitchy: Bitchy
-    troubled: Restless
-    jittery: Nervózní
+    mood: "Nálada"
+    fearful: "Bázlivý"
+    courageous: "Odvážný"
+    brave: "Statečný"
+    sleepy: "Ospalý"
+    sniffy: "Čichající"
+    aggressive: "Agresivní"
+    nervous: "Nervózní"
+    satisfied: "Spokojený"
+    stressed: "Stresovaný"
+    sleepless: "Bezesný"
+    dissatisfied: "Nespokojený"
+    depressed: "Depresivní"
+    defiant: "Vzpurný"
+    relaxed: "Uvolněný"
+    happy: "Šťastný"
+    obedient: "Poslušný"
+    balanced: "Vyvážený"
+    fiepsy: "Fiepsy"
+    grumpy: "Mrzutý"
+    weepy: "Plačtivý"
+    attentive: "Pozorný"
+    sad: "Smutný"
+    stormy: "Bouřlivý"
+    crazy: "Bláznivý"
+    calm: "Klidný"
+    cuddly: "Mazlivý"
+    appetiteless: "Bez chuti k jídlu"
+    indecisive: "Nerozhodný"
+    exhausted: "Vyčerpaný"
+    frustrated: "Frustrovaný"
+    bitchy: "Náladový"
+    troubled: "Znepokojený"
+    jittery: "Nervózní"
   behavior:
-    herding: Klobouky
-    adopting: Přijmout
-    nesting: Stavba hnízda
-    howling: Yelp
-    restless: Restless
+    behavior: "Chování"
+    herding: "Sběr"
+    adopting: "Adopce"
+    nesting: "Hnízdění"
+    howling: "Vytí"
+    restless: "Neklidný"
   symptom:
-    stomach_cramps: Žaludeční křeče
-    flatulence: Flatulence
-    diarrhea: Průjem
-    constipation: Zácpa
-    bloody_stool: Krvavé stolice
-    milk_discharge: Vypouštění mléka
-    swollen_teats: Oteklé hýždě
-    vomit: Zvracení
-    dandruff: Lupiny srst
+    symptom: "Příznak"
+    stomach_cramps: "Křeče v břiše"
+    flatulence: "Nadýmání"
+    diarrhea: "Průjem"
+    constipation: "Zácpa"
+    bloody_stool: "Krvavá stolice"
+    milk_discharge: "Mléčný výtok"
+    swollen_teats: "Oteklé struky"
+    vomit: "Zvracení"
+    dandruff: "Lupy"
   secretion:
-    bloody: Bloody
-    watery: Vodní
-    creamy: Krémový
-    dryly: Suché
-    stinky: Smradlavý
-    purulent: Hnisání
+    secretion: "Výtok"
+    bloody: "Krvavý"
+    watery: "Vodnatý"
+    creamy: "Krémový"
+    dryly: "Suchý"
+    stinky: "Páchnoucí"
+    purulent: "Hnisavý"
+
 overview:
+  last_cycle: "Poslední cyklus"
+  next_cycle: "Další cyklus"
   overview:
     current_period:
       no_data:
-        cta: Zaregistrujte první hárání své feny!
+        cta: "Zadejte první hárání vašeho psa!"
         info:
-          title: Předpověď příštího vedra
-          message: Heado potřebuje kompletní cyklus (včetně klidové fáze!) vaší feny,
-            aby mohl provést předpověď.
-          close: OK
-      days_left: stále {} dny
-      weeks_left: ještě {} týdnů
-      months_left: stále {} měsíce
-      until_date: na {}
-      error: Došlo k chybě. Klikněte pro zopakování.
+          title: "Předpověď dalšího hárání"
+          message: "Heado potřebuje kompletní cyklus (včetně klidové fáze) vašeho psa, aby mohl udělat předpověď."
+      days_left: "{} dní zbývá"
+      weeks_left: "{} týdnů zbývá"
+      months_left: "{} měsíců zbývá"
+      until_date: "do {}"
+      error: "Došlo k chybě. Klikněte pro opakování."
       phase:
-        proestrus: Předehřátí
-        estrus: Oestrus
-        metestrus: Afterburn
-        anestrus: Odpočinková fáze
+        proestrus: "Proestrus"
+        estrus: "Estrus"
+        metestrus: "Metestrus"
     period_dates:
       last:
-        title: Poslední ohřev
-        none: Zatím nebylo zadáno žádné období.
-        from: z
-        to: do
+        title: "Poslední období"
+        none: "Zatím žádné poslední období."
       next:
-        title: Další teplo
-        from: z
-        to: do
-        none: Zatím nemáme dostatek období, abychom mohli předpovídat.
+        title: "Další období"
+        none: "Nedostatečná data o obdobích pro předpověď dalšího období."
     period_count:
       period:
-        title: Počet ohřevů
-        time: Barva
-        times: Barva
+        title: "Počet období"
+        time: "krát"
+        times: "krát"
       false_pregnancy:
-        title: Počet falešných těhotenství
-        time: Barva
-        times: Barva
+        title: "Počet falešných březostí"
+        time: "krát"
+        times: "krát"
     menu:
-      calendar: Kalendář
-      settings: Nastavení
+      calendar: "Kalendář"
   ad_banner:
-    title: Vaše zkušební verze bez reklam brzy skončí!
-    message: Vaše testovací fáze končí v {}. Po tomto dni se vám budou zobrazovat
-      reklamy. Pokud chcete aplikaci používat bez reklam, můžete si zakoupit verzi
-      Premium.
-    become_member: Staňte se členem
-    left_days: '{}/{} Zbývající dny'
+    title: "Váš bezplatný zkušební období bez reklam brzy končí!"
+    message: "Váš zkušební období končí {}. Po tomto datu vám budeme zobrazovat reklamy. Pokud chcete pokračovat v používání Heado bez reklam, můžete si pořídit náš prémiový balíček."
+    become_member: "Stát se členem"
+    left_days: "{}/{} dní zbývá"
+
 premium:
-  title: Heado Premium
+  title: "Heado Premium"
   buy:
-    teaser: Staňte se členem Heado Premium a používejte aplikaci bez reklam.
-    purchase_single: Staňte se členem Premium
-    purchase_single_hint: '{} - Unikátní {}'
-    purchase_family: Staňte se rodinou Premium
-    purchase_family_hint: '{} - Unikátní {}'
-    restore_purchase: Obnovení nákupů
+    teaser: "Staňte se členem Heado Premium a používejte aplikaci bez reklam."
+    purchase_single: "Stát se prémiovým členem"
+    purchase_single_hint: "{} • Jednorázově {}"
+    purchase_family: "Stát se prémiovou rodinou"
+    purchase_family_hint: "{} • Jednorázově {}"
+    restore_purchase: "Obnovit nákup"
   membership:
     member:
-      teaser: Jste členem Heado Premium a můžete aplikaci používat bez reklam!
-      info: Jste členem Heado Premium od {}.
+      teaser: "Jste členem Heado Premium a můžete používat aplikaci bez reklam!"
+      info: "Jste členem Heado Premium od {}."
     family:
-      teaser: Vy a vaše rodina jste členy Heado Premium. Aplikaci můžete používat
-        bez reklam!
-      info: Vaše rodina je členem Heado Premium od {}.
+      teaser: "Vy a vaše rodina jste členy Heado Premium a můžete používat aplikaci bez reklam!"
+      info: "Vaše rodina je členem Heado Premium od {}."
+
 settings:
-  title: Nastavení
-  footer: Vyrobeno s {} pro Kori {} a Mayo {}.
-  family:
-    title: Rodina
-    dogs:
-      title: Psi
-    members:
-      title: Členové
-    family:
-      title: Rodina
+  settings: "Nastavení"
+  footer: "Vyrobeno s {} pro Kori {} a Mayo {}."
   account:
-    title: Účet
+    title: "Účet"
     premium:
-      title: Premium
+      title: "Premium"
     settings:
-      title: Nastavení účtu
+      title: "Nastavení účtu"
     cookies:
-      title: Souhlasy se soubory cookie
+      title: "Souhlasy s cookies"
   demo:
-    title: Demo
+    title: "Demo"
     test_login:
-      title: Testování přístupu uživatelů
+      title: "Přihlášení testovacího uživatele"
   contact:
-    title: Kontaktujte nás
+    title: "Kontakt"
     website:
-      title: Webové stránky
-      link: https://heado.de/
+      title: "Webové stránky"
     mail:
-      title: e-mail
-      link: mailto:wuff@heado.app
+      title: "E-mail"
     instagram:
-      title: Instagram
-      link: https://www.instagram.com/heado.de
+      title: "Instagram"
     tiktok:
-      title: TikTok
-      link: https://tiktok.com/@heado.de
+      title: "TikTok"
     twitter:
-      title: Twitter
-      link: https://twitter.com/heado_de
+      title: "Twitter"
   legal:
-    title: Právní záležitosti
+    title: "Právní"
     terms:
-      title: Podmínky použití
-      link: https://heado.de/terms
+      title: "Podmínky použití"
     privacy:
-      title: Podmínky ochrany údajů
-      link: https://heado.de/privacy
+      title: "Zásady ochrany osobních údajů"
   about:
-    title: O stránkách
+    title: "O aplikaci"
     status:
-      title: Stav
+      title: "Stav"
     version:
-      title: Verze
+      title: "Verze"
     translation:
-      title: Překlady
+      title: "Překlady"
   app:
     design:
-      light: Světlo
-      title: Design
-      dark: Dark
-    title: Aplikace
-  mayo: "Hej, chlupatý nos! 🐾\n\nJsem ráda, že jsi našel cestu do mého tajného prostoru!
-    Možná už mě znáš. Pokud ne, jmenuji se Mayo a jsem appenzellský horský pes. Samozřejmě
-    fenka! Teď jsou mi dva roky. Na obrázku nahoře jsem já. To abyste mě poznali,
-    kdybyste mě někdy potkali.\n\nBohužel jsme si s rodinou uvědomili, že mám úzkostné
-    fáze. V určitém okamžiku jsme všichni nabyli dojmu, že se mi před říjí zbláznily
-    hormony a že už nejsem tak statečná jako dřív. Ale nebyli jsme si úplně jistí.\n
-    \nMoje panička Korinna pak přišla s nápadem, že bychom mohli udělat kalendář pro
-    fenky, stejně jako to děláme pro lidské fenky. Nebylo to dříve řečeno než uděláno!
-    Můj pán Fabian je programátor. Také si myslel, že je to skvělý nápad, a hned se
-    do toho pustil.\n\nFabian si však brzy uvědomil, že o psím cyklu nemá vůbec žádnou
-    představu. Nebo co to obnáší. A tak hodně pátral na internetu, kladl Korinně spoustu
-    otázek a porovnával ji s existujícími aplikacemi pro lidské dámy.\n\nPo několika
-    měsících a testovací fázi s tlapkovými kamarády nastal čas! Dne 27. listopadu
-    2023 jsme Heado zveřejnili v App Store pro Android a iOS.\n\nMoje fáze úzkosti
-    vlastně pocházejí z mých hormonů. Ale také se zdá, že s každým horkem je to mnohem
-    lepší. Rozhodně to budeme sledovat.\n\nDoufám, že s touto aplikací pomůžeme i
-    vám a vašim lidem a rychleji najdeme problémy nebo nesrovnalosti. A také mít potřebné
-    důkazy u veterináře.\n\nPokud budete mít vy nebo vaši lidé nějaké nápady nebo
-    požadavky, ozvěte se mi prosím na mayo@heado.app. Také v případě problémů, chyb
-    nebo potíží.\n\nPřeji vám příjemnou zábavu s aplikací! <3\n\nMayo, Korinna & Fabian"
+      light: "Světlý"
+      dark: "Tmavý"
+      title: "Design"
+    title: "Aplikace"
+  mayo: "Ahoj, chlupáči! 🐾\n\nJsem rád, že jste našli cestu do mé tajné oblasti! Možná mě už znáte. Pokud ne, jmenuji se Mayo a jsem appenzellský salašnický pes. Samozřejmě, že jsem fenka! Teď mám 2 roky. Ilustrace nahoře jsem já. Jen abyste mě poznali, když mě někdy uvidíte.\n\nBohužel jsme si moje rodina a já museli uvědomit, že mám stále úzkostné fáze. V jednu chvíli jsme si všichni mysleli, že moje hormony před háráním šílí a proto nejsem tak odvážná. Ale nebyli jsme si úplně jistí.\n\nMoje majitelka Korinna pak měla nápad, že by se mohl udělat kalendář pro fenky, stejně jako pro ženy. Řekla a udělala! Můj pán Fabian je programátor. Také si myslel, že je to skvělý nápad a hned začal.\n\nAle Fabian brzy zjistil, že nemá tušení o cyklu psa. Nebo o tom, co to obnáší. Takže hodně hledal na internetu, ptal se Korinně spoustu otázek a porovnával to s existujícími aplikacemi pro ženy.\n\nPo několika měsících a testovací fázi s mými kamarády s tlapkami přišel čas! 27.11.2023 jsme vydali Heado v App Store pro Android a iOS.\n\nVe skutečnosti moje úzkostné fáze pocházejí z mých hormonů. Ale zdá se, že se s každým háráním hodně zlepšuje. Určitě to budeme sledovat.\n\nDoufám, že tato aplikace může také pomoci vám a vašim lidem najít problémy nebo nesrovnalosti rychleji. A také mít potřebné důkazy u veterináře.\n\nPokud vy nebo vaši lidé máte nějaké nápady nebo přání, kontaktujte mě na mayo@heado.app. Také v případě problémů, chyb nebo potíží.\n\nUžijte si aplikaci! <3\n\nMayo, Korinna & Fabian"
+
 account_settings:
-  title: Nastavení účtu
+  title: "Nastavení účtu"
   logins:
-    title: Údaje o účtu
-    google:
-      label: Google
-    apple:
-      label: Apple
+    title: "Připojení účtu"
     test:
-      label: Testovací uživatel
+      label: "Testovací uživatel"
     error:
       already_in_use:
-        title: Již připojeno
-        message: Vybraný účet je již připojen k jinému uživateli.
-        close: OK
+        title: "Účet již používán"
+        message: "Vybraný účet je již připojen k jinému uživateli."
   disconnect:
-    label: Oddělit účet
+    disconnect:
+      short: "Odpojit"
+      long: "Odpojit účet"
     confirm:
-      title: Oddělit účet
-      message: Opravdu chcete zrušit propojení svého účtu? Pak se již nebudete moci
-        přihlásit k tomuto poskytovateli. Účet můžete znovu připojit později.
-      no: Zrušit
-      yes: Ano, oddělit
+      message: "Opravdu chcete odpojit svůj účet? Poté se nebudete moci přihlásit pomocí tohoto poskytovatele. Účet můžete později znovu připojit."
+      yes: "Ano, odpojit"
   logout:
-    label: Odhlášení
+    logout: "Odhlásit se"
     confirm:
-      title: Odhlášení
-      message: Opravdu se chcete odhlásit? Můžete se znovu přihlásit pomocí účtu Google
-        nebo Apple.
-      no: Zrušit
-      yes: Ano, odhlaste se
-  delete:
-    label: Odstranění účtu
-    confirm:
-      title: Odstranění účtu
-      message: Opravdu chcete svůj účet smazat? Do této rodiny již nemáte přístup
-        a potřebujete novou pozvánku. Pokud jste posledním uživatelem této rodiny,
-        bude rodina také smazána. Vymazáni budou také všichni psi a související údaje.
-        Toto nelze vzít zpět!
-      no: Opravdu se chcete odhlásit? Můžete se znovu přihlásit pomocí účtu Google
-        nebo Apple.
-      yes: Ano, vymazat
+      message: "Opravdu se chcete odhlásit? Můžete se znovu přihlásit pomocí svého účtu Google nebo Apple."
+      yes: "Ano, odhlásit se"
+
 onboarding:
-  next: Další
+  code:
+    validation:
+      min_length: "Kód musí obsahovat 5 číslic"
+  next: "Pokračovat"
   welcome:
-    task: Máte již účet?
+    task: "Máte již účet?"
     action:
-      register: Vytvoření nového účtu
-      login: Už mám účet
+      register: "Vytvořit nový účet"
+      login: "Již mám účet"
   member:
-    task: Jak ti mám říkat?
-    name:
-      label: Název
-    default_name: 'Společník'
-    default_name_dog: '{}jeho společník'
+    task: "Jak vám mohu říkat?"
+    default_name: "Společník"
+    default_name_dog: "Společník {}"
   lonely:
-    task: Byli jste pozváni do rodiny?
+    task: "Byli jste pozváni do rodiny?"
     action:
-      create_family: Vytvoření nové rodiny
-      join_family: Připojte se ke stávající rodině
+      create_family: "Vytvořit novou rodinu"
+      join_family: "Připojit se k existující rodině"
   login:
-    task: Přihlaste se ke svému stávajícímu účtu
-    action:
-      google: Google
-      apple: Apple
+    task: "Přihlaste se ke svému stávajícímu účtu"
   test_login:
-    task: Přihlášení pomocí kódu PIN pro uživatele demo verze
+    task: "Přihlášení pomocí PIN kódu pro demo účty"
     code:
       error:
-        min_length: Kód se musí skládat z 5 číslic
-        invalid: Neplatný kód
+        invalid: "Neplatný PIN kód"
     action:
-      login: Přihlášení
+      login: "Přihlásit se"
   join:
-    task: Pozvánkový kód vaší rodiny
+    task: "Pozvánkový kód rodiny"
     code:
-      error:
-        min_length: Kód se musí skládat z 5 číslic
-      invalid: "Neplatný kód pozvánky.\nKód neexistuje nebo byl již použit."
+      invalid: "Neplatný pozvánkový kód.\nKód neexistuje nebo byl již použit."
   finish:
-    task: Jste připraveni!
+    task: "Jste připraveni!"
     legal:
-      hint: 'Kliknutím na "Přijmout a vytvořit účet" souhlasíte s následujícími podmínkami:'
+      hint: "Kliknutím na „Přijmout a vytvořit účet“ přijímáte následující podmínky:"
       terms:
-        label: 1. podmínky používání
-        link: https://heado.de/terms
+        label: "1. Podmínky použití"
       privacy:
-        label: 2. podmínky ochrany údajů
-        link: https://heado.de/privacy
+        label: "2. Zásady ochrany osobních údajů"
     action:
-      accept_and_register: Přijmout a vytvořit účet
+      accept_and_register: "Přijmout a vytvořit účet"
   family:
-    task: Pojmenujte svou rodinu
+    task: "Dejte své rodině jméno"
     name:
-      label: (Fiktivní) příjmení
-      help: Vyberte si imaginární jméno, které dobře vystihuje vaši rodinu. Vaše příjmení
-        zde není nutné.
-    default_name: '{}jeho rodina'
+      label: "Název rodiny (fiktivní)"
+      help: "Vyberte si fantazijní jméno, které dobře popisuje vaši rodinu. Vaše příjmení zde není nutné."
+    default_name: "Rodina {}"
   dog:
-    task: Jak se váš pes jmenuje?
+    task: "Jak se jmenuje váš pes?"
     name:
-      label: Jméno psa
+      label: "Jméno psa"
   auth:
-    task: Přihlášení, ukládání údajů o účtu a používání více zařízení
+    task: "Přihlaste se, uložte svá data a používejte svůj profil na více zařízeních"
     action:
-      google: Google
-      apple: Apple
-      skip: Nechci se přihlásit
-app:
-  title: Heado - tepelný kalendář
-  title_short: Heado
-  slogan: Teplotní kalendář
-generic:
-  system_default: Systémový standard
-  cancel: Zrušit
-  delete: Odstranit
-  done: Připraveno
+      skip: "Nechci se přihlašovat"
